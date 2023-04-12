@@ -212,24 +212,42 @@ public class HelloServlet3 extends HttpServlet {
 - `close()`를 하지 않으면 퍼포먼스가 떨어짐
 
 
+
+## 데이터 전송방식
+### Get (기본값)
+1. 서블릿에 데이터 전송시 데이터가 URL 뒤 `속성명=속성값` 형태( #Query_String )로 전송되며 주소창에 보임
+2. 보안에 취약
+3. 최대 256비트
+4. 서블릿에서 doGet()을 이용해 데이터 처리
+
+### Post
+1. 서블릿에 데이터를 전송시 데이터가 body영역에 담겨진 채 전송되며 주소창에 안보임
+2. 용량제한 없음
+3. Get 방식에 비해 보안에 용이하지만 데이터를 암호화하지 않으면 소용없음
+4. 서블릿에서 doPost()를 이용해 데이터 처리
+
+
 ## 서블릿 포워드 기능
+> 서블릿 간의 데이터 공유를 위해서 나온 개념
+
 - 포워드 기능이란? 
 	- 다른 서블릿이나 JSP와 데이터를 공유하여 데이터등을 연동할때 사용
 		- 데이터 연동 예시 : 웹 개발시 회원관리, 상품관리, 게시판 관리 등등
 	- 포워드 기능은 하나의 서블릿에서 다른 서블릿이나 JSP로 요청을 전달하는 역할
 		- 서버에서 포워딩되면 웹 브라우저의 주소창이 변경되지 않음
-		- 매개변수에 데이터를 추가하여 같이 포함시켜서 전달 가능
-- 형식 
-	```java
-	RequestDispatcher dis = request.getRequestDispatcher("두번째 서블릿");
-	dis.forward(request, response);
-	```
+		- 서블릿 요청이 클라이언트를 거쳐서 다시 요청되는 방식이기에 주소창의 주소가 변경됨
+		- 파라미터 방식으로 값을 넘김
+	- 데이터 [[Scope]] 범위를 어떻게 지정할 것인지가 이슈
+	- [[Servlet#바인딩 binding|바인딩]]과 세트로 취급됨
+- 포워드 기능을 하는 메소드
+	- response.sendRedirect : 쿼리스트링으로 값을 넘겨줄 수 있음
+	- response.addHeader : 시간을 지정하고 맵핑을 넘길 수 있음
+	- JS의 location.href 속성을 이용해 넘길 수 있음
+
 - 보안이 중요함 
-- 바인딩의 정의?
 - 서블릿 요청이 클라이언트를 거쳐서 다시 요청되는 방식이기에 주소창의 주소가 변경됨
 
-
-### Redirect의 작동 방식
+### Redirect메소드의 작동 방식
 
 1.  클라이언트 요청
 2. 첫번째 서블릿에서 어노테이션이 설정한 곳으로 데이터 포워드 
@@ -237,7 +255,7 @@ public class HelloServlet3 extends HttpServlet {
 	response.sendRedirect("두번째_서블릿");
 	```
 	- 서블릿에서 포워딩한 데이터 처리 서블릿
-	- 아래처럼 키값을 넘겨줄 수 있음, 값 넘겨주는 행위를 포워드
+	- 아래처럼 키값을 넘겨줄 수 있음( #Query_String ), 값 넘겨주는 행위를 **포워드** 
 		```java
 		response.sendRedirect("두번째_서블릿?name=이름");
 		```
@@ -245,23 +263,22 @@ public class HelloServlet3 extends HttpServlet {
 	```java
 	request.getParamter("name"); //이름
 	```
-	- 쿼리스트링으로 데이터를 넘겨줄 수 있음, 넘겨받는 행위를 포워딩이라고 함
-4. 첫번째 서블릿은 포워딩이 되고 나면 메모리에서 삭제 됨. 이를 개선해서 나온 것이 디스패처
+	- 쿼리스트링으로 데이터를 넘겨줄 수 있음, 넘겨받는 행위를 **포워딩**이라고 함
+4. 첫번째 서블릿은 포워딩이 되고 나면 메모리에서 삭제 됨. 이를 개선해서 나온 것이 **디스패처**
 
-### addheader의 작동방식
+### addheader메소드의 작동방식 [참고](https://blog.pages.kr/418)
 
 - 지정한 시간이 지난뒤 맵핑한 곳으로 이동
-```java
-response.addHeader("Refresh", "1;url=refresh2?name=flmssm");
-```
+	```java
+	response.addHeader("Refresh", "1;url=refresh2?name=flmssm");
+	```
 - 콜론(:)과 세미콜론(;)을 헷갈리지말것(작동이 안됨)
 - 추후에 CRUD할때는 객체를 묶어서 보내게 됨
 	- 바인딩을 쓰기는 하지만 
-- [참고](https://blog.pages.kr/418)
 
-### 로케이션 location 작동 방식
+### JS 로케이션 location의 작동 방식
 - 서블릿 요청이 클라이언트의 웹 브라우저를 거쳐서 다시 요청되는 방식 
-	- 웹 브라우저의 주소창이 달라짐
+- 웹 브라우저의 주소창이 달라짐
 - 클라이언트 요청
 - SeveletForwardLocation 서블릿에서 어노테이션으로 설정한 곳으로 데이터 포워딩
 - 다시 클라이언트를 거쳐서 ServletForwardLocation2 서블릿에서 최종 데이터 처리
@@ -269,34 +286,34 @@ response.addHeader("Refresh", "1;url=refresh2?name=flmssm");
   out.println("<script>location.href='location2</script>");
 ```
 
-# 바인딩 binding
+## 바인딩 binding
 - 전달하는 데이터의 양이 적을 때는 Get 방식으로 전달 할 수 있지만 Get은 많은 데이터를 전달하지 못하는 단점이 존재
 - 웹 프로그램 실행시에 데이터를 서블릿 관련 객체에 저장하는 방법이 나옴
 	- WAS가 알아서 해줌
 	- HttpServletRequest, HttpSession, ServletContext 객체를 통해 제공
 	- 저장된 데이터는 서블릿으로 JSP에서 서로 전달하고 공유하며 사용
 
-# 디스패쳐 dispatcher
+## 디스패쳐 dispatcher
 - 서버에서 포워드가 전달 -> 웹 브라우저 주소창이 변경되지 않음
 - 작동 방식
-	- 클라이언트 요청 발생시 
-	- 첫 번째 서블릿은 RequestDispatcher 객체를 이용하여 두번째 서블릿으로 전달
+	- 클라이언트 요청 발생시 첫 번째 서블릿은 RequestDispatcher 객체를 이용하여 두번째 서블릿으로 전달
 	- 포워드만 하는 것이 아니고 바인딩도 같이 함 (둘은 세트)
 ```java
 RequestDispatcher name = request.getRequestDispatcher("location2?name=paramata");
 name.forward(request, response);
 ```
 
+### 디스패처 예시구문
+- request의 [[Scope]]는 웹 페이지 하나당 한개씩이므로 새로운 웹 페이지에서는 데이터가 공유되지 않음
+
+
 # 브라우저 데이터 접근방식
 - 웹 프로그램 실행시에 데이터를 서블릿 관련 객체에 저장하는 방법이 나옴 (WAS가 알아서 해줌)
 - 3개의 객체를 통해서 접근
-	- 스코프 비교시 Request < Context < Session 순임
-	- **HttpServletRequest** 
-		- 요청될때마다 호출
-	- **ServletContext**
-		- Project 당 하나씩
-	- **HttpSession** 
-		- 브라우저가 종료되기 전까지 데이터를 가지고 있음
+	- [[Scope]] 비교시 Request < Context < Session 순임
+	- **HttpServletRequest** : 요청될때마다 호출
+	- **ServletContext** : Project 당 하나씩
+	- **HttpSession** : 브라우저가 종료되기 전까지 데이터를 가지고 있음
 - 저장된 데이터는 서블릿으로 JSP에서 서로 전달하고 공유하며 사용
 - 무조건 key, value (String 타입)
 
@@ -362,12 +379,13 @@ session.invalidate(); // 세션 강제 삭제 : 브라우저와 서버의 연결
 
 # 용어정리
 ## 쿼리 스트링( #Query_String)
-- 물음표 뒤에 오는 값을 의미 
-- 특정한 주소(URL)에 포함된 추가적인 데이터로 form을 통해 제출된 데이터를 쿼리 스트링 형식으로 받음, 문자열로만 전송이 가능함
-- Get 방식의 경우 : `Context/매핑명?속성명=속성값&속성명2=속성값2...`으로 구현
+- 정의
+	- 특정한 주소(URL)에 포함된 추가적인 데이터로 form을 통해 제출된 데이터를 쿼리 스트링 형식으로 받음, 문자열로만 전송이 가능함
+- 쿼리스트링의 형식 : `Context/매핑명?속성명=속성값&속성명2=속성값2...`
+	- key=value 쌍으로 이뤄져있고 여러개를 사용할 때 &를 붙임
 	- 동일한 키는 중복이 가능함
-	- 갯수제한이 있음 8bit(256가지)
-- Post 방식의 경우 : body에 붙어서 데이터 전송됨 (통으로 들어감)
-- 참고) 서버단 프로그래밍 시 쿼리스트링의 키들을 매개변수(파라미터)라고 함
+	- 문자열만 가능 / 갯수제한이 있음 (최대 256비트)
+	- 웹 브라우저에 직접 입력해서 데이터를 전송가능
+	- 참고) 서버단 프로그래밍 시 쿼리스트링의 키들을 매개변수(파라미터)라고 함
 
 # 연관문서

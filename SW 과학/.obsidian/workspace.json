@@ -4,9 +4,31 @@
     "type": "split",
     "children": [
       {
+        "id": "0500a6b59a2e5534",
+        "type": "tabs",
+        "dimension": 46.16519174041298,
+        "children": [
+          {
+            "id": "bb77119ed0592a35",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. 웹 개발/Servlet.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
+      },
+      {
         "id": "c8f2a280ae503928",
         "type": "tabs",
-        "dimension": 46.410891089108915,
+        "dimension": 53.83480825958702,
         "children": [
           {
             "id": "266d17f7761344b6",
@@ -24,44 +46,22 @@
             }
           },
           {
-            "id": "bb77119ed0592a35",
+            "id": "22bcc8dd49c562c8",
             "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. 웹 개발/Servlet.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "90568d81fc60e835",
-        "type": "tabs",
-        "dimension": 53.58910891089109,
-        "children": [
-          {
-            "id": "23352cca484ffd02",
-            "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
                 "file": "웹 개발.canvas",
                 "viewState": {
-                  "x": -40.00998309803785,
-                  "y": -274.25917398405477,
-                  "zoom": -1.3333333333333328
+                  "x": 1747.5824472281067,
+                  "y": 913.4311991305306,
+                  "zoom": -0.333333333333333
                 }
-              },
-              "pinned": true
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,7 +90,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "스크린틀릿",
+                "query": "tag:#Query_String",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -115,11 +115,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "10c1aa1ebe2f8f6a",
@@ -254,8 +256,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -273,16 +274,21 @@
   },
   "active": "bb77119ed0592a35",
   "lastOpenFiles": [
+    "웹 개발.canvas",
+    "4. 웹 개발/Servlet.md",
+    "데일리 노트/2023-04-12.md",
     "4. 웹 개발/JSP.md",
+    "4. 웹 개발/디자인 패턴/front controller.md",
+    "마크다운 사용법/La Tex 수식.md",
+    "마크다운 사용법/옵시디언.md",
+    "컴퓨터과학.canvas",
     "img/Pasted image 20230410074754.png",
     "img/Untitled.png",
     "img/Pasted image 20230412092551.png",
     "노트필기방법.canvas",
     "img/Pasted image 20221028041257.png",
     "img/웹브라우저_콘솔.png",
-    "웹 개발.canvas",
     "9. 용어해설집/소프트웨어/Scope.md",
-    "데일리 노트/2023-04-12.md",
     "4. 웹 개발/네트워크.md",
     "4. 웹 개발/웹 개발론.md",
     "4. 웹 개발/IP.md",
@@ -291,14 +297,11 @@
     "데일리 노트/2023-04-11.md",
     "데일리 노트/2023-04-10.md",
     "9. 용어해설집/소프트웨어/이클립스.md",
-    "4. 웹 개발/Servlet.md",
     "5. 프로그래밍 언어/마크업 언어/HTML.md",
     "5. 프로그래밍 언어/스타일 시트/CSS.md",
     "5. 프로그래밍 언어/마크업 언어/HTML^시.md",
     "5. 프로그래밍 언어/JS.md",
     "5. 프로그래밍 언어/마크업 언어/JSDOC.md",
-    "마크다운 사용법/옵시디언.md",
-    "마크다운 사용법/La Tex 수식.md",
     "2. 컴퓨터/2. 컴퓨터.md",
     "6. 영어",
     "8. 디자인/포토샵.md",
@@ -307,8 +310,6 @@
     "9. 용어해설집/소프트웨어/AJAX.md",
     "9. 용어해설집/소프트웨어/API.md",
     "9. 용어해설집/소프트웨어/오퍼레이션.md",
-    "9. 용어해설집/소프트웨어/데브옵스.md",
-    "컴퓨터과학.canvas",
     "무제 파일.canvas",
     "데일리 노트",
     "3학년 1학기.canvas",
