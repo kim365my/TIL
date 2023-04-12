@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"5. 용어해설집/프로그래밍 언어\"",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:\"실습\"",
+      "color": {
+        "a": 1,
+        "rgb": 16760295
+      }
+    },
+    {
+      "query": "path:\"4. 웹 개발\"",
+      "color": {
+        "a": 1,
+        "rgb": 6911935
+      }
+    },
+    {
+      "query": "path:\"2. 컴퓨터\"",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "path:\"6. 용어해설집\"",
+      "color": {
+        "a": 1,
+        "rgb": 15646297
+      }
+    },
+    {
+      "query": "path:독서",
+      "color": {
+        "a": 1,
+        "rgb": 14056028
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.05958333333333,
+  "lineSizeMultiplier": 0.916666666666667,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 273,
+  "scale": 0.6905660954368282,
+  "close": true
+}

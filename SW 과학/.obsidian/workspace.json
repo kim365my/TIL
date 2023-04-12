@@ -1,0 +1,328 @@
+{
+  "main": {
+    "id": "f8699187e18f68be",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8f2a280ae503928",
+        "type": "tabs",
+        "dimension": 46.410891089108915,
+        "children": [
+          {
+            "id": "266d17f7761344b6",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. 웹 개발/JSP.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "bb77119ed0592a35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. 웹 개발/Servlet.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "90568d81fc60e835",
+        "type": "tabs",
+        "dimension": 53.58910891089109,
+        "children": [
+          {
+            "id": "23352cca484ffd02",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "웹 개발.canvas",
+                "viewState": {
+                  "x": -40.00998309803785,
+                  "y": -274.25917398405477,
+                  "zoom": -1.3333333333333328
+                }
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4ace5938f515d7e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd3b39388fbc00da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "235bb72f847da6e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5fc88d40cbf00fb6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "스크린틀릿",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e93bae7cdd203bf8",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "d115810d4f8accf2",
+            "type": "leaf",
+            "state": {
+              "type": "mk-file-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "10c1aa1ebe2f8f6a",
+    "type": "split",
+    "children": [
+      {
+        "id": "422867e0e1bcf3da",
+        "type": "tabs",
+        "dimension": 66.4756446991404,
+        "children": [
+          {
+            "id": "0428bff858c0dbd0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "4. 웹 개발/Servlet.md"
+              }
+            }
+          },
+          {
+            "id": "6eae2d85ccfe3603",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "4. 웹 개발/Servlet.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "813ee55d2d0fb340",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "4. 웹 개발/Servlet.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "f29afc5ab71cc401",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "16061cec974e399c",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "5df68d6c0d6107ae",
+            "type": "leaf",
+            "state": {
+              "type": "ReferenceListView",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "4c27f8893d51138b",
+        "type": "tabs",
+        "dimension": 33.5243553008596,
+        "children": [
+          {
+            "id": "aa1112bc6bc13184",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "43046c19dbaa0fad",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "4. 웹 개발/Servlet.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "path:\"데일리 노트\"",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14701138
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.5359795996225941,
+                  "close": true
+                }
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 260.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:새 캔버스 만들기": false,
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "bb77119ed0592a35",
+  "lastOpenFiles": [
+    "4. 웹 개발/JSP.md",
+    "img/Pasted image 20230410074754.png",
+    "img/Untitled.png",
+    "img/Pasted image 20230412092551.png",
+    "노트필기방법.canvas",
+    "img/Pasted image 20221028041257.png",
+    "img/웹브라우저_콘솔.png",
+    "웹 개발.canvas",
+    "9. 용어해설집/소프트웨어/Scope.md",
+    "데일리 노트/2023-04-12.md",
+    "4. 웹 개발/네트워크.md",
+    "4. 웹 개발/웹 개발론.md",
+    "4. 웹 개발/IP.md",
+    "TCP",
+    "4. 웹 개발/자바빈.md",
+    "데일리 노트/2023-04-11.md",
+    "데일리 노트/2023-04-10.md",
+    "9. 용어해설집/소프트웨어/이클립스.md",
+    "4. 웹 개발/Servlet.md",
+    "5. 프로그래밍 언어/마크업 언어/HTML.md",
+    "5. 프로그래밍 언어/스타일 시트/CSS.md",
+    "5. 프로그래밍 언어/마크업 언어/HTML^시.md",
+    "5. 프로그래밍 언어/JS.md",
+    "5. 프로그래밍 언어/마크업 언어/JSDOC.md",
+    "마크다운 사용법/옵시디언.md",
+    "마크다운 사용법/La Tex 수식.md",
+    "2. 컴퓨터/2. 컴퓨터.md",
+    "6. 영어",
+    "8. 디자인/포토샵.md",
+    "9. 용어해설집/소프트웨어/SVG.md",
+    "9. 용어해설집/소프트웨어",
+    "9. 용어해설집/소프트웨어/AJAX.md",
+    "9. 용어해설집/소프트웨어/API.md",
+    "9. 용어해설집/소프트웨어/오퍼레이션.md",
+    "9. 용어해설집/소프트웨어/데브옵스.md",
+    "컴퓨터과학.canvas",
+    "무제 파일.canvas",
+    "데일리 노트",
+    "3학년 1학기.canvas",
+    "수업노트",
+    "img/Pasted image 20230410075755.png",
+    "img/Pasted image 20230410075008.png",
+    "img/Pasted image 20230410072832.png",
+    "img/Pasted image 20230410071757.png",
+    "img/Pasted image 20230410070148.png",
+    "마크다운 사용법",
+    "정보처리기사/자격증.canvas",
+    "정보처리기사/정보처리기사 필기, 5과목 정보시스템 구축 관 c3e23d19a6684999a35f934c69af5f4c",
+    "정보처리기사/정보처리기사 필기, 4과목 프로그래밍 언어 활ᄋ d17101021a174d90a1e18a14fc38b60c",
+    "정보처리기사/정보처리기사 필기, 3과목 데이터베이스 구축 무ᄅ 1a1c1c31c4dc405dad9b50753588a4bc",
+    "정보처리기사/정보처리기사 필기, 2과목 소프트웨어 개발 무료ᄀ 31d0cdc6647a4f2c98fb48fdcd7d5458"
+  ]
+}

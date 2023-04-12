@@ -1,0 +1,373 @@
+---
+tag : 백엔드
+---
+
+# 개요
+> [[Java]] 1.8버전 / [[이클립스]] IDE / 아파치 톰캣을 기준으로 설명
+
+- JavaEE 패키지의 Javax 클래스를 사용
+
+# 서블릭 기본 세팅
+![[이클립스#WAS 세팅]]
+
+# 서블릿 이해하기
+
+```mermaid
+graph LR
+	subgraph id1[" "]
+		서버
+		톰켓
+	end
+	subgraph id2["브라우저"]
+		View
+	end
+	id2 --request--> id1 --CRUD--- DB[(Database)]
+	id1 --response--> id2
+  서버--위임--> 톰켓(( 톰캣 WAS))
+	톰켓--서블릿으로 처리한\\n 뒤에 넘겨줌-->서버
+
+```
+- 브라우저 :  거대한 인터프린터로 서버에 요청/응답을 받는 클라이언트로 View를 구현
+- View에서 HTTP 메세지로 요청(Request)를 받으면 서버는 일일히 요청에 반응해서 프로그래밍된 대로 작동하고, 이후 데이터를 응답(Response)하게 됨
+- 서버를 편하게 작성하기 위해 사용하는 것이 WAS고, 서버는 WAS에게 모든 것을 위임하고 WAS는 서브릿이 작동된 뒤에 처리한 것을 서버에 다시 반환하게 된다. 그렇게 View 단에서 동적으로 데이터가 변동되는 것을 볼 수 있음
+
+## 웹 서버와 WAS의 차이점  [출처](http://sungbine.github.io/tech/post/2015/02/15/tomcat%EA%B3%BC%20apache%EC%9D%98%20%EC%97%B0%EB%8F%99.html)
+- 웹 서버 : 정적 웹페이지
+	- http 웹서버는 http 요청을 처리할 수 있는 웹서버
+	- apache http 서버는 http요청을 처리하는 웹 서버 
+	- 클라이언트가 get, post, delete 등을 이용해 요청시 결과를 돌려주는 기능
+- WAS(WebApplictionServer) #WAS :  동적 웹페이지를 구동시킬때 사용
+	- 서블릿을 담아두는 컨테이너로 서블릿을 생성, 작동 및 소멸까지 알아서 하는 [[API]]
+	- 함수처럼 요청이 있을때 내부의 프로그램을 통해서 결과를 생성하고 클라이언트에게 전달하는 기능, 웹 서버에서 요청을 받으면 WAS가 구동
+	- 톰캣 : 자바 기반 오픈 소스 WAS, Servlet/[[JSP]] 컨테이너
+- apache tomcat : 합쳐서 아파치 톰캣이라고 부르는 데 실제로는 아래처럼 기능이 다르대
+	- apache : 웹서버
+	- tomcat : WAS
+- [[웹 개발론#2. 정적/동적 페이지란?]] 둘의 차이는 데이터가 동적으로 변하는지 안변하는 지가 기준
+
+## 서블릿의 특징
+- 동적웹페이지를 구현하기 위해서 사용됨
+	- 보통 View단은 [[JSP]], Contoller단은 서블릿으로 구현
+	- [[JSP]]에 비해 서블릿은 View단 구현이 힘들다.
+- 자바 클래스 중 하나로 모든 서블릿 파일은 `HttpServlet` 클래스를 상속받아서 구현되었기에 자바 문법을 그대로 사용
+	```mermaid
+	graph RL
+		 구현["HttpServlet"]--상속--> id2((GenericSevlet)) --상속--> id1((Servet))
+	```
+- 서블릿은 싱글톤패턴을 가짐 
+- [[HTML]]과 연결하여 사용됨
+	- MVC 디자인 패턴으로 작성하면 [[HTML]] 문서가 많아질수록 서블릿의 양도 늘어나기에 용량이 많고 버거워짐 
+	- 그래서 나온 디자인 패턴이 [[front controller]]임 
+- [[Java#Java EE]] 기술
+	- 위에서 기술했듯이 서블릿 파일은 HttpServlet 클래스를 상속받아서 구현되므로 개발자는 서버에서 처리되어야 하는 기능의 일부분만 작성하면 됨
+- **서블릿 프로그래밍이 기존 웹서버 프로그래밍과 다른점**
+	- 객체를 생성하고나 호출하는 주체가 서블릿 컨테이너( #WAS)로 사용자가 생성❌
+		- 서블릿 프로젝트를 생성했을 경우 폴더 구조를 변경하면 안됨 (이미 구현 되어있기에 추가만해서 사용하면 됨)
+		- WAS 안에서만 작동
+		- 자바의 main을 이용해 프로그램을 실행하지 않음
+	- 서블릿 클래스에서 생성하는 객체도 서블릿 컨테이너에서 관리 ex) 서블릿 생명주기 메서드
+	- 서블릿이나 [[JSP]] 코드는 자바 언어 API와 동일하게 사용됨
+		- 서블릿 API도 동시 사용
+		- 단, 서블릿 API는 관련 라이브러리 필요
+
+
+## 서블릿의 생명주기 메서드
+- 초기화 과정 → 메모리에 인스턴스 생성 → 서비스 수행 → 소멸
+- 서블릿은 각 요청 실행 단계마다 호출되며 기능을 수행하는 콜백 메서드들이 있음
+    1.  `init()` : 생성시 초기화 작업 수행(서블릿 요청시 맨 처음 단, 한번만 호출), 생략가능
+    2.  `doGet() / doPost()`
+        1.  작업 수행 → 서블릿 호출시 매번 호출, 실제로 클라이언트가 요청하는 작업을 수행
+        2.  서블릿 구현의 핵심으로 반드시 구현
+    3.  `destory()` : 종료(서블릿 기능을 수행 후 소멸될때 호출되는 메소드 / 서블릿 마무리 작업시 주로 수행), 생략가능
+-   서블릿 동작과정과 코딩 순서가 동일함
+	1. 서블릿 클래스 만들시 → 개발자 코딩
+	2.  서블릿 생명주기 메서드 구현 -> inint(), doGet()이나 doPost 사용, destory()
+	3. 서블릿 매핑 작업 : web.xml 또는 어노테이션 사용(병행불가)
+	4.  클라이언트 (웹브라우저) 서블릿 매핑이름 요청
+	5. 어노테이션 과정을 거쳐서 주소창에 get방식으로 출력
+
+
+## 서블릿에서의 HTTP 통신 #HTTP 
+- [[웹 개발론#HTTP란? HTTP]]
+- 클라이언트로부터 요청이 들어오면 어떤 서블릿 자바 파일을 실행할지를 먼저 기술해야 함
+- 아파치 톰캣 서버가 실행되면 web, xml 어노페이션을 알아서 요청이름과 실행될 자바 파일을 매핑시켜서 서블릿 컨테이너에 등록하여 차곡차곡 쌓아둠
+- HTTP 에러는 번호에 따라서 어떤 오류인지 짐작할 수 있음
+	- 404에러 : 매핑이 잘못되었을 경우 발생
+---
+- **Request와 Response** : 브라우저에서 정보전달요청을 위해 사용하는 방법
+	- Request 요청
+		- Get : 주소창과 함께 값이 전달되는 방식	->  doGet에서 처리
+			- 단순 링크로 처리가 됨, 링크로 데이터가 넘어가기에 보안에 취약. 따라서 내부적으로 개발자들이 파라미터를 넘겨줄때만 사용
+			- 특정 정보를 조회하거나 보낼때만 사용
+			- 형식 : `Context/매핑명?속성명=속성값&속성명2=속성값2...` #Query_String 
+		- Post : body영역과 함께 넘어감 -> doGet에서 처리
+			- 주소와 데이터를 따로 보내는 방식 
+			- 폼에서 입력한 데이터를 `submit` 시 호출
+			- 웹 화면을 통해 실제 처리가 필요한 작업을 하기 위해 사용
+	- Response 응답
+- 연관 :  [[Servlet#서블릿과 HTML 연동하기]]
+
+# 서블릿 기본 코드
+``` java
+package view;
+import java.io.IOException;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+@WebServlet("/HelloServlet3")
+public class HelloServlet3 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	public void init(ServletConfig config) throws ServletException {}
+	public void destroy() {}
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {}
+}
+```
+- `@WebServlet("/HelloServlet3")` : 어노테이션, 매핑방식
+- `init` : 생성될때 호출
+- `doGet / doPost`  
+	- 기본 값이 get이기에 서블릿 파일을 실행하면 init이 실행된 뒤에 get이 실행되는 것을 볼 수 있음
+- `destroy` : 소멸될때 호출
+
+
+
+## 서블릿 매핑방식
+- 매핑이란 : 주소창에 보여지는 url 패턴을 일괄되게 맞춰주는 것을 말함 
+- 소문자로 작성하는 것이 관습
+
+1. Web.xml 방식
+	```xml
+	<servlet>
+		<servlet-name>서블릿 이름</servlet-name>
+		<servlet-class>view.HelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>서블릿 이름</servlet-name>
+		<url-pattern>/helloservlet</url-pattern>
+	</servlet-mapping>
+	```
+2. 어노테이션 서블릿 매핑
+	```java
+	@WebServlet("/HelloServlet3")
+	```
+ * 기존의 web.xml은 설정시 번거롭고 불편하기에 톰캣 7버전부터 어노테이션을 이용해 매핑하기 시작함 (단, 반드시 HttpServlet을 상속받은 클래스에서만 사용가능)
+ * 서블릿 클래스에 `@WebServlet("/HelloServlet3")`을 이용해 표시해주면 가독성도 좋고 편리
+
+### 서블릿과 HTML 연동하기
+```html
+<form action="loginpage" method="get">
+	아이디 : <input type="text" name="user_id" id="user_id"> <br><br>
+	비밀번호 : <input type="password" name="user_pw" id="user_pw"> <br>
+	<input type="submit" value="로그인">
+	<input type="reset" value="리셋">
+</form>
+```
+- 매핑을 통해 설정한 문자열을 통해서 HTML과 연동할 수 있음
+- 기본적으로 한페이지에 form은 하나만 사용
+
+#### HTML의 form 태그 
+![[HTML#서버와 사용하기]]
+
+
+##  데이터 가져오고 출력하기
+### 인코딩 설정
+- 요청 받은 데이터를 처리할 때는 requset의 인코딩 설정을 맞춰야 한글이 깨지지 않고 나오며, 응답해서 데이터를 넘겨줄때는 response의 인코딩 설정을 맞춰줘야 함
+- requset 방식
+	```java
+	request.setCharacterEncoding("UTF-8");
+	```
+- response 방식
+	```java
+	response.setCharacterEncoding("UTF-8");
+	response.setContentType("text/html;charset=utf-8");
+	```
+
+### 데이터 가져오기
+- `getParameter`를 사용해서 가져올 수 있음 키는 name에 써져있는 대로 작성할 것 
+	```java
+	Sting id = request.getParameter("user_id");
+	```
+- 배열을 데이터로 가져오려면 `getParameterValues`를 사용
+	```java
+	String[] input = request.getParameterValues("pw");
+	```
+
+### 데이터 출력하기
+- 서블릿은 HTML로 데이터를 표시하려면 아래와 같이 해야 하기에 불편, 그래서 나온 것이 [[JSP]]로 JSP는 HTML 구조 안에서 자바 코드를 작성
+- `response.setContentType` 을 통해 HTML을 출력하거나 파일을 다운 받을 수 있음
+	- 아래 코드는 제출과 동시에 HTML를 View에서 표시하게 함
+	- `HttpServlet`의 `getWriter()`를 이용해 문자열을 가져오고 이를 통해서 출력
+- 예시코드
+	```java
+	response.setContentType("text/html;charset=utf-8");
+	PrintWriter out = response.getWriter();
+	out.println("<html><body>아이디 : "+ id+"비밀번호 : "+ pw+"</body></html>");
+	out.close();
+	```
+- 서블릿 파일을 먼저 실행시켰으면 해당 내용이 출력되는 것을 볼 수 있음
+- 데이터는 예외처리가 필수
+- `close()`를 하지 않으면 퍼포먼스가 떨어짐
+
+
+## 서블릿 포워드 기능
+- 포워드 기능이란? 
+	- 다른 서블릿이나 JSP와 데이터를 공유하여 데이터등을 연동할때 사용
+		- 데이터 연동 예시 : 웹 개발시 회원관리, 상품관리, 게시판 관리 등등
+	- 포워드 기능은 하나의 서블릿에서 다른 서블릿이나 JSP로 요청을 전달하는 역할
+		- 서버에서 포워딩되면 웹 브라우저의 주소창이 변경되지 않음
+		- 매개변수에 데이터를 추가하여 같이 포함시켜서 전달 가능
+- 형식 
+	```java
+	RequestDispatcher dis = request.getRequestDispatcher("두번째 서블릿");
+	dis.forward(request, response);
+	```
+- 보안이 중요함 
+- 바인딩의 정의?
+- 서블릿 요청이 클라이언트를 거쳐서 다시 요청되는 방식이기에 주소창의 주소가 변경됨
+
+
+### Redirect의 작동 방식
+
+1.  클라이언트 요청
+2. 첫번째 서블릿에서 어노테이션이 설정한 곳으로 데이터 포워드 
+	```java
+	response.sendRedirect("두번째_서블릿");
+	```
+	- 서블릿에서 포워딩한 데이터 처리 서블릿
+	- 아래처럼 키값을 넘겨줄 수 있음, 값 넘겨주는 행위를 포워드
+		```java
+		response.sendRedirect("두번째_서블릿?name=이름");
+		```
+3. 다시 클라이언트를 거쳐서 두번째  서블릿에서 데이터가 최종처리
+	```java
+	request.getParamter("name"); //이름
+	```
+	- 쿼리스트링으로 데이터를 넘겨줄 수 있음, 넘겨받는 행위를 포워딩이라고 함
+4. 첫번째 서블릿은 포워딩이 되고 나면 메모리에서 삭제 됨. 이를 개선해서 나온 것이 디스패처
+
+### addheader의 작동방식
+
+- 지정한 시간이 지난뒤 맵핑한 곳으로 이동
+```java
+response.addHeader("Refresh", "1;url=refresh2?name=flmssm");
+```
+- 콜론(:)과 세미콜론(;)을 헷갈리지말것(작동이 안됨)
+- 추후에 CRUD할때는 객체를 묶어서 보내게 됨
+	- 바인딩을 쓰기는 하지만 
+- [참고](https://blog.pages.kr/418)
+
+### 로케이션 location 작동 방식
+- 서블릿 요청이 클라이언트의 웹 브라우저를 거쳐서 다시 요청되는 방식 
+	- 웹 브라우저의 주소창이 달라짐
+- 클라이언트 요청
+- SeveletForwardLocation 서블릿에서 어노테이션으로 설정한 곳으로 데이터 포워딩
+- 다시 클라이언트를 거쳐서 ServletForwardLocation2 서블릿에서 최종 데이터 처리
+```java
+  out.println("<script>location.href='location2</script>");
+```
+
+# 바인딩 binding
+- 전달하는 데이터의 양이 적을 때는 Get 방식으로 전달 할 수 있지만 Get은 많은 데이터를 전달하지 못하는 단점이 존재
+- 웹 프로그램 실행시에 데이터를 서블릿 관련 객체에 저장하는 방법이 나옴
+	- WAS가 알아서 해줌
+	- HttpServletRequest, HttpSession, ServletContext 객체를 통해 제공
+	- 저장된 데이터는 서블릿으로 JSP에서 서로 전달하고 공유하며 사용
+
+# 디스패쳐 dispatcher
+- 서버에서 포워드가 전달 -> 웹 브라우저 주소창이 변경되지 않음
+- 작동 방식
+	- 클라이언트 요청 발생시 
+	- 첫 번째 서블릿은 RequestDispatcher 객체를 이용하여 두번째 서블릿으로 전달
+	- 포워드만 하는 것이 아니고 바인딩도 같이 함 (둘은 세트)
+```java
+RequestDispatcher name = request.getRequestDispatcher("location2?name=paramata");
+name.forward(request, response);
+```
+
+# 브라우저 데이터 접근방식
+- 웹 프로그램 실행시에 데이터를 서블릿 관련 객체에 저장하는 방법이 나옴 (WAS가 알아서 해줌)
+- 3개의 객체를 통해서 접근
+	- 스코프 비교시 Request < Context < Session 순임
+	- **HttpServletRequest** 
+		- 요청될때마다 호출
+	- **ServletContext**
+		- Project 당 하나씩
+	- **HttpSession** 
+		- 브라우저가 종료되기 전까지 데이터를 가지고 있음
+- 저장된 데이터는 서블릿으로 JSP에서 서로 전달하고 공유하며 사용
+- 무조건 key, value (String 타입)
+
+##  Session API (HttpSession 객체 사용)
+- HttpServletRequest와 getSession()메소드 호출
+- getSession() : 기본 세션 객체가 존재하면 반환, 없으면 새로 생성
+```java
+//최초 요청시 세션 객체를 새로 생성하거나 또는 기존 세션 반환 = getSession() 사용
+HttpSession session = request.getSession();
+
+//생성된 객체의 객체 id를 가져옴
+System.out.println("세션 아이디 : "+session.getId() +"<br>");
+
+// 최초 세션 생성시간
+out.println("최초 세션 생성시간 : " + new Date(session.getCreationTime()) +"<br>");
+
+// 세션 객체 가장 최근 접근한 시간
+out.println("가장 최근 접근시간 : " + new Date(session.getLastAccessedTime()) +"<br>");
+// 세션 객체 유지 유효시간 = 기본은 30분
+out.println("세션 유효시간 : " + session.getMaxInactiveInterval() +"<br>");
+
+if (session.isNew()) { // 새로운 세션인지 아닌지 확인할때 사용, 클라이언트 세션 id를 할당하지 않은 경우 true리턴
+	out.println("새로운 세션");
+}
+session.invalidate(); // 세션 강제 삭제 : 브라우저와 서버의 연결 정지
+```
+
+
+
+# 서블릿 메소드
+## Request 메소드
+> 주소창과 관련된 메소드들이 많음
+
+| 메소드 명                   | 설명                             | 예시 |
+| --------------------------- | -------------------------------- | ---- |
+| request.getScheme()         | http 같은 통신규약명 호출        |      |
+| request.getRequestURL()     | 요청이 온 URL 주소명을 전체 출력 |      |
+| request.getRequestURI()     | 요청이 온 URL 주소명을 일부 출력 |      |
+| request.getServletPath()    | 요청이 온 서블릿의 주소 출력     | /RequestBasic     |
+| request.getServletContext() | 서블릿 실행환경 정보       |      |
+| request.getHeader()         |  헤더 정보    |      |
+
+
+## Response 메소드
+> 포워딩
+
+| 메소드명 | 설명 | 예시 |
+| -------- | ---- | ---- |
+| response.setCharacterEncoding("utf-8") | 인코딩 처리     |      |
+
+
+# 서블릿 디자인 패턴
+## MVC
+- Model : [[JAVA]]
+- View : [[JSP]]
+- Cotoller : Servlet
+
+오라클(=SQL?)에서 함
+
+
+## [[front controller]]
+
+
+# 용어정리
+## 쿼리 스트링( #Query_String)
+- 물음표 뒤에 오는 값을 의미 
+- 특정한 주소(URL)에 포함된 추가적인 데이터로 form을 통해 제출된 데이터를 쿼리 스트링 형식으로 받음, 문자열로만 전송이 가능함
+- Get 방식의 경우 : `Context/매핑명?속성명=속성값&속성명2=속성값2...`으로 구현
+	- 동일한 키는 중복이 가능함
+	- 갯수제한이 있음 8bit(256가지)
+- Post 방식의 경우 : body에 붙어서 데이터 전송됨 (통으로 들어감)
+- 참고) 서버단 프로그래밍 시 쿼리스트링의 키들을 매개변수(파라미터)라고 함
+
+# 연관문서

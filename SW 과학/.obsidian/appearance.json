@@ -1,0 +1,15 @@
+{
+  "accentColor": "#e57676",
+  "theme": "moonstone",
+  "translucency": false,
+  "textFontFamily": "Pretendard,Segoe UI",
+  "baseFontSize": 16,
+  "interfaceFontFamily": "Pretendard",
+  "cssTheme": "Minimal",
+  "monospaceFontFamily": "Fira Code",
+  "nativeMenus": false,
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "styles"
+  ]
+}

@@ -1,0 +1,15 @@
+.search-result-file-title .tree-item-inner {
+  border-radius: var(--radius-m);
+  font-size: 1.0rem;
+  font-weight: 700;
+}
+
+.search-result-file-matches {
+  font-size:1.0rem;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+.theme-dark .search-result-file-match:not(.search-info-more-matches) {
+  background: transparent;
+}
