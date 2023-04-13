@@ -6,29 +6,6 @@
       {
         "id": "0500a6b59a2e5534",
         "type": "tabs",
-        "dimension": 46.16519174041298,
-        "children": [
-          {
-            "id": "bb77119ed0592a35",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. 웹 개발/Servlet.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          }
-        ]
-      },
-      {
-        "id": "c8f2a280ae503928",
-        "type": "tabs",
-        "dimension": 53.83480825958702,
         "children": [
           {
             "id": "266d17f7761344b6",
@@ -46,22 +23,66 @@
             }
           },
           {
+            "id": "bb77119ed0592a35",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. 웹 개발/Servlet.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
             "id": "22bcc8dd49c562c8",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "웹 개발.canvas",
-                "viewState": {
-                  "x": 1747.5824472281067,
-                  "y": 913.4311991305306,
-                  "zoom": -0.333333333333333
-                }
+                "file": "9. 용어해설집/소프트웨어/바인딩.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "6c3535d12f1dffe4",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "9. 용어해설집/소프트웨어/Scope.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "d0c8416b9fe45592",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. 웹 개발/JSP.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3,
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -90,10 +111,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Query_String",
+                "query": "page",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -138,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. 웹 개발/Servlet.md"
+                "file": "9. 용어해설집/소프트웨어/Scope.md"
               }
             }
           },
@@ -148,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. 웹 개발/Servlet.md",
+                "file": "9. 용어해설집/소프트웨어/Scope.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -160,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. 웹 개발/Servlet.md",
+                "file": "9. 용어해설집/소프트웨어/Scope.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +240,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "4. 웹 개발/Servlet.md",
+                "file": "9. 용어해설집/소프트웨어/Scope.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -250,7 +271,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.5359795996225941,
+                  "scale": 1.0534979423868343,
                   "close": true
                 }
               }
@@ -260,7 +281,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 260.5
+    "width": 247.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -272,58 +293,58 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "bb77119ed0592a35",
+  "active": "6c3535d12f1dffe4",
   "lastOpenFiles": [
-    "웹 개발.canvas",
-    "4. 웹 개발/Servlet.md",
-    "데일리 노트/2023-04-12.md",
     "4. 웹 개발/JSP.md",
-    "4. 웹 개발/디자인 패턴/front controller.md",
-    "마크다운 사용법/La Tex 수식.md",
-    "마크다운 사용법/옵시디언.md",
-    "컴퓨터과학.canvas",
-    "img/Pasted image 20230410074754.png",
-    "img/Untitled.png",
-    "img/Pasted image 20230412092551.png",
-    "노트필기방법.canvas",
-    "img/Pasted image 20221028041257.png",
-    "img/웹브라우저_콘솔.png",
     "9. 용어해설집/소프트웨어/Scope.md",
+    "9. 용어해설집/소프트웨어/바인딩.md",
+    "2. 컴퓨터과학 개론/인공지능.md",
+    "4. 웹 개발/Servlet.md",
+    "img/Pasted image 20230413133955.png",
+    "2. 컴퓨터과학 개론/운영체제.md",
+    "9. 용어해설집/소프트웨어/포워딩.md",
+    "웹 개발.canvas",
+    "컴퓨터과학.canvas",
+    "데일리 노트/2023-04-11.md",
+    "9. 용어해설집/소프트웨어/백엔드",
+    "4. 웹 개발/오라클.md",
+    "데일리 노트/2023-04-12.md",
+    "데일리 노트/2023-04-13.md",
+    "4. 웹 개발/자바빈.md",
+    "마크다운 사용법/옵시디언.md",
+    "클린코드.md",
+    "코드컨벤션.md",
+    "4. 웹 개발/HTTP.md",
+    "img/Pasted image 20230413105611.png",
+    "img/Pasted image 20230413105506.png",
+    "img/Pasted image 20230413105213.png",
+    "img/Pasted image 20230413104651.png",
+    "img/Pasted image 20230413104452.png",
+    "img/Pasted image 20230413102850.png",
+    "img/Pasted image 20230413102430.png",
+    "img/Pasted image 20230412092551.png",
+    "img/Pasted image 20230410075755.png",
+    "4. 웹 개발/Web API.md",
     "4. 웹 개발/네트워크.md",
     "4. 웹 개발/웹 개발론.md",
+    "5. 프로그래밍 언어/스타일 시트/CSS.md",
+    "4. 웹 개발/디자인 패턴/front controller.md",
+    "마크다운 사용법/La Tex 수식.md",
+    "노트필기방법.canvas",
     "4. 웹 개발/IP.md",
     "TCP",
-    "4. 웹 개발/자바빈.md",
-    "데일리 노트/2023-04-11.md",
     "데일리 노트/2023-04-10.md",
     "9. 용어해설집/소프트웨어/이클립스.md",
-    "5. 프로그래밍 언어/마크업 언어/HTML.md",
-    "5. 프로그래밍 언어/스타일 시트/CSS.md",
-    "5. 프로그래밍 언어/마크업 언어/HTML^시.md",
-    "5. 프로그래밍 언어/JS.md",
-    "5. 프로그래밍 언어/마크업 언어/JSDOC.md",
-    "2. 컴퓨터/2. 컴퓨터.md",
     "6. 영어",
-    "8. 디자인/포토샵.md",
-    "9. 용어해설집/소프트웨어/SVG.md",
     "9. 용어해설집/소프트웨어",
-    "9. 용어해설집/소프트웨어/AJAX.md",
-    "9. 용어해설집/소프트웨어/API.md",
-    "9. 용어해설집/소프트웨어/오퍼레이션.md",
     "무제 파일.canvas",
     "데일리 노트",
     "3학년 1학기.canvas",
     "수업노트",
-    "img/Pasted image 20230410075755.png",
-    "img/Pasted image 20230410075008.png",
-    "img/Pasted image 20230410072832.png",
-    "img/Pasted image 20230410071757.png",
-    "img/Pasted image 20230410070148.png",
     "마크다운 사용법",
     "정보처리기사/자격증.canvas",
     "정보처리기사/정보처리기사 필기, 5과목 정보시스템 구축 관 c3e23d19a6684999a35f934c69af5f4c",
     "정보처리기사/정보처리기사 필기, 4과목 프로그래밍 언어 활ᄋ d17101021a174d90a1e18a14fc38b60c",
-    "정보처리기사/정보처리기사 필기, 3과목 데이터베이스 구축 무ᄅ 1a1c1c31c4dc405dad9b50753588a4bc",
-    "정보처리기사/정보처리기사 필기, 2과목 소프트웨어 개발 무료ᄀ 31d0cdc6647a4f2c98fb48fdcd7d5458"
+    "정보처리기사/정보처리기사 필기, 3과목 데이터베이스 구축 무ᄅ 1a1c1c31c4dc405dad9b50753588a4bc"
   ]
 }

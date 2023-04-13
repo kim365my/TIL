@@ -1,5 +1,6 @@
 ---
 tag : 백엔드
+aliases : 서블릿
 ---
 
 # 개요
@@ -87,8 +88,7 @@ graph LR
 	5. 어노테이션 과정을 거쳐서 주소창에 get방식으로 출력
 
 
-## 서블릿에서의 HTTP 통신 #HTTP 
-- [[웹 개발론#HTTP란? HTTP]]
+## 서블릿에서의 [[HTTP]] 통신
 - 클라이언트로부터 요청이 들어오면 어떤 서블릿 자바 파일을 실행할지를 먼저 기술해야 함
 - 아파치 톰캣 서버가 실행되면 web, xml 어노페이션을 알아서 요청이름과 실행될 자바 파일을 매핑시켜서 서블릿 컨테이너에 등록하여 차곡차곡 쌓아둠
 - HTTP 에러는 번호에 따라서 어떤 오류인지 짐작할 수 있음
@@ -234,7 +234,7 @@ public class HelloServlet3 extends HttpServlet {
 	- 다른 서블릿이나 JSP와 데이터를 공유하여 데이터등을 연동할때 사용
 		- 데이터 연동 예시 : 웹 개발시 회원관리, 상품관리, 게시판 관리 등등
 	- 포워드 기능은 하나의 서블릿에서 다른 서블릿이나 JSP로 요청을 전달하는 역할
-		- 서버에서 포워딩되면 웹 브라우저의 주소창이 변경되지 않음
+		- 서버에서 [[포워딩]]되면 웹 브라우저의 주소창이 변경되지 않음
 		- 서블릿 요청이 클라이언트를 거쳐서 다시 요청되는 방식이기에 주소창의 주소가 변경됨
 		- 파라미터 방식으로 값을 넘김
 	- 데이터 [[Scope]] 범위를 어떻게 지정할 것인지가 이슈
@@ -254,7 +254,7 @@ public class HelloServlet3 extends HttpServlet {
 	```java
 	response.sendRedirect("두번째_서블릿");
 	```
-	- 서블릿에서 포워딩한 데이터 처리 서블릿
+	- 서블릿에서 [[포워딩]]한 데이터 처리 서블릿
 	- 아래처럼 키값을 넘겨줄 수 있음( #Query_String ), 값 넘겨주는 행위를 **포워드** 
 		```java
 		response.sendRedirect("두번째_서블릿?name=이름");
@@ -263,8 +263,8 @@ public class HelloServlet3 extends HttpServlet {
 	```java
 	request.getParamter("name"); //이름
 	```
-	- 쿼리스트링으로 데이터를 넘겨줄 수 있음, 넘겨받는 행위를 **포워딩**이라고 함
-4. 첫번째 서블릿은 포워딩이 되고 나면 메모리에서 삭제 됨. 이를 개선해서 나온 것이 **디스패처**
+	- 쿼리스트링으로 데이터를 넘겨줄 수 있음, 넘겨받는 행위를 **[[포워딩]]**이라고 함
+4. 첫번째 서블릿은 [[포워딩]]이 되고 나면 메모리에서 삭제 됨. 이를 개선해서 나온 것이 **디스패처**
 
 ### addheader메소드의 작동방식 [참고](https://blog.pages.kr/418)
 
@@ -274,19 +274,19 @@ public class HelloServlet3 extends HttpServlet {
 	```
 - 콜론(:)과 세미콜론(;)을 헷갈리지말것(작동이 안됨)
 - 추후에 CRUD할때는 객체를 묶어서 보내게 됨
-	- 바인딩을 쓰기는 하지만 
+	- [[바인딩]]을 쓰기는 하지만 
 
 ### JS 로케이션 location의 작동 방식
 - 서블릿 요청이 클라이언트의 웹 브라우저를 거쳐서 다시 요청되는 방식 
 - 웹 브라우저의 주소창이 달라짐
 - 클라이언트 요청
-- SeveletForwardLocation 서블릿에서 어노테이션으로 설정한 곳으로 데이터 포워딩
+- SeveletForwardLocation 서블릿에서 어노테이션으로 설정한 곳으로 데이터 [[포워딩]]
 - 다시 클라이언트를 거쳐서 ServletForwardLocation2 서블릿에서 최종 데이터 처리
 ```java
   out.println("<script>location.href='location2</script>");
 ```
 
-## 바인딩 binding
+## [[바인딩]] binding
 - 전달하는 데이터의 양이 적을 때는 Get 방식으로 전달 할 수 있지만 Get은 많은 데이터를 전달하지 못하는 단점이 존재
 - 웹 프로그램 실행시에 데이터를 서블릿 관련 객체에 저장하는 방법이 나옴
 	- WAS가 알아서 해줌
@@ -297,7 +297,7 @@ public class HelloServlet3 extends HttpServlet {
 - 서버에서 포워드가 전달 -> 웹 브라우저 주소창이 변경되지 않음
 - 작동 방식
 	- 클라이언트 요청 발생시 첫 번째 서블릿은 RequestDispatcher 객체를 이용하여 두번째 서블릿으로 전달
-	- 포워드만 하는 것이 아니고 바인딩도 같이 함 (둘은 세트)
+	- 포워드만 하는 것이 아니고 [[바인딩]]도 같이 함 (둘은 세트)
 ```java
 RequestDispatcher name = request.getRequestDispatcher("location2?name=paramata");
 name.forward(request, response);
@@ -358,7 +358,7 @@ session.invalidate(); // 세션 강제 삭제 : 브라우저와 서버의 연결
 
 
 ## Response 메소드
-> 포워딩
+> [[포워딩]]
 
 | 메소드명 | 설명 | 예시 |
 | -------- | ---- | ---- |

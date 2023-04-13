@@ -1,6 +1,6 @@
 ---
 tag : 마크업_언어 프론트엔드
-본딧말 : Cascading Style Sheets - 종속형 시트
+aliases : Cascading Style Sheets - 종속형 시트
 ---
  
 - 연관키워드
@@ -130,6 +130,9 @@ tag : 마크업_언어 프론트엔드
 	- `panel_header`
 	- `panel-body`
 	- `table`
+- 버튼
+	- btn btn-primary
+	- btn btn-secondary
 - 자주 사용하는 폼
 	```html
 	<!DOCTYPE html>
@@ -156,10 +159,10 @@ tag : 마크업_언어 프론트엔드
 						<td><input type="password" name="password"></td>
 					</tr>
 					<tr>
-						<td colspan="2">
-							<input type="submit" value="제출">
-							<input type="reset" value="리셋">
-						</td>
+                            <td colspan="2">
+                                <input type="submit" value="제출" class="btn btn-primary">
+                                <input type="reset" value="리셋" class="btn btn-secondary">
+                            </td>
 					</tr>
 				</table>
 			</form>

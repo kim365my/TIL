@@ -1,7 +1,6 @@
 ---
 tag : 백엔드
-본딧말 : Java Server Page
-요약 : HTML 코드에 자바코드를 넣어 동적웹페이지를 생성하는 웹어플리케이션 도구
+aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페이지를 생성하는 웹어플리케이션 도구
 ---
 
 
@@ -126,6 +125,9 @@ tag : 백엔드
 
 - session의 유지시간은 밀리세컨드로 받음
 	- `session.setMaxInactiveInterval(interval)`
+### 바인딩 하기
+
+
 
 ## JSP 기본 태그
 - JSP 기본폼(스크립트 요소) : `<% %>`
@@ -199,56 +201,45 @@ tag : 백엔드
 
 
 ## JSP 액션 태그
-- XML에서 문법을 받아왔으므로 태그 닫는거 필수
+- 액션태그의 형식
+	- XML에서 문법을 받아왔으므로 태그 닫는거 필수
+	- `< />`식으로 단일 태그로 할 수 있음
 - 액션 태그의 탄생
 	- 자바 코드를 JSP 파일에서 없애는 것이 목적으로 화면이 점점 복잡해짐에 따라 프론트엔드 개발자(=퍼블리셔)들도 자바코드를 써야하는 문제로 이슈 발생, 그래서 JSP는 스크립틀릿의 자바 코드를 제거하고 더 쉽고 편리하게 작업 할 수 있는 태그 형태로 기능을 제공해야 하는 필요성이 생김
+- 액션 태그의 기능
+	- 액션태그를 조합해서 파라미터 값을 넘겨주거나, 자바빈에 값을 저장하는 등
 
-### 액션태그 종류
-- include  : `<jsp:include page ="페이지.jsp">` 이미 있는 JSP 인클루드와 동일
-	- include는 해당 페이지를 현재 페이지에 포함시키는 것
-- `jsp:forward` : 서블릿의 RequestDispatcher 클래스와 포워딩을 대신하는 태그
-- `<jsp:useBean>` : 객체를 생성하기 위한 태그
-- `<jsp:getProperty>` : 속성 설정 가져오기
-- `<jsp:setProperty>` : 속성 설정
-- `<jsp:param>` : 파라미터 설정?
-- 이외에도 많은 태그 존재
-
-### jsp:include 태그 코드예시
-```jsp
-<jsp:include page="./00_include.jsp">
-	<jsp:param name="name" value="포토이미지"/>
-	<jsp:param name="imgName" value="flex-01.jpg"/>
-</jsp:include>
-```
-- include는 해당 페이지를 현재 페이지에 포함시키는 것으로 해당 페이지에서 request.getParameter를 통해 값을 받아올 수 있음
-- 이를 스크립틀릿과 연결해서 사용하면 동적으로 변하는 이미지를 구현할 수  있음
-
-### 포워드 액션태그 코드예시
-- 기존 하나의 서블릿에서 다른 서블릿, JSP로 포워딩하는 방식은 RequsetDispather 객체사용했지만 JSP에서는 더 간단하게 액션태그로 포워드 사용가능
-```jsp
-
-```
+### 액션태그 종류 (이외에도 더 존재)
+| 이름        | 설명                                                       | 코드예시                                                        |
+| ----------- | ---------------------------------------------------------- | --------------------------------------------------------------- |
+| include     | 해당 페이지를 현재 페이지에 포함시키는 것                  | <jsp:include page ="페이지.jsp" />                                |
+| forward     | 서블릿의 RequestDispatcher 클래스와 [[포워딩]]을 대신하는 태그 | <jsp:forward page="./페이지.jsp" />                                                                |
+| useBean     | 객체를 생성하기 위한 태그                                  | <jsp:useBean id="이름" class="자바빈 클래스 이름" scope="범위"> |
+| getProperty | 자바빈 속성 설정 가져오는 태그, String으로 출력됨    |  <jsp:getProperty name="사용할 유즈빈 id값" property="속성값이름" />                                                               |
+| setProperty | 자바빈 속성 설정, 자바빈의 멤버변수와 파라미터 값이 동일하면 `property="*"`를 통해서 일괄적으로 값 할당 가능             |  <jsp:setProperty name="사용할 유즈빈 id값" property="속성값이름" value="속성값" />                                                               |
+| param  | 파라미터 설정을 통해서 값을 넘겨줄 수 있음                      | <jsp:param name="키명" value="키값"/>                                                         |
 
 
-### 액션태그로  자바빈과 연결하기 
-- 정의
-	- [[Scope]]를 통해서 자바빈에 접근할 수 있는 저장 범위를 지정
-		- scope의 기본값은 page
-	- id 값을 이용해서 스크립틀릿에서 객체의 메소드에 접근 가능
-- 형식
-	```jsp
-	<jsp:useBean id="이름" class="자바빈 클래스 이름" scope="범위">
-	```
-- 코드 예시
-	```jsp
-	<jsp:useBean id="mbean" class="exprtion.MemberVO">
-		<jsp:setProperty name="mbean" property="name" value="이젠컴" />
-	</jsp:useBean>
-	```
+### 액션태그로  [[자바빈]]과 연결하기 
+- <jsp:useBean>
+	- id :  id 값을 이용해서 스크립틀릿에서 객체의 메소드에 접근 가능
+	- class : 자바빈으로 사용할 클래스 이름(`패키지명.클래스_이름` 형식으로 작성)
+	- [[scope]] : 자바빈에 접근할 수 있는 저장 범위를 지정 (기본값은 page)
+- <jsp:setProperty>
+	- [[자바빈]]과 파라미터 값이 동일하면 property 속성을 
+	- property 속성을 `*`로 하면 전송된 매개변수 이름과 자바빈 멤버변수를 비교하고 값을 자동으로 모두 넘겨줌
+		- 같은 데이터 타입으로 맞추기(String으로 넘겨 받으니까 멤버변수를 String으로 작성하는 것이 중요)
+- <jsp:getProperty>
+	- 문자열로 출력되니까 HTML에서 결과값을 보고 싶을 경우 사용
+
 
 # EL (Expression Language)
 - 형식 : `${ }`
-	- ⭐사용하기 위해서는 선언문에서 `isELIgnored="false"`로 설정필요
+	- ⭐사용하기 위해서는 선언문에서 `isELIgnored="false"` 설정필요 (안해도 출력은 됨)
+	- 프로퍼티 표현법
+		- [] 연산자 사용 : `${user["name"]}`
+		- 점연산자 사용 : `${user.name}`
+- 메소드 표현법 : `${user.size()}`
 - 표현언어의 특징
 	- 표현식이 아니고 언어? #질문 
 	- JSP 표현식을 보다 편하게 데이터를 출력하기 위해 JSP2.0에서부터 도입됨 (요즘 나오는 프로그래밍 언어들은 거의 표현식을 사용)
@@ -262,7 +253,13 @@ tag : 백엔드
 			- 기본적인 연산가능 (산술, 비교, 논리, 논리부정, 크기비교 연산자)
 				- 숫자형 문자열과 숫자를 연산할 경우 자동으로 숫자로 형변환하여 연산
 
-## EL Empty 연산
+
+
+## EL의 내장객체
+> JSP에서 기본적으로 내장객체를 제공하지만 JSP 내장객체는 표현식에서만 사용가능
+> 그래서 EL에서 따로 내장 객체를 제공하며 EL의 형식 내에서 사용가능
+
+### EL Empty 연산자
 - [[자바빈]]의 속성이 값으로 설정되었는지 또는 컬렉션 객체에 값이 존재하는지 판단하는 연산자
 - 리턴값 : boolean
 - 형식 : `${ empty mbean }`
@@ -278,24 +275,21 @@ tag : 백엔드
 	${empty null } <br> <!--true-->
 	```
 
-## EL의 내장객체
-> JSP에서 기본적으로 내장객체를 제공하지만 JSP 내장객체는 표현식에서만 사용가능
-> 그래서 EL에서 따로 내장 객체를 제공하며 EL의 형식 내에서 사용가능
-- 프로퍼티 표현법
-	- [] 연산자 사용 : `${user["name"]}`
-	- 점연산자 사용 : `${user.name}`
-- 메소드 표현법 : `${user.size()}`
+### [[Scope]] 관련 내장객체
+- 기본적으로 JSP와 동일하며 [[바인딩]] 된 데이터에 접근 가능
+- DTO 작성시 [[자바빈]] 형태로 작성
+- 객체명
+	- requestScope : JSP request와 동일
+	- sessionScope
+	- applicationScope 
+- 사용형식 : `${객체명.가져올_키명}`
+
+
+#### EL form 데이터 받기
 - `param` : getParamter()를 사용하지 않아도 사용가능
 	- 사용예시 : `${param.name값}`
 
-### Scope 관련 내장객체
-- 기본적으로 JSP와 동일하며 바인딩 된 데이터에 접근 가능
-- DTO 작성시 [[자바빈]] 형태로 작성
-- `requestScope` : JSP request와 동일
-	- 사용예시 : 
-- sessionScope, applicationScope도 존재
-
-## EL form 데이터 받기
+### EL로 [[바인딩]]하기
 - 
 
 
