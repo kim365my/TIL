@@ -4,21 +4,22 @@ aliases : 스코프, 변수의 저장범위
 ---
 
 # Web에서의 스코프
-- 스코프의 종류
-  
-- 스코프의 범위 : `page` < `request` < `session` < `application`
-	- ![[Pasted image 20230413133955.png|250]]
-	- session부터 Scope의 범위가 넓어서 브라우저를 종료하지 않는 한 한 서버내에서 값의 교환이 가능
-## [[Servlet|서블릿]]과 [[JSP]]의 객체명 정리
+## attribute의 스코프
+- 데이터 스코프 : 로컬 / 지역 / 전역 / Context
+- 스코프의 종류와 범위 : `page` < `request` < `session` < `application`
+  ![[Pasted image 20230413133955.png|250]]
+
+### [[Servlet|서블릿]]과 [[JSP]]의 객체명 정리
 | 스코프      | 서블릿             | JSP         |  설명   |
 | ----------- | ------------------ | ----------- | --- |
-| page        |                    | pageContext |     |
-| request     | HttpServletRequest | request     |기본적으로 하나의 용청과 응답만 처리|
-| session     | HttpSession        | session     |request와 다르게 여러개의 요청이 들어와도 남아있음  <br>session 객체가 생성되고 소멸될 때까지     |
+| page        |                    | pageContext | 페이지 내에서 지역변수처럼 취급됨 |
+| request     | HttpServletRequest | request     | 요청을 받아 웹 브라우저에게 응답할 때까지 변수가 유지됨 <br>기본적으로 하나의 요청과 응답만 처리|
+| session     | HttpSession        | session     |request와 다르게 여러개의 요청이 들어와도 남아있음  <br>session 객체가 생성되고 소멸될 때까지이기에 브라우저를 종료하지 않는 한 한 서버 내에서 값의 교환이 가능     |
 | application | ServletContext     | application |해당 어플리케이션에 계속 위치해있는 스태틱에 비슷한 것이기에 잘 사용하지는 않음|
 
-
-## Request 객체의 메소드
+- 어플리케이션의 범위가 어떻게 되지?
+	- 이클립스의 한 프로젝트가 하나의 어플리케이션의 범위라고 하던데
+### Request 객체의 메소드
 - API 컨트롤을 위한 메소드 3개 : param, query, body
 - param(파라미터) 
 - query
@@ -31,7 +32,7 @@ aliases : 스코프, 변수의 저장범위
 |                  | 설명                                  | 언어                  |
 | ---------------- | ------------------------------------- | --------------------- |
 | 블록 레벨 스코프 | 코드 블록({})내에서만 접근가능 | 대부분 [[C]]기반 언어 |
-| 함수 레벨 스코프 | 함수 코드 블록 내에서만 접근 가능, 블록레벨과 달리 함수 전체를 기준으로 하므로 잘 생각해야함 | [[JS]]의 var, ES6에서 추가된 let은 블록레벨 스코프를 사용 |
+| 함수 레벨 스코프 | 함수 코드 블록 내에서만 접근 가능, 블록레벨과 달리 함수 전체를 기준으로 하므로 잘 생각해야함 | [[JS]]의 var에서 사용 (+ES6에서 추가된 let은 블록레벨 스코프를 사용) |
 
 ## 상위 스코프를 결정하는 방법
 - 상위 스코프를 결정하는 방법 : 동적 스코프, 렉시컬 스코프

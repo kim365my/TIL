@@ -6,7 +6,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 
 # 개요
 >자바 + [[HTML]]
-![[웹 개발론#백엔드의 흐름]]
+>기본적으로 [[Servlet|서블릿]] 거의 동일함
 
 # JSP란?
 - 정의 
@@ -39,15 +39,24 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 - HTML과의 차이점
 	- HTML 태그는 컨테이너 작업없이 바로 브라우저로 전송되므로 동적인 구성이 아님
 	- JSP는 WAS에서 자바로 변환되는 과정을 거치므로 JSP 제공 스크립트 요소를 이용하여 조건, 상황에 맞게 HTML 태그를 선택적으로 전송가능하므로 화면이 동적으로 구성됨
-## JSP 파일 생성하기
+- JSP 구성요소
+	1. HTML, CSS, JS
+	2. JSP 기본태그
+	3. JSP 액션태그
+	4. 커스텀 태그
+		- 개발자가 직접 제작하여 사용하는 태그와 프레임워크가 제공하는 태그를 말함
+
+## JSP 파일 생성위치
 - src -> main -> webapp에서 jsp 파일을 생성
 
 
 ## 다른 파일들과 연동해서 사용하기
 ### HTML, CSS, JS
+- 서블릿은 HTML 파일에 작성하는 거
 - css와 JS도 기본 HTML에서 사용하는 것처럼 사용하면 됨
 - form에서 다른 페이지로 넘기기 : 서블릿과 방법 동일
 - 다음 코드와 같이 스크립틀릿 연결을 끊었다 이었다하면서 HTML 코드사이사이에 적어넣을 수 있음
+	- for문을 통해서 특정 HTML 구문을 반복해서 출력하게 할 수도 있음
 - 코드예시
 	```jsp
 	<%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -108,25 +117,24 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 
 
 # JSP 기본 문법
-- JSP 구성요소
-	1. HTML, CSS, JS
-	2. JSP 기본태그
-	3. JSP 액션태그
-	4. 커스텀 태그
-		- 개발자가 직접 제작하여 사용하는 태그와 프레임워크가 제공하는 태그를 말함
+## JSP 내장객체 (이외에도 존재)
+| 객체명      | 서블릿 코드                             |  설명   |
+| ----------- | --------------------------------------- | --- |
+| page        | JSP에서만 존재하는 듯 #질문             |     |
+| request     | HttpServletRequest request              | 요청에 관련된 메소드를 가짐|
+| response    | HttpServletResponse response            | 응답에 관련된 메소드를 가짐 |
+| session     | HttpSession session = request.getSession();  | 스코프의 범위가 request보다 넓음|
+| application | ServletContext                          |     |
+| out         | PrintWriter out = response.getWriter(); |     |
 
-
-## JSP 내장객체
-- session : HttpSession 객체를 선언안해도 사용가능
-- out
-- 등등
 - JSP 내장 객체는 표현식에서만 사용가능(변수사용했을 때) 그래서 나온게 EL
+- [[Scope|스코프]] 관련 객체들은 `get/setAttribute("keyname", Object)` 메소드를 가지는 데 이를 통해서 데이터를 공유가 가능
+- request는 `get/setParamter`이라는 파라미터 값을 받는 메소드가 존재 위의 Attributer와 어떤 차이가 있지? #질문 
+
 ### JSP에서 session 로그인 처리하기
 
 - session의 유지시간은 밀리세컨드로 받음
 	- `session.setMaxInactiveInterval(interval)`
-### 바인딩 하기
-
 
 
 ## JSP 기본 태그
@@ -155,10 +163,10 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 
 #### 스크립트 요소 코드 형식
 |                          | 코드형식 |  설명   |
-| ------------------------ | :--------: | --- |
-| 선언문 (declaration tag) | `<%!%>` | JSP에서 변수나 메서드 선언에서 사용|
-| 스크립틀릿(scriptlet)    | `<%%>`   | JSP에서 자바 코드 작성시 사용 |
-| 표현식(expression tag)   | `<%=%>` | JSP에서 변수 값 출력시 사용 |
+| ------------------------ | -------- | --- |
+| 선언문 (declaration tag) | `<%! %>` | 변수나 메서드 선언에서 사용|
+| 스크립틀릿(scriptlet)    | `<% %>`   | 자바 코드 작성시 사용 |
+| 표현식(expression tag)   | `<%= %>` | 변수 값 출력시 사용 |
 
 #### 선언문 (declaration tag)
 
@@ -198,8 +206,6 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 	- class 컴파일 후 브라우저 출력
 
 
-
-
 ## JSP 액션 태그
 - 액션태그의 형식
 	- XML에서 문법을 받아왔으므로 태그 닫는거 필수
@@ -226,34 +232,33 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 	- class : 자바빈으로 사용할 클래스 이름(`패키지명.클래스_이름` 형식으로 작성)
 	- [[scope]] : 자바빈에 접근할 수 있는 저장 범위를 지정 (기본값은 page)
 - <jsp:setProperty>
-	- [[자바빈]]과 파라미터 값이 동일하면 property 속성을 
-	- property 속성을 `*`로 하면 전송된 매개변수 이름과 자바빈 멤버변수를 비교하고 값을 자동으로 모두 넘겨줌
+	- [[자바빈]]과 파라미터 값의 name이 동일시 property 속성을 `*`로 지정하면 전송된 매개변수 이름과 자바빈 멤버변수를 비교하고 값을 자동으로 모두 넘겨줌
 		- 같은 데이터 타입으로 맞추기(String으로 넘겨 받으니까 멤버변수를 String으로 작성하는 것이 중요)
 - <jsp:getProperty>
 	- 문자열로 출력되니까 HTML에서 결과값을 보고 싶을 경우 사용
 
 
 # EL (Expression Language)
+- 표현언어의 등장
+	- JSP 표현식을 보다 편하게 데이터를 출력하기 위해 JSP2.0에서부터 도입됨 (요즘 나오는 프로그래밍 언어들은 거의 표현식을 사용)
+		- JS ES6의 Xpath처럼 구조 분할 방식
 - 형식 : `${ }`
 	- ⭐사용하기 위해서는 선언문에서 `isELIgnored="false"` 설정필요 (안해도 출력은 됨)
+	- 직접 값 접근에 가능하기에 `${키명}`식으로 접근하면 됨
+		- ⭐[[Scope|스코프]]에 저장된 값만 출력이 가능(request, session, applictaion)
+			- page는 다른 곳으로 포워딩이 안되지 않을까? #질문 
 	- 프로퍼티 표현법
 		- [] 연산자 사용 : `${user["name"]}`
 		- 점연산자 사용 : `${user.name}`
-- 메소드 표현법 : `${user.size()}`
-- 표현언어의 특징
-	- 표현식이 아니고 언어? #질문 
-	- JSP 표현식을 보다 편하게 데이터를 출력하기 위해 JSP2.0에서부터 도입됨 (요즘 나오는 프로그래밍 언어들은 거의 표현식을 사용)
-		- JS ES6의 Xpath처럼 구조 분할 방식
-	- 기본적으로 할 수 있는 기능
-		- 변수와 여러가지 연산자 포함가능
-		- JSP 내장 객체에 저장된 속성 및 자바빈 속성도 출력가능
-		- EL 자체의 내장 객체 제공
-		- EL의 취급가능한 데이터 
-			- 문자, 숫자 출력 가능 (리터널 데이터로 취급)
-			- 기본적인 연산가능 (산술, 비교, 논리, 논리부정, 크기비교 연산자)
-				- 숫자형 문자열과 숫자를 연산할 경우 자동으로 숫자로 형변환하여 연산
-
-
+	- 메소드 표현법 : `${user.size()}`
+- 기본적으로 할 수 있는 기능
+	- 변수와 여러가지 연산자 포함가능
+	- JSP 내장 객체에 저장된 속성 및 자바빈 속성도 출력가능
+	- EL 자체의 내장 객체 제공
+	- EL의 취급가능한 데이터 
+		- 문자, 숫자 출력 가능 (리터널 데이터로 취급)
+		- 기본적인 연산가능 (산술, 비교, 논리, 논리부정, 크기비교 연산자)
+			- 숫자형 문자열과 숫자를 연산할 경우 자동으로 숫자로 형변환하여 연산
 
 ## EL의 내장객체
 > JSP에서 기본적으로 내장객체를 제공하지만 JSP 내장객체는 표현식에서만 사용가능
@@ -289,8 +294,16 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 - `param` : getParamter()를 사용하지 않아도 사용가능
 	- 사용예시 : `${param.name값}`
 
-### EL로 [[바인딩]]하기
-- 
+
+### EL의 [[Scope]] 우선순위
+- EL은 값에 키명으로 직접 접근이 가능하므로 여러개의 스코프에서 동일한 변수명이 있을 경우 아래처럼 우선순위가 있음
+	- 1) page > 2) request > 3) session > 4) application
+
+
+
+# JSTL
+- JSP의 단점을 개선하기 위해 나온 것
+
 
 
 # JSP 예외처리(exception) 페이지

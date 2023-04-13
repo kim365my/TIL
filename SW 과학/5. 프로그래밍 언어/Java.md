@@ -1,3 +1,8 @@
+---
+tag : oop
+aliases : 자바
+---
+
 # 개요
 > zulu8 JDK / 자바 1.8 버전 / IDE([[이클립스]] 2021-06) / 톰캣 8.5.78v 기준 설명
 
@@ -14,7 +19,7 @@
 # 자바 설치하기
 - [zulu8 오픈자바JDK](https://www.azul.com/downloads/?version=java-8-lts&os=windows&architecture=x86-64-bit&package=jdk#zulu)
 - [오라클 / 유료](https://www.oracle.com/java/technologies/downloads/)
-- [[[이클립스]] 2021-06 R](https://www.eclipse.org/downloads/packages/release/2021-06/r)
+- [이클립스_2021-06 R](https://www.eclipse.org/downloads/packages/release/2021-06/r)
 - [Apache Tomcat® - Apache Tomcat 8 Software Downloads](https://tomcat.apache.org/download-80.cgi)
 
 ## 환경변수 설정 : JAVA_HOME, Path
@@ -38,7 +43,6 @@ public class HelloWorld{
 - 코드 작성형식 : 람다식(객체지향의 단점을 극복하기 위해서 ) 등 #설명보완필요
 
 ## 데이터 타입
-- 자바는 다른 프로그래밍 언어와 동일하게 원시데이터타입과 참조데이터타입으로 나뉨
 - 기본 데이터 타입 Primitive type
 	- 정수형 : byte, short, int(기본), long
 	- 실수형 : float, double(기본)

@@ -28,7 +28,7 @@ graph LR
 	톰켓--서블릿으로 처리한\\n 뒤에 넘겨줌-->서버
 
 ```
-- 브라우저 :  거대한 인터프린터로 서버에 요청/응답을 받는 클라이언트로 View를 구현
+- [[웹 브라우저]] :  거대한 인터프린터로 서버에 요청/응답을 받는 클라이언트로 View를 구현
 - View에서 HTTP 메세지로 요청(Request)를 받으면 서버는 일일히 요청에 반응해서 프로그래밍된 대로 작동하고, 이후 데이터를 응답(Response)하게 됨
 - 서버를 편하게 작성하기 위해 사용하는 것이 WAS고, 서버는 WAS에게 모든 것을 위임하고 WAS는 서브릿이 작동된 뒤에 처리한 것을 서버에 다시 반환하게 된다. 그렇게 View 단에서 동적으로 데이터가 변동되는 것을 볼 수 있음
 
@@ -156,7 +156,7 @@ public class HelloServlet3 extends HttpServlet {
  * 기존의 web.xml은 설정시 번거롭고 불편하기에 톰캣 7버전부터 어노테이션을 이용해 매핑하기 시작함 (단, 반드시 HttpServlet을 상속받은 클래스에서만 사용가능)
  * 서블릿 클래스에 `@WebServlet("/HelloServlet3")`을 이용해 표시해주면 가독성도 좋고 편리
 
-### 서블릿과 HTML 연동하기
+### 매핑값과 함께 서블릿과 HTML 연동하기
 ```html
 <form action="loginpage" method="get">
 	아이디 : <input type="text" name="user_id" id="user_id"> <br><br>
@@ -166,10 +166,7 @@ public class HelloServlet3 extends HttpServlet {
 </form>
 ```
 - 매핑을 통해 설정한 문자열을 통해서 HTML과 연동할 수 있음
-- 기본적으로 한페이지에 form은 하나만 사용
-
-#### HTML의 form 태그 
-![[HTML#서버와 사용하기]]
+- 기본적으로 한페이지에 form은 하나만 사용![[HTML#서버와 사용하기]]
 
 
 ##  데이터 가져오고 출력하기
@@ -227,81 +224,16 @@ public class HelloServlet3 extends HttpServlet {
 4. 서블릿에서 doPost()를 이용해 데이터 처리
 
 
-## 서블릿 포워드 기능
-> 서블릿 간의 데이터 공유를 위해서 나온 개념
+## 포워딩
+![[포워딩#포워딩이란?]]
 
-- 포워드 기능이란? 
-	- 다른 서블릿이나 JSP와 데이터를 공유하여 데이터등을 연동할때 사용
-		- 데이터 연동 예시 : 웹 개발시 회원관리, 상품관리, 게시판 관리 등등
-	- 포워드 기능은 하나의 서블릿에서 다른 서블릿이나 JSP로 요청을 전달하는 역할
-		- 서버에서 [[포워딩]]되면 웹 브라우저의 주소창이 변경되지 않음
-		- 서블릿 요청이 클라이언트를 거쳐서 다시 요청되는 방식이기에 주소창의 주소가 변경됨
-		- 파라미터 방식으로 값을 넘김
-	- 데이터 [[Scope]] 범위를 어떻게 지정할 것인지가 이슈
-	- [[Servlet#바인딩 binding|바인딩]]과 세트로 취급됨
-- 포워드 기능을 하는 메소드
-	- response.sendRedirect : 쿼리스트링으로 값을 넘겨줄 수 있음
-	- response.addHeader : 시간을 지정하고 맵핑을 넘길 수 있음
-	- JS의 location.href 속성을 이용해 넘길 수 있음
-
-- 보안이 중요함 
-- 서블릿 요청이 클라이언트를 거쳐서 다시 요청되는 방식이기에 주소창의 주소가 변경됨
-
-### Redirect메소드의 작동 방식
-
-1.  클라이언트 요청
-2. 첫번째 서블릿에서 어노테이션이 설정한 곳으로 데이터 포워드 
-	```java
-	response.sendRedirect("두번째_서블릿");
-	```
-	- 서블릿에서 [[포워딩]]한 데이터 처리 서블릿
-	- 아래처럼 키값을 넘겨줄 수 있음( #Query_String ), 값 넘겨주는 행위를 **포워드** 
-		```java
-		response.sendRedirect("두번째_서블릿?name=이름");
-		```
-3. 다시 클라이언트를 거쳐서 두번째  서블릿에서 데이터가 최종처리
-	```java
-	request.getParamter("name"); //이름
-	```
-	- 쿼리스트링으로 데이터를 넘겨줄 수 있음, 넘겨받는 행위를 **[[포워딩]]**이라고 함
-4. 첫번째 서블릿은 [[포워딩]]이 되고 나면 메모리에서 삭제 됨. 이를 개선해서 나온 것이 **디스패처**
-
-### addheader메소드의 작동방식 [참고](https://blog.pages.kr/418)
-
-- 지정한 시간이 지난뒤 맵핑한 곳으로 이동
-	```java
-	response.addHeader("Refresh", "1;url=refresh2?name=flmssm");
-	```
-- 콜론(:)과 세미콜론(;)을 헷갈리지말것(작동이 안됨)
-- 추후에 CRUD할때는 객체를 묶어서 보내게 됨
-	- [[바인딩]]을 쓰기는 하지만 
-
-### JS 로케이션 location의 작동 방식
-- 서블릿 요청이 클라이언트의 웹 브라우저를 거쳐서 다시 요청되는 방식 
-- 웹 브라우저의 주소창이 달라짐
-- 클라이언트 요청
-- SeveletForwardLocation 서블릿에서 어노테이션으로 설정한 곳으로 데이터 [[포워딩]]
-- 다시 클라이언트를 거쳐서 ServletForwardLocation2 서블릿에서 최종 데이터 처리
-```java
-  out.println("<script>location.href='location2</script>");
-```
+### 포워딩 메소드
+![[포워딩#서블릿의 포워드 기능 메소드]]
 
 ## [[바인딩]] binding
-- 전달하는 데이터의 양이 적을 때는 Get 방식으로 전달 할 수 있지만 Get은 많은 데이터를 전달하지 못하는 단점이 존재
-- 웹 프로그램 실행시에 데이터를 서블릿 관련 객체에 저장하는 방법이 나옴
-	- WAS가 알아서 해줌
-	- HttpServletRequest, HttpSession, ServletContext 객체를 통해 제공
-	- 저장된 데이터는 서블릿으로 JSP에서 서로 전달하고 공유하며 사용
+![[바인딩#바인딩이란?]]
 
-## 디스패쳐 dispatcher
-- 서버에서 포워드가 전달 -> 웹 브라우저 주소창이 변경되지 않음
-- 작동 방식
-	- 클라이언트 요청 발생시 첫 번째 서블릿은 RequestDispatcher 객체를 이용하여 두번째 서블릿으로 전달
-	- 포워드만 하는 것이 아니고 [[바인딩]]도 같이 함 (둘은 세트)
-```java
-RequestDispatcher name = request.getRequestDispatcher("location2?name=paramata");
-name.forward(request, response);
-```
+
 
 ### 디스패처 예시구문
 - request의 [[Scope]]는 웹 페이지 하나당 한개씩이므로 새로운 웹 페이지에서는 데이터가 공유되지 않음
@@ -312,8 +244,8 @@ name.forward(request, response);
 - 3개의 객체를 통해서 접근
 	- [[Scope]] 비교시 Request < Context < Session 순임
 	- **HttpServletRequest** : 요청될때마다 호출
-	- **ServletContext** : Project 당 하나씩
-	- **HttpSession** : 브라우저가 종료되기 전까지 데이터를 가지고 있음
+	- **ServletContext** : Project 당 하나씩 (전체 서블릿간의 공유 데이터)
+	- **HttpSession** : 브라우저가 종료되기 전까지 데이터를 가지고 있음 (각 사용자마다 가지는 메모리)
 - 저장된 데이터는 서블릿으로 JSP에서 서로 전달하고 공유하며 사용
 - 무조건 key, value (String 타입)
 
@@ -347,22 +279,32 @@ session.invalidate(); // 세션 강제 삭제 : 브라우저와 서버의 연결
 ## Request 메소드
 > 주소창과 관련된 메소드들이 많음
 
-| 메소드 명                   | 설명                             | 예시 |
-| --------------------------- | -------------------------------- | ---- |
-| request.getScheme()         | http 같은 통신규약명 호출        |      |
-| request.getRequestURL()     | 요청이 온 URL 주소명을 전체 출력 |      |
-| request.getRequestURI()     | 요청이 온 URL 주소명을 일부 출력 |      |
-| request.getServletPath()    | 요청이 온 서블릿의 주소 출력     | /RequestBasic     |
-| request.getServletContext() | 서블릿 실행환경 정보       |      |
-| request.getHeader()         |  헤더 정보    |      |
+| 메소드 명                      | 설명                                                        | 예시                                                                     |
+| ------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------------------ |
+| request.getScheme()            | http 같은 통신규약명 호출                                   |                                                                          |
+| request.getRequestURL()        | 요청이 온 URL 주소명을 전체 출력                            |                                                                          |
+| request.getRequestURI()        | 요청이 온 URL 주소명을 일부 출력                            |                                                                          |
+| request.getServletPath()       | 요청이 온 서블릿의 주소 출력                                | /RequestBasic                                                            |
+| request.getServletContext()    | 서블릿 실행환경 정보                                        |                                                                          |
+| request.getHeader()            | 헤더 정보                                                   |                                                                          |
+| request.getSession()           | 최초 요청시 세션 객체를 새로 생성하거나 또는 기존 세션 반환 | HttpSession session = request.getSession();                              |
+| request.getRequestDispatcher() | 디스패쳐                                                    | RequestDispatcher name = request.getRequestDispatcher("이동할 페이지명") |
+| request.getParameter()         | 가져올 파라미터 키명                                        |                                                                          |
+| request.setParameter()       |            파라미터 값 설정                                                 |                                                                          |
 
 
 ## Response 메소드
 > [[포워딩]]
 
-| 메소드명 | 설명 | 예시 |
-| -------- | ---- | ---- |
-| response.setCharacterEncoding("utf-8") | 인코딩 처리     |      |
+| 메소드명 | 설명 | 
+| -------- | ---- | 
+| response.setCharacterEncoding("utf-8") | 인코딩 처리     |
+| response.sendRedirect | 쿼리스트링으로 값을 넘겨줄 수 있음  |
+| response.addHeader    | 시간을 지정하고 맵핑을 넘길 수 있음 |
+
+
+## HttpSession 객체
+
 
 
 # 서블릿 디자인 패턴
@@ -386,6 +328,6 @@ session.invalidate(); // 세션 강제 삭제 : 브라우저와 서버의 연결
 	- 동일한 키는 중복이 가능함
 	- 문자열만 가능 / 갯수제한이 있음 (최대 256비트)
 	- 웹 브라우저에 직접 입력해서 데이터를 전송가능
-	- 참고) 서버단 프로그래밍 시 쿼리스트링의 키들을 매개변수(파라미터)라고 함
+	- 참고) 서버단 프로그래밍 시 쿼리스트링의 키들을 매개변수(파라미터 paramter)라고 함
 
 # 연관문서
