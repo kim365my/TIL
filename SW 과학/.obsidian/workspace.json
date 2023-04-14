@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "9a16c4e321f1cf93",
+        "id": "0e955b09f4442f57",
         "type": "split",
         "children": [
           {
-            "id": "cf82eef8280a070f",
+            "id": "27a014ef5026608d",
             "type": "tabs",
-            "dimension": 79.1586998087954,
+            "dimension": 32.538167938931295,
             "children": [
               {
                 "id": "9ad62984a533ba7f",
@@ -21,9 +21,26 @@
                   "state": {
                     "file": "웹 개발.canvas",
                     "viewState": {
-                      "x": -4309.725990350944,
-                      "y": -46.28852883170714,
-                      "zoom": 3.3306690738754696e-16
+                      "x": -3575.7267826719644,
+                      "y": -2513.7977062019463,
+                      "zoom": -1.1102230246251565e-16
+                    }
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "0f4ba4d6671deae0",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "3학년 1학기.canvas",
+                    "viewState": {
+                      "x": -776.2609354332311,
+                      "y": 220.382872486282,
+                      "zoom": -0.37862048586229474
                     }
                   },
                   "pinned": true
@@ -32,86 +49,113 @@
             ]
           },
           {
-            "id": "0500a6b59a2e5534",
-            "type": "tabs",
-            "dimension": 20.84130019120459,
+            "id": "31f74b10543ab86e",
+            "type": "split",
+            "dimension": 67.4618320610687,
             "children": [
               {
-                "id": "6c3535d12f1dffe4",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "9. 용어해설집/소프트웨어/Scope.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
+                "id": "0500a6b59a2e5534",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "6c3535d12f1dffe4",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "9. 용어해설집/소프트웨어/Scope.md",
+                        "mode": "source",
+                        "backlinks": true,
+                        "source": false
+                      },
+                      "pinned": true
+                    }
                   },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "bb77119ed0592a35",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "4. 웹 개발/Servlet.md",
-                    "mode": "preview",
-                    "backlinks": true,
-                    "source": false
+                  {
+                    "id": "bb77119ed0592a35",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "4. 웹 개발/Servlet.md",
+                        "mode": "source",
+                        "backlinks": true,
+                        "source": false
+                      },
+                      "pinned": true
+                    }
                   },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "22bcc8dd49c562c8",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "9. 용어해설집/소프트웨어/바인딩.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
+                  {
+                    "id": "22bcc8dd49c562c8",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "9. 용어해설집/소프트웨어/바인딩.md",
+                        "mode": "source",
+                        "backlinks": true,
+                        "source": false
+                      },
+                      "pinned": true
+                    }
                   },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "266d17f7761344b6",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "4. 웹 개발/JSP.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
+                  {
+                    "id": "266d17f7761344b6",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "4. 웹 개발/JSP.md",
+                        "mode": "source",
+                        "backlinks": true,
+                        "source": false
+                      },
+                      "pinned": true
+                    }
                   },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "d94be2d58749277a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "9. 용어해설집/소프트웨어/Scope.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
+                  {
+                    "id": "43a6034d4542d6c0",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "데일리 노트/2023-04-14.md",
+                        "mode": "source",
+                        "backlinks": true,
+                        "source": false
+                      },
+                      "pinned": true
+                    }
                   }
-                }
+                ],
+                "currentTab": 4
+              },
+              {
+                "id": "127722a01b0acc7c",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "c0f9b14bbe62d07a",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "4. 웹 개발/HTTP.md",
+                        "mode": "source",
+                        "backlinks": true,
+                        "source": false
+                      }
+                    }
+                  }
+                ]
               }
             ],
-            "currentTab": 4,
-            "stacked": true
+            "direction": "vertical"
           }
         ],
         "direction": "horizontal"
@@ -143,10 +187,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "이클립스",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -168,8 +212,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -183,7 +226,7 @@
       {
         "id": "422867e0e1bcf3da",
         "type": "tabs",
-        "dimension": 66.4756446991404,
+        "dimension": 70.41984732824427,
         "children": [
           {
             "id": "0428bff858c0dbd0",
@@ -191,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "웹 개발.canvas"
+                "file": "4. 웹 개발/HTTP.md"
               }
             }
           },
@@ -201,7 +244,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "웹 개발.canvas",
+                "file": "4. 웹 개발/HTTP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -213,7 +256,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "웹 개발.canvas",
+                "file": "4. 웹 개발/HTTP.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -256,7 +299,7 @@
       {
         "id": "4c27f8893d51138b",
         "type": "tabs",
-        "dimension": 33.5243553008596,
+        "dimension": 29.580152671755727,
         "children": [
           {
             "id": "aa1112bc6bc13184",
@@ -272,7 +315,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "웹 개발.canvas",
+                "file": "4. 웹 개발/HTTP.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -313,7 +356,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5
+    "width": 221.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -325,24 +368,41 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "9ad62984a533ba7f",
+  "active": "c0f9b14bbe62d07a",
   "lastOpenFiles": [
-    "9. 용어해설집/소프트웨어/Scope.md",
+    "데일리 노트/2023-04-14.md",
     "4. 웹 개발/JSP.md",
+    "웹 개발.canvas",
+    "2. 컴퓨터과학 개론/인공지능.md",
+    "3학년 1학기.canvas",
+    "Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
+    "img/5. 노드확장_아래쪽.png",
+    "img/5. 노드확장_왼쪽.png",
+    "img/4. 노드확장_아래쪽.png",
+    "img/4. 노드확장_왼쪽.png",
+    "img/3. 노드확장_오른쪽.png",
+    "img/3. 노드확장_왼쪽.png",
+    "img/2. 노드확장_아래.png",
+    "img/2. 노드확장_오른쪽.png",
+    "img/2. 노드확장_위.png",
+    "img/1. 노드확장_오른쪽.png",
+    "9. 용어해설집/소프트웨어/이클립스.md",
+    "정보처리기사/2. 소프트웨어 개발.md",
+    "9. 용어해설집/소프트웨어/파라미터.md",
+    "4. 웹 개발/Servlet.md",
+    "5. 프로그래밍 언어/스타일 시트/CSS.md",
+    "4. 웹 개발/HTTP.md",
+    "컴퓨터과학.canvas",
+    "9. 용어해설집/소프트웨어/Scope.md",
     "데일리 노트/2023-04-13.md",
     "9. 용어해설집/소프트웨어/포워딩.md",
     "9. 용어해설집/소프트웨어/바인딩.md",
-    "웹 개발.canvas",
-    "4. 웹 개발/Servlet.md",
     "4. 웹 개발/웹 브라우저.md",
     "5. 프로그래밍 언어/Java.md",
     "8. 디자인/디자인 효과.md",
     "8. 디자인/포토샵.md",
     "3. 소프트웨어 공학/프로그래밍 언어론.md",
-    "2. 컴퓨터과학 개론/인공지능.md",
-    "img/Pasted image 20230413133955.png",
     "2. 컴퓨터과학 개론/운영체제.md",
-    "컴퓨터과학.canvas",
     "데일리 노트/2023-04-11.md",
     "9. 용어해설집/소프트웨어/백엔드",
     "4. 웹 개발/오라클.md",
@@ -350,28 +410,11 @@
     "4. 웹 개발/자바빈.md",
     "마크다운 사용법/옵시디언.md",
     "클린코드.md",
-    "코드컨벤션.md",
-    "4. 웹 개발/HTTP.md",
-    "img/Pasted image 20230413105611.png",
-    "img/Pasted image 20230413105506.png",
-    "img/Pasted image 20230413105213.png",
-    "img/Pasted image 20230413104651.png",
-    "img/Pasted image 20230413104452.png",
-    "img/Pasted image 20230413102850.png",
-    "img/Pasted image 20230413102430.png",
-    "img/Pasted image 20230412092551.png",
-    "img/Pasted image 20230410075755.png",
-    "4. 웹 개발/Web API.md",
-    "4. 웹 개발/네트워크.md",
-    "4. 웹 개발/웹 개발론.md",
-    "5. 프로그래밍 언어/스타일 시트/CSS.md",
     "노트필기방법.canvas",
     "TCP",
     "6. 영어",
     "9. 용어해설집/소프트웨어",
-    "무제 파일.canvas",
     "데일리 노트",
-    "3학년 1학기.canvas",
     "수업노트",
     "마크다운 사용법",
     "정보처리기사/자격증.canvas",

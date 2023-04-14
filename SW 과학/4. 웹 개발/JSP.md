@@ -169,7 +169,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 | 표현식(expression tag)   | `<%= %>` | 변수 값 출력시 사용 |
 
 #### 선언문 (declaration tag)
-
+##### 선언부 page
 - 선언부 : Servlet에서 인코딩 설정할때와 똑같은 내용이라고 보면 됨
 	```jsp
 	<%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -226,7 +226,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 | param  | 파라미터 설정을 통해서 값을 넘겨줄 수 있음                      | <jsp:param name="키명" value="키값"/>                                                         |
 
 
-### 액션태그로  [[자바빈]]과 연결하기 
+### [[자바빈]]과 연결하기 
 - <jsp:useBean>
 	- id :  id 값을 이용해서 스크립틀릿에서 객체의 메소드에 접근 가능
 	- class : 자바빈으로 사용할 클래스 이름(`패키지명.클래스_이름` 형식으로 작성)
@@ -236,17 +236,42 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 		- 같은 데이터 타입으로 맞추기(String으로 넘겨 받으니까 멤버변수를 String으로 작성하는 것이 중요)
 - <jsp:getProperty>
 	- 문자열로 출력되니까 HTML에서 결과값을 보고 싶을 경우 사용
+### 포워딩, 바인딩하기
+- <jsp:forward>
+	- 디스패처로 forward 한 것과 동일한 결과를 얻음
+	- page 속성 뒤에 #Query_String 으로 파라미터 값을 넘겨줄 수 있음
+- <jsp:param>
+	- 파라미터에 자바빈으로 값을 넘겨주면 파라미터를 통해서 받을 수 있음
+
+
+# JSP 예외처리(exception) 페이지
+- 정의
+	- 보통 Servlet에서 예외처리를 하니까 있다는 것만 알아두기
+- 형식
+	- 오류가 발생 할 페이지에 선언문에  `errorPage=""`로 이동할 예외처리 페이지를 지정
+	- 예외처리 페이지 코딩
+		- 예외처리 내장객체 : `exception`
+			- 주로 사용하는 메소드
+				- .toString()
+					- 에러 관련 문자열 출력
+					- `<%= exception.toString() %>`
+				- .getMessage()
+					- 어느 부분에서 에러가 났는지 출력
+					- `<%= exception.getMessage() %>`
+				- .printStackTrace() 
+					- 객체로 반환되기 때문에 다른 메소드와 다르게 스크립틀릿으로 사용해야 함
+					- `<% exception.printStackTrace();%>`
 
 
 # EL (Expression Language)
 - 표현언어의 등장
 	- JSP 표현식을 보다 편하게 데이터를 출력하기 위해 JSP2.0에서부터 도입됨 (요즘 나오는 프로그래밍 언어들은 거의 표현식을 사용)
 		- JS ES6의 Xpath처럼 구조 분할 방식
+## EL의 기본 형식
 - 형식 : `${ }`
 	- ⭐사용하기 위해서는 선언문에서 `isELIgnored="false"` 설정필요 (안해도 출력은 됨)
 	- 직접 값 접근에 가능하기에 `${키명}`식으로 접근하면 됨
-		- ⭐[[Scope|스코프]]에 저장된 값만 출력이 가능(request, session, applictaion)
-			- page는 다른 곳으로 포워딩이 안되지 않을까? #질문 
+		- ⭐[[Scope|스코프]]에 저장된 값만 출력이 가능(page, request, session, applictaion)
 	- 프로퍼티 표현법
 		- [] 연산자 사용 : `${user["name"]}`
 		- 점연산자 사용 : `${user.name}`
@@ -257,6 +282,8 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 	- EL 자체의 내장 객체 제공
 	- EL의 취급가능한 데이터 
 		- 문자, 숫자 출력 가능 (리터널 데이터로 취급)
+			- 문자 출력 : `${'문자열'}`
+			- 숫자 출력 : `${40}`
 		- 기본적인 연산가능 (산술, 비교, 논리, 논리부정, 크기비교 연산자)
 			- 숫자형 문자열과 숫자를 연산할 경우 자동으로 숫자로 형변환하여 연산
 
@@ -301,28 +328,141 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 
 
 
-# JSTL
+# JSTL (JSP 표준태그 라이브러리)
 - JSP의 단점을 개선하기 위해 나온 것
+- 커스텀 태그 중 가장 많이 사용하는 태그를 표준화하여 라이브러리로 제공하는 것
+- JSP2.0 규약에서부터 추가되어 톰켓에서는 기본적으로 제공되지 않음
+	- 따라서 플러그인을 설치해줘야 사용 가능
+- 자바의 기능을 태그로 대체가 가능하다는 개념 
+- 사용하려면 JSP 선언부에 taglib 태그에 추가하여 톰캣에 알려줘야함
+	- value 값의 출력은 EL 표기법을 사용
+		- 입력에도 EL 표기법 사용가능
+- JSTL 태그의 종류
+	- 라이브러리 코어
+		- 변수지원
+		- 제어문, 반복문 처리
+		- URL 처리등이 가능 
+		- 접두어 c(Core)를 가장 많이 사용
+
+## 플러그인 설치
+- [설치 페이지](http://www.java2s.com/Code/Jar/j/Downloadjstl12jar.htm#google_vignette)에서 다운 받고 압축 푼 다음, 이클립스 프로젝트파일의 src->main->webapp->WEB-INF->lib 경로에 .jar 파일을 넣으면 됨
+## JSTL 라이브러리 코어 태그 문법
+
+### JSTL 태그 사용선언 
+```jsp
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+```
+
+###  변수선언
+```jsp
+<c:set var="변수명" value="값" scope="범위"
+```
+- value : EL로 작성 가능
+- [[scope]] : 생략가능, 기본값은 page
+	- 전역변수로 저장됨, page는 한 page에서 사용할 수 있는 범위인가? 아직 명확하게 생각이 정리가 안돼 #질문 
+- EL로 value에 대입할 경우 `""`를 써줘야함
+	```jsp
+	<c:set var="age" value="${43}" />
+	```
+
+### 제어문
+#### if문 (단일if만 존재)
+```jsp
+<c:if test="${비교값}">참일 경우 실행시킬 구문</c:if>
+```
+- test에는 EL 표기법으로 작성
+	- EL empty 연산자를 많이 사용(null 체크를 위해서)
+
+#### choose 태그 (if~else)
+```jsp
+<c:choose>
+	<c:when test="조건식">
+		참일경우 실행할 구문
+	</c:when>
+	<c:otherwise>
+		거짓일경우 
+	</c:otherwise>
+</c:choose>
+```
+- null 체크
+	- 고정값 이외의 값은 동적으로 변하니까  처음 로딩시 null이 기본값으로 들어가니까 고정값을 넣어주기 위해서 사용
+
+### 반복문
+#### forEach (가장 많이 사용)
+```jsp
+<c:forEach var="변수명" items="반복 객체 파일" begin="시작점" end="마지막값" step="증가값" varStatus="반복상태">
+	반복할 구문
+	${반복상태.count} <!--몇번 반복했는지 표시-->
+</c:forEach>
+```
+- varStatus : 반복문의 상태를 알려줌
+##### 객체값
+```jsp
+<c:forEach var="변수명" items="${반복 객체 파일}">
+	반복할 구문 ${변수명 }
+</c:forEach>
+```
+- 변수명을 통해서 반복할 객체 파일에 접근가능
+- 참고로 EL은 Scope에 있는 값만 접근 할 수 있기에 객체를 사용하려면 변수에 담아주는 과정을 거쳐야함
+
+#### forTokens
+```jsp
+<c:set var="football" value="최범근, 이희택, 박지성, 안정환, 최순호"/>
+<c:forTokens var="football2" items="${football }" delims=",">
+	${football2 }
+</c:forTokens>	
+```
+- 구분자를 이용해 문자열을 분리하여 출력하는 태그
+- delims : 구분자를 선택
+- items : 문자열
+
+### 주소창 관련
+#### c:redirect
+```jsp
+<c:redirect url="./206_reditc2.jsp">
+	<c:param name="param2" value="ezen" />
+	<c:param name="param3" value="computer" />
+</c:redirect>
+```
+#### url
+```jsp
+<c:url var="login" value="주소값"/>
+```
+- url 주소값을 담기 위해 사용됨
+- 단지 경로만 저장됨
+#### import
+```jsp
+<c:import url="${login }"/>
+```
+- 페이지 임포트
+
+#### out
+```jsp
+<c:set var="str" value="<h3>수업중입니다.</h3>"/>
+<c:out value="${str})" escapeXml="false"/>
+```
+- 출력, 이스케이프 문자 등을 지정가능
+- escapeXml="false"로 할시 html 태그를 인식시킬 수 있음
+	- 기본값은 true
+
+> <c:out>태그안에 내용을 넣어주면 다 문자열이 됩니다  
+> 
+	컨트롤러에서 alert()이라는 문자열이 어떤 키 안에 특정값으로 들어갔다고 하면 이상태에서 <c:out>을쓰지 않으면 alert창이 웹상에서 떠 버립니다
+	<c:out>”alert()”</c:out> 이렇게 c:out을 써주면 alert()라는 문자열로만 보여집니다 alert창이 따로 뜨질 않는거죠
+	보안에도 관련이 있는데 alert()이 아닌 악성코드라고 한다면 감염이 될 것입니다 그것을 String으로 받아버리면 alert()이 아니라 <c:out>이 문자열로 받아버리니까 감염 될 일이 없고요 그래서 무조건 c:out으로 문자열로 만들어 주는게 중요합니다
 
 
 
-# JSP 예외처리(exception) 페이지
-- 정의
-	- 보통 Servlet에서 예외처리를 하니까 있다는 것만 알아두기
-- 형식
-	- 오류가 발생 할 페이지에 선언문에  `errorPage=""`로 이동할 예외처리 페이지를 지정
-	- 예외처리 페이지 코딩
-		- 예외처리 내장객체 : `exception`
-			- 주로 사용하는 메소드
-				- .toString()
-					- 에러 관련 문자열 출력
-					- `<%= exception.toString() %>`
-				- .getMessage()
-					- 어느 부분에서 에러가 났는지 출력
-					- `<%= exception.getMessage() %>`
-				- .printStackTrace() 
-					- 객체로 반환되기 때문에 다른 메소드와 다르게 스크립틀릿으로 사용해야 함
-					- `<% exception.printStackTrace();%>`
+
+
+
+
+
+
+
+
+
+
 
 
 # 연관문서

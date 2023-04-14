@@ -48,10 +48,19 @@ aliases : Hypertext transfer protocol, 데이터 교환에 대한 규칙과 약�
 
 
 
-# 데이터를 받아오는 방법
+# 데이터 Request
+- HTTP 메세지로 넘겨받은 값을 Request 객체가 처리
 
-## get
+## Get (기본값)
+1.  서블릿에 데이터 전송시 데이터가 URL 뒤 `속성명=속성값` 형태( [#Query_String](app://obsidian.md/index.html#Query_String) )로 전송되며 주소창에 보임
+2.  보안에 취약
+3.  최대 256비트
+4.  서블릿에서 doGet()을 이용해 데이터 처리
+## Post
+1.  서블릿에 데이터를 전송시 데이터가 body영역에 담겨진 채 전송되며 주소창에 안보임
+2.  용량제한 없음
+3.  Get 방식에 비해 보안에 용이하지만 데이터를 암호화하지 않으면 소용없음
+4.  서블릿에서 doPost()를 이용해 데이터 처리
 
-# post
-
-# API 이용 (JSON, XML 등)
+## API 이용 (JSON, XML 등)
+- http api에서 주로 사용하며 json 등의 형식
