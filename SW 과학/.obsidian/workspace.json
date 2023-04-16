@@ -15,9 +15,9 @@
               "state": {
                 "file": "0. 공부목표.canvas",
                 "viewState": {
-                  "x": 1277.5426427520968,
-                  "y": -252.1724222095478,
-                  "zoom": -0.9393693164930381
+                  "x": 1002,
+                  "y": 16.5,
+                  "zoom": 0
                 }
               }
             }
@@ -256,7 +256,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0428bff858c0dbd0",
+  "active": "117a6b26fa47e5fa",
   "lastOpenFiles": [
     "4. 웹 개발/PWA.md",
     "0. 공부목표.canvas",
