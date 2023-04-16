@@ -3,7 +3,7 @@
   "theme": "moonstone",
   "translucency": false,
   "textFontFamily": "Pretendard,Segoe UI",
-  "baseFontSize": 13,
+  "baseFontSize": 15,
   "interfaceFontFamily": "Pretendard",
   "cssTheme": "Minimal",
   "monospaceFontFamily": "Fira Code",

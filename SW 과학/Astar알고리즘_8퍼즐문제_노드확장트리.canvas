@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"d84269853366ee5f","x":-1348,"y":-460,"width":1768,"height":3456,"color":"4","type":"group","label":"A* 알고리즘 예제. 8 퍼즐 문제"},
 		{"type":"file","file":"img/초기상태.png","id":"dd1bfb921ceed68d","x":-600,"y":-440,"width":400,"height":376},
 		{"type":"file","file":"img/1. 노드확장_위.png","id":"be11f61fe78c40d3","x":-1064,"y":120,"width":400,"height":376},
 		{"type":"file","file":"img/1. 노드확장_오른쪽.png","id":"e67856fe685c5730","x":-600,"y":120,"width":400,"height":376},

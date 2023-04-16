@@ -6,7 +6,7 @@
 ---
 👉 **간단소개**
 	JavaScript, HTML 및 CSS와 같은 웹 기술을 사용하여 기본 애플리케이션을 만들기 위한 GUI 프레임워크
-	백엔드로는 [[NodeJS]] 런타임을, 프론트엔드로는 Chromium을 사용
+	백엔드로는 [[Node JS]] 런타임을, 프론트엔드로는 Chromium을 사용
 	electron ↔ node js ↔ 운영체제
 	chromium(검색창 없는 크롬) → 유저 인터페이스
 

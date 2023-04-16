@@ -1,5 +1,6 @@
 ---
 tag : 마크업_언어 프론트엔드
+aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 ---
 # HTML 사용이유와 기초
 ## 1. 왜 HTML을 쓰는가?

@@ -21,7 +21,7 @@ aliases : Hypertext transfer protocol, 데이터 교환에 대한 규칙과 약�
 - 헤더 정보(생략 가능)
 	- 지금 보내는 요청에 대한 정보 / 본문의 내용에 대한 정보. Key-Value쌍이 콜론으로 구분되어 한 줄씩 차지함.
 	- `User-Agent: Mozilla/4.0`
-	- `Accept: text/plain, text/html` # 서버로부터 오는 응답 중에서 어떤 종류의 정보를 받겠다. 서버에게 지금 요청을 내린 프로그램이 받아들일 수 있는것이 일반 텍스트와 HTML응답이다. (비디오, 오디오 등은 안 받음)
+	- `Accept: text/plain, text/html` # 서버로부.,/터 오는 응답 중에서 어떤 종류의 정보를 받겠다. 서버에게 지금 요청을 내린 프로그램이 받아들일 수 있는것이 일반 텍스트와 HTML응답이다. (비디오, 오디오 등은 안 받음)
 - 빈칸
 - 본문 메세지(생략 가능)
 
@@ -39,11 +39,10 @@ aliases : Hypertext transfer protocol, 데이터 교환에 대한 규칙과 약�
 - 3**: 리다이렉트
 	- 301 Moved Permanently: 요청한 자원이 다른 주소로 이동되었음
 - 4**: 클라이언트 에러
-	- 401 Not Authorized: 권한 없음
-	- 403 Forbidden: 서버가 요청을 거부하였음
-	- 404 해당 url을 찾을 수 없음
-	- 408 Request Timeout: 클라이언트가 서버가 지정한 타임아웃 시간 내에 응답을 보내지 않음
-- 5**
+?	- 401 Not Authorized: 권한 없음?
+	.,- 404 해당 url을 찾을 수 없음
+	-?. 408 Request Timeout: 클라이언트가 서버가 지정한 타임아웃 시간 내에 응답을 보내지 않음
+- 5**.,
 	- 500 Server Error: 비정상적인 스크립트로 인해 서버 설정에 에러 등등
 
 
