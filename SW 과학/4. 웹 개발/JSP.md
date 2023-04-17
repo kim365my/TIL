@@ -5,8 +5,9 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 
 
 # 개요
->자바 + [[HTML]]
->기본적으로 [[Servlet|서블릿]] 거의 동일함
+- 자바 + [[HTML]], 기본적으로 [[Servlet|서블릿]] 거의 동일함
+- 스크립틀릿 / 액션태그 / 표현식, EL, JSTL 같은 편하게 쓰기 위한 문법이 존재
+	- 하나만 써야하는 건 아니고 서로 중첩해서 써도 됨
 
 # JSP란?
 - 정의 
@@ -347,13 +348,19 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 ## 플러그인 설치
 - [설치 페이지](http://www.java2s.com/Code/Jar/j/Downloadjstl12jar.htm#google_vignette)에서 다운 받고 압축 푼 다음, 이클립스 프로젝트파일의 src->main->webapp->WEB-INF->lib 경로에 .jar 파일을 넣으면 됨
 ## JSTL 라이브러리 코어 태그 문법
-
-### JSTL 태그 사용선언 
 ```jsp
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 ```
+- 코어 태그를 사용하겠다고 선언
 
-###  변수선언
+###  변수관련
+#### import : 페이지 임포트
+```jsp
+<c:import url="${login }"/>
+```
+- 페이지 임포트
+
+#### set : 변수선언
 ```jsp
 <c:set var="변수명" value="값" scope="범위"
 ```
@@ -364,6 +371,20 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 	```jsp
 	<c:set var="age" value="${43}" />
 	```
+#### out : 변수 출력
+```jsp
+<c:set var="str" value="<h3>수업중입니다.</h3>"/>
+<c:out value="${str})" escapeXml="false"/>
+```
+- 출력, 이스케이프 문자 등을 지정가능
+- escapeXml="false"로 할시 html 태그를 인식시킬 수 있음
+	- 기본값은 true
+
+
+- <c:out>태그안에 내용을 넣어주면 다 문자열이 됩니다  
+- 컨트롤러에서 alert()이라는 문자열이 어떤 키 안에 특정값으로 들어갔다고 하면 이상태에서 <c:out>을쓰지 않으면 alert창이 웹상에서 떠 버립니다
+- <c:out>”alert()”</c:out> 이렇게 c:out을 써주면 alert()라는 문자열로만 보여집니다 alert창이 따로 뜨질 않는거죠
+- 보안에도 관련이 있는데 alert()이 아닌 악성코드라고 한다면 감염이 될 것입니다 그것을 String으로 받아버리면 alert()이 아니라 <c:out>이 문자열로 받아버리니까 감염 될 일이 없고요 그래서 무조건 c:out으로 문자열로 만들어 주는게 중요합니다
 
 ### 제어문
 #### if문 (단일if만 존재)
@@ -396,6 +417,14 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 </c:forEach>
 ```
 - varStatus : 반복문의 상태를 알려줌
+	- status.index : 인덱스 (0부터 시작)
+	- status.count : 카운트 (1부터 시작)
+	- status.current : 현재 아이템, var 속성의 값과 동일
+	- status.first : 현재가 첫번째 루프면 참
+	- status.last : 현재가 마지막 루프면 참
+	- status.begin : begin 속성 사용시 나옴
+	- status.end : end 속성 사용시 나옴
+	- status.step : step 속성 사용시 나옴
 ##### 객체값
 ```jsp
 <c:forEach var="변수명" items="${반복 객체 파일}">
@@ -430,38 +459,55 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 ```
 - url 주소값을 담기 위해 사용됨
 - 단지 경로만 저장됨
-#### import
+
+## JSTL fmt 태그 문법
 ```jsp
-<c:import url="${login }"/>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 ```
-- 페이지 임포트
-
-#### out
+- 포맷을 지정가능
+## 시간
+### formatDate
 ```jsp
-<c:set var="str" value="<h3>수업중입니다.</h3>"/>
-<c:out value="${str})" escapeXml="false"/>
+<c:set var="today" value="<%= new Date() %>"/>
+오늘날짜:<fmt:formatDate value="${today }" type="both" dateStyle="full"/>
 ```
-- 출력, 이스케이프 문자 등을 지정가능
-- escapeXml="false"로 할시 html 태그를 인식시킬 수 있음
-	- 기본값은 true
+- type
+	- both : 둘다 출력
+	- time : 시간만 출력
+	- date : 날짜만 출력
+- dateStyle  : 날짜 표시 스타일
+	- full : 전부 `ex) 2023년 4월 17일 월요일
+	- long : 요일을 제외하고 `ex) 2023년 4월 17일`
+	- medium : `ex) 2023. 4. 17.`
+	- short : `ex) 23. 4. 17.`
+- timeStyle : 시간 표시 스타일
+	- full : 전부  `ex) 오전 10시 28분 0초 대한민국 표준시`
+	- long : `ex) 오전 10시 28분 0초 KST`
+	- medium : `ex) 오전 10:28:00`
+	- short : `ex) 오전 10:28`
+- pattern : 패턴 사용, 아래 예약어를 사용해 원하는 대로 출력할 수 있음
+	- YYYY : 년도
+	- MM : 월
+	- dd : 일
+	- HH : 24시간 표시 | hh : 12시간 표시
+	- ss : 초
+	- SS : 밀리초 
+	- EEEE : 요일
+	- a : 오전, 오후
 
-> <c:out>태그안에 내용을 넣어주면 다 문자열이 됩니다  
-> 
-	컨트롤러에서 alert()이라는 문자열이 어떤 키 안에 특정값으로 들어갔다고 하면 이상태에서 <c:out>을쓰지 않으면 alert창이 웹상에서 떠 버립니다
-	<c:out>”alert()”</c:out> 이렇게 c:out을 써주면 alert()라는 문자열로만 보여집니다 alert창이 따로 뜨질 않는거죠
-	보안에도 관련이 있는데 alert()이 아닌 악성코드라고 한다면 감염이 될 것입니다 그것을 String으로 받아버리면 alert()이 아니라 <c:out>이 문자열로 받아버리니까 감염 될 일이 없고요 그래서 무조건 c:out으로 문자열로 만들어 주는게 중요합니다
+### fmt:timeZone
+```jsp
+<fmt:timeZone value="Asia/Seoul">
+	런던 : <fmt:formatDate value="${today }" type="both"/>
+</fmt:timeZone>
+```
+- value로 지역을 선택해서 시간을 보여줄 수 있음
 
-
-
-
-
-
-
-
-
-
-
-
+### fmt:setTimeZone
+```jsp
+<fmt:setTimeZone value="America/New_York"/>
+```
+- value로 지역을 설정해서 앞으로 나오는 formatDate의 시간을 해당 지역의 시간으로 맞춤
 
 
 

@@ -67,3 +67,6 @@ body:before{
 }
 
 
+.cm-editor .cm-lineNumbers{
+	/* color: var(--background-primary); */
+}
