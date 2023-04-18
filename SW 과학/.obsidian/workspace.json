@@ -13,6 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "9. 용어해설집/코드컨벤션.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9558368337b70317",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
                 "mode": "source",
                 "backlinks": true,
@@ -21,20 +34,7 @@
             }
           },
           {
-            "id": "3a8a51b2a9fd94f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/2. 소프트웨어 개발.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "76d0a764084719a7",
+            "id": "547c8414a9fe8c06",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -47,35 +47,32 @@
             }
           },
           {
-            "id": "a84d12fd8d3c4b56",
+            "id": "60965799889ae650",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "데일리 노트/2023-04-17.md",
+                "file": "4. 웹 개발/JSP.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              },
-              "pinned": true
+              }
             }
           },
           {
-            "id": "3e2cc1a76c4f659b",
+            "id": "c2127caf5d828a3e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. 프로그래밍 언어/Java.md",
+                "file": "9. 용어해설집/소프트웨어/이클립스.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,10 +101,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#공용사용메모리",
+                "query": "font",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -131,8 +128,24 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "a84d12fd8d3c4b56",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "데일리 노트/2023-04-18.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -154,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5. 프로그래밍 언어/Java.md"
+                "file": "9. 용어해설집/코드컨벤션.md"
               }
             }
           },
@@ -164,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5. 프로그래밍 언어/Java.md",
+                "file": "9. 용어해설집/코드컨벤션.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -176,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. 프로그래밍 언어/Java.md",
+                "file": "9. 용어해설집/코드컨벤션.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +237,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "5. 프로그래밍 언어/Java.md",
+                "file": "9. 용어해설집/코드컨벤션.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -255,7 +268,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.0534979423868343,
+                  "scale": 0.7514342322277602,
                   "close": true
                 }
               }
@@ -265,7 +278,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5
+    "width": 218.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -277,52 +290,53 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "3e2cc1a76c4f659b",
+  "active": "916ad6a75684a3a3",
   "lastOpenFiles": [
+    "5. 프로그래밍 언어/마크업 언어/HTML.md",
+    "TO DO list.md",
+    "데일리 노트/2023-04-18.md",
+    "9. 용어해설집/소프트웨어/이클립스.md",
+    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+    "4. 웹 개발/오라클.md",
+    "4. 웹 개발/커넥션 풀 API.md",
+    "4. 웹 개발/JDBC.md",
+    "4. 웹 개발/PWA.md",
+    "0. 공부목표.canvas",
+    "3학년 1학기.canvas",
+    "노트필기방법.canvas",
+    "웹 개발.canvas",
+    "컴퓨터과학.canvas",
+    "9. 용어해설집/코드컨벤션.md",
+    "9. 용어해설집/클린코드.md",
+    "99. 메모/Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
+    "4. 웹 개발/JSP.md",
+    "9. 용어해설집/소프트웨어/디자인 패턴/MVC 패턴.md",
+    "9. 용어해설집/소프트웨어/오퍼레이션.md",
+    "9. 용어해설집/소프트웨어/API",
+    "1. 데이터/데이터베이스.md",
+    "4. 웹 개발/Servlet.md",
+    "9. 용어해설집/소프트웨어/CRUD.md",
+    "데일리 노트/2023-04-17.md",
+    "5. 프로그래밍 언어/Java.md",
     "img/Pasted image 20230417164711.png",
     "9. 용어해설집/소프트웨어/아스키 코드.md",
     "9. 용어해설집/소프트웨어/헤시함수.md",
     "img/Pasted image 20230417164145.png",
-    "5. 프로그래밍 언어/Java.md",
     "3. 소프트웨어 공학/프로그래밍 언어론.md",
-    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
     "정보처리기사/2. 소프트웨어 개발.md",
     "img/Pasted image 20230417151630.png",
     "img/Pasted image 20230417151555.png",
     "img/Pasted image 20230417151414.png",
-    "9. 용어해설집/소프트웨어/이클립스.md",
     "img/Pasted image 20230417151111.png",
     "img/Pasted image 20230417151033.png",
     "img/Pasted image 20230417150653.png",
-    "데일리 노트/2023-04-17.md",
-    "1. 데이터/데이터베이스.md",
-    "4. 웹 개발/오라클.md",
     "img/Pasted image 20230417124200.png",
-    "웹 개발.canvas",
-    "0. 공부목표.canvas",
     "0. 공부 목표/Coding Interview University.md",
-    "컴퓨터과학.canvas",
-    "4. 웹 개발/JSP.md",
     "99. 메모",
     "img/Pasted image 20230417094631.png",
-    "img/Pasted image 20230417094303.png",
     "데일리 노트/2023-04-14.md",
     "4. 웹 개발/웹 스토리지.md",
-    "4. 웹 개발/HTTP.md",
-    "데일리 노트/2023-04-15.md",
-    "5. 프로그래밍 언어/프레임워크/Vue.js.md",
-    "5. 프로그래밍 언어/프레임워크/React.js.md",
-    "5. 프로그래밍 언어/프레임워크/Node JS.md",
-    "5. 프로그래밍 언어/프레임워크/Augulor.md",
-    "5. 프로그래밍 언어/스타일 시트/CSS 프레임워크.md",
-    "4. 웹 개발/웹 어셈블리.md",
-    "4. 웹 개발/PWA.md",
-    "2. 컴퓨터과학 개론/인공지능.md",
-    "3학년 1학기.canvas",
-    "Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
-    "9. 용어해설집/소프트웨어/파라미터.md",
     "9. 용어해설집/소프트웨어/백엔드",
-    "노트필기방법.canvas",
     "TCP",
     "6. 영어",
     "9. 용어해설집/소프트웨어",
@@ -330,7 +344,6 @@
     "수업노트",
     "마크다운 사용법",
     "정보처리기사/자격증.canvas",
-    "정보처리기사/정보처리기사 필기, 5과목 정보시스템 구축 관 c3e23d19a6684999a35f934c69af5f4c",
-    "정보처리기사/정보처리기사 필기, 4과목 프로그래밍 언어 활ᄋ d17101021a174d90a1e18a14fc38b60c"
+    "정보처리기사/정보처리기사 필기, 5과목 정보시스템 구축 관 c3e23d19a6684999a35f934c69af5f4c"
   ]
 }

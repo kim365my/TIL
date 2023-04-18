@@ -117,8 +117,10 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 	- 이동하려면 html에서 하는 것과 동일하게 `./`을 넣고 이동할 파일명을 적어주면 됨
 
 
-# JSP 기본 문법
-## JSP 내장객체 (이외에도 존재)
+
+# JSP 내장객체 (이외에도 존재)
+
+## 스코프
 | 객체명      | 서블릿 코드                             |  설명   |
 | ----------- | --------------------------------------- | --- |
 | page        | JSP에서만 존재하는 듯 #질문             |     |
@@ -132,6 +134,8 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 - [[Scope|스코프]] 관련 객체들은 `get/setAttribute("keyname", Object)` 메소드를 가지는 데 이를 통해서 데이터를 공유가 가능
 - request는 `get/setParamter`이라는 파라미터 값을 받는 메소드가 존재 위의 Attributer와 어떤 차이가 있지? #질문 
 
+
+# JSP 기본 문법
 ### JSP에서 session 로그인 처리하기
 
 - session의 유지시간은 밀리세컨드로 받음
@@ -235,6 +239,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 - <jsp:setProperty>
 	- [[자바빈]]과 파라미터 값의 name이 동일시 property 속성을 `*`로 지정하면 전송된 매개변수 이름과 자바빈 멤버변수를 비교하고 값을 자동으로 모두 넘겨줌
 		- 같은 데이터 타입으로 맞추기(String으로 넘겨 받으니까 멤버변수를 String으로 작성하는 것이 중요)
+	- 이외에 value 속성을 통해 값을 설정해주는 것도 가능
 - <jsp:getProperty>
 	- 문자열로 출력되니까 HTML에서 결과값을 보고 싶을 경우 사용
 ### 포워딩, 바인딩하기

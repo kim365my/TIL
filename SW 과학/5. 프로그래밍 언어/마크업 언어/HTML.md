@@ -115,9 +115,13 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
     - 더 알아보고 싶다면 → [컴퓨터 데이터의 표현](https://www.notion.so/7ac659862cf34af69b082828c86923cd)
 ---
 ## 3. 아이콘 HTML에 추가하기(with font aswse)
+
+
 - 참고링크
 	- [폰트어썸5 사용법](https://www.daleseo.com/font-awesome/)
 	- [웹디자인에 꼭 필요한 무료 아이콘 사이트 3곳](https://smartsolar.tistory.com/entry/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%90-%EA%BC%AD-%ED%95%84%EC%9A%94%ED%95%9C-%EB%AC%B4%EB%A3%8C-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%82%AC%EC%9D%B4%ED%8A%B8-3%EA%B3%B3)
+
+
 ## 4. SEO(search engine optimization)란? #SEO
 
 > HTML로 만들면서 SEO를 하는 2가지 방법(메타 태그, [[HTML#시멘틱 태그|시맨틱 태그]])
