@@ -1,7 +1,7 @@
 {
   "promptDelete": false,
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "img",
+  "attachmentFolderPath": "99. 기타/img",
   "trashOption": "none",
   "newFileLocation": "current",
   "showLineNumber": true,
@@ -14,5 +14,8 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "defaultViewMode": "source"
+  "defaultViewMode": "source",
+  "userIgnoreFilters": [
+    "99. 메모/데일리 노트/"
+  ]
 }

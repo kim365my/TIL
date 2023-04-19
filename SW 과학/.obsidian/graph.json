@@ -6,7 +6,36 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:\"4. 웹 개발\"",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:\"2. 컴퓨터과학 개론\"",
+      "color": {
+        "a": 1,
+        "rgb": 11492566
+      }
+    },
+    {
+      "query": "path:\"9. 용어해설집\"",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "path:\"5. 프로그래밍 언어\"",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.6905660954368303,
-  "close": true
+  "scale": 0.6905660954368308,
+  "close": false
 }

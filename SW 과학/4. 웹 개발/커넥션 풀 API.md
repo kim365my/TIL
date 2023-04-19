@@ -99,3 +99,38 @@ public class MemberDAO {
 	    url="jdbc:oracle:thin:@localhost:1521:xe" username="hr" />
 	```
 	- name과 MemberDAO에서 설정한 ds lookup의 값을 맞춰줘야 함
+
+# 커넥션 풀 흐름
+```mermaid
+graph LR
+  브라우저--request--> JSP --커넥션 풀 API 등--> DB[("DB")]
+```
+1. dbConn()으로 DB 연결
+2. 쿼리문 세팅
+	- prepareStatement객체는 DB에 값을 편하게 넣기 위해 사용
+	- ???를 통해서
+3. 세팅한 쿼리문 실행
+4. 자원 반납(DB 닫기)
+	- DB가 계속 열려있으면 죽어버리거나 과부화될 수 있음
+---
+- 데이터는 다 레코드셋 타입
+- ⚠️ 인용부호안에 물음표를 넣으면 안됨
+- 아이디 값은 거의 PK로 사용되니까 변하지 않음
+- SQL 커밋은 웹상에서 접속했을 경우 자동으로 이뤄지고 우리가 수동접속하면 수동으로 해야함
+
+## DB에 접속하기 위한 비지니스 로직
+- insert, update, delete의 흐름
+	1. DB연결
+	2. 쿼리문 세팅
+	3. 세팅한 쿼리문 실행 : `pstml.executeUpdate();`
+		- insert, update, delete시 사용 (int로 성공여부를 반환됨)
+		- select만 특이하게 다른 쿼리문을 사용
+	4. 자원 반납
+- Read의 흐름
+	1. MemberDAO의 selectMember()를 호출해서 자바빈 자료형이나 객체배열에 담기
+	2. selectMember() 메소드의 흐름
+		1. DB연결
+		2. 쿼리문 세팅
+		3. 세팅한 쿼리문 실행 : `pstml.executeQuery();`
+		4. 자원 반납
+

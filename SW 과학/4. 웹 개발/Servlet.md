@@ -228,7 +228,7 @@ public class HelloServlet3 extends HttpServlet {
 ![[포워딩#포워딩이란?]]
 
 ### 포워딩 메소드
-![[포워딩#서블릿의 포워드 기능 메소드]]
+![[포워딩#서블릿의 포워드 방법]]
 
 ## [[바인딩]] binding
 ![[바인딩#바인딩이란?]]

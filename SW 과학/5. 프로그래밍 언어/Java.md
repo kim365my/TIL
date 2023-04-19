@@ -36,7 +36,7 @@ aliases : 자바
 
 
 
-# 자바 기초 문법
+# 자바 문법
 ```java
 import java.util.Scanner;
 public class HelloWorld{
@@ -58,6 +58,47 @@ public class HelloWorld{
 
 - 작성 순서 : 접근제어자 - 메모리공간 - 리턴타입- 메소드명
 - implements는 클래스명 뒤에 작성
+
+## 콘솔 입출력방식
+### 출력하기
+|         | 줄바꿈 | 예시                               |
+| ------- | ------ | ---------------------------------- |
+| print   | ❌     | System.out.print("Hello Word!");   |
+| println | ⭕     | System.out.println("Hello Word!"); |
+| printf  | ❌ | System.out.printf(”출력방식 %*”, 콘솔출력변수); |
+
+1.  개행
+    ```java
+    System.out.println("icon"
+    				+ "Computer");
+    ```
+2.  Escapse 문자 ( `\\n` 등)
+    ```java
+    System.out.println(str2 + "\\n"); // 줄 바꿈
+    System.out.println("Hello \\"World!\\""); // \\를 통해서 특수문자를 콘솔표시가능
+    ```
+#### 출력양식 변환기호
+|     | 설명                                                          |
+| --- | ------------------------------------------------------------- |
+| %d  | 정수형 출력                                                   |
+| %f  | 부동소수점 출력(소수점 6자리까지 출력하고 7자리에서는 반올림) <br>%.2f식으로 소수점 조절가능|
+| %s  | 문자열 길이만큼 출력공간 확보       |
+
+### 입력하기(java.util.Scanner)
+```java
+package outprint;
+import java.util.Scanner; // 포함시키지 않으면 오류
+
+public class Operator2 {
+	public static void main(String[] args) {
+	// Scanner scan = new Scanner(System.in);
+		java.util.Scanner scan = new java.util.Scanner(System.in);
+		String input = scan.nextLine();
+		System.out.println(input);
+	}
+}
+```
+- 자바 util의 Scanner 객체를 이용해야 함
 
 
 ## 데이터 타입
@@ -138,6 +179,7 @@ public class HelloWorld{
 | 멤버변수 | 접근제어자 모두, final, static               |
 | 지역변수 | final                                        |
 | 초기화블록  | static 등                                  |
+
 
 
 
