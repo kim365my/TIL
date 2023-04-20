@@ -15,8 +15,14 @@ aliases : 자바
 - **자바의 네이밍 규칙**
 	- 대문자 : 프로젝트 / 소스파일
 	- 소문자 : 패키지
+- 자바 공식 문서 보는 법 : api documentation java검색
+	- 참고 문서
+		- [Java Platform, Standard Edition Java API Reference](https://docs.oracle.com/en/java/javase/18/docs/api/)
+		- [자바 공식 문서: Learning the Java Language](https://taptorestart.tistory.com/entry/%EC%9E%90%EB%B0%94-%EA%B3%B5%EC%8B%9D-%EB%AC%B8%EC%84%9C-Learning-the-Java-Language)
 - 코드 작성형식 
 	- 람다식 : 객체지향의 단점을 극복하기 위해서 함수를 쓸 수 있게 해주는 형식
+
+
 # 자바 설치하기
 - [zulu8 오픈자바JDK](https://www.azul.com/downloads/?version=java-8-lts&os=windows&architecture=x86-64-bit&package=jdk#zulu)
 - [오라클 / 유료](https://www.oracle.com/java/technologies/downloads/)
@@ -373,6 +379,7 @@ classDiagram
 		method()
 	}
 ```
+
 ### 인터페이스 
 - 정의
 	- 일종의 추상클래스
@@ -381,6 +388,7 @@ classDiagram
 	- 자바에서는 전체 개발에 대한 설계를 인터페이스에서 한다고 생각하면 됨 
 - 특징
 	- 다중 구현이 가능, 쉼표로 구분하여 사용
+	- 생성자 사용 불가능 (= 추상메서드와 동일)
 	- 인터페이스로부터만 상속가능
 	- 리턴 타입은 인터페이스
 		- 메서드가 해당 인터페이스를 구현한 클래스의 인터페이스를 반환
@@ -430,6 +438,24 @@ classDiagram
 
 ## 멀티스레드
 ### 멀티 스레드란?
+- 스레드의 구현과 실행벙법 : 두방법 중 하나를 선택하여 run()의 구현부를 코딩을 통해 (쓰레드를 통해 작업하고자 하는 내용을) 채우는 것
+- 멀티 스레드의 2가지 방법
+	1. thread 클래스 상속 (이경우 다른 클래스를 상속 받을 수 없기 때문에 많이 사용❌)
+		```java
+		class MyTread extends Thread{
+			@Override
+			public void run(){구현코드} // Thread 메소드의 run 오버라이딩
+		}
+		```
+	2. Runable 인터페이스 구현
+		```java
+		class MyTread extends Thread implements Runnable{
+			public void run() {}; //Runnable 인터페이스 구현
+		}
+		```
+		1. run()만 정의되어 있음 public abstract void run();
+		2. 일반적인 사용방법, 재사용성이 높고, 코드의 일관성을 유지할 수 있기 때문에 좀더 객체지향에 부합하는 방법
+
 
 # 자바 기본 제공 클래스
 ## 자바 JDK (Java Development Kit)
@@ -460,8 +486,35 @@ classDiagram
 
 
 
-# 디자인 패턴
+# 자바 자주 쓰는 메소드/필드 정리
+- equals()는 여러 객체에서 오버라이딩 되는데 객체의 내용을 비교하는 데 사용됨
+	- 참조타입은 == 키워드를 사용하면 기본타입과 다르게 주소값을 비교하기 때문에 사용
+- 
 
+## String 객체
+| 메소드명            | 설명                                                 | 반환값  | 매개변수                 |
+| ------------------- | ---------------------------------------------------- | ------- | ------------------------ |
+| .length()           | 문자열 길이 계산                                     | int     |                          |
+| .replace()          | 바꿀 문자열과 대체 문자열을 작성                     |         | 바꿀 문자열, 대체 문자열 |
+| .equals()           | 해당 String과 내용을 비교해서 boolean값으로 반환해줌 | boolean |                          |
+| .equalsIgnoreCase() | 위와 동일하지만 대소문자 구분을 하지 않음            | boolean |                          |
+| .valueOf()          | 기본 타입의 값을 문자열로 변경                       |         |                          |
+
+## Integer 객체
+| 메소드명 | 설명 |
+| -------- | ---- |
+| .parseInt() | 문자열을 int로 변환(integer이외에도 다른 데이터 타입에도 많음) |
+
+## Math 객체
+| 메소드명 | 설명                        |
+| -------- | --------------------------- |
+| .PI      | 파이, 원주율값              |
+| .floor() | 내림 (소수점값을 버리는 듯) |
+| .ceil() |  올림                     |
+
+
+# 디자인 패턴
+- [[소프트웨어 디자인 패턴]]
 ## 싱글톤 패턴 Singleton Pettern
 - 인스턴스를 한개만 생성해서 사용하는 것, static에 인스턴스를 하나만 구현해놓음
 -  절대 바뀌지 않는 것을 해당 부분에 작성해둠
@@ -483,10 +536,11 @@ classDiagram
 ![[Pasted image 20230417164711.png|400]]
 
 
-# JVM의 작동과정
+# JVM이란?
 - 다른 프로그래밍언어와 동일하게 컴파일과 해석과정을 거치지만 JVM(자바 버추얼머신)이 관여하는 점에서 다른 프로그래밍 언어와 다름
 - JVM은 엔트리 포인트에서부터 클래스 코드를 읽고 작동
----
+
+## JVM의 작동 흐름
 1.  `.java` 파일이 컴파일되면 `.class` 파일이 됨 (컴파일러는 javac)
 2.  `.class`을 JVM이 실행해주는데, OS 메모리를 할당받아서 런타임 데이터 영역을 구성
 3.  클래스 로더를 통해서 클래스를 동적 로딩(load-time / run-time으로 나뉨)
@@ -497,64 +551,128 @@ classDiagram
 4.  실행엔진이 코드를 JIT 방식으로 읽음
 	-   자바는 특이하게 컴파일을 한다음 당장 안쓰는 건 코드화해놓는 것 같아, 코드화를 해놓고 필요할때 실행엔진이 JIT방식으로 번역해서 실행
 5.  코드가 실행되면서 실행엔진이 런타임데이터 영역에 데이터를 올림
-	1.  가비지 콜렉터는 힙영역을 감시, 사용하지 않는 객체를 데이터영역에서 내림
-```mermaid
-flowchart TD
-	id1[".java"]--컴파일-->id2[".class"]--실행-->id6
-	
-	subgraph JVM
-		id5["실행엔진 (Exeution Engine)"]<-->id8
-		id6["클래스 로더\\n(Class Loader)"]<-->id8
-		id5<-->id6
-		subgraph id5["실행엔진 (Exeution Engine)"]
-			JIT
-			INterPreter
-			id7["가비지 콜렉터\\n(Garbage Collector)"]
-		end
-
-		subgraph id6["클래스 로더\\n(Class Loader)"]
+	- 가비지 콜렉터는 힙영역을 감시, 사용하지 않는 객체를 데이터영역에서 내림
+- JVM 작동 도식화
+	```mermaid
+	flowchart TD
+		id1[".java"]--컴파일-->id2[".class"]--실행-->id6
 		
-		end
-
-		subgraph id8["런타임 데이터 영역 (Runtime Data Area)"]
-			subgraph id10["스레드 공유됨"]
-				id100["Heap Area"]
-				id200["Method Area"]
+		subgraph JVM
+			id5["실행엔진 (Exeution Engine)"]<-->id8
+			id6["클래스 로더\\n(Class Loader)"]<-->id8
+			id5<-->id6
+			subgraph id5["실행엔진 (Exeution Engine)"]
+				JIT
+				INterPreter
+				id7["가비지 콜렉터\\n(Garbage Collector)"]
 			end
-			subgraph id11["스레드 공유안됨"]
-				id300["Stack Area"]
-				id400["PC Register"]
-				id500["Native Method Stack"]
+	
+			subgraph id6["클래스 로더\\n(Class Loader)"]
+			
+			end
+	
+			subgraph id8["런타임 데이터 영역 (Runtime Data Area)"]
+				subgraph id10["스레드 공유됨"]
+					id100["Heap Area"]
+					id200["Method Area"]
+				end
+				subgraph id11["스레드 공유안됨"]
+					id300["Stack Area"]
+					id400["PC Register"]
+					id500["Native Method Stack"]
+				end
 			end
 		end
-	end
+	
+		subgraph id800["Native Method"]
+			id600["Interface"]
+			id700["Library"]
+			id700-->id600
+		end	
+	```
 
-	subgraph id800["Native Method"]
-		id600["Interface"]
-		id700["Library"]
-		id700-->id600
-	end	
-```
+## JVM 용어 정리
+- 스레드
+	- 프로세스(메인 스레드) : 응용 프로그램의 실행 중인 객체
+	- 스레드 : 작업단위 / 실행단위
+- 실행엔진(Exeution Enfine) : JVM을 실행
+	- 클래스 로더 (Class Loader)
+		- 클래스를 동적 로딩(load-time / run-time으로 나뉨)해줌 
+		- 클래스를 런타임 데이터 영역에 전달 이후에 실행엔진에 바이트 코드를 제공
+	- 가비지 콜렉터 (Garbage Collector)
+		- 쓸모 없어진 메모리를 회수
+	- JIT 
+		- JVM은 컴파일된 자바 코드를 자기만 읽을 수 있게 다른 방식으로 코드화한다고 함
+		- JIT는 [[프로그래밍 언어론]]에서도 말했듯이 한줄한줄 읽어서 실행하는 인더 프린터 방식의 일종
+- 런타임 데이터 영역(Runtime Data Area) : 데이터가 저장되는 영역
+	- 힙 (Heap Area)
+		- 참조 데이터가 생성되는 영역으로 가비지 콜렉터의 주요 감시 부분
+		- eden(young)과 old로 나눠짐
+	- 스택 (Stack Area)
+		- 참조 데이터의 메모리 번지값과 원시데이터가 저장되는 곳
+	- 메소드영역 (Method Area)
+		- 클래스 파일의 바이트 코드가 로드되는 곳
+		- 클래스별로 static, final, 메소드, 생성자가 올라감
+	- PC 레지스터 (PC Register)
+		- 스레드의 부분 주소가 저장되는 영역
+		- 현재 실행중인 JVM 주소를 가지고 있음
+		- #질문 이부분이 JVM을 어느 OS에서도 동작할 수 있게 해주는건가?
+	- 네이티브 메소드 스택 Native Method Stack
+		- 자바 외 언어의 네이티브 메서드를 지원하기 위한 메모리영역 (보통 C/C++ 코드 수행을 위한 스택)
 
 
 
 # 용어정리
+- 물리적 / 논리적
+	- 물리적으로 같다(= 주소값(메모리번지)가 동일하다)
+	- 논리적으로 같다(= 주소값은 다르지만 내용은 동일하다)
+- 객체 (Object) : 자바에서는 클래스를 지칭, 이를 중심으로 코드를 작성함
+- 리터널 : 변수의 값, 그자체
+- 엔트리 포인트 : 컴파일을 시작하는 시작점
+- 인스턴스 (instance) : 클래스를 사용해 만들어낸 객체로, oop의 주요 특징 중 하나
+- 오버플로우 / 언더플로우 : 데이터 형이 허용하는 최대값을 벗어나는 것
+- 스레드 (thread) : 프로세스 내에서의 작업 단위로서 시스템의 여러 자원을 할당받아 실행하는 단위
+- 오버라이드 / 오버로딩
+	- 오버라이드(override) 
+		- 슈퍼 클래스에서 정의된 메소드를 서브 클래스에서 재정의 
+		- ==메서드의 선언부는 동일, 구현부만 재정의==
+	- 오버로딩(overloading)
+		- 객체 지향에서 같은 이름의 메소드에 ==다른 매개변수==를 작성한 메소드를 만든다는 의미
+- 레퍼 클래스(Wraper Class)
+	- 자바에서 자료형은 객체가 아니니까 객체지향에 위배되기에 자료형을 객체로 감싸는 느낌으로 만든 클래스를 레퍼 클래스라고 함
+- WAS(Web app system) : 서블릿 컨테이너, 대표적으로 [[Servlet|서블릿]]에서 사용되는 아파치 톰캣이 있음
+- 제네릭 : 데이터 타입을 정하고 싶지 않을 때 사용  형식) `<e>`(e는 별 뜻 없을걸)
+- UML : 클래스 도식도
+- 어노테이션 (annotation, 주석)
+	- 소스코드에 추가해서 사용할 수 있는 메타 데이터의 일종
+	- JSP 서블릿 등에서 어노테이션을 이용한다고 함
+	- ex) @Override, @Deprecated 등
+- 디프리케이티드 (deprecated)
+	- 사전 (신조어) 중요도가 떨어져 더 이상 사용되지 않고 앞으로는 사라지게 될 (컴퓨터 시스템 기능 등) 
+	- 어노테이션 : 더 이상 사용하지 않는 기능이라고 명시할때 사용 
+	- 래퍼클래스처럼 사용을 권장하지 않는 기능을 뜻하기도 함
+- 오토파싱 
+	- 컴파일러가 자동으로 변환 코드를 삽입
+	- 래퍼클래스를 생각할것
+- 객체 직렬화
+- [[Servlet|서블릿]] : Dynamic Web Page를 만들 때 사용되는 자바 기반의 웹 어플리케이션 프로그래밍 기술
+- [[헤시함수]]
+	- 헤싱(Hasuhing) 기법에 사용되는 헤시함수를 구현
+	- 헤싱은 데이터 관리기법 중 다량의 데이터를 저장하고 검색하는데 있어 유용함
+	- 헤싱함수 = 찾고자 하는 값을 입력하면 그 값이 저장된 위치를 알려주는 헤시코드를 반환
+	- 보안에서 활용
+- [[아스키 코드]]
+## Value Object #자바VO 
+- 메소드 매개변수로 객체를 사용할 수 있음 
+- 값 객체 패턴(Value object pattern) 즉, 객체를 값처럼 쓸 수 있고, 제약사항 중 하나는 객체의 인스턴스 변수가 생성자를 통해서 일단 설정된 후에는 결코 변하지 않음을 보장한다는 것 
+-  [[자바빈]] Bean 
+	- 객체를 데이터 보관용으로 사용
+	- 데이터의 무결성을 위해 private으로 멤버변수를 설정
+- 자바 DTO
+	- 데이터 이외에 메소드도 있는거
+- 참고 문서
+	- [Java-VOValue-Object란](https://velog.io/@livenow/Java-VOValue-Object%EB%9E%80)
+	- [DAO, DTO, VO](https://velog.io/@ruinak_4127/DAO-vs-DTO-vs-VO)
 
 
-## 오버라이드 / 오버로딩
-- 오버라이드(override) 
-	- 슈퍼 클래스에서 정의된 메소드를 서브 클래스에서 재정의 
-	- ==메서드의 선언부는 동일, 구현부만 재정의==
-- 오버로딩(overloading)
-	- 객체 지향에서 같은 이름의 메소드에 ==다른 매개변수==를 작성한 메소드를 만든다는 의미
-
-
-## 레퍼 클래스(Wraper Class)
-- 자바에서 자료형은 객체가 아니니까 객체지향에 위배되기에 자료형을 객체로 감싸는 느낌으로 만든 클래스를 레퍼 클래스라고 함
-
-
-## 자바VO #자바VO 
-- 메소드 매개변수로 객체를 사용할 수 있음 #설명추가필요
-
-
-
+# 참고 문서

@@ -1,84 +1,45 @@
 {
   "main": {
-    "id": "f8699187e18f68be",
+    "id": "8e711f2b2d82fa70",
     "type": "split",
     "children": [
       {
-        "id": "127722a01b0acc7c",
+        "id": "a911236b5c5d884a",
         "type": "tabs",
         "children": [
           {
-            "id": "916ad6a75684a3a3",
+            "id": "b2eed27b86317758",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "99. 기타/데일리 노트/2023-04-20.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "30b54c25e319d955",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. 웹 개발/웹 브라우저.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7934d1dd8451eaee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "4. 웹 개발/웹 개발론.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "57493cf7a1e1e4f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. 웹 개발/웹 디자인.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9558368337b70317",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "547c8414a9fe8c06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1. 데이터/데이터베이스.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "60965799889ae650",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. 웹 개발/JSP.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c2127caf5d828a3e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "9. 용어해설집/소프트웨어/이클립스.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,39 +48,20 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "bf9e832ce5eb20ff",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f880bc7d6783e73f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. 웹 개발/웹 개발론.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "4ace5938f515d7e9",
+    "id": "bb7ea878bb561f35",
     "type": "split",
     "children": [
       {
-        "id": "dd3b39388fbc00da",
+        "id": "39630d77485ef61a",
         "type": "tabs",
         "children": [
           {
-            "id": "235bb72f847da6e8",
+            "id": "92adc524f583e33d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -129,30 +71,86 @@
             }
           },
           {
-            "id": "5fc88d40cbf00fb6",
+            "id": "1a20c4f37a683e2c",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "font",
+                "query": "2c579d",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
             }
           },
           {
-            "id": "e93bae7cdd203bf8",
+            "id": "fc7370033c56edf1",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "c6ac381c0c76878d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dfa81541d743652e",
+        "type": "tabs",
+        "dimension": 67.01923076923076,
+        "children": [
+          {
+            "id": "0a5bac5d777b6b6b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "4. 웹 개발/웹 브라우저.md"
+              }
+            }
           },
           {
-            "id": "f29afc5ab71cc401",
+            "id": "e6825597d95b7519",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "4. 웹 개발/웹 브라우저.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d82d2b89ff5be0ec",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "4. 웹 개발/웹 브라우저.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5fa728c76ddc8b81",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -161,72 +159,9 @@
                 "useHierarchy": true
               }
             }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
-  },
-  "right": {
-    "id": "10c1aa1ebe2f8f6a",
-    "type": "split",
-    "children": [
-      {
-        "id": "422867e0e1bcf3da",
-        "type": "tabs",
-        "dimension": 66.98564593301435,
-        "children": [
-          {
-            "id": "0428bff858c0dbd0",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "4. 웹 개발/웹 디자인.md"
-              }
-            }
           },
           {
-            "id": "6eae2d85ccfe3603",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "4. 웹 개발/웹 디자인.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "813ee55d2d0fb340",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "4. 웹 개발/웹 디자인.md",
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "16061cec974e399c",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "5df68d6c0d6107ae",
+            "id": "cd4cb9c8b74b4c9e",
             "type": "leaf",
             "state": {
               "type": "ReferenceListView",
@@ -236,133 +171,46 @@
         ]
       },
       {
-        "id": "4c27f8893d51138b",
+        "id": "a12f6cb927b52f3c",
         "type": "tabs",
-        "dimension": 33.014354066985646,
+        "dimension": 32.98076923076923,
         "children": [
           {
-            "id": "aa1112bc6bc13184",
+            "id": "589e0935997caacb",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
-            }
-          },
-          {
-            "id": "43046c19dbaa0fad",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "4. 웹 개발/웹 디자인.md",
-                "options": {
-                  "collapse-filter": false,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": true,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": false,
-                  "colorGroups": [
-                    {
-                      "query": "path:\"데일리 노트\"",
-                      "color": {
-                        "a": 1,
-                        "rgb": 14701138
-                      }
-                    }
-                  ],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.7514342322277602,
-                  "close": true
-                }
-              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 218.5
+    "width": 245.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:새 캔버스 만들기": false,
       "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "57493cf7a1e1e4f5",
+  "active": "30b54c25e319d955",
   "lastOpenFiles": [
-    "99. 기타/img/Pasted image 20230419211301.png",
-    "99. 기타/img/Pasted image 20230419211132.png",
-    "99. 기타/img/Pasted image 20230419211109.png",
-    "99. 기타/img/Pasted image 20230419211041.png",
     "4. 웹 개발/웹 개발론.md",
-    "4. 웹 개발/웹 디자인.md",
-    "8. 디자인/포토샵.md",
-    "8. 디자인/디자인 효과.md",
-    "9. 용어해설집/코드컨벤션.md",
-    "99. 템플릿/데일리 노트.md",
-    "99. 템플릿",
-    "99. 기타/정보처리기사/정보처리기사 필기, 5과목 정보시스템 구축 관 c3e23d19a6684999a35f934c69af5f4c/image5.png",
-    "99. 기타/정보처리기사/정보처리기사 필기, 5과목 정보시스템 구축 관 c3e23d19a6684999a35f934c69af5f4c/image6.png",
-    "99. 기타/정보처리기사/정보처리기사 필기, 5과목 정보시스템 구축 관 c3e23d19a6684999a35f934c69af5f4c/image4.gif",
-    "99. 기타/정보처리기사/정보처리기사 필기, 5과목 정보시스템 구축 관 c3e23d19a6684999a35f934c69af5f4c/image3.png",
-    "99. 기타/정보처리기사/정보처리기사 필기, 4과목 프로그래밍 언어 활ᄋ d17101021a174d90a1e18a14fc38b60c/image4.png",
-    "99. 기타/정보처리기사/정보처리기사 필기, 4과목 프로그래밍 언어 활ᄋ d17101021a174d90a1e18a14fc38b60c/image5.png",
-    "99. 기타/정보처리기사/정보처리기사 필기, 5과목 정보시스템 구축 관 c3e23d19a6684999a35f934c69af5f4c/image1.gif",
-    "99. 기타/정보처리기사/정보처리기사.md",
-    "99. 기타/정보처리기사/정보처리기사 필기, 5과목 정보시스템 구축 관 c3e23d19a6684999a35f934c69af5f4c",
-    "99. 기타/정보처리기사/정보처리기사 필기, 4과목 프로그래밍 언어 활ᄋ d17101021a174d90a1e18a14fc38b60c",
-    "99. 기타/정보처리기사/정보처리기사 필기, 3과목 데이터베이스 구축 무ᄅ 1a1c1c31c4dc405dad9b50753588a4bc",
-    "99. 기타/정보처리기사/자격증.canvas",
-    "99. 기타/정보처리기사/5. 정보시스템 구축 관리.md",
-    "99. 기타/정보처리기사/정보처리기사 필기, 2과목 소프트웨어 개발 무료ᄀ 31d0cdc6647a4f2c98fb48fdcd7d5458",
-    "99. 기타/정보처리기사/정보처리기사 필기, 1과목 소프트웨어 설계 무료ᄀ 0d5432921ef740afb4edd35688908660",
-    "99. 기타/정보처리기사/3. 데이터베이스 구축.md",
-    "99. 기타/정보처리기사/4. 프로그래밍 언어 활용.md",
-    "99. 기타/정보처리기사/1. 소프트웨어 설계.md",
-    "99. 기타/정보처리기사/2. 소프트웨어 개발.md",
-    "99. 기타/정보처리기사",
-    "99. 기타/마크다운 사용법/옵시디언.md",
-    "99. 기타/마크다운 사용법/La Tex 수식.md",
-    "99. 기타/마크다운 사용법",
-    "99. 기타/데일리 노트/2023-04-19.md",
-    "99. 기타/데일리 노트/2023-04-18.md",
-    "99. 기타/데일리 노트/2023-04-15.md",
-    "99. 기타/데일리 노트/2023-04-14.md",
+    "4. 웹 개발/웹 브라우저.md",
+    "5. 프로그래밍 언어/JS.md",
+    "9. 용어해설집/IDE/VSC.md",
+    "9. 용어해설집/IDE/이클립스.md",
+    "9. 용어해설집/IDE",
+    "99. 기타/데일리 노트/2023-04-20.md",
+    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
     "99. 기타/데일리 노트/2023-04-17.md",
-    "99. 기타/데일리 노트/2023-04-12.md",
-    "99. 기타/데일리 노트/2023-04-13.md",
-    "99. 기타/데일리 노트/2023-04-11.md",
-    "99. 기타/데일리 노트/2023-04-10.md",
-    "99. 기타/데일리 노트",
-    "99. 기타/img/하드웨어 사진",
-    "99. 기타/img/img.md",
-    "99. 기타/Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
-    "5. 프로그래밍 언어/마크업 언어/HTML.md",
-    "0. 공부목표.canvas",
-    "3학년 1학기.canvas",
-    "노트필기방법.canvas",
     "웹 개발.canvas",
-    "컴퓨터과학.canvas",
-    "99. 메모/Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
-    "정보처리기사/자격증.canvas"
+    "99. 기타/img/Pasted image 20230412092551.png"
   ]
 }
