@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. 웹 개발/웹 브라우저.md",
+                "file": "5. 프로그래밍 언어/마크업 언어/HTML.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -93,13 +93,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c6ac381c0c76878d",
@@ -116,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. 웹 개발/웹 브라우저.md"
+                "file": "5. 프로그래밍 언어/마크업 언어/HTML.md"
               }
             }
           },
@@ -126,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. 웹 개발/웹 브라우저.md",
+                "file": "5. 프로그래밍 언어/마크업 언어/HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. 웹 개발/웹 브라우저.md",
+                "file": "5. 프로그래밍 언어/마크업 언어/HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,8 +199,9 @@
   },
   "active": "30b54c25e319d955",
   "lastOpenFiles": [
-    "4. 웹 개발/웹 개발론.md",
+    "4. 웹 개발/HTTP.md",
     "4. 웹 개발/웹 브라우저.md",
+    "4. 웹 개발/웹 개발론.md",
     "5. 프로그래밍 언어/JS.md",
     "9. 용어해설집/IDE/VSC.md",
     "9. 용어해설집/IDE/이클립스.md",
