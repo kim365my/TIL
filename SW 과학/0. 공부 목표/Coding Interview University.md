@@ -11,7 +11,8 @@
 >
 > *행운을 빕니다!*
 
----
+
+
 # 공부계획
 
 ## 1. 이건 대체 뭐하는 건가요?
@@ -27,7 +28,8 @@
 
 주의) 이 글은 **소프트웨어 엔지니어**가 되기 위한 계획이지 웹 개발을 배우기 위한 것이 아닙니다.구글, 아마존, 페이스북 그리고 마이크로소프트 같은 대기업은 소프트웨어 엔지니어링이랑 웹 개발을 서로 다른 것으로 봅니다. 예를 들어, 아마존에는 프론트엔드 엔지니어와 소프트웨어 개발 엔지니어가 있습니다. 이 두 역할은 서로 나뉘어져있으므로 면접 역시 같게 보진 않을 것이고, 갖추어야할 역량 역시 다릅니다. 위의 회사들은 소프트웨어 개발자/엔지니어 역할에 좀 더 전문적인 컴퓨터 과학 지식을 요구합니다.
 
----
+
+
 
 
 ## 2. 이걸 왜 해야하죠?
@@ -781,7 +783,7 @@ Skiena의 책(아래의 책 섹션 참조)과 인터뷰 책에서 더 많은 그
     - [ ] [Local pairwise sequence alignment (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/WnNau/local-pairwise-sequence-alignment)
 
 - ### 디자인 패턴
-  - [ ] [Quick UML review (video)](https://www.youtube.com/watch?v=3cmzqZzwNDM&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc&index=3)
+  - [ ] [Quick [[UML]] review (video)](https://www.youtube.com/watch?v=3cmzqZzwNDM&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc&index=3)
   - [ ] 아래 패턴들을 배워봅시다:
     - [ ] strategy
     - [ ] singleton
@@ -1097,7 +1099,8 @@ Skiena의 책(아래의 책 섹션 참조)과 인터뷰 책에서 더 많은 그
     - [Design a URL-shortener system: copied from above](http://www.hiredintech.com/system-design/the-system-design-process/)
     - [Design a cache system](https://www.adayinthelifeof.nl/2011/02/06/memcache-internals/)
 
----
+
+
 
 ## 9. 최종 검토
 
@@ -1111,13 +1114,15 @@ Skiena의 책(아래의 책 섹션 참조)과 인터뷰 책에서 더 많은 그
 - [ ] [Sedgewick Videos - Algorithms I](https://www.coursera.org/learn/algorithms-part1)
 - [ ] [Sedgewick Videos - Algorithms II](https://www.coursera.org/learn/algorithms-part2)
 
----
 
 
 
 
 
----
+
+
+
+
 # 코딩 문제 연습
 
 이제 당신은 위의 컴퓨터 과학 주제들을 모두 알고 있으므로, 코딩 문제에 답하는 것을 연습할 차례이다.
@@ -1257,13 +1262,15 @@ Challenge repos:
 
 끝난게 아니니까요.
 
----
+
+
 # 옵션
 
 - 아래의 모든 것들은 선택 사항이다.
 - 당신은 이것들을 공부함으로써 더 많은 CS 개념들에 대해 알 수 있을 것이며, 소프트웨어 엔지니어링 직업을 준비하는 데에도 도움이 될 것이다. 더불어 당신은 훨씬 더 균형 잡힌 소프트웨어 엔지니어가 될 것이다.
 
----
+
+
 
 ## 1. Additional Books
 
@@ -1648,7 +1655,8 @@ Challenge repos:
     - [Machine Learning for Software Engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers)
     - Data School: <http://www.dataschool.io/>
 
----
+
+
 
 ## 3. 몇몇 주제에 대한 세부사항
 
@@ -1763,7 +1771,7 @@ Challenge repos:
 
 - [UC Berkeley 61C: Machine Structures (26 videos)](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iCl2-D-FS5mk0jFF6cYSJs_)
 
-- [OOSE: Software Dev Using UML and Java (21 videos)](https://www.youtube.com/playlist?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
+- [OOSE: Software Dev Using [[UML]] and Java (21 videos)](https://www.youtube.com/playlist?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
 
 - ~~[UC Berkeley CS 152: Computer Architecture and Engineering (20 videos)](https://www.youtube.com/watch?v=UH0QYvtP7Rk&index=20&list=PLkFD6_40KJIwEiwQx1dACXwh-2Fuo32qr)~~
 
@@ -1871,7 +1879,8 @@ Challenge repos:
 
 
 
----
+
+
 # 프로그래밍 언어별 요약카드
 
 - C

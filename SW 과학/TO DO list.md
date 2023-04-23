@@ -54,6 +54,11 @@
 - 도서 페이지
 - 마이 페이지
 - 이벤트 페이지
+
+### 디자인 시안
+
+
+
 ## 주요 사용기능
 - 프론트
 	- HTML 네이밍 신경쓰면서 하기
@@ -74,3 +79,10 @@
 	- DB 테이블 이름 : kyo_member
 - ProductVO : 제품정보
 	- id, name, author, price, publisher, publicationDate
+
+
+
+# 관련 자격증
+- [ ] 웹 디자인 기능사
+- [ ] 정보처리기사 <- 빠르게 따는게 좋음
+- [ ] SQL D 자격증?

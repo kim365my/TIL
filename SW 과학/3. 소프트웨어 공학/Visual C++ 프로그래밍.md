@@ -1,6 +1,7 @@
 프로그래밍 언어 : [[C++]]
 
----
+
+
 <details>
     <summary>파일 이름 정할 시 앞의 접두사 정리</summary>
 	<ul>
@@ -11,7 +12,8 @@
 </ul>
 </details>
 
----
+
+
 # 개요
 
 - 운영체제는 3가지 [동적 연결 라이브러리](https://www.notion.so/94b78ef4a5da455caad3f39be00f2fb7) (DLL)로 구성됨 (1)kernel 2) User 3)GDL)

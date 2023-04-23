@@ -2,11 +2,13 @@
 - 연관문서 : 
 - 참고문서
 - [[Mobile/Android] 안드로이드 프로그래밍 입문](https://pangtrue.tistory.com/86)
----
+
+
 📌 안드로이드 프로그램은 java 기반 (따라서 자바 숙지 필수)
 	안드로이드의 표준 IDE : Android Studio
 
----
+
+
 # 0.1. 개요
 
 Android Studio를 설치한 후 가장 먼저 가상 디바이스(애뮬레이터)를 설치해야 한다.

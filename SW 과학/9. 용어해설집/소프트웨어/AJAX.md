@@ -7,4 +7,5 @@
     2.  서버로부터 데이터를 받고 작업을 수행 
 - 참고문서
 	-  [Ajax 시작하기 - 웹 개발자 안내서 | MDN](https://developer.mozilla.org/ko/docs/Web/Guide/AJAX/Getting_Started)
----
+
+

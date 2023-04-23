@@ -2,7 +2,7 @@
   "theme": "moonstone",
   "lightStyle": "minimal-light",
   "darkStyle": "minimal-dark",
-  "lightScheme": "minimal-notion-light",
+  "lightScheme": "minimal-catppuccin-light",
   "darkScheme": "minimal-atom-dark",
   "editorFont": "",
   "lineHeight": 1.5,
