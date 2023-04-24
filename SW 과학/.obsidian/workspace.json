@@ -1,80 +1,40 @@
 {
   "main": {
-    "id": "8e711f2b2d82fa70",
+    "id": "6d18a1e15f1b009e",
     "type": "split",
     "children": [
       {
-        "id": "c85a11d074684a31",
+        "id": "7f02a1c53eaeb226",
         "type": "tabs",
         "children": [
           {
-            "id": "c2c7d944d197922c",
+            "id": "b85ac6564a014aaa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. 웹 개발/JDBC.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "08b8067efe66f718",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. 웹 개발/Web API.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "67fbd8f2335c4a99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. 웹 개발/웹 개발론.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2c9cb6fac0b32153",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
+                "file": "Anki.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "bb7ea878bb561f35",
+    "id": "54550629f8e6e2d9",
     "type": "split",
     "children": [
       {
-        "id": "39630d77485ef61a",
+        "id": "60d84d04f09643de",
         "type": "tabs",
         "children": [
           {
-            "id": "92adc524f583e33d",
+            "id": "5121c4c751dca168",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -84,22 +44,22 @@
             }
           },
           {
-            "id": "1a20c4f37a683e2c",
+            "id": "f8f607b4344df2cf",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#비지니스_로직",
+                "query": "참고",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
-                "extraContext": true,
+                "collapseAll": false,
+                "extraContext": false,
                 "sortOrder": "alphabetical"
               }
             }
           },
           {
-            "id": "fc7370033c56edf1",
+            "id": "64d46896565e1c45",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -110,35 +70,34 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
-    "id": "c6ac381c0c76878d",
+    "id": "b835c88157d3074d",
     "type": "split",
     "children": [
       {
-        "id": "dfa81541d743652e",
+        "id": "f584d0d70c683c2d",
         "type": "tabs",
-        "dimension": 67.05426356589147,
+        "dimension": 67.73255813953489,
         "children": [
           {
-            "id": "0a5bac5d777b6b6b",
+            "id": "560d99ac017cda49",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md"
+                "file": "Anki.md"
               }
             }
           },
           {
-            "id": "e6825597d95b7519",
+            "id": "12d2065f883748c3",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
+                "file": "Anki.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,19 +109,19 @@
             }
           },
           {
-            "id": "d82d2b89ff5be0ec",
+            "id": "c05b4d5eebdab729",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
+                "file": "Anki.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "5fa728c76ddc8b81",
+            "id": "9a62c47c516a128f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -173,30 +132,22 @@
             }
           },
           {
-            "id": "cd4cb9c8b74b4c9e",
+            "id": "02b4dc9a39cd05d6",
             "type": "leaf",
             "state": {
               "type": "ReferenceListView",
-              "state": {}
-            }
-          },
-          {
-            "id": "8897c6fdc4db55a1",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
               "state": {}
             }
           }
         ]
       },
       {
-        "id": "a12f6cb927b52f3c",
+        "id": "4523ed5fc307716e",
         "type": "tabs",
-        "dimension": 32.945736434108525,
+        "dimension": 32.26744186046512,
         "children": [
           {
-            "id": "589e0935997caacb",
+            "id": "3e53a94a9909c3e9",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -207,7 +158,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 258.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,50 +167,38 @@
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "2c9cb6fac0b32153",
+  "active": "b85ac6564a014aaa",
   "lastOpenFiles": [
-    "4. 웹 개발/웹 개발론.md",
-    "5. 프로그래밍 언어/마크업 언어/HTML.md",
-    "5. 프로그래밍 언어/스타일 시트/CSS.md",
-    "99. 기타/데일리 노트/2023-04-24.md",
-    "99. 기타/데일리 노트/2023-04-22.md",
-    "99. 기타/데일리 노트/2023-04-21.md",
-    "4. 웹 개발/JDBC.md",
-    "4. 웹 개발/커넥션 풀 API.md",
-    "99. 템플릿/HTML, CSS 폼.md",
-    "5. 프로그래밍 언어/라이브러리/JQuery.md",
+    "TO DO list.md",
     "4. 웹 개발/웹 브라우저.md",
-    "4. 웹 개발/Web API.md",
-    "4. 웹 개발/Servlet.md",
-    "4. 웹 개발/PWA.md",
     "4. 웹 개발/웹 스토리지.md",
-    "4. 웹 개발/저장공간",
-    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
-    "4. 웹 개발/웹 디자인.md",
-    "99. 기타/데일리 노트/2023-04-20.md",
-    "99. 기타/데일리 노트/2023-04-23.md",
-    "5. 프로그래밍 언어/JS.md",
-    "5. 프로그래밍 언어/프레임워크/Vue.js.md",
-    "4. 웹 개발/Web Kit.md",
-    "9. 용어해설집/IDE/VSC.md",
-    "99. 기타/카페24 가입.md",
-    "99. 기타/img/Pasted image 20230424122736.png",
-    "9. 용어해설집/소프트웨어/파라미터.md",
+    "4. 웹 개발/웹 어셈블리.md",
+    "4. 웹 개발/자바빈.md",
+    "4. 웹 개발/JDBC.md",
     "4. 웹 개발/JSP.md",
-    "99. 기타/img/Pasted image 20230423162855.png",
+    "4. 웹 개발/HTTP.md",
+    "4. 웹 개발/Servlet.md",
+    "4. 웹 개발/Web Kit.md",
+    "4. 웹 개발/Web API.md",
+    "4. 웹 개발/PWA.md",
+    "4. 웹 개발/커넥션 풀 API.md",
+    "4. 웹 개발/웹 디자인.md",
+    "4. 웹 개발/웹 개발론.md",
+    "99. 기타/노트필기 메모/옵시디언.md",
+    "99. 기타/정보처리기사/1. 소프트웨어 설계.md",
+    "99. 기타/노트필기 메모/에버그린 노트 정리방식.md",
+    "99. 기타/노트필기 메모/La Tex 수식.md",
     "노트필기방법.canvas",
-    "99. 기타/img/마크업언어_설명이미지.png",
-    "99. 기타/img/하드웨어 사진/네트워크 크기 단위.png",
-    "99. 기타/img/하드웨어 사진/검색엔진모듈.png",
-    "99. 기타/img/하드웨어 사진/검색엔진_효율성.png",
-    "99. 기타/img/하드웨어 사진/검색모델.png",
-    "99. 기타/img/2 (3).png",
-    "99. 기타/img/4. 노드확장_왼쪽.png",
-    "99. 기타/img/4. 노드확장_아래쪽.png",
-    "9. 용어해설집/IDE",
-    "웹 개발.canvas"
+    "99. 기타/카페24 가입.md",
+    "유용한 사이트 정리.md",
+    "99. 기타/데일리 노트/2023-04-24.md",
+    "5. 프로그래밍 언어/스타일 시트/CSS.md",
+    "5. 프로그래밍 언어/프레임워크/Node JS.md",
+    "5. 프로그래밍 언어/C++.md",
+    "0. 공부 목표/Coding Interview University.md"
   ]
 }

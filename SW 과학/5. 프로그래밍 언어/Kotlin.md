@@ -1,7 +1,6 @@
-- tag : 
-- 연관문서 : 
-- 참고문서
-- [[Mobile/Android] 안드로이드 프로그래밍 입문](https://pangtrue.tistory.com/86)
+
+>[!cite]- 참고 문서
+> - [[Mobile/Android] 안드로이드 프로그래밍 입문](https://pangtrue.tistory.com/86)
 
 
 📌 안드로이드 프로그램은 java 기반 (따라서 자바 숙지 필수)

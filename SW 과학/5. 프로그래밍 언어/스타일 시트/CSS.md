@@ -13,9 +13,10 @@ aliases : Cascading Style Sheets - 종속형 시트
 			```html
 			<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
 			```
-- 참고문서
-	- https://cocoon1787.tistory.com/m/843
-	- https://velog.io/@wiostz98kr/TIL8-l-CSS-Grid
+
+>[!cite]- 참고 문서
+> - https://cocoon1787.tistory.com/m/843
+> - https://velog.io/@wiostz98kr/TIL8-l-CSS-Grid
 
 
 # 기초 CSS

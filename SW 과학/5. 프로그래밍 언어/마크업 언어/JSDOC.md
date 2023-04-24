@@ -2,9 +2,9 @@
 tag : 마크업_언어 
 ---
 
-- 참고문서
-	- [JSDoc을 통해 JavaScript API 문서 만들기](https://geniee.tistory.com/28)
-	- [JSDOC란?](https://medium.com/@su_bak/javascript-jsdoc-%EC%9D%B4%EB%9E%80-fb7747189200)
+>[!cite]- 참고 문서
+> - [JSDoc을 통해 JavaScript API 문서 만들기](https://geniee.tistory.com/28)
+> - [JSDOC란?](https://medium.com/@su_bak/javascript-jsdoc-%EC%9D%B4%EB%9E%80-fb7747189200)
 
 # JSDOC란? 
 - [[JS]] 소스 코드에 대한 설명을 하기 위해 사용되는 마크업 언어

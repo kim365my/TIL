@@ -16,9 +16,9 @@ aliases : 자바
 	- 대문자 : 프로젝트 / 소스파일
 	- 소문자 : 패키지
 - 자바 공식 문서 보는 법 : api documentation java검색
-	- 참고 문서
-		- [Java Platform, Standard Edition Java API Reference](https://docs.oracle.com/en/java/javase/18/docs/api/)
-		- [자바 공식 문서: Learning the Java Language](https://taptorestart.tistory.com/entry/%EC%9E%90%EB%B0%94-%EA%B3%B5%EC%8B%9D-%EB%AC%B8%EC%84%9C-Learning-the-Java-Language)
+>[!cite]- 참고 문서
+> - [Java Platform, Standard Edition Java API Reference](https://docs.oracle.com/en/java/javase/18/docs/api/)
+> - [자바 공식 문서: Learning the Java Language](https://taptorestart.tistory.com/entry/%EC%9E%90%EB%B0%94-%EA%B3%B5%EC%8B%9D-%EB%AC%B8%EC%84%9C-Learning-the-Java-Language)
 - 코드 작성형식 
 	- 람다식 : 객체지향의 단점을 극복하기 위해서 함수를 쓸 수 있게 해주는 형식
 
@@ -670,9 +670,9 @@ classDiagram
 	- 데이터의 무결성을 위해 private으로 멤버변수를 설정
 - 자바 DTO
 	- 데이터 이외에 메소드도 있는거
-- 참고 문서
-	- [Java-VOValue-Object란](https://velog.io/@livenow/Java-VOValue-Object%EB%9E%80)
-	- [DAO, DTO, VO](https://velog.io/@ruinak_4127/DAO-vs-DTO-vs-VO)
+>[!cite]- 참고 문서
+> - [Java-VOValue-Object란](https://velog.io/@livenow/Java-VOValue-Object%EB%9E%80)
+> - [DAO, DTO, VO](https://velog.io/@ruinak_4127/DAO-vs-DTO-vs-VO)
 
 
 # 참고 문서

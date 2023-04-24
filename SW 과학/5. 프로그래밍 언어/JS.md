@@ -13,13 +13,13 @@ tag : 프론트엔드 oop
 	- 데이터 :  [[JSON]]
 	- 프레임워크 : Node.JS
 	- 라이브러리:  [[JQuery]]
-- 참고문서 
-	- [JS cheatsheet](https://www.interviewbit.com/javascript-cheat-sheet/) 
-	- [JS 스타일가이드](https://github.com/tipjs/javascript-style-guide#%EB%AA%A9%EC%B0%A8)
-	- JS run time
-	- [ES6](https://nomadcoders.co/es6-once-and-for-all) 
-	- [ES2020](https://frontdev.tistory.com/m/entry/ES2020-7%EA%B0%80%EC%A7%80-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8C%81)
-	- 이벤트 : https://jenny-daru.tistory.com/17
+>[!cite]- 참고 문서 
+> - [JS cheatsheet](https://www.interviewbit.com/javascript-cheat-sheet/) 
+> - [JS 스타일가이드](https://github.com/tipjs/javascript-style-guide#%EB%AA%A9%EC%B0%A8)
+> - JS run time
+> - [ES6](https://nomadcoders.co/es6-once-and-for-all) 
+> - [ES2020](https://frontdev.tistory.com/m/entry/ES2020-7%EA%B0%80%EC%A7%80-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8C%81)
+> - 이벤트 : https://jenny-daru.tistory.com/17
 - 질문
 	-  (변수 or 예약어).함수(인수) <- 이런식으로 JS에서 진행되는건가
 	- 커피 스크립트, 타입 스크립트, 자바스크립트 슈퍼셋

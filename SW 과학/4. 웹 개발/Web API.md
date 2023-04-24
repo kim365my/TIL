@@ -19,5 +19,5 @@ aliases : 웹API
 	    - Media Captrue and Stream
 	    - Server Sent Events
 	    - Web Worker 
-- 참고 문서
-	- MDN web api : https://developer.mozilla.org/ko/docs/Web/API
+>[!cite]- 참고 문서
+> - MDN web api : https://developer.mozilla.org/ko/docs/Web/API

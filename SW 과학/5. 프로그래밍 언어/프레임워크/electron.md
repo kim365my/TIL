@@ -1,8 +1,8 @@
 - tag : 
 - 연관문서 : 
-- 참고문서
-- [https://www.youtube.com/watch?v=6Ep8ot0ABH0](https://www.youtube.com/watch?v=6Ep8ot0ABH0)
--  [FE개발자의 성장 스토리 11 : Electron, 저도 한번 해보겠습니다.](https://tech.kakao.com/2021/08/17/frontend-growth-11/)
+>[!cite]- 참고 문서
+> - [https://www.youtube.com/watch?v=6Ep8ot0ABH0](https://www.youtube.com/watch?v=6Ep8ot0ABH0)
+> - [FE개발자의 성장 스토리 11 : Electron, 저도 한번 해보겠습니다.](https://tech.kakao.com/2021/08/17/frontend-growth-11/)
 
 
 👉 **간단소개**

@@ -16,7 +16,7 @@ aliases : 제이쿼리
 - 서드파티 플로그인 연결
 	- 반드시 코어 제이쿼리 밑에 추가해야함 : [jQuery UI - 공식위키](https://jqueryui.com/)
 	- 파일확장자에서 이런식으로 min이 있는 건 들여쓰기 없는거
-- 참고문서  
+>[!cite]- 참고 문서  
 	 -  [[자바스크립트] 왜 jquery를 사용하는가?](https://unikys.tistory.com/300)
 	 - https://www.samsungsds.com/kr/insights/jquery.html
 

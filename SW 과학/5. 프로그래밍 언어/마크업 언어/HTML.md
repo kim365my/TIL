@@ -178,8 +178,8 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 - 하나의 이미지에 대해 여러 영역으로 나누어 링크 지정 
 - map 요소 안에서 필요한 영역의 개수만큼 area 요소로 각 영역 지정
 - 하나의 이미지에 여러 개의 링크를 걸어 클릭 위치에 따라 서로 다른 링크가 열리는 기능
-- 참고문서
-	- [img map](https://hsunnystory.tistory.com/44?category=793287)
+>[!cite]- 참고 문서
+> - [img map](https://hsunnystory.tistory.com/44?category=793287)
 
 ### picture 요소
 ```html
@@ -455,8 +455,8 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 	- 
 
 # HTML 전역속성
-- 참고문서
-	- [Global attributes - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+>[!cite]- 참고 문서
+> - [Global attributes - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 
 # 그 외

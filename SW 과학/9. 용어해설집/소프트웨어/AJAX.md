@@ -5,7 +5,7 @@
     1.  페이지 새로고침 없이 서버에 요청
         페이지 전체를 리프레쉬하지 않아도 수행되는 “비동기성”, 사용자의 event가 있으면 전체 페이지가 아닌 일부분만 업데이트 가능
     2.  서버로부터 데이터를 받고 작업을 수행 
-- 참고문서
-	-  [Ajax 시작하기 - 웹 개발자 안내서 | MDN](https://developer.mozilla.org/ko/docs/Web/Guide/AJAX/Getting_Started)
+>[!cite]- 참고 문서
+> - [Ajax 시작하기 - 웹 개발자 안내서 | MDN](https://developer.mozilla.org/ko/docs/Web/Guide/AJAX/Getting_Started)
 
 
