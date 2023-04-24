@@ -191,7 +191,7 @@ select * from employees where commission_pct IS NULL;
 			- 위 예제에서 언더바를 중첩해서 사용하면 언더바를 사용한 만큼의 위치에 있는 e를 찾을 수 있음 (두번째 글자를 찾으려면 언더바 하나)
 
 
-## NVL(column, value) 
+### NVL(column, value) 
 - NVL(column, value) 형식, null Value
 	- null 있는 칼럼을 찾아서 해당 값으로 치환해주는 메소드
 	- 계산에 사용되는 칼럼의 값에 null 값이 있는 경우 null을 치환할 값을 지정하는 함수
@@ -201,6 +201,12 @@ select * from employees where commission_pct IS NULL;
 		from employees;
 	```
 
+## 정렬
+### order by
+- 기본값이 내림차순(desc)
+	```sql
+	select*from b_board order by seq desc;
+	```
 
 
 # CRUD
@@ -265,5 +271,13 @@ delete from b_member where id ='mc';
 ```
 - mc 인 사람의 레코드를 삭제
 
+
+# 서브 쿼리문
+- 하나의 쿼리문에 다른 쿼리문을 중첩할 수 있음 (select 문만 가능)
+```sql
+insert into b_board(seq,title,nickname,content)
+values((select nvl(max(seq),0)+1 from b_board),'타이틀','글쓴이','글내용' );
+```
+- values 앞에 띄워쓰기 해줘야함
 
 # 연관문서

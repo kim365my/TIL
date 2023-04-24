@@ -8,38 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1c98d77ccfbbc27e",
+            "id": "c2c7d944d197922c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. 프로그래밍 언어/마크업 언어/HTML.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "63bbeb4981700d2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 기타/데일리 노트/2023-04-23.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bc4b3cf54c2914cf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "유용한 사이트 정리.md",
+                "file": "4. 웹 개발/JDBC.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -52,7 +26,33 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "4. 웹 개발/Web API.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "67fbd8f2335c4a99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "4. 웹 개발/웹 개발론.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2c9cb6fac0b32153",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -89,11 +89,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "사이드",
+                "query": "tag:#비지니스_로직",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
@@ -106,8 +106,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -129,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-04-23.md"
+                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md"
               }
             }
           },
@@ -139,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-04-23.md",
+                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-04-23.md",
+                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -208,7 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,34 +219,38 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "63bbeb4981700d2d",
+  "active": "2c9cb6fac0b32153",
   "lastOpenFiles": [
-    "5. 프로그래밍 언어/스타일 시트/CSS.md",
-    "99. 기타/데일리 노트/2023-04-23.md",
-    "5. 프로그래밍 언어/마크업 언어/HTML.md",
     "4. 웹 개발/웹 개발론.md",
-    "유용한 사이트 정리.md",
-    "99. 기타/img/Pasted image 20230423162855.png",
-    "8. 디자인/웹 디자인 레퍼런스.md",
-    "4. 웹 개발/웹 브라우저.md",
-    "9. 용어해설집/코드 컨벤션.md",
-    "8. 디자인/포토샵.md",
-    "9. 용어해설집/IDE/VSC.md",
+    "5. 프로그래밍 언어/마크업 언어/HTML.md",
+    "5. 프로그래밍 언어/스타일 시트/CSS.md",
+    "99. 기타/데일리 노트/2023-04-24.md",
     "99. 기타/데일리 노트/2023-04-22.md",
-    "99. 기타/데일리 노트/2023-04-15.md",
-    "99. 기타/데일리 노트/2023-04-10.md",
-    "10. 독서/명상록.md",
-    "9. 용어해설집/소프트웨어/UML.md",
-    "9. 용어해설집/소프트웨어/UCM.md",
-    "9. 용어해설집/소프트웨어/SVG.md",
-    "무제 폴더",
-    "99. 기타/정보처리기사/1. 소프트웨어 설계.md",
-    "99. 기타/정보처리기사/4. 프로그래밍 언어 활용.md",
-    "5. 프로그래밍 언어/마크업 언어/seo.md",
-    "4. 웹 개발/네트워크.md",
+    "99. 기타/데일리 노트/2023-04-21.md",
+    "4. 웹 개발/JDBC.md",
+    "4. 웹 개발/커넥션 풀 API.md",
+    "99. 템플릿/HTML, CSS 폼.md",
+    "5. 프로그래밍 언어/라이브러리/JQuery.md",
+    "4. 웹 개발/웹 브라우저.md",
+    "4. 웹 개발/Web API.md",
+    "4. 웹 개발/Servlet.md",
+    "4. 웹 개발/PWA.md",
+    "4. 웹 개발/웹 스토리지.md",
+    "4. 웹 개발/저장공간",
+    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+    "4. 웹 개발/웹 디자인.md",
+    "99. 기타/데일리 노트/2023-04-20.md",
+    "99. 기타/데일리 노트/2023-04-23.md",
+    "5. 프로그래밍 언어/JS.md",
+    "5. 프로그래밍 언어/프레임워크/Vue.js.md",
+    "4. 웹 개발/Web Kit.md",
+    "9. 용어해설집/IDE/VSC.md",
+    "99. 기타/카페24 가입.md",
+    "99. 기타/img/Pasted image 20230424122736.png",
+    "9. 용어해설집/소프트웨어/파라미터.md",
+    "4. 웹 개발/JSP.md",
+    "99. 기타/img/Pasted image 20230423162855.png",
     "노트필기방법.canvas",
-    "10. 독서/기초부터 배우는 인공지능.md",
-    "99. 기타/Untitled Kanban.md",
     "99. 기타/img/마크업언어_설명이미지.png",
     "99. 기타/img/하드웨어 사진/네트워크 크기 단위.png",
     "99. 기타/img/하드웨어 사진/검색엔진모듈.png",
@@ -256,10 +259,6 @@
     "99. 기타/img/2 (3).png",
     "99. 기타/img/4. 노드확장_왼쪽.png",
     "99. 기타/img/4. 노드확장_아래쪽.png",
-    "99. 기타/img/1. 노드확장_아래.png",
-    "7. 수학/플랑크 상수.md",
-    "99. 기타/데일리 노트/2023-04-21.md",
-    "TO DO list.md",
     "9. 용어해설집/IDE",
     "웹 개발.canvas"
   ]

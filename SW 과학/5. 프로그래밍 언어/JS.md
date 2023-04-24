@@ -8,9 +8,6 @@ tag : 프론트엔드 oop
 # 개요
 - 앞으로 공부할 내용 
 	- 스코트, 훅, 화살표 함수, 스프레드, 일급 객체개념, 클래스. this, Dom 제어
-
-
-
 - 연관문서
 	- [[JSDOC]], [[AJAX]]
 	- 데이터 :  [[JSON]]
@@ -300,6 +297,13 @@ funtion 이름(매개변수) {
 1. 화살표 함수
 
 ## 2. 이벤트(Event)
+- event 멈추기
+	```js
+	postBox.addEventLister("click" (e)={
+		e.preventDefalut();
+	})
+	```
+
 
 ## 3. ES6, ES7, ES8 : JS의 표준화 문법
 > ES6이란? ES6을 기점으로 JS는 큰 변화를 맞이함
