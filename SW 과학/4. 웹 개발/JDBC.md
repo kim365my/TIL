@@ -8,8 +8,8 @@ tag : 백엔드
 
 # JDBC를 이용해서 DB 접속흐름
 ```java
-Class.forName("oracle.jdbc.driver.OracleDrvier");
-String url = "jdbc:orcle:thin:@localhost:1521:xe";
+Class.forName("oracle.jdbc.driver.OracleDriver");
+String url = "jdbc:oracle:thin:@localhost:1521:xe";
 Connection conn = DriverManager.getConnection(url, "hr", "hr");
 // DB 접속 코드 작성 생략
 // 자원 반납 필수

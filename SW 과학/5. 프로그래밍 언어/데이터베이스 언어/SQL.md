@@ -116,10 +116,8 @@ DESC employees;
 
    ![[Pasted image 20230417124200.png|400]]
 ### PK와 FK란
-- PK(primary key) 
-	- 해당 테이블에 반드시 존재해야하는 키로 유니크 해야함
-- FX(Foreign Key)
-	- 외부 키
+- PK(primary key) : 해당 테이블에 반드시 존재해야하는 키로 유니크 해야함
+- FX(Foreign Key) : 외부 키
 - PK와 FK를 묶어서 각각 관리 할 수 있는 방식으로 RDB에서 사용됨
 	- 자바처럼 모듈화해서 관리하는 시스템
 
@@ -210,7 +208,9 @@ select * from employees where commission_pct IS NULL;
 
 
 # CRUD
-![[CRUD#개요]]
+>[!cite]- CRUD란?
+>![[CRUD#개요]]
+
 ## Create
 ### 테이블 생성
 ```sql
@@ -255,8 +255,6 @@ COMMIT;
 UPDATE b_member SET name = '김수돌', email='mc@naver.com' where id = 'mc';
 ```
 - 업데이트는 거의 where 조건절과 함께 사용
-
-
 
 ## Delete
 ### 테이블 삭제

@@ -2,17 +2,23 @@
 tag : 프론트엔드 마크업_언어 스타일시트
 aliases : Cascading Style Sheets - 종속형 시트
 ---
+>[!hint] 새로운 소식
+> - [CSS 중첩(nesting)이 된다고?](https://developer.chrome.com/articles/css-nesting/)
+
+>[!question]- 어려운 부분
+> - [ ] 선택자는 문자열이 아니라 객체 참조라는 말이 무슨 뜻이지
+> - [ ] 그라데이션이 어려워
+
 # 개요
-- 연관키워드
-	- CSS 도구
-		- [[SASS]] : Syntactically Awesome Style Sheets - 문법적으로 어썸한 스타일시트
-		- [[SCSS]] : Sassy CSS - 문법적으로 짱 멋진(Sassy) CSS
-		- PostCSS : [[Node JS]]와 함께 언급되는 css 후처리기
-	- CSS 프레임 워크
-		- 부트스트랩 프레임워크 [설치 페이지](https://getbootstrap.com/docs/4.4/getting-started/download/)  [템플릿](https://learn2you.tistory.com/42)
-			```html
-			<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-			```
+- CSS 도구
+	- [[SASS]] : Syntactically Awesome Style Sheets - 문법적으로 어썸한 스타일시트
+	- [[SCSS]] : Sassy CSS - 문법적으로 짱 멋진(Sassy) CSS
+	- PostCSS : [[Node JS]]와 함께 언급되는 css 후처리기
+- CSS 프레임 워크
+	- 부트스트랩 프레임워크 [설치 페이지](https://getbootstrap.com/docs/4.4/getting-started/download/)  [템플릿](https://learn2you.tistory.com/42)
+		```html
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+		```
 
 >[!cite]- 참고 문서
 > - https://cocoon1787.tistory.com/m/843
@@ -115,10 +121,8 @@ aliases : Cascading Style Sheets - 종속형 시트
 
 
 ## 케스케이딩
-```
-📌 아이디 선택자 > 클래스 ・ 속성 선택자 및 가상 클래스 > 요소 및 가상 
-	요소 순서대로 가중치
-```
+>[!note] 아이디 선택자 > 클래스・속성 선택자 및 가상 클래스 > 요소 및 가상 요소 순서대로 가중치
+
 1.  코드 순서
 2.  **중요도(importance)**
 	1.  Internal 방식으로 작성된 스타일 (ex. head내부에 스타일방식으로 선언)
@@ -139,69 +143,107 @@ aliases : Cascading Style Sheets - 종속형 시트
 	2.  클래스 ・ 속성 선택 자 및 가상 클래스 개수 계산
 	3.  요소 및 가상 요소 개수 계산
 
+## 전역변수 (사용자지정 CSS 속성)
+```css
+/* 전역변수 설정 */
+:root{
+	--color : #ccc;
+}
+/* 전역변수 사용 */
+body{
+	color : var(--color);
+}
+```
+- 기본 사용법 
+	- :root(HTML 요소)에 변수를 지정하고 사용
+	- css에서 변수식으로 담아서 적용 css를 줄 수 있음
+	- 대소문자 구분
+	- 상속됨
+
+- 변수의 대안값 : 아래처럼 변수가 정의되지 않았을때 표시되는 대체제를 정의할 수 있음
+    ```css
+    body{
+        color : var(--color, red);
+    }
+    ```
+
 
 # CSS 속성 목록 정리
+## @ at-rule 
+>[!summary]- @ 기호는CSS에서 at-rules(at-규칙)이라고함 / 요소를 직접적으로 스타일링 하진않지만, 스타일을 적용하는 방법을 제어
+
+- @import	: 다른 스타일시트를 불러올때 정의 ex) `@import url(’ ’);`
+- @charset : 스타일 시트 인코딩 정의  ex) `@charset 'utf-8';`
+- @container : 반응형 디자인에서 페이지 넓이 뿐만 아니라 부모 요소의 넓이를 기준으로 잡을 수 있음
+- @font-face: 글꼴을 사용할때 정의	
+- @font-face: 웹폰트 이전에 폰트가 기본으로 나오는걸 방지하기 위해 사용. 메모리 영역에 올라가서 설치되지 않아도 보이게 됨	
+	```css
+	@font-face {
+		font-family: 'trana';
+		src: url()
+		url() format(),
+		url(.) format()
+	}
+	```
+- @keyframes : 애니메이션을 제어하기 위한 정의
+- @media : [[CSS#미디어 쿼리|미디어쿼리]]를 사용할때 정의
+- @nest : 중첩 셀렉팅을 도와주고 코드 반복을 줄여주는 문법
+- @namespace : 네임스페이스로 접두사가 붙을때 정의
+- @page : 페이지를 프린트 할 때 레이아웃 설정을 정의
+- @scope : 스타일 범위 지정. 테마 별로 스타일 분기처리할때 좋음 (지원되는 브라우저 적음)
+	```css
+	@scope (.aboutTime) {
+		:scope { display: grid; grid-template-columns: 20px 2fr; } 
+	img { 
+		display: block; width: 100%; 
+	}
+	```
+	- [[JS]]하고 같이 사용되는 문법인가봐... #이해부족  
+- @viewport : 각 디바이스에 화면을 어떻게 표현할건지의 대한 정의
+
 ## 텍스트
 ## 폰트
-![[웹 개발론#1. 폰트 사이즈 단위]]
-### 폰트 속성
+>[!quote]- 폰트 사이즈에 대해
+> ![[웹 개발론#1. 폰트 사이즈 단위]]
+
 | 속성                                                                                                                                         | 값                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| font-family (글꼴 종류) | • 일반 폰트명 → 굴림체, 궁서체, ‘Times New Roman’, … • 폰트 패밀리 → serif, sans-serif, cursive, fantasy, monospace                                                                                                                         |
-| font-size (글자 크기)                                                                                                                        | • 절대 단위(cm, mm, in, pt, pc, px), 상대 단위(em, ex, %) • xx-small, x-small, small, medium, large, x-large, xx-large |
+| font-family (글꼴 종류) | • 일반 폰트명 : 굴림체, 궁서체, ‘Times New Roman’, … <br>• 폰트 패밀리 : serif(명조 계열), sans-serif(고딕 계열), cursive(필기체), fantasy(장식이 된 글꼴), monospace(일정한 공간으로 된 타자기 서체)                                                                                                                         |
+| font-size (글자 크기)                                                                                                                        | • 절대 단위(cm, mm, in, pt, pc, px), 상대 단위(em, ex, %) <br>• xx-small, x-small, small, medium, large, x-large, xx-large |
 | font-style (글자 스타일)                                                                                                                     | normal, italic, oblique                                                                                                |
 | font-variant (작은 대문자로 변환)                                                                                                            | normal, small-caps                                                                                                     |
-|  font-weight (글자 굵기)  |  • 100, 200, 300, 400, 500, 600, 700, 800, 900 • normal(=400), bold(=700), bolder, lighter                                                                                                                      |
-| font (글꼴 속성의 일괄 지정)  |   [ font-style | font-variant | font-weight ] font-size [ / line-height ] font-family                                                                                                                     |
-
-1. font-family 속성값
-	1. 일반 폰트명
-	2. 폰트 패밀리
-		- serif (명조 계열)
-		- sans-serif (고딕 계열)
-		- cursive (필기체)
-		- fantasy (장식이 된 글꼴)
-		- monospace (일정한 공간으로 된 타자기 서체)
+|  font-weight (글자 굵기)  |  • 숫자 : 100, 200, 300, 400, 500, 600, 700, 800, 900 <br>• 문자열 : normal(=400), bold(=700), bolder, lighter                                                                                                                      |
+| font (글꼴 속성의 일괄 지정)  |   [ font-style \| font-variant \| font-weight ] font-size [ \/ line-height ] font-family                                                                                                                     |
 
 ## 리스트
-
+- list-style-type
+	- 리스트의 앞머리 기호를 지정
+	- 속성
+		- 문자열 값 : 기호 대신 출력하고 싶은 값을 “”를 사용해 표현
+		- 미리 정의된 모양 : disc, circle 등
+- list-style-position	
+	- 리스트 앞머리 기호의 위치를 지정
+	- 속성 : inside,outside
+		- 기본값이 ouside라 inside로 바꿔야 따로 안놈
+- list-style-image
+	- 리스트의 앞머리나 기호 대신 특정 이미지를 지정
+	- 속성 : url
 
 ## 배경
 ## 박스모델
+![[Pasted image 20230425101146.png|150]]
+1.  요소 : 텍스트, 사진 등을 보여줌
+2.  패딩(padding) : 요소 주변을 감쌈, 해당 부분은 투명색
+	-   그 박스 안의 요소를 움직일때 사용
+3.  테두리(border) : 요소와 패딩을 감싸는 테두리
+4.  마진(margin) : 테두리 밖의 영역을 감쌈, 해당 부분은 투명색
+	-   박스간의 관계
+	-   마진값을 마이너스를 주면서 위치를 조정할 수 있음
+	-   마진상쇄 (마진겹침현상) : 마진이 위아래로 서로 겹칠때 의도한것과는 다르게 나오는 현상
+		-   상하만 좌우는 상관 ❌
+		-   작은 값과 큰값이 있으면 큰값으로 마진이 생성됨/ 합쳐지는 것은 아님
+		-   footer 밑바닥 공백 안됨, margin은 박스간의 관계라 더이상 밑에 아무것도 없으면 적용이 되지 않음
 ## 레이아웃
-## 디스플레이
-## 오버플로
-## 캐스케이딩
-- CSS에서는 HTML 태그에 하나 이상의 스타일이 적용될 때, 우선순위를 결정하는 규칙을 의미
-- **캐스케이딩 규칙** : 중요도 · 특수성 > 코드 순서
-	1. **코드 순서**
-	2.  **중요도(importance)**
-	    1.  Internal 방식으로 작성된 스타일
-	    2.  Internal 방식으로 작성된 스타일 내부의 @import
-	    3.  External 방식으로 연결된 스타일
-	    4.  External 방식으로 연결된 스타일 내부의 @import
-	    5.  브라우저의 기본 스타일
-	3.  **특수성(specificity)**
-	    1.  !important 속성이 지정된 스타일 (ex, `h2{ color: green !important; }`)
-	    2.  Inline 방식으로 적용된 스타일
-	    3.  아이디 선택자
-	    4.  클래스 선택자 ・ 가상 선택자
-	    5.  태그 선택자
-	    6.  상속된 스타일
-	- **특수성 계산기** : 점수를 매겨 우선순위를 결정하는 개념
-	    1.  아이디 선택자 개수 계산
-	    2.  클래스 ・ 속성 선택 자 및 가상 클래스 개수 계산
-	    3.  요소 및 가상 요소 개수 계산
-	    아이디 선택자 > 클래스 ・ 속성 선택자 및 가상 클래스 > 요소 및 가상 요소 순서대로 가중치
-- `!important` : 일반적으로 !important는 적용된 우선순위를 무시하고 스타일을 강제하기 때문에, 차후에 유지 보수성을 고려한다면 최선책은 아니다. 따라서 너무 많이 사용하지 않는 것이 좋다. (아이디・클래스 선택자로 대체)
-## 컬러
-## 미디어 쿼리
-## 애니메이션
-## 사용자 지정 속성
-## 링크에 지정 가능 스타일
-
-
-# 레이아웃 만들기
 - Floats
 - Positioning
 - Display
@@ -209,8 +251,99 @@ aliases : Cascading Style Sheets - 종속형 시트
 - CSS Grid
 - Flex Box
 
-# 반응형 디자인과 미디어 쿼리
 
+## 디스플레이
+## 오버플로
+## 캐스케이딩
+- CSS에서는 HTML 태그에 하나 이상의 스타일이 적용될 때, 우선순위를 결정하는 규칙을 의미
+- **캐스케이딩 규칙** : 중요도 · 특수성 > 코드 순서
+	1. **코드 순서**
+	2.  **중요도(importance)**
+		1.  Internal 방식으로 작성된 스타일
+		2.  Internal 방식으로 작성된 스타일 내부의 @import
+		3.  External 방식으로 연결된 스타일
+		4.  External 방식으로 연결된 스타일 내부의 @import
+		5.  브라우저의 기본 스타일
+	3.  **특수성(specificity)**
+		1.  !important 속성이 지정된 스타일 (ex, `h2{ color: green !important; }`)
+		2.  Inline 방식으로 적용된 스타일
+		3.  아이디 선택자
+		4.  클래스 선택자 ・ 가상 선택자
+		5.  태그 선택자
+		6.  상속된 스타일
+	- **특수성 계산기** : 점수를 매겨 우선순위를 결정하는 개념
+		1.  아이디 선택자 개수 계산
+		2.  클래스 ・ 속성 선택 자 및 가상 클래스 개수 계산
+		3.  요소 및 가상 요소 개수 계산
+		아이디 선택자 > 클래스 ・ 속성 선택자 및 가상 클래스 > 요소 및 가상 요소 순서대로 가중치
+- `!important` : 일반적으로 !important는 적용된 우선순위를 무시하고 스타일을 강제하기 때문에, 차후에 유지 보수성을 고려한다면 최선책은 아니다. 따라서 너무 많이 사용하지 않는 것이 좋다. (아이디・클래스 선택자로 대체)
+## 컬러
+## 미디어 쿼리
+>[!abstract]- 선행조건
+>- HTML 메타에 뷰포트가 꼭 있어야함
+>    `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+>	-   디바이스는 기본 설정값이 자동으로 보이는 영역으로 설정
+>		-   pc는 뷰포트와 연관없음 모니터 해상도를 기준, 따라서 pc는 제외하고 생각
+>	-   viewport는 스마트 기기의 보이는 영역을 기기 실제 화면 크기로 변경해줌
+>	-   그래서, 그 값을 이용하여 미디어쿼리 속성으로 기기 화면크기를 정확히 감지하며 반응형을 동작하게 함
+
+```css
+@media [only or not] 미디어 유형 and 또는 (조건문 실행문){
+	선택자 {
+		/* css 코드 작성 */
+	}
+}
+```
+- 정의
+	- 화면의 크기와 기타 환경을 감지하여 웹 사이트를 변경하는 기술
+	- 웹 반응형을 적용하려면 디바이스 기기의 종류를 알아야 하고 그 기기에 맞게 웹 사이트 구조를 바꿀 수 있기 때문에 반드시 필요
+-   사용 가능 상황
+	1.  CSS : @media & @import를 사용해 특정 조건에 따라 스타일 적용시
+	2.  HTML : 요소에 media 특성을 사용해 특정 매체만 가리킬 때
+- 조건식
+	-   미디어 타입 : all, print, screen, speech *아무것도 안쓰면 기본값 all 적용
+	-   조건
+		- max-width : 최대가로, 반드시 미디어 쿼리 너비 크기가 큰것부터 작은것 순서대로 코딩 (선생님은 이걸 PC 퍼스트 방식이라고 함)
+		- min-width : 최소가로, **반드시** 미디어쿼리 너비 크기가 작은 값부터 큰 것 순서대로 코딩
+			-  (모바일 퍼스트 방식) 반응형을 만들때 실무에서는 모바일단을 먼저 만듬 / 연습할때는 넣고 쓰자
+		- orientation:landscape : 가로모드
+		- orientation:portrait :  세로모드(기본)
+	-   연산자
+		- `and` : 논리곱(&&)
+		- `,` : 논리합(||)
+		- not : 부정
+- 미디어 쿼리와 함께 사용하는 기능들 #이해부족 
+	- Custom-media 쿼리 : 미디어 쿼리를 변수화해서 재사용 가능
+	- @nest
+	- @container : 반응형 디자인에서 페이지 넓이 뿐만 아니라 부모 요소의 넓이를 기준으로 잡을 수 있음
+	- @scope : 스타일 범위 지정. 테마 별로 스타일 분기처리할때 좋음
+
+>[!danger]- 미디어쿼리 작성시 유의사항
+> -   정해진 건 아님 : 360(모바일) | 768(태블릿) | 1024(PC)
+>-   and 구문 앞, 뒤에는 반드시 공백 한칸
+>-   (조건문){실행문} 사이는 붙여서 코딩
+>-   조건문에 없는 애들은 공통 스타일이 적용됨
+>-   CSS 코드 작성시 유의점
+>	-   변화를 주고 싶은 박스 영역만 코딩
+>	-   변경하고 싶은 선택자하고 속성명을 똑같이 맞춰줘야 함
+>	-   반응형은 구조는 바꾸지 않아야 함
+## 애니메이션
+## 사용자 지정 속성
+## 링크에 지정 가능 스타일
+
+
+
+
+
+# 신기능 코너!
+
+## nesting
+- css 중첩 기능, 하지만 HTML 요소 앞에 `&`기호나 `:is()` 가상 선택자가 필요
+- 선택자는 문자열이 아니라 객체 참조?
+- `@scope`, `@layer`의 at-rule과 함께 사용됨
+- 지원 브라우저 : 23년 04월부터 크롬, edge, 사파리, 안드로이드 기본브라우저에서 지원시작
+	- 오페라나 파이어 폭스, 삼성인터넷은 지원하지 않음
+	- 현재 전세계 비율로 따지면 40.94%의 브라우저가 지원
 
 # 그 외
 ## 와일드 카드 문자
@@ -226,10 +359,7 @@ aliases : Cascading Style Sheets - 종속형 시트
     }
     ```
 
-## 가변 너비
--   밀도가 높은 모바일 환경에서 유용
-	-   밀도란 같은 색인데 색에 들어가는 픽셀의 수가 높은 것을 말하는 듯
--   max는 최대 / min은 최소값
+## 가변 그리드(뷰포트 | 마진 계산하기) 
 ```css
 #wrap{
     max-width: 1920px;
@@ -237,6 +367,22 @@ aliases : Cascading Style Sheets - 종속형 시트
     margin: 0 auto;
 }
 ```
+-   밀도가 높은 모바일 환경에서 유용
+	-   밀도란 같은 색인데 색에 들어가는 픽셀의 수가 높은 것을 말하는 듯
+-   max는 최대 / min은 최소값
+- 브라우저 너비(pc, 태블릿, 휴대폰 등)에 반응
+-   가변과 반응형은 다른 것
+	-   pc(px) → 가변(%) → 반응형(%)
+		-   기본이 가변단위(% 등), px을 못쓰는건 아님
+	-   가변 그리드 : px → %로 변화
+	-   그리드 : 화면레이아웃 격자
+	-   퍼센트 안먹을 경우 픽셀 값 확인
+-   가변 계산하기 (기준 값 필요, 반올림하지말고 소수점까지 다 적을것)
+	- `$ (설정하고 \, 싶은 \, 픽셀 / 부모 \, 픽셀값) * 100 $`
+	-   마진을 너비값에서 빼고 원하는 영역을 구한다음에 가변계산하기
+-   뷰포트하면 무조건 브라우저, pc에서 할때도 설정가능
+	-   pc는 모니터 해상도에 따라거 결정/ 모바일은 아님
+	-   가로기준, 세로기준으로 계산
 
 ## 이슈 사항
 -  `display:inline-block`으로 하면 `block`으로 할때와는 다르게 딱 붙지 않고 간격이 생김

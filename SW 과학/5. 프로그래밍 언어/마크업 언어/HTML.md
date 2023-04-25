@@ -92,6 +92,11 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 ```
 - charset을 유니코드로 인코딩을 맞춰주어야 함
 - [[seo]] 최적화를 위해서 head의 meta 태그에 여러 정보를 기입함
+- SNS에 공유시 표시되는 속성( #Open_Graph)
+	- `meta property="og:title" content="표시할 제목"`
+	- `meta property="og:url" content ="표시할 대표 URL"`
+	- `meta property="og:image" content="미리보기에 나타낼 이미지"`
+	- `meta property="og:description" content="미리보기에 나타낼 설명"`
 
 ### base 요소
 ```html

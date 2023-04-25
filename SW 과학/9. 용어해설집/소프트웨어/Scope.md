@@ -3,6 +3,8 @@ tag : 네트워크 저장공간
 aliases : 스코프, 변수의 저장범위
 ---
 
+>[!summary] 현재 실행되는 컨텍스트(Execution context)
+> - 대충 범위를 의미하는 말 같은데... #이해부족 
 # Web에서의 스코프
 ## attribute의 스코프
 - 데이터 스코프 : 로컬 / 지역 / 전역 / Context
