@@ -4,76 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "7f02a1c53eaeb226",
+        "id": "fd7dc847cd4a464c",
         "type": "tabs",
         "children": [
           {
-            "id": "b85ac6564a014aaa",
+            "id": "2405ffe2958b2d88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-04-25.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4776eab598f549e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 기타/노트필기 메모/옵시디언.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "42d50716d786ee42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b3b45a02def17262",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "9. 용어해설집/소프트웨어/포워딩.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e9acbdadaf87ee23",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5. 프로그래밍 언어/JS.md",
+                "file": "9. 용어해설집/IDE/VSC.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#이해부족",
+                "query": "vsc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -141,7 +89,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5. 프로그래밍 언어/JS.md"
+                "file": "9. 용어해설집/IDE/VSC.md"
               }
             }
           },
@@ -151,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. 프로그래밍 언어/JS.md",
+                "file": "9. 용어해설집/IDE/VSC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5. 프로그래밍 언어/JS.md",
+                "file": "9. 용어해설집/IDE/VSC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,26 +173,28 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "e9acbdadaf87ee23",
+  "active": "2405ffe2958b2d88",
   "lastOpenFiles": [
-    "TO DO list.md",
+    "9. 용어해설집/소프트웨어/포워딩.md",
+    "9. 용어해설집/소프트웨어/바인딩.md",
+    "9. 용어해설집/IDE/이클립스.md",
+    "Anki.md",
+    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+    "4. 웹 개발/Servlet.md",
     "99. 기타/노트필기 메모/옵시디언.md",
+    "5. 프로그래밍 언어/JS.md",
+    "TO DO list.md",
     "5. 프로그래밍 언어/스타일 시트/CSS.md",
     "99. 기타/데일리 노트/2023-04-25.md",
-    "9. 용어해설집/소프트웨어/포워딩.md",
     "유용한 사이트 정리.md",
     "9. 용어해설집/소프트웨어/Scope.md",
     "8. 디자인/포토샵.md",
     "4. 웹 개발/웹 개발론.md",
-    "Anki.md",
     "9. 용어해설집/소프트웨어/Open Graph.md",
     "2. 컴퓨터과학 개론/인공지능.md",
     "99. 템플릿/HTML, CSS 템플릿.md",
     "3학년 1학기.canvas",
     "5. 프로그래밍 언어/마크업 언어/HTML.md",
-    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
-    "4. 웹 개발/Servlet.md",
-    "9. 용어해설집/소프트웨어/바인딩.md",
     "4. 웹 개발/JDBC.md",
     "4. 웹 개발/커넥션 풀 API.md",
     "99. 기타/img/Pasted image 20230425101146.png",
@@ -253,8 +203,6 @@
     "4. 웹 개발/웹 어셈블리.md",
     "4. 웹 개발/자바빈.md",
     "4. 웹 개발/JSP.md",
-    "4. 웹 개발/HTTP.md",
-    "4. 웹 개발/Web Kit.md",
     "노트필기방법.canvas"
   ]
 }

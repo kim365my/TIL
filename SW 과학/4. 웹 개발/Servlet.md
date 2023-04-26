@@ -335,9 +335,9 @@ session.invalidate(); // 세션 강제 삭제 : 브라우저와 서버의 연결
 	- 참고) 서버단 프로그래밍 시 쿼리스트링의 키들을 매개변수(파라미터 paramter)라고 함
 
 # 에러에 대처하기
-## 404 에러시 대처방법
-- [이클립스 톰캣 설정 수정](https://dev-handbook.tistory.com/32)
-- [경로지우고 재시작](https://clsrn4561.tistory.com/10)
-- [이외의 방법 링크 모음](https://october-east-sea.tistory.com/160)
+>[!cite]- 404 에러시 대처방법
+> - [이클립스 톰캣 설정 수정](https://dev-handbook.tistory.com/32)
+> - [경로지우고 재시작](https://clsrn4561.tistory.com/10)
+> - [이외의 방법 링크 모음](https://october-east-sea.tistory.com/160)
 
 # 연관문서
