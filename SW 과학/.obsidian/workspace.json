@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "6d18a1e15f1b009e",
+    "id": "01d17f0eecf1d48d",
     "type": "split",
     "children": [
       {
-        "id": "fd7dc847cd4a464c",
+        "id": "6684baf8095ddd23",
         "type": "tabs",
         "children": [
           {
-            "id": "2405ffe2958b2d88",
+            "id": "e74decfefdc71b84",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. 프로그래밍 언어/Java.md",
+                "file": "Anki.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,22 +21,8 @@
             }
           },
           {
-            "id": "9b628f7b190721c6",
+            "id": "fe6262c682d7e835",
             "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4f6f4c47df09f2bd",
-            "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -44,25 +30,51 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              },
-              "pinned": true
+              }
+            }
+          },
+          {
+            "id": "c5ed6961579efd8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TO DO list.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "488ca7656ef9bdde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TO DO list.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "54550629f8e6e2d9",
+    "id": "94546faf3592b1fd",
     "type": "split",
     "children": [
       {
-        "id": "60d84d04f09643de",
+        "id": "c12775fae2c8f91d",
         "type": "tabs",
         "children": [
           {
-            "id": "5121c4c751dca168",
+            "id": "7b79105709bd62f0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -72,22 +84,22 @@
             }
           },
           {
-            "id": "f8f607b4344df2cf",
+            "id": "522870b8a2cbe0a5",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#백엔드",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
             }
           },
           {
-            "id": "64d46896565e1c45",
+            "id": "53c44a22068756b2",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -102,31 +114,31 @@
     "collapsed": true
   },
   "right": {
-    "id": "b835c88157d3074d",
+    "id": "bb8686f0faceae86",
     "type": "split",
     "children": [
       {
-        "id": "f584d0d70c683c2d",
+        "id": "ffbf2920a807d553",
         "type": "tabs",
-        "dimension": 67.73255813953489,
+        "dimension": 67.92635658914729,
         "children": [
           {
-            "id": "560d99ac017cda49",
+            "id": "f6780cb79497c65c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "5. 프로그래밍 언어/Java.md"
+                "file": "TO DO list.md"
               }
             }
           },
           {
-            "id": "12d2065f883748c3",
+            "id": "9cb5f10b4bb771db",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. 프로그래밍 언어/Java.md",
+                "file": "TO DO list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,19 +150,19 @@
             }
           },
           {
-            "id": "c05b4d5eebdab729",
+            "id": "d1660e916cfe639b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5. 프로그래밍 언어/Java.md",
+                "file": "TO DO list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "9a62c47c516a128f",
+            "id": "7ebca70bb473d38e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -161,7 +173,7 @@
             }
           },
           {
-            "id": "02b4dc9a39cd05d6",
+            "id": "47f7d7c0d9729926",
             "type": "leaf",
             "state": {
               "type": "ReferenceListView",
@@ -171,58 +183,23 @@
         ]
       },
       {
-        "id": "4523ed5fc307716e",
+        "id": "efc992030006832f",
         "type": "tabs",
-        "dimension": 32.26744186046512,
+        "dimension": 32.07364341085272,
         "children": [
           {
-            "id": "3e53a94a9909c3e9",
+            "id": "f3d49e3fd127be85",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
-            }
-          },
-          {
-            "id": "b8838bcb56befb1f",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "5. 프로그래밍 언어/Java.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.7132754626224432,
-                  "close": true
-                }
-              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 242.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,36 +212,20 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "2405ffe2958b2d88",
+  "active": "488ca7656ef9bdde",
   "lastOpenFiles": [
     "99. 기타/노트필기 메모/옵시디언.md",
-    "5. 프로그래밍 언어/Java.md",
-    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
-    "99. 기타/데일리 노트/2023-04-27.md",
-    "5. 프로그래밍 언어/프레임워크/Node JS.md",
-    "1. 데이터/데이터베이스.md",
-    "4. 웹 개발/웹 개발론.md",
-    "4. 웹 개발/Servlet.md",
-    "9. 용어해설집/디자인 패턴/MVC 패턴.md",
-    "4. 웹 개발/JSP.md",
-    "4. 웹 개발/커넥션 풀 API.md",
-    "4. 웹 개발/JDBC.md",
-    "5. 프로그래밍 언어/라이브러리/JQuery.md",
-    "9. 용어해설집/IDE/VSC.md",
-    "9. 용어해설집/소프트웨어/포워딩.md",
-    "9. 용어해설집/소프트웨어/바인딩.md",
-    "9. 용어해설집/IDE/이클립스.md",
-    "Anki.md",
-    "5. 프로그래밍 언어/JS.md",
     "TO DO list.md",
-    "5. 프로그래밍 언어/스타일 시트/CSS.md",
-    "99. 기타/데일리 노트/2023-04-25.md",
-    "유용한 사이트 정리.md",
-    "9. 용어해설집/소프트웨어/Scope.md",
-    "8. 디자인/포토샵.md",
-    "9. 용어해설집/소프트웨어/Open Graph.md",
-    "3학년 1학기.canvas",
-    "99. 기타/img/Pasted image 20230425101146.png",
-    "노트필기방법.canvas"
+    "99. 기타/img/쇼핑몰 시안.png",
+    "Anki.md",
+    "4. 웹 개발/PWA.md",
+    "4. 웹 개발/JDBC.md",
+    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+    "99. 기타/img/Group 57.png",
+    "99. 기타/img/Group 78.png",
+    "99. 기타/img/Group 74.png",
+    "99. 기타/img/Group 59.png",
+    "99. 기타/데일리 노트/2023-04-27.md",
+    "4. 웹 개발/웹 개발론.md"
   ]
 }
