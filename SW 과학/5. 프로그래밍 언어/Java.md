@@ -4,7 +4,7 @@ aliases : 자바
 ---
 
 # 개요
-> zulu8 JDK / 자바 1.8 버전 / IDE([[이클립스]] 2021-06) / 톰캣 8.5.78v 기준 설명
+>[!info]- zulu8 JDK / 자바 1.8 버전 / IDE([[이클립스]] 2021-06) / 톰캣 8.5.78v 기준 설명
 
 -  VSC에서 자바하려면 JDK 17버전 이상 필요
 -  **자바에 대해서** 
@@ -16,18 +16,21 @@ aliases : 자바
 	- 대문자 : 프로젝트 / 소스파일
 	- 소문자 : 패키지
 - 자바 공식 문서 보는 법 : api documentation java검색
->[!cite]- 참고 문서
-> - [Java Platform, Standard Edition Java API Reference](https://docs.oracle.com/en/java/javase/18/docs/api/)
-> - [자바 공식 문서: Learning the Java Language](https://taptorestart.tistory.com/entry/%EC%9E%90%EB%B0%94-%EA%B3%B5%EC%8B%9D-%EB%AC%B8%EC%84%9C-Learning-the-Java-Language)
 - 코드 작성형식 
 	- 람다식 : 객체지향의 단점을 극복하기 위해서 함수를 쓸 수 있게 해주는 형식
 
+>[!cite]- 참고 문서
+> - [Java Platform, Standard Edition Java API Reference](https://docs.oracle.com/en/java/javase/18/docs/api/)
+> - [자바 공식 문서: Learning the Java Language](https://taptorestart.tistory.com/entry/%EC%9E%90%EB%B0%94-%EA%B3%B5%EC%8B%9D-%EB%AC%B8%EC%84%9C-Learning-the-Java-Language)
 
 # 자바 설치하기
 - [zulu8 오픈자바JDK](https://www.azul.com/downloads/?version=java-8-lts&os=windows&architecture=x86-64-bit&package=jdk#zulu)
 - [오라클 / 유료](https://www.oracle.com/java/technologies/downloads/)
 - [이클립스_2021-06 R](https://www.eclipse.org/downloads/packages/release/2021-06/r)
 - [Apache Tomcat® - Apache Tomcat 8 Software Downloads](https://tomcat.apache.org/download-80.cgi)
+
+>[!cite]- 이클립스 설치 및 기본 설정
+> ![[이클립스#기본 설정]]
 
 ## 환경변수 설정 : JAVA_HOME, Path
 - 제어판 -> 시스템 환경변수 검색 -> 새로추가 
@@ -36,9 +39,6 @@ aliases : 자바
   ![[Pasted image 20230417151555.png|400]]
 - 명령프롬프트에서 Javac라고 입력 (java -version이라고 하면 버전확인가능) 
   ![[Pasted image 20230417151630.png|400]]
-
-## 이클립스
-![[이클립스#기본 설정]]
 
 
 
@@ -480,9 +480,24 @@ classDiagram
 - 이 스펙에 따라 제품을 구현한 것을 웹APP 서버( #was)라고 함
 - [[JSP]], [[Servlet]], [[JDBC]], JNDI, JTA, EJB 등
 
-## 컬렉션 프레임워크
+## 컬렉션 프레임워크(Java Collections Framework)
+- 컬렉션 프레임 워크(Java Collections Framework) : 다수의 데이터를 동일한 방식으로 다루기 위해 자바는 자료구조를 인터페이스로 정의한 다음 구현화한 클래스로 제공, 컬렉션 프레임워크는 이렇게 만들어진 인터페이스와 클래스를 뜻하는 말
+- 자료구조 클래스화 (인터페이스 —구현—> 클래스)
+	- 컬렉션 : 다수의 데이터
+	- 프레임워크 : 표준화된 프로그래밍 방식
 
+>[!summary] 간략화한 컬렉션의 구조 (동그라미 : 인터페이스 | 네모 : 구현 클래스)
+> ```mermaid
+> graph BT
+>	Collection(("Collection")) --> Inerable(("Inerable"))
+>	List & Set--> Collection
+>	ArrayList & Vector & LinkedList -.-> List(("List"))
+>	HashSet & TreeSet -.-> Set(("Set"))
+>	HashMap & Hashtable & TreeMap & Properties -.-> Map(("Map"))
 
+- Inerable 인테페이스를 상속받는 Collection 인터페이스는 List, Set을 자식으로 가지고 있음
+	- \*Collections와는 다름
+- Map은 연관이 없지만 둘과 비슷
 
 
 
@@ -622,6 +637,16 @@ classDiagram
 
 
 
+
+# Servlet과 JSP
+>[!cite]- 서블릿
+>![[Servlet|서블릿]]
+
+>[!cite]- JSP
+>![[JSP]]
+
+
+
 # 용어정리
 - 물리적 / 논리적
 	- 물리적으로 같다(= 주소값(메모리번지)가 동일하다)
@@ -662,6 +687,7 @@ classDiagram
 	- 헤싱함수 = 찾고자 하는 값을 입력하면 그 값이 저장된 위치를 알려주는 헤시코드를 반환
 	- 보안에서 활용
 - [[아스키 코드]]
+
 ## Value Object #자바VO 
 - 메소드 매개변수로 객체를 사용할 수 있음 
 - 값 객체 패턴(Value object pattern) 즉, 객체를 값처럼 쓸 수 있고, 제약사항 중 하나는 객체의 인스턴스 변수가 생성자를 통해서 일단 설정된 후에는 결코 변하지 않음을 보장한다는 것 

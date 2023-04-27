@@ -2,7 +2,8 @@
 tag : 백엔드
 aliases : 노드JS
 ---
-사용 언어 : [[JS]]
+# 개요
+- 사용 언어 : [[JS]]
 >[!cite]- 참고 문서 
 > - [NodeJS](https://hanamon.kr/nodejs-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/)
 

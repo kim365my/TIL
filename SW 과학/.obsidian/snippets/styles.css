@@ -5,7 +5,7 @@ body{
 	--accent-h: 254;
 	--accent-s: 80%;
 	--accent-l: 68%;
-    --background-color:rgba(255,165,0,1);
+    /* --background-color:rgba(255,165,0,1); */
 }
 
 .theme-light,
@@ -70,4 +70,19 @@ body:before{
 
 .cm-editor .cm-lineNumbers{
 	/* color: var(--background-primary); */
+}
+
+/* -------------- */
+/* 콜아웃 스타일 편집 */
+/* -------------- */
+/* 콜아웃 코드 색깔 변경 */
+.callout-content code,
+.callout-content li pre:has(code){
+	margin: 0;
+	background-color: var(--background-primary);
+	border: 1px solid hsl( var(--base-h), var(--base-s), 70%);
+}
+/* 콜아웃 리스트 지우려고 프리뷰 화면에서 보이는게 거슬려 */
+.callout-content li:has(pre){
+	list-style: none;	
 }

@@ -1,21 +1,25 @@
 ---
-tag : 데이터베이스 쿼리용_언어
+tag : 데이터베이스 쿼리용_언어 백엔드
 aliases : 에스큐엘, 데이터베이스 표준언어
 ---
 
+
 # 개요
-📌 [[데이터베이스]]의 기본 - SQL(에스큐엘, 데이터 베이스 표준언어)
-> SQL은 프로그래밍 언어가 아닌 **쿼리용 언어**
-> DBMS : 오라클 11gEE버전 기준
-- 쿼리 : RDBMS에서 이해하는 유효한 명령
+>[!info] [[데이터베이스]]의 기본 - SQL(에스큐엘, 데이터 베이스 표준언어)
+> - SQL은 프로그래밍 언어가 아닌 **쿼리용 언어**
+> - DBMS : 오라클 11gEE버전 기준
+> - 쿼리 : RDBMS에서 이해하는 유효한 명령
+
 # SQL이란?
 - 관계형 데이터베이스 관리 시스템(RDBMS)를 관리하기 위해 설계된 특수 목적의 프로그래밍 언어
 -   row(행)과 column(열)이 존재
 -   ORM을 이용하면 파이썬 등으로 작업한 코드를 SQL로 변경해줌.
-    -   장점 : 시간 절약가능
-    -   단점 : ORM에 너무 의존하면 SQL에서 어떻게 작동하는 지 생각을 못하게 됨
-        풀스택개발자는 SQL의 기초적인 원리를 배워야 한다고 함
-- 데이터베이스 ![[데이터베이스#개요]]
+	-   장점 : 시간 절약가능
+	-   단점 : ORM에 너무 의존하면 SQL에서 어떻게 작동하는 지 생각을 못하게 됨
+		- 풀스택개발자는 SQL의 기초적인 원리를 배워야 한다고 함
+
+>[!cite]- 데이터베이스란?
+> ![[데이터베이스#개요]]
 
 # DBMS 설치
 ## 오라클 11gEE
@@ -70,7 +74,7 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 
 
 
-# 명령어
+# 명령어(DDL)
 ## show 명령어
 - 현재 접속한 계정을 확인하는 명령어
 	```sql
@@ -173,7 +177,7 @@ select * from employees where commission_pct IS NULL;
 
 ### ⭐ like : 데이터의 내용 조회
 - 데이터의 일부분으로 원하는 내용을 검색할 수 있음
-- 문자, 날짜 데이터 타입에 사용할 수 있음
+- 문자, 날짜 데이터 타입에 사용할 수 있음 (대소문자 구분됨)
 - vsc의 정규식 같은 느낌
 - 와일드 카드
 	-  퍼센트(`%`) : 길이 제한 없이 아무 문자가 와도 상관 없는 와일드 카드
@@ -199,12 +203,92 @@ select * from employees where commission_pct IS NULL;
 		from employees;
 	```
 
-## 정렬
-### order by
-- 기본값이 내림차순(desc)
-	```sql
-	select*from b_board order by seq desc;
-	```
+
+### IN(value)
+```sql
+select first_name, job_id AS "department_name"
+from employees where department_id IN(10, 20, 30);
+```
+- 해당 값을 포함한 것을 출력하는 쿼리문
+
+## order by : 정렬
+```sql
+select*from b_board order by seq desc;
+```
+- 기본값이 내림차순(desc)  | 오름차순은 ASC
+
+## 집합
+### UNION : 합집합
+```sql
+select * from employees where first_name like 'J%n'
+union
+select * from employees where first_name like 'J%s';
+```
+- 합집합으로 첫글자가 J로 시작하는 first_name에서 끝 글자가 n과 s일 경우의 모든 데이터를 불러오는 코드
+
+### UNION ALL
+```sql
+select department_id from employees where department_id = 30
+union all
+select department_id from employees where department_id BETWEEN 10 AND 30;
+```
+- 위와 다르게 중복 제거 안함
+
+### INTERSECT : 교집합
+```sql
+select department_id from employees where department_id = 30
+INTERSECT
+select department_id from employees where department_id BETWEEN 10 AND 30;
+```
+- 교집합
+
+### MINUS : 차집합
+```sql
+select department_id from employees where department_id = 50
+MINUS
+select department_id from employees where department_id BETWEEN 10 AND 30;
+```
+- 차집합
+
+## DECODE
+```sql
+select first_name, job_id, decode(department_id,
+    10 , 'Adimn', 20,'Maketing', 30, 'Planning'
+    )AS "department_name"
+from employees where department_id IN(10, 20, 30);
+```
+- switch~ case 문과 비슷한 함수
+
+## GROUP BY 그룹 함수
+- 테이블의 행들을 특정 칼럼 기준으로 그룹화하여 계산하는 함수들
+- 특정 그룹의 종합, 갯수, 평균등을 구하는 함수들
+- 그룹의 기준이 되는 칼럼 GROUP BY열과 함께 사용됨
+- 그룹 함수의 결과는 일반 칼럼과 함께 출력될 수 있음
+- 그룹 함수의 종류
+	- SUM(column) : 총합
+	- AVG(column) : 평균
+	- MAX(column) : 최대값
+	- MIN(column) : 최소값
+	- COUNT(column) : 갯수
+
+>[!example]
+>-  job_id를 기준으로 그룹으로 묶어서 각 그룹의 합을 보여주는 쿼리문
+>- ```sql
+select job_id, SUM(SALARY) from employees GROUP BY job_id;
+>-  job_id를 그룹으로 평균 연봉을 구하는 쿼리문
+>- ```sql
+select job_id, AVG((SALARY*(NVL(commission_pct,0)+1))*12) AS "평균 연봉" from employees GROUP By job_id;``
+>- HAVING과 함께 사용하는 쿼리문
+>- ```sql 
+select job_id, AVG(salary) AS sag_id from employees GROUP BY job_id HAVING AVG(salary) > = 10000;``
+> - `where`절과 함께 사용가능
+
+
+## HAVING : 그룹함수에 조건을 줄 때
+```sql
+select job_id, AVG(salary) AS sag_id from employees GROUP BY job_id HAVING AVG(salary) > = 10000;
+```
+- 그룹 함수에 조건을 줄때 사용하는 명령어
 
 
 # CRUD
@@ -277,5 +361,6 @@ insert into b_board(seq,title,nickname,content)
 values((select nvl(max(seq),0)+1 from b_board),'타이틀','글쓴이','글내용' );
 ```
 - values 앞에 띄워쓰기 해줘야함
+
 
 # 연관문서
