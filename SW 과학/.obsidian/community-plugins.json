@@ -2,7 +2,6 @@
   "obsidian-minimal-settings",
   "number-headings-obsidian",
   "obsidian-contextual-typography",
-  "table-editor-obsidian",
   "obsidian-cloudinary-uploader",
   "obsidian-style-settings",
   "obsidian-pandoc-reference-list",
@@ -11,5 +10,6 @@
   "calendar",
   "obsidian-outliner",
   "dataview",
-  "obsidian-to-anki-plugin"
+  "obsidian-to-anki-plugin",
+  "table-editor-obsidian"
 ]

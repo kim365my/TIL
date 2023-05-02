@@ -272,13 +272,13 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 
 # EL (Expression Language)
 >[!info]
-- 표현언어의 등장
-	- JSP 표현식을 보다 편하게 데이터를 출력하기 위해 JSP2.0에서부터 도입됨 (요즘 나오는 프로그래밍 언어들은 거의 표현식을 사용)
-		- JS ES6의 Xpath처럼 구조 분할 방식
+> - 표현언어의 등장
+>	- JSP 표현식을 보다 편하게 데이터를 출력하기 위해 JSP2.0에서부터 도입됨 (요즘 나오는 프로그래밍 언어들은 거의 표현식을 사용)
+>	- JS ES6의 Xpath처럼 [[구조 분해 할당]]
+>		- 메모리에 떠있는 객체들에 직접 접근이 가능함
+>			- ex. `${i.title}`처럼 원래라면 get 메소드를 이용해 가져와야하는 데이터에 직접 접근이 가능
 
->[!warning]
-> JSP에서 기본적으로 내장객체를 제공하지만 JSP 내장객체는 표현식에서만 사용가능
-> 그래서 EL에서 따로 내장 객체를 제공하며 EL의 형식 내에서 사용가능
+>[!warning] JSP에서 기본적으로 내장객체를 제공하지만 JSP 내장객체는 표현식에서만 사용가능. 그래서 EL에서 따로 내장 객체를 제공하며 EL의 형식 내에서 사용가능
 
 ## EL의 기본 형식
 - 형식 : `${ }`
@@ -359,7 +359,8 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 >JSP의 스크립틀릿에서 JSTL로 선언한 변수를 사용하지 못하니까 JSTL의 제어문을 통해서 제어해야함
 
 ## 플러그인 설치
-- [설치 페이지](http://www.java2s.com/Code/Jar/j/Downloadjstl12jar.htm#google_vignette)에서 다운 받고 압축 푼 다음, 이클립스 프로젝트파일의 src->main->webapp->WEB-INF->lib 경로에 .jar 파일을 넣으면 됨
+- [설치 페이지](http://www.java2s.com/Code/Jar/j/Downloadjstl12jar.htm#google_vignette)에서 다운 받고 압축 푼 다음, 이클립스 프로젝트파일의 src->main->webapp-> WEB-INF->lib 경로에 .jar 파일을 넣으면 됨
+
 ## JSTL 라이브러리 코어 태그 문법
 ```jsp
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -384,6 +385,8 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 	```jsp
 	<c:set var="age" value="${43}" />
 	```
+
+
 #### out : 변수 출력
 ```jsp
 <c:set var="str" value="<h3>수업중입니다.</h3>"/>

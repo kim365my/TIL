@@ -80,7 +80,7 @@ body:before{
 .callout-content li pre:has(code){
 	margin: 0;
 	background-color: var(--background-primary);
-	border: 1px solid hsl( var(--base-h), var(--base-s), 70%);
+	/* border: 1px solid hsl( var(--base-h), var(--base-s), 70%); */
 }
 /* 콜아웃 리스트 지우려고 프리뷰 화면에서 보이는게 거슬려 */
 .callout-content li:has(pre){
