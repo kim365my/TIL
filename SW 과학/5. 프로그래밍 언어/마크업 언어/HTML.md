@@ -73,7 +73,6 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 >> <script src="./js/jquery.scrollTo.min.js"></script>
 
 # 개요
-- [표준 HTML위키](https://html.spec.whatwg.org/multipage/)
 - 박스 모델 레이아웃이 HTML의 핵심
 - XML에서 발전한 형태
 - CSS과 연결시 주의점
@@ -84,6 +83,8 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 			- 가상 dom과 dom의 차이는 리액트 내용이기에 css의 가상클래스와 연관이 전혀 없음 
 	- 인라인 태그 : 너비/높이 조절 못함
 
+>[!cite]
+> - [표준 HTML위키](https://html.spec.whatwg.org/multipage/)
 
 
 # HTML 사용이유와 기초
@@ -531,7 +532,7 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 	- 
 
 # HTML 전역속성
->[!cite]- 참고 문서
+>[!cite] 참고 문서
 > - [Global attributes - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
 

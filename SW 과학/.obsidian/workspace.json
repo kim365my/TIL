@@ -1,67 +1,40 @@
 {
   "main": {
-    "id": "6d18a1e15f1b009e",
+    "id": "ae57a08b6c98f775",
     "type": "split",
     "children": [
       {
-        "id": "f28466f05c0cb65c",
+        "id": "fa1926ba9a8b2304",
         "type": "tabs",
         "children": [
           {
-            "id": "59e310a894a9272d",
+            "id": "42f4a482c34575ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. 프로그래밍 언어/Java.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "959ec94cd4d660c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "75fa8f7910d5abf4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 기타/메모/옵시디언.md",
+                "file": "4. 웹 개발/웹 개발론.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "54550629f8e6e2d9",
+    "id": "610d88578409a41d",
     "type": "split",
     "children": [
       {
-        "id": "60d84d04f09643de",
+        "id": "a166f7034495f256",
         "type": "tabs",
         "children": [
           {
-            "id": "5121c4c751dca168",
+            "id": "d1241a9630c8b981",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -71,7 +44,7 @@
             }
           },
           {
-            "id": "f8f607b4344df2cf",
+            "id": "8e904bce012b395e",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -79,22 +52,14 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
             }
           },
           {
-            "id": "64d46896565e1c45",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
-          },
-          {
-            "id": "9a62c47c516a128f",
+            "id": "5df08192d1e86aad",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -105,7 +70,7 @@
             }
           },
           {
-            "id": "1faeb12587140546",
+            "id": "193c72225d53e6d4",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -116,47 +81,34 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
-    "id": "b835c88157d3074d",
+    "id": "0ec7239b9c0b9a42",
     "type": "split",
     "children": [
       {
-        "id": "f584d0d70c683c2d",
+        "id": "efdcbd70d8282bb8",
         "type": "tabs",
-        "dimension": 70.1923076923077,
+        "dimension": 67.82945736434108,
         "children": [
           {
-            "id": "560d99ac017cda49",
+            "id": "e297f3dcd7f9d836",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md"
+                "file": "4. 웹 개발/웹 개발론.md"
               }
             }
           },
           {
-            "id": "c05b4d5eebdab729",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "12d2065f883748c3",
+            "id": "a41845c6911a332c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
+                "file": "4. 웹 개발/웹 개발론.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +120,19 @@
             }
           },
           {
-            "id": "faa4cdcc834e219c",
+            "id": "8bf3c9c5dc18741e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "4. 웹 개발/웹 개발론.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "de334a29d7fba367",
             "type": "leaf",
             "state": {
               "type": "ReferenceListView",
@@ -178,12 +142,12 @@
         ]
       },
       {
-        "id": "4523ed5fc307716e",
+        "id": "92f7af63d8dd3cce",
         "type": "tabs",
-        "dimension": 29.807692307692307,
+        "dimension": 32.17054263565892,
         "children": [
           {
-            "id": "79695475647168f1",
+            "id": "f9f8e608f518e7a0",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -191,20 +155,20 @@
             }
           },
           {
-            "id": "b8838bcb56befb1f",
+            "id": "b0ac13d7bbc874ca",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
+                "file": "4. 웹 개발/웹 개발론.md",
                 "options": {
-                  "collapse-filter": false,
+                  "collapse-filter": true,
                   "search": "",
                   "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
-                  "showTags": true,
+                  "showTags": false,
                   "showAttachments": false,
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
@@ -219,14 +183,14 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.4019828977761084,
+                  "scale": 1,
                   "close": true
                 }
               }
             }
           },
           {
-            "id": "b1a60d9a9b28a0b6",
+            "id": "f16bc92498a7bd96",
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
@@ -237,7 +201,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -247,49 +211,10 @@
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "959ec94cd4d660c5",
-  "lastOpenFiles": [
-    "99. 기타/메모/옵시디언.md",
-    "5. 프로그래밍 언어/스타일 시트/CSS.md",
-    "5. 프로그래밍 언어/Java.md",
-    "4. 웹 개발/HTML, CSS 템플릿.md",
-    "5. 프로그래밍 언어/마크업 언어/HTML.md",
-    "99. 기타/노트필기 메모/1.md",
-    "99. 템플릿/새 노트.md",
-    "99. 템플릿/데일리 노트.md",
-    "철학.md",
-    "7. 수학/난 수학이 싫어.md",
-    "7. 수학/플랑크 상수.md",
-    "4. 웹 개발/웹 개발론.md",
-    "웹 개발.canvas",
-    "케빈노트.md",
-    "TO DO list.md",
-    "1. 데이터/데이터베이스.md",
-    "99. 기타/정보처리기사/2. 소프트웨어 개발.md",
-    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
-    "99. 기타/데일리 노트/2023-05-03.md",
-    "99. 기타/정보처리기사/3. 데이터베이스 구축.md",
-    "99. 기타/데일리 노트/2023-05-02.md",
-    "4. 웹 개발/XML.md",
-    "9. 용어해설집/소프트웨어/AJAX.md",
-    "JSON.md",
-    "4. 웹 개발/웹 트렌드.md",
-    "5. 프로그래밍 언어/프레임워크/React.js.md",
-    "4. 웹 개발/구조 분해 할당.md",
-    "99. 기타/img/Frame 6.png",
-    "99. 기타/img/Frame 6 1.png",
-    "99. 기타/img/Untitled.png",
-    "99. 기타/img/4. 노드확장_아래쪽.png",
-    "99. 기타/img/Pasted image 20230502153647.png",
-    "99. 기타/img/Pasted image 20230502153618.png",
-    "99. 기타/img/Pasted image 20230502151617.png",
-    "99. 기타/img/Pasted image 20230502151605.png",
-    "99. 기타/img/Pasted image 20230502135301.png",
-    "99. 기타/img/Pasted image 20230502091637.png",
-    "3학년 1학기.canvas",
-    "노트필기방법.canvas"
-  ]
+  "active": "f9f8e608f518e7a0",
+  "lastOpenFiles": []
 }

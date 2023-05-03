@@ -1,15 +1,17 @@
 [
-  "obsidian-minimal-settings",
-  "number-headings-obsidian",
-  "obsidian-contextual-typography",
-  "obsidian-cloudinary-uploader",
-  "obsidian-style-settings",
-  "obsidian-pandoc-reference-list",
-  "obsidian-pandoc",
-  "obsidian-kanban",
+  "table-editor-obsidian",
   "calendar",
-  "obsidian-outliner",
+  "obsidian-contextual-typography",
   "dataview",
+  "influx",
+  "obsidian-kanban",
+  "link-exploder",
+  "obsidian-minimal-settings",
+  "obsidian-cloudinary-uploader",
   "obsidian-to-anki-plugin",
-  "table-editor-obsidian"
+  "obsidian-outliner",
+  "obsidian-pandoc",
+  "obsidian-pandoc-reference-list",
+  "obsidian-style-settings",
+  "obsidian-tasks-plugin"
 ]
