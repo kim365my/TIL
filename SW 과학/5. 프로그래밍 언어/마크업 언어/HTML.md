@@ -2,6 +2,76 @@
 tag : 마크업_언어 프론트엔드
 aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 ---
+
+>[!quote]- HTML 템플릿
+>> [!example]- 팝이콘
+>> ```html
+>> <link rel="shortcut icon" href="./images/favicon/favmc32.png">
+>> <link rel="apple-touch-icon=precomposed" href="./images/favicon/montblanc_fav144.png">
+>> ```
+>
+>> [!example]- 가상이미지
+>> ```html
+ > <img src="<https://place-hold.it/640x480>" alt="가상 이미지">
+>> ```
+>> - 작성예시 : `https://place-hold.it/사이즈/배경색/텍스트색/문구(?Text=”작성하고 싶은 텍스트”) `
+>> - [공식사이트](https://place-hold.it/) 
+>> - [설명](https://ddorang-d.tistory.com/44)
+>
+>>[!example]- 폰트어썸
+>> - 폰트어썸 4버전
+>> 	```html
+>> 	<!-- 폰트어썸 -->
+>> 	<link rel="stylesheet" href="<https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>">
+>>	```
+>> - 폰트어썸 5버전
+>> 	```html
+>> 	<!-- 폰트어썸 -->
+>> 	<link rel="stylesheet" href="<https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css>">
+>> 	```
+>
+>>[!example]- 제이쿼리
+>> ```html
+>> <!-- 제이쿼리 코어파일 -->
+>> <script src="./js/jquery-1.12.4.min.js"></script>
+>> <script src="./js/jquery-3.3.1.min.js"></script>
+>> <script src="./js/jquery-3.4.1.min.js"></script>
+>> <!-- 코딩할때 웹킷 안써줘도 자동으로 브라우저에 인식하게 해줌 : 접두어 일일히 쓰는거 -->
+>> <script src="./js/prefixfree.min.js"></script>
+>> <!-- 제이쿼리 플러그인 -->
+>> <script src="./js/jquery-ui.min.js"></script>
+>> <script src="./js/jquery.bxslider.js"></script>
+>> <script src="./js/jquery.scrollTo.min.js"></script>
+>> ```
+>
+>>[!example]- 기본 폼
+>> ```html
+>> <meta charset="UTF-8">
+>> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+>> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>> <title>Mobile</title>
+>> <!-- 파비콘 -->
+>> <link rel="shortcut icon" href="./images/favicon/favmc32.png">
+>> <link rel="apple-touch-icon=precomposed" href="./images/favicon/montblanc_fav144.png">    
+>> <!-- 폰트어썸 -->
+>> <link rel="stylesheet" href="<https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>">    
+>> <!-- 스타일 -->
+>> <link rel="stylesheet" href="./css/font.css">
+>> <link rel="stylesheet" href="./css/reset.css">
+>> <!-- <link rel="stylesheet" href="./css/jquery.bxslider.css"> -->
+>> <!-- 커스텀 css -->
+>> <link rel="stylesheet" href="./css/style.css">
+>> <!-- 제이쿼리 코어파일 -->
+>> <script src="./js/jquery-1.12.4.min.js"></script>
+>> <script src="./js/jquery-3.3.1.min.js"></script>
+>> <script src="./js/jquery-3.4.1.min.js"></script>
+>> <!-- 코딩할때 웹킷 안써줘도 자동으로 브라우저에 인식하게 해줌 : 접두어 일일히 쓰는거 -->
+>> <script src="./js/prefixfree.min.js"></script>
+>> <!-- 제이쿼리 플러그인 -->
+>> <script src="./js/jquery-ui.min.js"></script>
+>> <script src="./js/jquery.bxslider.js"></script>
+>> <script src="./js/jquery.scrollTo.min.js"></script>
+
 # 개요
 - [표준 HTML위키](https://html.spec.whatwg.org/multipage/)
 - 박스 모델 레이아웃이 HTML의 핵심
@@ -13,6 +83,7 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 			- 따라서 after()나 before()를 이용해 js로 가상선택자에 접근은 되도 권장하지는 않음
 			- 가상 dom과 dom의 차이는 리액트 내용이기에 css의 가상클래스와 연관이 전혀 없음 
 	- 인라인 태그 : 너비/높이 조절 못함
+
 
 
 # HTML 사용이유와 기초

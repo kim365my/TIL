@@ -8,7 +8,7 @@
   "cssTheme": "Minimal",
   "monospaceFontFamily": "Fira Code",
   "nativeMenus": false,
-  "baseFontSizeAction": true,
+  "baseFontSizeAction": false,
   "enabledCssSnippets": [
     "styles"
   ]

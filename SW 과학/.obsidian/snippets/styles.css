@@ -84,7 +84,7 @@ body:before{
 }
 /* 콜아웃 리스트 지우려고 프리뷰 화면에서 보이는게 거슬려 */
 .callout-content li:has(pre){
-	list-style: none;	
+	/* list-style: none;	 */
 }
 
 /* 콜아웃 보더랑 패딩 없애기 */
@@ -102,7 +102,7 @@ body:before{
 	padding:11px 20px;
 }
 .callout-content{
-	padding:0 11px;
+	padding:11px;
 }
 .callout-icon,
 .callout-fold{

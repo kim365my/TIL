@@ -140,6 +140,7 @@ public class Operator2 {
 	- 연산시 더 큰 데이터 타입으로 자동 형변환
 	- 서로 다른 타입 간의 대입이나 연산을 할때 먼저 형변환으로 타입을 일치시키는 것이 원칙(단, 경우에 따라 컴파일러가 자동으로 생략된 형변환을 해줌)
 	- 크거 → 작은거 (오류) / 작은거 → 큰거(오류x) : 데이터타입의 비트크기 기준
+
 ### 메모리 공간
 ![[프로그래밍 언어론#메모리 공간]]
 
@@ -544,44 +545,45 @@ classDiagram
 	-   자바는 특이하게 컴파일을 한다음 당장 안쓰는 건 코드화해놓는 것 같아, 코드화를 해놓고 필요할때 실행엔진이 JIT방식으로 번역해서 실행
 5.  코드가 실행되면서 실행엔진이 런타임데이터 영역에 데이터를 올림
 	- 가비지 콜렉터는 힙영역을 감시, 사용하지 않는 객체를 데이터영역에서 내림
-- JVM 작동 도식화
-	```mermaid
-	flowchart TD
-		id1[".java"]--컴파일-->id2[".class"]--실행-->id6
-		
-		subgraph JVM
-			id5["실행엔진 (Exeution Engine)"]<-->id8
-			id6["클래스 로더\\n(Class Loader)"]<-->id8
-			id5<-->id6
-			subgraph id5["실행엔진 (Exeution Engine)"]
-				JIT
-				INterPreter
-				id7["가비지 콜렉터\\n(Garbage Collector)"]
-			end
-	
-			subgraph id6["클래스 로더\\n(Class Loader)"]
-			
-			end
-	
-			subgraph id8["런타임 데이터 영역 (Runtime Data Area)"]
-				subgraph id10["스레드 공유됨"]
-					id100["Heap Area"]
-					id200["Method Area"]
-				end
-				subgraph id11["스레드 공유안됨"]
-					id300["Stack Area"]
-					id400["PC Register"]
-					id500["Native Method Stack"]
-				end
-			end
-		end
-	
-		subgraph id800["Native Method"]
-			id600["Interface"]
-			id700["Library"]
-			id700-->id600
-		end	
-	```
+
+>[!quote]- JVM 작동 도식화
+>```mermaid
+>flowchart TD
+>	id1[".java"]--컴파일-->id2[".class"]--실행-->id6
+>	
+>	subgraph JVM
+>		id5["실행엔진 (Exeution Engine)"]<-->id8
+>		id6["클래스 로더\\n(Class Loader)"]<-->id8
+>		id5<-->id6
+>		subgraph id5["실행엔진 (Exeution Engine)"]
+>			JIT
+>			INterPreter
+>			id7["가비지 콜렉터\\n(Garbage Collector)"]
+>		end
+>
+>		subgraph id6["클래스 로더\\n(Class Loader)"]
+>		
+>		end
+>
+>		subgraph id8["런타임 데이터 영역 (Runtime Data Area)"]
+>			subgraph id10["스레드 공유됨"]
+>				id100["Heap Area"]
+>				id200["Method Area"]
+>			end
+>			subgraph id11["스레드 공유안됨"]
+>				id300["Stack Area"]
+>				id400["PC Register"]
+>				id500["Native Method Stack"]
+>			end
+>		end
+>	end
+>
+>	subgraph id800["Native Method"]
+>		id600["Interface"]
+>		id700["Library"]
+>		id700-->id600
+>	end	
+>```
 
 ## JVM 용어 정리
 - 스레드
@@ -639,11 +641,11 @@ classDiagram
 
 ## DB에 연결하는 방식 
 - [[JDBC]]와 [[커넥션 풀 API]] 방식을 통해서 DB와 연결할 수 있음
-- 연결한 후에는 데이터를 [[CRUD]]하면 됨
+	- 연결한 후에는 자바에서 데이터를 [[CRUD]]하면 됨
 - 데이터를 화면에 출력하는 방식 #비지니스_로직 #기술면접
 	1. JSP 방식
 		- 정의 
-			- [[JSP]]를 이용해서 화면에 출력하는 방식으로 [[Servlet|서블릿]]이나 다른 페이지를 거치지 않고 직접 [[JDBC]]를 통해서 DB와 연결함
+			- [[JSP]]를 이용해서 화면에 출력하는 방식으로 [[Servlet|서블릿]]이나 다른 페이지를 거치지 않고 직접 [[JDBC]]를 통해서 [[데이터베이스|DB]]와 연결함
 			- 비지니스 로직이 복잡하지 않을 경우 주로 사용
 		- 장점 : 컨트롤과 뷰가 통합되어 있어 다른 페이지를 거치지 않아서 코드를 보기에 직관적
 		- 단점 : 보안에 취약, 코드 재활용 불가능 
@@ -658,7 +660,9 @@ classDiagram
 			- 기존 Model 1 방식과 동일하지만 DB와 연결하여 [[CRUD]]하는 방식을 클래스화한 방식
 			- 완전히 코드가 분리되어 있음
 		- 장점
+			- 코드 재활용이 좋음
 		- 단점
+			- 작은 규모의 프로젝트여도 파일이 많이 생긴다는 점? %%단점은 잘 캐치하기 어려워...%%
 
 ### MVC(Model-View-Controller)
 >[!summary] Model(자바) - View(JSP) - Controller(서블릿)

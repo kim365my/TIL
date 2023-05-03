@@ -2,12 +2,249 @@
 tag : 프론트엔드 마크업_언어 스타일시트
 aliases : Cascading Style Sheets - 종속형 시트
 ---
->[!hint] 새로운 소식
-> - [CSS 중첩(nesting)이 된다고?](https://developer.chrome.com/articles/css-nesting/)
+>[!quote] 
+>>[!hint] 새로운 소식
+>> - [CSS 중첩(nesting)이 된다고?](https://developer.chrome.com/articles/css-nesting/
+>
+>>[!question]- 어려운 부분
+>> - [ ] 선택자는 문자열이 아니라 객체 참조라는 말이 무슨 뜻이지
+>> - [ ] 그라데이션이 어려워
 
->[!question]- 어려운 부분
-> - [ ] 선택자는 문자열이 아니라 객체 참조라는 말이 무슨 뜻이지
-> - [ ] 그라데이션이 어려워
+>[!quote]- CSS 자주 쓰는 코드
+>>[!example]- reset.css
+>> ```css
+>> @charset "utf-8";
+>> /* CSS 불러오기 */
+>> @import url(./font.css);
+>> /* CSS 초기화 */
+>> html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,
+>> p,blockquote,pre,cite,code,del,em,img,ins,q,small,strong,sub,sup,
+>> dl,dt,dd,ol,ul,li,fieldset,form,legend,table,caption,
+>> thead,thead,tfoot,tr,th,td,article,aside,canvas,details,figcaption,figure,
+>> footer,header,nav,section,summary,time,mark,audio,video,button {
+>>     margin: 0;
+>>     padding: 0;
+>>     border: 0;
+>>     outline: 0;
+>>     font-size: 100%;
+>>     font-weight: normal;
+>>     vertical-align: baseline;
+>> }
+>> /* 문서 전체 CSS 적용 */
+>> body {
+>>     line-height: 1;
+>> }
+>> /* List 요소 */
+>> ul,li,ol {
+>>     list-style: none;
+>> }
+>> /* A 요소 */
+>> a {
+>>     text-decoration: none;
+>>     color: inherit;
+>>     font-size: 1em;
+>>     vertical-align: baseline;
+>>     background: none;
+>> }
+>> /* img 요소 */
+>> img {
+>>     vertical-align: top;
+>> }
+>> /* hr 요소 */
+>> hr {
+>>     display: block;
+>>     margin: 0;
+>>     padding: 0;
+>>     border: 0;
+>> }
+>> /* button 요소 */
+>> button {
+>>     background: none;
+>> }
+>> /* 박스사이징 */
+>> * {
+>>     box-sizing: border-box;
+>> }
+>> /* 플롯해제 */
+>> .cf::after {
+>>     content: "";
+>>     display: block;
+>>     clear: both;
+>> }
+>> /* 모든 환경에 안보여도 되지만, 반드시 입력해야할 html태그가 존재(웹접근성 때문에) */
+>> /* 그때, 해당 요소를 숨기기 위해 사용되는 class */
+>> .blind {
+>>     position: absolute;
+>>     left: -9999px;
+>>     width: 0;
+>>     height: 0;
+>>     line-height: 0;
+>>     text-indent: -9999px;
+>>     overflow: hidden;
+>> }
+>> /* 패딩, 마진, 보더값 초기화 클래스 */
+>> .no_mt {margin-top: 0 !important;}
+>> .no_mr {margin-right: 0 !important;}
+>> .no_mb {margin-bottom: 0 !important;}
+>> .no_ml {margin-left: 0 !important;}
+>> 
+>> .no_pt {padding-top: 0 !important;}
+>> .no_pr {padding-right: 0 !important;}
+>> .no_pb {padding-bottom: 0 !important;}
+>> .no_pl {padding-left: 0 !important;}
+>> 
+>> .no_bt {border-top: 0 !important;}
+>> .no_br {border-right: 0 !important;}
+>> .no_bb {border-bottom: 0 !important;}
+>> .no_bl {border-left: 0 !important;}
+>> ```
+>
+>>[!example]- font.css
+>> ```css
+>> @charset "utf-8";
+>> 
+>> /* 영문폰트 */
+>> @import url('<https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Rowdies&family=Oswald&family=Roboto+Mono&family=Raleway&family=Ubuntu&family=Nunito&family=Merriweather&family=Playfair+Display&family=PT+Sans&family=Rubik&family=Mukta&family=Work+Sans&family=Sevillana&family=Lora&family=Fira+Sans&family=Barlow&family=Kanit&family=Quicksand&family=Passions+Conflict&family=Montserrat&family=PT+Serif&family=Play&family=Monoton&family=Fjalla+One&display=swap>');
+>> /*각 링크{
+>>     @import url('<https://fonts.googleapis.com/css2?family=Roboto&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Open+Sans&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Rowdies&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Oswald&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Raleway&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Ubuntu&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Nunito&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=PT+Sans&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Rubik&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Mukta&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Work+Sans&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Sevillana&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Lora&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Barlow&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Kanit&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Quicksand&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Montserrat&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=PT+Serif&display=swap>'); 
+>>     @import url('<https://fonts.googleapis.com/css2?family=Play&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Monoton&display=swap>');
+>> 		@import url('<https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap>');
+>> 		@import url('<https://fonts.googleapis.com/css2?family=Righteous&display=swap>');
+>> } */
+>> 
+>> /* 한글폰트 */
+>> @import url('<https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Nanum+Gothic&family=East+Sea+Dokdo&family=Yeon+Sung&family=Black+Han+Sans&family=Nanum+Pen+Script&family=Jua&family=Gugi&family=Do+Hyeon&family=IBM+Plex+Sans+KR&family=Gowun+Dodum&family=Gowun+Batang&family=Song+Myung&family=Hahmlet&family=Dongle&family=Noto+Serif+KR&display=swap>');
+>> /*각 링크{
+>>     @import url('<https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Jua&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Gugi&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Song+Myung&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Hahmlet&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Dongle&display=swap>');
+>>     @import url('<https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap>');
+>> }*/
+>> 
+>> /* 영문/한글폰트 나눠서 해야함 */
+>> /* 영문 폰트 20개 이상 한글폰트 15개 이상 */
+>> /* 영문폰트 */
+>> .roboto{font-family: 'Roboto', sans-serif;}
+>> .opensans{font-family: 'Open Sans', sans-serif;}
+>> .rowdies{font-family: 'Rowdies', cursive;}
+>> .oswald{font-family: 'Oswald', sans-serif;}
+>> .robotoMono{font-family: 'Roboto Mono', monospace;}
+>> .raleway{font-family: 'Raleway', sans-serif;}
+>> .ubuntu{font-family: 'Ubuntu', sans-serif;}
+>> .nunito{font-family: 'Nunito', sans-serif;}
+>> .merriweather{font-family: 'Merriweather', serif;}
+>> .playfairdisplay{font-family: 'Playfair Display', serif;}
+>> .ptsans{font-family: 'PT Sans', sans-serif;}
+>> .rubik{font-family: 'Rubik', sans-serif;}
+>> .mukta{font-family: 'Mukta', sans-serif;}
+>> .worksans{font-family: 'Work Sans', sans-serif;}
+>> .sevillana{font-family: 'Sevillana', cursive;}
+>> .lora{font-family: 'Lora', serif;}
+>> .firasans{font-family: 'Fira Sans', sans-serif;}
+>> .barlow{font-family: 'Barlow', sans-serif;}
+>> .kanit{font-family: 'Kanit', sans-serif;}
+>> .quicksand{font-family: 'Quicksand', sans-serif;}
+>> .passionsconflict{font-family: 'Passions Conflict', cursive;}
+>> .montserrat{font-family: 'Montserrat', sans-serif;}
+>> .ptserif{font-family: 'PT Serif', serif;}
+>> .play{font-family: 'Play', sans-serif;}
+>> .monoton{font-family: 'Monoton', cursive;}
+>> .fjallaone { font-family: 'Fjalla One', sans-serif;}
+>> .righteous { font-family: 'Righteous', cursive;}
+>> 
+>> /* 한글폰트 */
+>> .notosanskr {font-family: 'Noto Sans KR', sans-serif;}
+>> .nanumgothic{font-family: 'Nanum Gothic', sans-serif;}
+>> .eastseadokdo{font-family: 'East Sea Dokdo', cursive;}
+>> .yeonsung{font-family: 'Yeon Sung', cursive;}
+>> .blackhansans{font-family: 'Black Han Sans', sans-serif;}
+>> .nonumpenscript{font-family: 'Nanum Pen Script', cursive;}
+>> .jua{font-family: 'Jua', sans-serif;}
+>> .gugi{font-family: 'Gugi', cursive;}
+>> .dohyeon{font-family: 'Do Hyeon', sans-serif;}
+>> .ibmplexsanskr{font-family: 'IBM Plex Sans KR', sans-serif;}
+>> .gowundodum{font-family: 'Gowun Dodum', sans-serif;}
+>> .gowunbatang{font-family: 'Gowun Batang', serif;}
+>> .songmyung{font-family: 'Song Myung', serif;}
+>> .hohmlet{font-family: 'Hahmlet', serif;}
+>> .dongle{font-family: 'Dongle', sans-serif;}
+>> .notoserifkorean{font-family: 'Noto Serif KR', serif;}
+>> ```
+>
+>>[!example]- display_none_scrollbar.css
+>> ```css
+>> body {
+>>    -ms-overflow-style: none;
+>> }
+>> ::-webkit-scrollbar 
+>> { 
+>>    display: none;
+>> } 
+>> /*특정 부분 스크롤바 없애기*/ 
+>> .box {
+>>     -ms-overflow-style: none;
+>> }
+>> .box::-webkit-scrollbar { 
+>>      display:none;
+>> }
+>> ```
+>
+>>[!example]- 시스템 폰트 세팅
+>> -   사용자가 기본으로 쓰는 폰트를 적용할 수 있게 세팅
+>> -   기본폰트 : SF로 시작하는 폰트는 맥용 / 윈도우는 Arial
+>> ```css
+>> body {
+>> 	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+>> }
+>> 
+>> /* "system" font family 설정*/
+>> @font-face {
+>> 	font-family: system;
+>> 	font-style: normal;
+>> 	font-weight: 300;
+>> 	src: local("./font/SFNSText-Light.ttf"), local("./font/HelveticaNeueDeskInterface-Light.ttf"), local("./font/LucidaGrandeUI.ttf"), local("./font/Ubuntu-Light.ttf"), local("./font/SegoeUILight.ttf"), local("./font/Roboto-Light.ttf"), local("./font/DroidSans.ttf"), local("./font/Tahoma.ttf");
+>> }
+>> /* @font-family 적용 */
+>> body {
+>> 	font-family: "system";
+>> }
+>> ```
+
 
 # 개요
 - CSS 도구
@@ -78,6 +315,40 @@ aliases : Cascading Style Sheets - 종속형 시트
 | `요소명[속성명*="값"]` | 전체 중 어떤 일부분이라도 일치하는 요소 선택                     |
 
 
+
+# CSS 속성 목록 정리
+## @ at-rule 
+>[!summary]- @ 기호는CSS에서 at-rules(at-규칙)이라고함 / 요소를 직접적으로 스타일링 하진않지만, 스타일을 적용하는 방법을 제어
+
+- @import	: 다른 스타일시트를 불러올때 정의 ex) `@import url(’ ’);`
+- @charset : 스타일 시트 인코딩 정의  ex) `@charset 'utf-8';`
+- @container : 반응형 디자인에서 페이지 넓이 뿐만 아니라 부모 요소의 넓이를 기준으로 잡을 수 있음
+- @font-face: 글꼴을 사용할때 정의	
+- @font-face: 웹폰트 이전에 폰트가 기본으로 나오는걸 방지하기 위해 사용. 메모리 영역에 올라가서 설치되지 않아도 보이게 됨	
+	```css
+	@font-face {
+		font-family: 'trana';
+		src: url()
+		url() format(),
+		url(.) format()
+	}
+	```
+- @keyframes : 애니메이션을 제어하기 위한 정의
+- @media : [[CSS#미디어 쿼리|미디어쿼리]]를 사용할때 정의
+- @nest : 중첩 셀렉팅을 도와주고 코드 반복을 줄여주는 문법
+- @namespace : 네임스페이스로 접두사가 붙을때 정의
+- @page : 페이지를 프린트 할 때 레이아웃 설정을 정의
+- @scope : 스타일 범위 지정. 테마 별로 스타일 분기처리할때 좋음 (지원되는 브라우저 적음)
+	```css
+	@scope (.aboutTime) {
+		:scope { display: grid; grid-template-columns: 20px 2fr; } 
+	img { 
+		display: block; width: 100%; 
+	}
+	```
+	- [[JS]]하고 같이 사용되는 문법인가봐... #이해부족  
+- @viewport : 각 디바이스에 화면을 어떻게 표현할건지의 대한 정의
+
 ## 가상 선택자
 - **가상선택자 사용 조건**
 	- 선택자와 달리 선택한 요소가 특별한 상태일 때 사용가능
@@ -113,12 +384,12 @@ aliases : Cascading Style Sheets - 종속형 시트
 		- 조건요소
 			- not : 조건이 아닌 대상에 적용
 			- checked : 체크되어있으면 적용
-		- 가상요소
-			- ::before : 선택된 요소 앞에 작성됨 `content`의 `“ ”`를 통해서 문자열을 넣을 수 있음
-			- ::after : 선택된 요소 뒤에 작성됨
+		- 가상요소 
+			- `::before` : 선택된 요소 앞에 작성됨 `content`의 `“ ”`를 통해서 문자열을 넣을 수 있음
+			- `::after` : 선택된 요소 뒤에 작성됨
+			- 가상요소 사용이유 #기술면접 
+				- 마크업 수정없이 다른 요소를 삽입할 때 사용
 - HTML 태그를 선택할 때는 `:root` 가상 선택자를 사용함
-
-
 
 ## 케스케이딩
 >[!note] 아이디 선택자 > 클래스・속성 선택자 및 가상 클래스 > 요소 및 가상 요소 순서대로 가중치
@@ -142,6 +413,9 @@ aliases : Cascading Style Sheets - 종속형 시트
 	1.  아이디 선택자 개수 계산
 	2.  클래스 ・ 속성 선택 자 및 가상 클래스 개수 계산
 	3.  요소 및 가상 요소 개수 계산
+- `!important` #기술면접 
+	- 일반적으로 !important는 적용된 우선순위를 무시하고 스타일을 강제하기 때문에, 차후에 유지 보수성을 고려한다면 최선책은 아니다. 따라서 너무 많이 사용하지 않는 것이 좋다. (아이디・클래스 선택자로 대체)
+
 
 ## 전역변수 (사용자지정 CSS 속성)
 ```css
@@ -167,41 +441,9 @@ body{
     }
     ```
 
-
-# CSS 속성 목록 정리
-## @ at-rule 
->[!summary]- @ 기호는CSS에서 at-rules(at-규칙)이라고함 / 요소를 직접적으로 스타일링 하진않지만, 스타일을 적용하는 방법을 제어
-
-- @import	: 다른 스타일시트를 불러올때 정의 ex) `@import url(’ ’);`
-- @charset : 스타일 시트 인코딩 정의  ex) `@charset 'utf-8';`
-- @container : 반응형 디자인에서 페이지 넓이 뿐만 아니라 부모 요소의 넓이를 기준으로 잡을 수 있음
-- @font-face: 글꼴을 사용할때 정의	
-- @font-face: 웹폰트 이전에 폰트가 기본으로 나오는걸 방지하기 위해 사용. 메모리 영역에 올라가서 설치되지 않아도 보이게 됨	
-	```css
-	@font-face {
-		font-family: 'trana';
-		src: url()
-		url() format(),
-		url(.) format()
-	}
-	```
-- @keyframes : 애니메이션을 제어하기 위한 정의
-- @media : [[CSS#미디어 쿼리|미디어쿼리]]를 사용할때 정의
-- @nest : 중첩 셀렉팅을 도와주고 코드 반복을 줄여주는 문법
-- @namespace : 네임스페이스로 접두사가 붙을때 정의
-- @page : 페이지를 프린트 할 때 레이아웃 설정을 정의
-- @scope : 스타일 범위 지정. 테마 별로 스타일 분기처리할때 좋음 (지원되는 브라우저 적음)
-	```css
-	@scope (.aboutTime) {
-		:scope { display: grid; grid-template-columns: 20px 2fr; } 
-	img { 
-		display: block; width: 100%; 
-	}
-	```
-	- [[JS]]하고 같이 사용되는 문법인가봐... #이해부족  
-- @viewport : 각 디바이스에 화면을 어떻게 표현할건지의 대한 정의
-
 ## 텍스트
+
+
 ## 폰트
 >[!quote]- 폰트 사이즈에 대해
 > ![[웹 개발론#1. 폰트 사이즈 단위]]
@@ -245,6 +487,15 @@ body{
 		-   footer 밑바닥 공백 안됨, margin은 박스간의 관계라 더이상 밑에 아무것도 없으면 적용이 되지 않음
 ## 레이아웃
 - Floats
+	- float:left를 썼을 경우 영역사라짐(height:0)을 방지하는 방법 #기술면접 
+		- clearfix 방식
+			```css
+			.clearfix {*zoom:1;}
+			.clearfix:before, .clearfix:after{ 
+				display: block; content: ''; line-height: 0;
+			}
+			.clearfix:after {clear: both;}
+			```
 - Positioning
 - Display
 - Box Model
@@ -254,29 +505,8 @@ body{
 
 ## 디스플레이
 ## 오버플로
-## 캐스케이딩
-- CSS에서는 HTML 태그에 하나 이상의 스타일이 적용될 때, 우선순위를 결정하는 규칙을 의미
-- **캐스케이딩 규칙** : 중요도 · 특수성 > 코드 순서
-	1. **코드 순서**
-	2.  **중요도(importance)**
-		1.  Internal 방식으로 작성된 스타일
-		2.  Internal 방식으로 작성된 스타일 내부의 @import
-		3.  External 방식으로 연결된 스타일
-		4.  External 방식으로 연결된 스타일 내부의 @import
-		5.  브라우저의 기본 스타일
-	3.  **특수성(specificity)**
-		1.  !important 속성이 지정된 스타일 (ex, `h2{ color: green !important; }`)
-		2.  Inline 방식으로 적용된 스타일
-		3.  아이디 선택자
-		4.  클래스 선택자 ・ 가상 선택자
-		5.  태그 선택자
-		6.  상속된 스타일
-	- **특수성 계산기** : 점수를 매겨 우선순위를 결정하는 개념
-		1.  아이디 선택자 개수 계산
-		2.  클래스 ・ 속성 선택 자 및 가상 클래스 개수 계산
-		3.  요소 및 가상 요소 개수 계산
-		아이디 선택자 > 클래스 ・ 속성 선택자 및 가상 클래스 > 요소 및 가상 요소 순서대로 가중치
-- `!important` : 일반적으로 !important는 적용된 우선순위를 무시하고 스타일을 강제하기 때문에, 차후에 유지 보수성을 고려한다면 최선책은 아니다. 따라서 너무 많이 사용하지 않는 것이 좋다. (아이디・클래스 선택자로 대체)
+
+
 ## 컬러
 ## 미디어 쿼리
 >[!abstract]- 선행조건
@@ -327,8 +557,12 @@ body{
 >	-   변화를 주고 싶은 박스 영역만 코딩
 >	-   변경하고 싶은 선택자하고 속성명을 똑같이 맞춰줘야 함
 >	-   반응형은 구조는 바꾸지 않아야 함
+
 ## 애니메이션
+
 ## 사용자 지정 속성
+
+
 ## 링크에 지정 가능 스타일
 
 
@@ -336,7 +570,6 @@ body{
 
 
 # 신기능 코너!
-
 ## nesting
 - css 중첩 기능, 하지만 HTML 요소 앞에 `&`기호나 `:is()` 가상 선택자가 필요
 - 선택자는 문자열이 아니라 객체 참조?
@@ -346,6 +579,7 @@ body{
 	- 현재 전세계 비율로 따지면 40.94%의 브라우저가 지원
 
 # 그 외
+
 ## 와일드 카드 문자
 - `*` : 여러 문자
 - `?` : 한 문자 
