@@ -76,13 +76,46 @@ body:before{
 /* 콜아웃 스타일 편집 */
 /* -------------- */
 /* 콜아웃 코드 색깔 변경 */
-.callout-content code,
-.callout-content li pre:has(code){
+.callout code,
+.callout pre:has(code){
 	margin: 0;
 	background-color: var(--background-primary);
-	/* border: 1px solid hsl( var(--base-h), var(--base-s), 70%); */
+	border:1px solid rgba(var(--callout-color), 0.3);
 }
 /* 콜아웃 리스트 지우려고 프리뷰 화면에서 보이는게 거슬려 */
 .callout-content li:has(pre){
 	list-style: none;	
 }
+
+/* 콜아웃 보더랑 패딩 없애기 */
+.callout{
+	padding: 0;
+	border:1px solid rgba(var(--callout-color), 0.3);
+    background-color: rgba(var(--callout-color), 0.07);
+}
+.callout-title{
+	gap:var(--size-4-3);
+    align-items:center;
+    background-color:rgba(var(--callout-color), 0.07);
+	border-bottom:1px solid transparent;
+	transition:border 0.3s;
+	padding:11px 20px;
+}
+.callout-content{
+	padding:0 11px;
+}
+.callout-icon,
+.callout-fold{
+	margin:0;
+	align-self:center;
+}
+
+/* only apply border if callout is not collapsed */
+.callout:not(.is-collapsed)>.callout-title:has(+.callout-content){
+	border-bottom:1px solid rgba(var(--callout-color), 0.3);
+}
+
+.markdown-source-view.mod-cm6 .callout .callout{
+	margin:1em 0;
+}
+

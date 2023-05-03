@@ -11,7 +11,7 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 > 	- 쿼리 : RDBMS에서 이해하는 유효한 명령
 > 		-  row(행)과 column(열)이 존재
 > - DBMS : 오라클 등
-> -   ORM(객체 관계)을 이용하면 파이썬 등으로 작업한 코드를 SQL로 변경해줌.
+> -   ORM(객체 관계)을 이용하면 [[python|파이썬]] 등으로 작업한 코드를 SQL로 변경해줌.
 >	-   장점 : 시간 절약가능
 >	-   단점 : ORM에 너무 의존하면 SQL에서 어떻게 작동하는 지 생각을 못하게 됨
 >		- 풀스택개발자는 SQL의 기초적인 원리를 배워야 한다고 함
@@ -29,11 +29,19 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 >	- 고급 시스템 설정 - 환경변수 - 새로 추가 - `C:\Program Files\MySQL\MySQL Server 8.0\bin`(mysqld.exe가 있는 곳으로)
 >	- window - R(실행) ->  cmd - `mysql -V` - 성공 문자 확인
 
+>[!cite] [티베로 사용설명서](https://technet.tmaxsoft.com/upload/download/online/tibero/pver-20150504-000001/reference/index.html) : 한국산 DBMS
 
 # 기본 문법
 - 대소문자 구별안함 (데이터 값은 예외)
 - `ctrl+enter`로 한줄씩 실행가능
 - 기본 지원 : 데이터 타입제공 / 사칙연산 가능 / 메소드 지원
+- 오라클 DB 이름 명명 규칙
+	- 문자로 시작해야함
+	- 1자부터 30자까지 가능
+	- A-z, 0-9, $ 포함가능
+	- 동일한 사용자가 소유한 다른 DB의 이름과 중복되지 않아야함
+	- 오라클의 예약어가 아니어야함
+	- 다른 프로그래밍 언어랑 동일한 듯
 
 >[!warning] 주의 
 >- 변수 개념이 없음
@@ -81,6 +89,8 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 	- GRANT : 권한 부여
 	- REVOKE : 권한 회수
 - TCL (트랜직션 제어 명령어 : Transaction Control Language)
+	- COMMIT
+	- ROLLBACK
 
 ## DDL 명령어
 ### show 명령어
@@ -330,20 +340,51 @@ select job_id, AVG(salary) AS sag_id from employees GROUP BY job_id HAVING AVG(s
 - 그룹 함수에 조건을 줄때 사용하는 명령어
 
 
-## 서브 쿼리문
-- 하나의 쿼리문에 다른 쿼리문을 중첩할 수 있음 (select 문만 가능)
+## TCL 명령어
+###  COMMIT
 ```sql
-insert into b_board(seq,title,nickname,content)
-values((select nvl(max(seq),0)+1 from b_board),'타이틀','글쓴이','글내용' );
+COMMIT;
 ```
-- values 앞에 띄워쓰기 해줘야함
+- 작업 적용하는 키워드
+- 외부 작업시 반드시 커밋을 적용시켜줘야함
+- 커밋을 하게 되면 다시 롤백이 어려우므로 신중하게 해야함
 
+###  ROLLBACK
+```sql
+ROLLBACK;
+```
+- 커밋한 상태로 되돌릴 수 있음
+
+
+## 서브 쿼리문 ⭐
+- 하나의 SELECT 문 내부에 포함된 또 하나의 SELECT 문으로 서브쿼리를 포함하고 있는 쿼리를 메인쿼리라고 하며 항상 서브 쿼리가 먼저 실행됨 (사칙연산 생각하면 쉬움)
+- 실행결과에 따라 단일행 서브쿼리, 다중행 서브쿼리로 분류됨
+	- 단일행 서브쿼리
+		- 서브쿼리의 실행결과가 단 하나의 행인 서브쿼리
+		- 단일값끼리 비교하는 연산자들을 사용할 수 있음
+	- 다중행 서브쿼리
+- 자주 함께 사용하는 메소드
+	- IN : 뒤에 나오는 값이 포함되어 있으면 참
+	- ANY, SOME : 뒤에 나오는 여러 값 중 하나 이상 조건을 만족시키면 참
+	- ALL : 뒤에 나오는 여러 값들이 모두 해당 조건을 만족시키면 참
+
+>[!warning] 하나의 쿼리문에 다른 쿼리문을 중첩할 수 있음 (select 문만 가능)
+>```sql
+> insert into b_board(seq,title,nickname,content)
+> values((select nvl(max(seq),0)+1 from b_board),'타이틀','글쓴이','글내용' );
+
+### 테이블 복사하기
 ```sql
 -- 서브 쿼리 이용 같은 구조 테이블 생성 가능
 CREATE table fruts2 as(select * from fruts where 1 != 1);
 insert into fruts2(select * from fruts);
 select * from fruts2;
 ```
+- 테이블 복사의 경우 NOT NULL 제약조건은 복사됨
+	- 서브쿼리문은 select만 되어서 참인게 다 들어옴
+	- 복사했을 경우  NOT NULL과 CHECK이외의 제약조건은 복사가 안되는 것을 확인할 수 있음
+
+
 
 # CRUD
 >[!cite]- CRUD란?
@@ -384,19 +425,6 @@ insert into fruts(qty, price, name) VALUES('10', '5000', '오렌지');
 - 칼럼명 생략시 테이블 생성했을 때의 칼럼 순서대로 데이터를 모두 넣어야 함
 
 
-###  COMMIT
-```sql
-COMMIT;
-```
-- 작업 적용하는 키워드
-- 외부 작업시 반드시 커밋을 적용시켜줘야함
-- 커밋을 하게 되면 다시 롤백이 어려우므로 신중하게 해야함
-
-###  ROLLBACK
-```sql
-ROLLBACK;
-```
-- 커밋한 상태로 되돌릴 수 있음
 
 ## Read
 - select 구문
@@ -428,15 +456,32 @@ delete from b_member where id ='mc';
 - 조건을 안쓰면 모든 행을 수정
 
 
-
 # 데이터 딕셔너리(Data Dictionary) 
-- 시스템 카탈로그라고 부르며 사용가능한 데이터베이스 및 테이블의 정보를 가지고 있는 시스템 테이블
-- DBMS만이 추가, 수정, 삭제가 가능하고 사용자는 조회만 가능
-- 오라클의 데이터 딕셔너리
-  ![[Pasted image 20230502091637.png|200]]
+## 설명
+- 시스템 카탈로그라고 부르며 사용가능한 데이터베이스 및 테이블의 정보를 요약해서 가지고 있는 시스템 테이블
+- 테이블의 요약된 정보는 메타데이터라고 하며 종류는 스키마 · 사용자 · 객체 · 권한 · 롤 · 데이터 베이스의 정보 등이 있음
+- 옵시디언에서 메타데이터를 이용해 하나의 노트를 관리하는 것처럼 데이터 딕셔너리는 표를 이러한 방식으로 관리함
+- 시스템 정보를 가지고 있기에 일반 사용자는 조회만 가능
+- 오라클의 딕셔너리
+  ![[Pasted image 20230502091637.png|150]]
+- 시퀀스? #질문 
+	- [ibm에서 설명한 시퀀스](https://www.ibm.com/docs/ko/db2/11.1?topic=objects-sequences)
 
-## 데이터 제약조건
-- 데이터 무결성 : 데이터에 결함이 존재해서는 안됨
+### 사용자 유형별 접근 권한별 뷰
+|      | 설명                                                       |
+| ---- | ---------------------------------------------------------- |
+| ALL  | 모든 개체에 접근가능                         |
+| DBA  | DB관리자들만 접속가능 직접 접근이 가능하며 데이터 사전을 직접 갱신 할 수 있음    |
+| USER | 뷰를 통해 소유중인 개체에만 접근 가능, 읽기만 할 수 있을 뿐 다른 작업은 불가 |
+- 오라클 명령어의 접두어를 통해서 어떤 뷰가 무슨 유형에서 사용되는지 알 수 있음
+
+### 시스템 뷰의 종류
+- 동적 뷰 : 테이블에서 동적으로 변경되는 메모리나 현재 세션에 관한 정보를 알 수 있는 뷰
+- 정적 뷰 : 하나 이상의 테이블에 있는 데이터들의 부분 집합
+
+
+### 데이터 제약조건
+- **데이터 무결성** : 데이터에 결함이 존재해서는 안됨
 	- 데이터에 결함이 없는 성질
 	- 정확성, 일관성, 유효성이 유지되는 데이터를 말함
 	 - 데이터 무결성 제약 조건
@@ -444,37 +489,103 @@ delete from b_member where id ='mc';
 		- UNIQUE : 해당 도메인에 중복되는 값을 허용하지 않음
 		- primary key : 해당 도메인을 테이블의 기본 키로 사용 UNIQUTE = NOT null
 		- CHECK : 원하는 조건을 지정, 도메인 무결성을 유지함
-- 개체 무결성
+	- CONSTRAINT_TYPE
+		- P : Primary Key
+		- R : Foregin Key
+		- C : Check or Not null
+		- U : Unique
+			- 유니크와 PK의 차이점 : PK는 참조 주소가 FK와 연동이 됨
+- **개체 무결성**
 	- 테이블의 데이터 = 반드시 한 행을 구분할 수 있어야함
 	- 테이블의 개체 무결성을 지키기 위한 제약조건 = PK 사용
-	- 주의! 객체라고 하면 안되는 이유 :  한 컬럼값으로 묶어져있기 때문에 #질문 
-- 참조 무결성
+- **참조 무결성**
 	- 참조 관계에 있는 데이터는 항상 일관된 값을 가져야함
 	- 참조 무결성을 지키기 위한 제약조건 = FK 사용
 	- JOIN을 통해서 FK와 PK를 연결해줄 수 있음
 	- e.g. departments에서 departments_id는 PK이고 employess에서는 departments_id는 FK로 되어있음
 
-## 키에 대해서
+>[!note]- 제약조건을 걸면 DB에서 조건에 맞지 않는 값은 받아들이지 않음, 하지만 DB에서 처리하기 전에 프론트엔드에서 유효성 검사를 하면 DB연결 비용절약 가능
+
+>[!warning] DB에서 개체(entity)를 객체(object)라고 하면 안되는 이유 
+> - 하나의 개체는 하나 이상의 속성(attribute)으로 구성되고 각 속성은 그 개체의 특성이나 상태를 설명함
+> - 객체는 실제로 컴퓨터 내에서 구현되는 코드 블럭같은 거
+> - [참고 문서 : 한빛출판네트워크](https://m.hanbit.co.kr/network/category/category_view.html?cms_code=CMS4926333301)
+
+## 데이터 딕셔너리 쿼리문
+- 데이터 딕셔너리
+	- 색인(index) : DML, DCM 만드는 것처럼 `Create index 인덱스명`으로 생성
+- `user_catalog` : 뷰, 시퀀스 등을 확인할 수 있는 데이터 딕셔너리 쿼리문
+- AS를 통해서 표를 복사할 수 있는 데, 복사할때 CHECK만 복사되고 다른 제약조건은 복사가 되지 않음
+
+### 테이블 목록 조회 (뷰, 시퀀스 포함)
+- 해당 유저가 소유하고 있는 테이블 목록을 다 보여줌
+	```sql
+	select * from user_catalog;
+	```
 
 
-### 생성과 동시에 제약 걸기
+### 제약조건 조회하기
+- 제약사항에 대해 볼 수 있는 데이터 딕셔너리 뷰로 접속 사용자의 제약사항만 볼 수 있음
+	```sql
+	select * from user_constraints;
+	```
+- 모든 사용자의 제약사항을 볼 수 있는 데이터 딕셔너리 뷰
+	```sql
+	select * from all_constraints;
+	```
+
+- 한 테이블의 제약사항 조회
+	```sql
+	select * from user_constraints where table_name = 'FRUTS2';
+	```
+	- 주의 ) 대문자로 작성해야함
+
+### 제약조건 삭제하기
 ```sql
--- CONSTRAINT 실습
-select * from fruites5;
-
-create table fruites5(
-    fid     number(4) -- PK
-        CONSTRAINT f5_fid_pk        PRIMARY KEY,
-    fname   varchar2(20)
-        CONSTRAINT f5_fname_uk      UNIQUE
-        CONSTRAINT f5_fname_nn  NOT NULL,
-    grade   varchar2(2)
-        CONSTRAINT f5_grade_chk     CHECK(grade IN('A+','A','B+','B')),
-    fsize     number(2)
-        CONSTRAINT f5_fsize_chk     CHECK(fsize BETWEEN 0 AND 20)
-);
-select * from user_constraints where table_name = 'FRUITES5';
+ALTER TABLE fruits6 DROP CONSTRAINT f6_grade_ck;
 ```
+
+### CONSTRAINT : 생성과 동시에 제약 걸기
+```sql
+칼럼명 칼럼타입 제약조건(이름이 자동으로 정해짐)
+칼럼명 칼럼 타입 CONSTRANT 제약조건명 제약조건
+```
+- CONSTRAINT를 사용하지 않고 제약조건만 적어도 설정가능, 하지만 이때 제약조건의 이름을 직접 설정 못하지 않을까? #질문 
+- CONSTRAINT를 통해서 생성과 동시에 제약조건을 설정할 수 있음
+	```sql
+	-- CONSTRAINT 실습
+	select * from fruites5;
+	
+	create table fruites5(
+	    fid     number(4) -- PK
+	        CONSTRAINT f5_fid_pk        PRIMARY KEY,
+	    fname   varchar2(20)
+	        CONSTRAINT f5_fname_uk      UNIQUE
+	        CONSTRAINT f5_fname_nn  NOT NULL,
+	    grade   varchar2(2)
+	        CONSTRAINT f5_grade_chk     CHECK(grade IN('A+','A','B+','B')),
+	    fsize     number(2)
+	        CONSTRAINT f5_fsize_chk     CHECK(fsize BETWEEN 0 AND 20)
+	);
+	select * from user_constraints where table_name = 'FRUITES5';
+	```
+
+
+### ALTER : 이미 생성된 테이블 제약조건 추가 / 수정
+- 이미 생성된 테이블 제약조건 추가
+	```sql 
+	ALTER TABLE 테이블명 ADD CONSTRAINT 제약조건명 제약조건(칼럼)
+	```
+-  이미 존재하는 칼럼을 수정
+	```sql 
+	ALTER TABLE 테이블명 MODIFY
+	```
+
+>[!warning]  `NOT NULL`과 `CHECK`는 `ADD  CONSTRAINT` 대신 `MODIFY`를 사용
+
+
+### 색인(index)
+- DML, DCM 만드는 것처럼 `Create index 인덱스명`으로 생성
 
 
 # 용어정리

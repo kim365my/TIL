@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "29562314005ffa4c",
+            "id": "59e310a894a9272d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 기타/정보처리기사/3. 데이터베이스 구축.md",
+                "file": "5. 프로그래밍 언어/Java.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,38 +21,12 @@
             }
           },
           {
-            "id": "e8286a29ba407920",
+            "id": "4f6087b1865995ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 데이터/데이터베이스.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "87391f5646b9a9fb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 기타/데일리 노트/2023-05-02.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "442cb6787373b958",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 기타/데일리 노트/2023-05-02.md",
+                "file": "99. 기타/노트필기 메모/옵시디언.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -60,7 +34,8 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1,
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -89,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "리액트",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -116,13 +91,21 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "1faeb12587140546",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 225.5
   },
   "right": {
     "id": "b835c88157d3074d",
@@ -131,7 +114,7 @@
       {
         "id": "f584d0d70c683c2d",
         "type": "tabs",
-        "dimension": 67.73255813953489,
+        "dimension": 70.1923076923077,
         "children": [
           {
             "id": "560d99ac017cda49",
@@ -139,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-05-02.md"
+                "file": "99. 기타/노트필기 메모/옵시디언.md"
               }
             }
           },
@@ -149,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-05-02.md",
+                "file": "99. 기타/노트필기 메모/옵시디언.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-05-02.md",
+                "file": "99. 기타/노트필기 메모/옵시디언.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +176,7 @@
       {
         "id": "4523ed5fc307716e",
         "type": "tabs",
-        "dimension": 32.26744186046512,
+        "dimension": 29.807692307692307,
         "children": [
           {
             "id": "3e53a94a9909c3e9",
@@ -209,15 +192,15 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-05-02.md",
+                "file": "99. 기타/노트필기 메모/옵시디언.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "",
                   "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
-                  "showTags": false,
+                  "showTags": true,
                   "showAttachments": false,
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
@@ -232,7 +215,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224435,
+                  "scale": 1.0000000000000053,
                   "close": true
                 }
               }
@@ -255,59 +238,27 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "floating": {
-    "id": "289bfbe56fddbe39",
-    "type": "floating",
-    "children": [
-      {
-        "id": "e8e101e2d99fadb2",
-        "type": "window",
-        "children": [
-          {
-            "id": "c2cfcb8d9d8a6db6",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "7c19993d90f5ee99",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "99. 기타/노트필기 메모/옵시디언.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 3,
-        "y": 15,
-        "width": 776,
-        "height": 1000,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "442cb6787373b958",
+  "active": "4f6087b1865995ad",
   "lastOpenFiles": [
     "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+    "5. 프로그래밍 언어/Java.md",
+    "99. 기타/노트필기 메모/옵시디언.md",
+    "99. 기타/데일리 노트/2023-05-03.md",
+    "99. 기타/정보처리기사/3. 데이터베이스 구축.md",
     "1. 데이터/데이터베이스.md",
     "99. 기타/데일리 노트/2023-05-02.md",
+    "케빈노트.md",
+    "4. 웹 개발/XML.md",
+    "4. 웹 개발/웹 개발론.md",
+    "9. 용어해설집/소프트웨어/AJAX.md",
+    "JSON.md",
     "TO DO list.md",
-    "Untitled Kanban.md",
     "웹 개발.canvas",
     "4. 웹 개발/웹 트렌드.md",
-    "99. 기타/노트필기 메모/옵시디언.md",
     "5. 프로그래밍 언어/프레임워크/React.js.md",
     "4. 웹 개발/구조 분해 할당.md",
     "99. 기타/img/Frame 6.png",
     "99. 기타/img/Frame 6 1.png",
-    "99. 기타/정보처리기사/3. 데이터베이스 구축.md",
     "4. 웹 개발/커넥션 풀 API.md",
     "99. 기타/img/Untitled.png",
     "99. 기타/img/4. 노드확장_아래쪽.png",
@@ -322,16 +273,10 @@
     "9. 용어해설집/IDE/VSC.md",
     "99. 기타/정보처리기사/정보처리기사.md",
     "99. 기타/img/Pasted image 20230502091637.png",
-    "5. 프로그래밍 언어/Java.md",
     "4. 웹 개발/JDBC.md",
     "99. 기타/데일리 노트/2023-04-28.md",
     "99. 기타/데일리 노트/2023-04-27.md",
     "5. 프로그래밍 언어/프레임워크/Node JS.md",
-    "4. 웹 개발/웹 개발론.md",
-    "4. 웹 개발/Servlet.md",
-    "9. 용어해설집/디자인 패턴/MVC 패턴.md",
-    "5. 프로그래밍 언어/라이브러리/JQuery.md",
-    "9. 용어해설집/소프트웨어/포워딩.md",
     "3학년 1학기.canvas",
     "노트필기방법.canvas"
   ]
