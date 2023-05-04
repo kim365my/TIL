@@ -2,6 +2,18 @@
 tag : 프론트엔드 마크업_언어 스타일시트
 aliases : Cascading Style Sheets - 종속형 시트
 ---
+
+# 개요
+- CSS 도구
+	- [[SASS]] : Syntactically Awesome Style Sheets - 문법적으로 어썸한 스타일시트
+	- [[SCSS]] : Sassy CSS - 문법적으로 짱 멋진(Sassy) CSS
+	- PostCSS : [[Node JS]]와 함께 언급되는 css 후처리기
+- CSS 프레임 워크
+	- 부트스트랩 프레임워크 [설치 페이지](https://getbootstrap.com/docs/4.4/getting-started/download/)  [템플릿](https://learn2you.tistory.com/42)
+		```html
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+		```
+
 >[!quote] 
 >>[!hint] 새로운 소식
 >> - [CSS 중첩(nesting)이 된다고?](https://developer.chrome.com/articles/css-nesting/
@@ -244,18 +256,6 @@ aliases : Cascading Style Sheets - 종속형 시트
 >> 	font-family: "system";
 >> }
 >> ```
-
-
-# 개요
-- CSS 도구
-	- [[SASS]] : Syntactically Awesome Style Sheets - 문법적으로 어썸한 스타일시트
-	- [[SCSS]] : Sassy CSS - 문법적으로 짱 멋진(Sassy) CSS
-	- PostCSS : [[Node JS]]와 함께 언급되는 css 후처리기
-- CSS 프레임 워크
-	- 부트스트랩 프레임워크 [설치 페이지](https://getbootstrap.com/docs/4.4/getting-started/download/)  [템플릿](https://learn2you.tistory.com/42)
-		```html
-		<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-		```
 
 >[!cite]- 참고 문서
 > - https://cocoon1787.tistory.com/m/843
