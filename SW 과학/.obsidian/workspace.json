@@ -4,23 +4,76 @@
     "type": "split",
     "children": [
       {
-        "id": "fa1926ba9a8b2304",
+        "id": "d3bada3190f9afe2",
         "type": "tabs",
         "children": [
+          {
+            "id": "3b55ff3c51a22ec7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "99. 기타/데일리 노트/2023-05-04.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
           {
             "id": "42f4a482c34575ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. 웹 개발/웹 개발론.md",
+                "file": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4fa16020344a699a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. 웹 개발/JSP.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "32baa3cce113de6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "48c90182f8777589",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "99. 기타/데일리 노트/2023-04-21.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -49,7 +102,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#프론트엔드",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +130,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. 웹 개발/웹 개발론.md"
+                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md"
               }
             }
           },
@@ -108,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. 웹 개발/웹 개발론.md",
+                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. 웹 개발/웹 개발론.md",
+                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +214,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "4. 웹 개발/웹 개발론.md",
+                "file": "5. 프로그래밍 언어/스타일 시트/CSS.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -201,7 +255,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 264.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,10 +265,27 @@
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "f9f8e608f518e7a0",
-  "lastOpenFiles": []
+  "active": "32baa3cce113de6b",
+  "lastOpenFiles": [
+    "5. 프로그래밍 언어/마크업 언어/HTML.md",
+    "5. 프로그래밍 언어/스타일 시트/CSS.md",
+    "유용한 사이트 정리.md",
+    "99. 기타/데일리 노트/2023-04-21.md",
+    "4. 웹 개발/커넥션 풀 API.md",
+    "4. 웹 개발/JSP.md",
+    "99. 기타/메모/옵시디언.md",
+    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+    "99. 기타/데일리 노트/2023-05-04.md",
+    "99. 기타/정보처리기사/3. 데이터베이스 구축.md",
+    "TO DO list.md",
+    "99. 기타/데일리 노트/2023-05-03.md",
+    "99. 기타/데일리 노트/2023-05-02.md",
+    "99. 프로젝트/쇼핑몰 페이지 구축.md",
+    "99. 프로젝트/교보문고 리디자인.md",
+    "99. 프로젝트",
+    "4. 웹 개발/웹 개발론.md"
+  ]
 }

@@ -517,14 +517,14 @@ delete from b_member where id ='mc';
 - `user_catalog` : 뷰, 시퀀스 등을 확인할 수 있는 데이터 딕셔너리 쿼리문
 - AS를 통해서 표를 복사할 수 있는 데, 복사할때 CHECK만 복사되고 다른 제약조건은 복사가 되지 않음
 
-### 테이블 목록 조회 (뷰, 시퀀스 포함)
+### 정보조회 : select
+#### 테이블 목록 조회 (뷰, 시퀀스 포함)
 - 해당 유저가 소유하고 있는 테이블 목록을 다 보여줌
 	```sql
 	select * from user_catalog;
 	```
 
-
-### 제약조건 조회하기
+#### 제약조건 조회하기
 - 제약사항에 대해 볼 수 있는 데이터 딕셔너리 뷰로 접속 사용자의 제약사항만 볼 수 있음
 	```sql
 	select * from user_constraints;
@@ -538,40 +538,55 @@ delete from b_member where id ='mc';
 	```sql
 	select * from user_constraints where table_name = 'FRUTS2';
 	```
-	- 주의 ) 대문자로 작성해야함
-
-### 제약조건 삭제하기
-```sql
-ALTER TABLE fruits6 DROP CONSTRAINT f6_grade_ck;
-```
+>[!warning] 테이블명을 대문자로 작성해야함
 
 ### CONSTRAINT : 생성과 동시에 제약 걸기
 ```sql
 칼럼명 칼럼타입 제약조건(이름이 자동으로 정해짐)
 칼럼명 칼럼 타입 CONSTRANT 제약조건명 제약조건
 ```
-- CONSTRAINT를 사용하지 않고 제약조건만 적어도 설정가능, 하지만 이때 제약조건의 이름을 직접 설정 못하지 않을까? #질문 
-- CONSTRAINT를 통해서 생성과 동시에 제약조건을 설정할 수 있음
+>[!example]- CONSTRAINT를 통해서 생성과 동시에 제약조건을 설정할 수 있음
+> ```sql
+> -- CONSTRAINT 실습
+> select * from fruites5;
+> 
+> create table fruites5(
+> 	fid     number(4) -- PK
+> 		CONSTRAINT f5_fid_pk        PRIMARY KEY,
+> 	fname   varchar2(20)
+> 		CONSTRAINT f5_fname_uk      UNIQUE
+> 		CONSTRAINT f5_fname_nn  NOT NULL,
+> 	grade   varchar2(2)
+> 		CONSTRAINT f5_grade_chk     CHECK(grade IN('A+','A','B+','B')),
+> 	fsize     number(2)
+> 		CONSTRAINT f5_fsize_chk     CHECK(fsize BETWEEN 0 AND 20)
+> );
+> select * from user_constraints where table_name = 'FRUITES5';
+> ```
+
+
+### ALTER : 기존 테이블의 무언가를 변경하는 예약어
+#### 테이블명 변경하기
+```sql
+RENAME 현재 테이블명 TO 바꿀 테이블명;
+```
+
+#### 칼럼 추가 | 수정 | 삭제
+- 데이터 새 칼럼 추가하기
 	```sql
-	-- CONSTRAINT 실습
-	select * from fruites5;
-	
-	create table fruites5(
-	    fid     number(4) -- PK
-	        CONSTRAINT f5_fid_pk        PRIMARY KEY,
-	    fname   varchar2(20)
-	        CONSTRAINT f5_fname_uk      UNIQUE
-	        CONSTRAINT f5_fname_nn  NOT NULL,
-	    grade   varchar2(2)
-	        CONSTRAINT f5_grade_chk     CHECK(grade IN('A+','A','B+','B')),
-	    fsize     number(2)
-	        CONSTRAINT f5_fsize_chk     CHECK(fsize BETWEEN 0 AND 20)
-	);
-	select * from user_constraints where table_name = 'FRUITES5';
+	ALTER TABLE 테이블명 ADD (칼럼명, 칼럼타입, ...);
+	```
+- 칼럼이름 변경하기
+	```sql
+	ALTER TABLE 테이블명 RENAME COLUMN 현재칼럼명 TO 바꿀 칼럼명;
+	```
+- 테이블 컬럼 삭제 : 해당 컬럼의 제약조건들도 함께 삭제됨
+	```sql
+	ALTER TABLE 테이블명 DROP COLUMN 컬럼명
 	```
 
+#### 제약조건 추가 | 수정 | 삭제
 
-### ALTER : 이미 생성된 테이블 제약조건 추가 / 수정
 - 이미 생성된 테이블 제약조건 추가
 	```sql 
 	ALTER TABLE 테이블명 ADD CONSTRAINT 제약조건명 제약조건(칼럼)
@@ -579,13 +594,27 @@ ALTER TABLE fruits6 DROP CONSTRAINT f6_grade_ck;
 -  이미 존재하는 칼럼을 수정
 	```sql 
 	ALTER TABLE 테이블명 MODIFY
+```
+- 테이블 제약조건 삭제 : 대소문자 상관없음
+	```sql
+	ALTER TABLE 테이블명 DROP CONSTRAINT 제약조건명
 	```
 
->[!warning]  `NOT NULL`과 `CHECK`는 `ADD  CONSTRAINT` 대신 `MODIFY`를 사용
+
+>[!warning] 제약조건 추가시 NOT NULL과 CHECK는 ADD  CONSTRAINT 대신 MODIFY를 사용
+
+- NOT NULL의 제약조건 키명은 C로 되어 있던데 이것과 관련이 있는걸까? #질문 
 
 
 ### 색인(index)
-- DML, DCM 만드는 것처럼 `Create index 인덱스명`으로 생성
+- DML, DCM 만드는 것처럼 생성
+```sql
+Create index 인덱스명
+```
+
+
+
+
 
 
 # 용어정리

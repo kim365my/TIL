@@ -92,6 +92,7 @@ body:before{
 	padding: 0;
 	border:1px solid rgba(var(--callout-color), 0.3);
     background-color: rgba(var(--callout-color), 0.07);
+	font-size: 0.85rem;
 }
 .callout-title{
 	gap:var(--size-4-3);

@@ -3,15 +3,13 @@
   "calendar",
   "obsidian-contextual-typography",
   "dataview",
-  "influx",
   "obsidian-kanban",
   "link-exploder",
   "obsidian-minimal-settings",
-  "obsidian-cloudinary-uploader",
   "obsidian-to-anki-plugin",
-  "obsidian-outliner",
   "obsidian-pandoc",
   "obsidian-pandoc-reference-list",
   "obsidian-style-settings",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "obsidian-outliner"
 ]
