@@ -9,6 +9,7 @@ aliases : viual studio code
 - VSC 정규식은 .NET 정규식을 사용함 
 
 # 정규식
+>[!note] 정규식은 각 프로그래밍 언어마다 다르긴 하지만 기본 골격은 같다
 -   역슬래시 없는 괄호는 변수용으로 사용가능
 -   특수기호의 경우 앞에 역슬래시(\)를 붙혀야 함
 - [문법](https://learn.microsoft.com/ko-kr/visualstudio/ide/using-regular-expressions-in-visual-studio?view=vs-2022)
@@ -19,6 +20,8 @@ aliases : viual studio code
 	-   `$0` : 원본 문자.
 - 예시 코드
 	- `^[^\x00-\x7F].+` : 한글 검색
+	- ```python([\s\S]*?```[\r\n]) : \`\`\`부터 시작해서 \`\`\`으로 끝나는 문장을 찾는 정규식
+
 
 # 설정
 - 파일 → 기본설정 → 바로가기 키

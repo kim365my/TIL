@@ -133,7 +133,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 
 - JSP 내장 객체는 표현식에서만 사용가능(변수사용했을 때) 그래서 나온게 EL
 - [[Scope|스코프]] 관련 객체들은 `get/setAttribute("keyname", Object)` 메소드를 가지는 데 이를 통해서 데이터를 공유가 가능
-- request는 `get/setParamter`이라는 파라미터 값을 받는 메소드가 존재 위의 Attributer와 어떤 차이가 있지? #질문 
+- [?] request는 `get/setParamter`이라는 파라미터 값을 받는 메소드가 존재 위의 Attributer와 어떤 차이가 있지?  #질문 
 
 
 # JSP 기본 문법
@@ -380,7 +380,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 ```
 - value : EL로 작성 가능
 - [[scope]] : 생략가능, 기본값은 page
-	- 전역변수로 저장됨, page는 한 page에서 사용할 수 있는 범위인가? 아직 명확하게 생각이 정리가 안돼 #질문 
+	- [?] 전역변수로 저장됨, page는 한 page에서 사용할 수 있는 범위인가? 아직 명확하게 생각이 정리가 안돼 #질문 
 - EL로 value에 대입할 경우 `""`를 써줘야함
 	```jsp
 	<c:set var="age" value="${43}" />

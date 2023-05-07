@@ -7,9 +7,13 @@
   "link-exploder",
   "obsidian-minimal-settings",
   "obsidian-to-anki-plugin",
-  "obsidian-pandoc",
-  "obsidian-pandoc-reference-list",
   "obsidian-style-settings",
   "obsidian-tasks-plugin",
-  "obsidian-outliner"
+  "obsidian-outliner",
+  "obsidian-sortable",
+  "obsidian-emoji-toolbar",
+  "obsidian-enhancing-export",
+  "better-fn",
+  "tag-wrangler",
+  "recent-files-obsidian"
 ]

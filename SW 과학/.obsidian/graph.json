@@ -5,47 +5,47 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:\"4. 웹 개발\"",
       "color": {
         "a": 1,
-        "rgb": 14048348
+        "rgb": 16112476
       }
     },
     {
       "query": "path:\"2. 컴퓨터과학 개론\"",
       "color": {
         "a": 1,
-        "rgb": 11492566
+        "rgb": 14794989
       }
     },
     {
       "query": "path:\"9. 용어해설집\"",
       "color": {
         "a": 1,
-        "rgb": 11392604
+        "rgb": 6068182
       }
     },
     {
       "query": "path:\"5. 프로그래밍 언어\"",
       "color": {
         "a": 1,
-        "rgb": 6084269
+        "rgb": 8150230
       }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": -1.6,
-  "nodeSizeMultiplier": 0.98046875,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": false,
+  "nodeSizeMultiplier": 0.974088541666667,
+  "lineSizeMultiplier": 1.05065104166667,
+  "collapse-forces": true,
   "centerStrength": 0.518713248970312,
   "repelStrength": 10,
   "linkStrength": 1,
-  "linkDistance": 250,
+  "linkDistance": 283,
   "scale": 0.5311718988288379,
   "close": true
 }

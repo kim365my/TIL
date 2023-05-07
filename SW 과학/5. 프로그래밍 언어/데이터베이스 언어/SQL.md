@@ -464,7 +464,7 @@ delete from b_member where id ='mc';
 - 시스템 정보를 가지고 있기에 일반 사용자는 조회만 가능
 - 오라클의 딕셔너리
   ![[Pasted image 20230502091637.png|150]]
-- 시퀀스? #질문 
+- [?] 시퀀스?  #질문 
 	- [ibm에서 설명한 시퀀스](https://www.ibm.com/docs/ko/db2/11.1?topic=objects-sequences)
 
 ### 사용자 유형별 접근 권한별 뷰
@@ -594,7 +594,7 @@ RENAME 현재 테이블명 TO 바꿀 테이블명;
 -  이미 존재하는 칼럼을 수정
 	```sql 
 	ALTER TABLE 테이블명 MODIFY
-```
+	```
 - 테이블 제약조건 삭제 : 대소문자 상관없음
 	```sql
 	ALTER TABLE 테이블명 DROP CONSTRAINT 제약조건명
@@ -603,7 +603,7 @@ RENAME 현재 테이블명 TO 바꿀 테이블명;
 
 >[!warning] 제약조건 추가시 NOT NULL과 CHECK는 ADD  CONSTRAINT 대신 MODIFY를 사용
 
-- NOT NULL의 제약조건 키명은 C로 되어 있던데 이것과 관련이 있는걸까? #질문 
+- [?] NOT NULL의 제약조건 키명은 C로 되어 있던데 이것과 관련이 있는걸까?  #질문 
 
 
 ### 색인(index)

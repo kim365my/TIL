@@ -13,6 +13,7 @@ body{
 .is-tablet.theme-light{
 	--color-red:hsla(365, 85%, 55%, 1);
     --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 5%));
+	--custom-border-color:#00000014;
 }
 
 .theme-dark,
@@ -20,18 +21,20 @@ body{
 .is-tablet.theme-dark{
 	--color-red:hsla(365, 90%, 65%, 1);
     --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 2%));
+	--custom-border-color:#ffffff14;
 }
 
-/* Inline code */
-.markdown-rendered :not(pre)>code,
-.cm-s-obsidian span.cm-inline-code{
-    color:var(--inline-code-color);
-	padding: 0 5px;
-}
-/* inline code background */
-.cm-hmd-indented-code,
-.cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code{
-	background:var(--code-background);
+/* ----------------------------- */
+/* remove backgrounds for wave design background */
+.workspace,
+.workspace-tabs .workspace-leaf,
+.workspace-ribbon,
+.workspace-ribbon.mod-left.is-collapsed,
+.workspace-split.mod-root,
+.workspace-tab-header-container,
+.workspace-split.mod-root .view-content
+{ /* remove background as parent will be the one to have it instead */
+	background:none;
 }
 
 /* Background Wave design */
@@ -46,42 +49,63 @@ body:before{
 	-webkit-mask-position:88.5% -73px;
 	-webkit-mask-repeat:no-repeat;
     background-color:var(--color-accent-2);
+    background-color:rgba(57, 134, 197, 0.8);
 	transform:rotateZ(180deg);
-	opacity:0.5;
+	opacity:0.6;
 }
 
-/* remove backgrounds for wave design background */
-.workspace,
-.workspace-tabs .workspace-leaf,
-.workspace-ribbon,
-.workspace-split.mod-root,
-.workspace-tab-header-container,
-.workspace-split.mod-root .view-content
-{ /* remove background as parent will be the one to have it instead */
-	background:none;
-}
-
-
+/* 백그라운드 색깔 변경 */
+/* body, body.is-translucent{
+	background-color:var(--background-secondary);
+} */
 /* 캔버스 편집할때 뒤에 이미지가 보이는 오류가 있음  이부분에 스타일 적용하면 될것같은데*/
 .cm-editor{
 	background-color: var(--background-primary);
 }
 
 
-.cm-editor .cm-lineNumbers{
-	/* color: var(--background-primary); */
+.mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon, .mod-right-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon, .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon, .mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+    opacity: var(--icon-opacity-hover);
+    color: var(--icon-color-hover);
+}
+
+/* remove distinguishing-borders on sidebars and headers */
+.workspace-ribbon,
+.workspace-tab-header-container{
+	border-color:var(--custom-border-color);
+}
+
+
+
+/* ----------------------------- */
+/* 코드 블록 색깔 변경 */
+/* Inline code */
+.markdown-rendered :not(pre)>code,
+.cm-s-obsidian span.cm-inline-code{
+    color:var(--inline-code-color);
+	padding: 0 5px;
+}
+/* inline code background */
+.cm-hmd-indented-code,
+.cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code{
+	background:var(--code-background);
 }
 
 /* -------------- */
 /* 콜아웃 스타일 편집 */
 /* -------------- */
 /* 콜아웃 코드 색깔 변경 */
-.callout code,
-.callout pre:has(code){
+.callout-content pre{
 	margin: 0;
 	background-color: var(--background-primary);
 	border:1px solid rgba(var(--callout-color), 0.3);
 }
+
+/* 콜아웃 인라인 코드 */
+.callout-content code{
+	background-color:initial;
+}
+
 /* 콜아웃 리스트 지우려고 프리뷰 화면에서 보이는게 거슬려 */
 .callout-content li:has(pre){
 	/* list-style: none;	 */
@@ -92,7 +116,7 @@ body:before{
 	padding: 0;
 	border:1px solid rgba(var(--callout-color), 0.3);
     background-color: rgba(var(--callout-color), 0.07);
-	font-size: 0.85rem;
+
 }
 .callout-title{
 	gap:var(--size-4-3);
@@ -101,9 +125,11 @@ body:before{
 	border-bottom:1px solid transparent;
 	transition:border 0.3s;
 	padding:11px 20px;
+	font-size: 0.9rem;
 }
 .callout-content{
-	padding:11px;
+	padding: 3px 15px;
+	font-size: 0.85rem;
 }
 .callout-icon,
 .callout-fold{
@@ -116,7 +142,31 @@ body:before{
 	border-bottom:1px solid rgba(var(--callout-color), 0.3);
 }
 
-.markdown-source-view.mod-cm6 .callout .callout{
-	margin:1em 0;
+.markdown-source-view.mod-cm6 .callout,
+.callout{
+	margin: 0.5rem 0;
 }
 
+/* 목차 텍스트 안짤리게 하기 */
+body:not(.full-file-names) .tree-item-inner {
+	white-space: break-spaces;
+}
+
+/* 캔버스 편집시 번호와 컨텐츠 간격 조정 */
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-content,
+.node-insert-event.mod-inside-iframe .cm-editor .cm-content{
+	margin-left: 25px;
+}
+
+/* 헤더 아래 마진 없애기 */
+.h1-l .markdown-reading-view h1:not(.embedded-note-title), .h1-l .mod-cm6 .cm-editor .HyperMD-header-1,
+.h2-l .markdown-reading-view h2, .h2-l .mod-cm6 .cm-editor .HyperMD-header-2,
+.h3-l .markdown-reading-view h3, .h3-l .mod-cm6 .cm-editor .HyperMD-header-3{
+	margin-bottom: 0;
+}
+
+/* 다른 문서를 해당 문서에 포함하게 되었을 경우 스타일 설정 */
+.workspace-split.mod-vertical.mod-root .markdown-preview-view{
+	padding: 0;
+	padding-left: 10px;
+}
