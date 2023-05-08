@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"type":"group","id":"be96bcf083539ebc","x":60,"y":-39,"width":860,"height":1280,"label":"필기시험"},
+		{"type":"file","file":"0. 공부 목표/정보처리기사/1. 소프트웨어 설계.md","id":"b5df8f5420ddd947","x":80,"y":-19,"width":400,"height":400},
+		{"type":"file","file":"0. 공부 목표/정보처리기사/2. 소프트웨어 개발.md","id":"944345f53b947520","x":500,"y":-19,"width":400,"height":400},
+		{"type":"file","file":"0. 공부 목표/정보처리기사/3. 데이터베이스 구축.md","id":"70c185edc046a81c","x":80,"y":401,"width":400,"height":400},
+		{"type":"file","file":"0. 공부 목표/정보처리기사/4. 프로그래밍 언어 활용.md","id":"9c1b2109258e3557","x":500,"y":401,"width":400,"height":400},
+		{"type":"file","file":"0. 공부 목표/정보처리기사/5. 정보시스템 구축 관리.md","id":"9f87ff9f8a6abbca","x":80,"y":821,"width":400,"height":400},
+		{"type":"file","file":"0. 공부 목표/정보처리기사/정보처리기사.md","id":"0961d104bcfd63a9","x":-440,"y":19,"width":378,"height":1164}
+	],
+	"edges":[
+		{"id":"4188ab2710d81712","fromNode":"0961d104bcfd63a9","fromSide":"right","toNode":"be96bcf083539ebc","toSide":"left"}
+	]
+}

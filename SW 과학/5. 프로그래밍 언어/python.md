@@ -16,8 +16,7 @@ aliases : 파이썬
 > 	- [파이썬(Python) - 예외사항 처리](https://truman.tistory.com/109)
 > 	- https://github.com/jaehwachung/Python-Programming
 
-- <run selection/line in python terminal> : 단축기는 <Shift + Enter>마우스 오른쪽 버튼 클릭시 나옴. 선택한 코드 부분만 터니멀에서 실행하겠다는 의미로  코딩하다가 잘못 눌러 문장이 실행되면 SyntaxError: invalid syntax 오류가 콘솔창에 난다. 콘솔창에 >>>exit를 작성해 나가거나 쓰레기통 모양을 클릭해 나갈 수 있음
-- 에코잉(메아리) 기법 : 어떤 데이터 값만 집어넣으면 해당 데이터를 그대로 콘솔에 출력하는 것을 말함
+
 
 >[!warning] 다른 프로그래밍 언어와 다른 점
 > - 주석기호 : `#`
@@ -25,6 +24,10 @@ aliases : 파이썬
 > - 프로그램은 대비가 안되어있으면 에러를 내뱉고 그 에러를 셉션이라고 함 
 > - 들여쓰기에 의미를 부여?
 >	- 파이썬은 C와 다르게 {}에 따라 블럭을 정의하지 않고 띄어쓰기에 따라 블럭을 정의
+
+>[!note]
+>- `<run selection/line in python terminal>` : 단축기는 <Shift + Enter>마우스 오른쪽 버튼 클릭시 나옴. 선택한 코드 부분만 터니멀에서 실행하겠다는 의미로  코딩하다가 잘못 눌러 문장이 실행되면 SyntaxError: invalid syntax 오류가 콘솔창에 난다. 콘솔창에 >>>exit를 작성해 나가거나 쓰레기통 모양을 클릭해 나갈 수 있음
+> - 에코잉(메아리) 기법 : 어떤 데이터 값만 집어넣으면 해당 데이터를 그대로 콘솔에 출력하는 것을 말함
 
 # 파이썬 환경설정
 - [구글 코랩](https://colab.research.google.com/?hl=ko)
@@ -52,9 +55,188 @@ aliases : 파이썬
 - 자료구조 타입 확인 : print(변수명, type(변수명)) 
 - 사용법 : 변수명 = 자료구조명(변수명)
 - 자료구조 종류
-	1. list
-	2. tuple
-	3. set
+	1. list : 순서를 가지는 객체의 집합
+	2. tuple : 리스트와 다르게 내용의 변경이나 추가를 할 수 없지만 속도가 리스트보다 빠름.
+	3. set : 중복이 안되고 순서가 없음
+
+>[!example]- 리스트[]
+> ```python
+> subway = [10, 20, 30]
+> print(subway)
+> 
+> subway = ["유재석", "조세호", "박명수"]
+> print(subway)
+> 
+> # 조세호씨가 몇번째 칸에 타고 있는가
+> print(subway.index("조세호"))
+> 
+> # 하하씨가 다음 정류장에서 다음 칸에 탐
+> subway.append("하하")
+> print(subway)
+> # 뒤에 삽입
+> 
+> # 정형돈씨를 유재석 / 조세호 사이에 태워봄
+> subway.insert(1, "정형돈")
+> print(subway)
+> 
+> # 지하철에 있는 사람을 한 명씩 뒤에서 꺼냄
+> print(subway.pop())
+> print(subway)
+> 
+> # 같은 이름의 사람이 몇 명 있는지 확인
+> subway.append("유재석")
+> print(subway)
+> print(subway.count("유재석"))
+> 
+> # 정렬도 가능
+> num_list = [5,2,6,2,1]
+> num_list.sort()
+> print(num_list)
+> 
+> # 순서 뒤집기도 가능
+> num_list.reverse()
+> print(num_list)
+> 
+> # 모두 지우기
+> num_list.clear()
+> print(num_list)
+> 
+> # 다양한 자료형과 함께 사용
+> num_list = [5,2,6,2,1]
+> mix_list = ["조세호", 20, True]
+> print(mix_list)
+> 
+> # 리스트 확장
+> num_list.extend(mix_list)
+> print(num_list)
+> ```
+> 
+
+>[!example]- 사전
+> ```python
+> cabinet = {3:"유재석", 100:"김태호"}
+> print(cabinet[3])
+> print(cabinet[100])
+> 
+> # []로 열고 닫거나 .get()으로 사전에 있는 걸 불러올 수 있다.
+> print(cabinet.get(3))
+> # print(cabinet[5]) # 5에는 할당된 값이 없기에 오류가 나고 끝남 
+> print(cabinet.get(5)) # get을 이용했을 경우 값이 없으면 none이라고 출력되고 뒤의 Hi도 나옴
+> print(cabinet.get(5, "사용 가능")) # none 말고 다른 것을 기본으로 출력하고 싶은 경우
+> print("hi")
+> 
+> print(3 in cabinet) # 3이라는 키가 있으면 True
+> print(5 in cabinet) # 5이라는 키가 없으므로 False
+> 
+> # 정수형이 아닌 다른 형식으로 키를 정할 수 있음
+> cabinet = {"A-3":"유재석", "B-100":"김태호"}
+> print(cabinet["A-3"])
+> print(cabinet["B-100"])
+> 
+> # 새 손님
+> print(cabinet)
+> cabinet["A-3"] = "김종국" # 유재석이라는 값이 빠지고 김종국이 들어감
+> cabinet["C-20"] = "조세호" # 새로운 키 추가
+> print(cabinet)
+> 
+> # 간 손님
+> del cabinet["A-3"] # A-3의 데이터 삭제
+> print(cabinet)
+> 
+> # key만 출력
+> print(cabinet.keys())
+> 
+> # value 만 출력
+> print(cabinet.values())
+> 
+> # key, value 쌍으로 출력
+> print(cabinet.items())
+> 
+> # 목욕탕 폐점
+> cabinet.clear() # 안의 모든 값을 싹 지움
+> print(cabinet)
+> ```
+
+>[!example]- 튜플
+> ```python
+> menu = "돈가스", "치즈까스"
+> # 괄호를 열고 닫고 보다는 콤마로 구분
+> print(menu[0])
+> print(menu[1])
+> 
+> # menu.add("생선까스") 오류남, 튜플은 추가나 변경을 할 수 없음
+> # 튜플의 활용, 밑에 처럼 변수로 각각 선언할 수 있지만 튜플을 이용하면 코드가 깔끔해짐
+> name = "김종국"
+> age = 20
+> hobby = "코딩"
+> print(name, age, hobby)
+> 
+> (name, age, hobby) = ("김종국", 20, "코딩")
+> print(name, age, hobby)
+> ```
+
+>[!example]- 집합(set)
+> ```python
+> my_set = {1,2,3,3,3}
+> print(my_set) # {1,2,3} 중복을 허용하지 않음
+> 
+> java = {"유재석", "김태호", "양세형"}
+> python = set(["유재석", "박명수"])
+> 
+> # 교집합 (java와 python을 모두 할 수 있는 개발자)
+> print(java & python) #{'유재석'}
+> print(java.intersection(python))
+> 
+> # 합집합 (java나 python을 할 수 있는 개발자)
+> print(java | python)
+> print(java.union(python))
+> 
+> # 차집합 (java는 할 수 있지만 python은 할 줄 모르는 개발자)
+> print(java - python)
+> print(java.difference(python))
+> 
+> # python을 할 줄 아는 사람이 늘어남
+> python.add("김태호")
+> print(python)
+> 
+> # java를 잊었어요
+> java.remove("김태호")
+> print(java)
+> ```
+
+>[!example]- 자료구조의 변경
+> ```python
+> menu - {"커피", "우유", "주스"} # 맨 처음 set로 자료를 만듬
+> print(menu, type(menu)) 
+> 
+> menu = list(menu) # 리스트로 변경
+> print(menu, type(menu))
+> 
+> menu = tuple(menu) # 튜플로 변경
+> print(menu, type(menu))
+> 
+> menu = set(menu) # 다시 세트로 변경
+> print(menu, type(menu))
+> ```
+
+>[!example]- 퀴즈 4
+> ```python
+> from random import *
+> users = range(1, 21) # 1부터 20까지 숫자를 생성
+> # print(type(users))
+> users = list(users) # range 타입이므로 list로 바꾼다.
+> shuffle(users) # shuffle을 통해 users를 섞는다.
+> 
+> winners = sample(users, 4) # 한명은 치킨, 3명은 커피
+> 
+> print("-- 당첨자 발표 --")
+> print("치킨 당첨자 : {0}".format(winners[0]))
+> print("커피 당첨자 : {0}".format(winners[1:]))
+> print("-- 축하합니다 --")
+> ```
+
+
+
 
 ## 연산자
 - 비교연산(>,<)
@@ -253,7 +435,7 @@ aliases : 파이썬
 	- randrange
 	- randint
 
->[!example] 랜덤함수
+>[!example]- 랜덤함수
 > ```python
 > from random import *
 > 
@@ -267,8 +449,6 @@ aliases : 파이썬
 > print(randrange(1,46)) #1이상 46미만의 임의의 값 생성
 > print(randint(1,45)) # 1이상 45이하의 임의의 값 생성
 > ```
-
-
 
 >[!example]- 슬라이싱
 > ```python
@@ -315,7 +495,6 @@ aliases : 파이썬
 > 
 > print(python.count("n")) #python이라는 함수에서 n이 몇번 나왔는지 알려줌
 > ```
-
 
 >[!example]- 문자열 포멧
 > ```python
@@ -421,186 +600,9 @@ aliases : 파이썬
 > ```
 
 
-## 자료구조
->[!example]- 리스트[] : 순서를 가지는 객체의 집합
-> ```python
-> subway = [10, 20, 30]
-> print(subway)
-> 
-> subway = ["유재석", "조세호", "박명수"]
-> print(subway)
-> 
-> # 조세호씨가 몇번째 칸에 타고 있는가
-> print(subway.index("조세호"))
-> 
-> # 하하씨가 다음 정류장에서 다음 칸에 탐
-> subway.append("하하")
-> print(subway)
-> # 뒤에 삽입
-> 
-> # 정형돈씨를 유재석 / 조세호 사이에 태워봄
-> subway.insert(1, "정형돈")
-> print(subway)
-> 
-> # 지하철에 있는 사람을 한 명씩 뒤에서 꺼냄
-> print(subway.pop())
-> print(subway)
-> 
-> # 같은 이름의 사람이 몇 명 있는지 확인
-> subway.append("유재석")
-> print(subway)
-> print(subway.count("유재석"))
-> 
-> # 정렬도 가능
-> num_list = [5,2,6,2,1]
-> num_list.sort()
-> print(num_list)
-> 
-> # 순서 뒤집기도 가능
-> num_list.reverse()
-> print(num_list)
-> 
-> # 모두 지우기
-> num_list.clear()
-> print(num_list)
-> 
-> # 다양한 자료형과 함께 사용
-> num_list = [5,2,6,2,1]
-> mix_list = ["조세호", 20, True]
-> print(mix_list)
-> 
-> # 리스트 확장
-> num_list.extend(mix_list)
-> print(num_list)
-> ```
-> 
-
->[!example]- 사전
-> ```python
-> cabinet = {3:"유재석", 100:"김태호"}
-> print(cabinet[3])
-> print(cabinet[100])
-> 
-> # []로 열고 닫거나 .get()으로 사전에 있는 걸 불러올 수 있다.
-> print(cabinet.get(3))
-> # print(cabinet[5]) # 5에는 할당된 값이 없기에 오류가 나고 끝남 
-> print(cabinet.get(5)) # get을 이용했을 경우 값이 없으면 none이라고 출력되고 뒤의 Hi도 나옴
-> print(cabinet.get(5, "사용 가능")) # none 말고 다른 것을 기본으로 출력하고 싶은 경우
-> print("hi")
-> 
-> print(3 in cabinet) # 3이라는 키가 있으면 True
-> print(5 in cabinet) # 5이라는 키가 없으므로 False
-> 
-> # 정수형이 아닌 다른 형식으로 키를 정할 수 있음
-> cabinet = {"A-3":"유재석", "B-100":"김태호"}
-> print(cabinet["A-3"])
-> print(cabinet["B-100"])
-> 
-> # 새 손님
-> print(cabinet)
-> cabinet["A-3"] = "김종국" # 유재석이라는 값이 빠지고 김종국이 들어감
-> cabinet["C-20"] = "조세호" # 새로운 키 추가
-> print(cabinet)
-> 
-> # 간 손님
-> del cabinet["A-3"] # A-3의 데이터 삭제
-> print(cabinet)
-> 
-> # key만 출력
-> print(cabinet.keys())
-> 
-> # value 만 출력
-> print(cabinet.values())
-> 
-> # key, value 쌍으로 출력
-> print(cabinet.items())
-> 
-> # 목욕탕 폐점
-> cabinet.clear() # 안의 모든 값을 싹 지움
-> print(cabinet)
-> ```
-
->[!example]- 튜플 : 리스트와 다르게 내용의 변경이나 추가를 할 수 없지만 속도가 리스트보다 빠름.
-> ```python
-> menu = "돈가스", "치즈까스"
-> # 괄호를 열고 닫고 보다는 콤마로 구분
-> print(menu[0])
-> print(menu[1])
-> 
-> # menu.add("생선까스") 오류남, 튜플은 추가나 변경을 할 수 없음
-> # 튜플의 활용, 밑에 처럼 변수로 각각 선언할 수 있지만 튜플을 이용하면 코드가 깔끔해짐
-> name = "김종국"
-> age = 20
-> hobby = "코딩"
-> print(name, age, hobby)
-> 
-> (name, age, hobby) = ("김종국", 20, "코딩")
-> print(name, age, hobby)
-> ```
-
->[!example]- 집합(set) : 중복이 안되고 순서가 없음
-> ```python
-> my_set = {1,2,3,3,3}
-> print(my_set) # {1,2,3} 중복을 허용하지 않음
-> 
-> java = {"유재석", "김태호", "양세형"}
-> python = set(["유재석", "박명수"])
-> 
-> # 교집합 (java와 python을 모두 할 수 있는 개발자)
-> print(java & python) #{'유재석'}
-> print(java.intersection(python))
-> 
-> # 합집합 (java나 python을 할 수 있는 개발자)
-> print(java | python)
-> print(java.union(python))
-> 
-> # 차집합 (java는 할 수 있지만 python은 할 줄 모르는 개발자)
-> print(java - python)
-> print(java.difference(python))
-> 
-> # python을 할 줄 아는 사람이 늘어남
-> python.add("김태호")
-> print(python)
-> 
-> # java를 잊었어요
-> java.remove("김태호")
-> print(java)
-> ```
-
->[!example] 자료구조의 변경
-> ```python
-> menu - {"커피", "우유", "주스"} # 맨 처음 set로 자료를 만듬
-> print(menu, type(menu)) 
-> 
-> menu = list(menu) # 리스트로 변경
-> print(menu, type(menu))
-> 
-> menu = tuple(menu) # 튜플로 변경
-> print(menu, type(menu))
-> 
-> menu = set(menu) # 다시 세트로 변경
-> print(menu, type(menu))
-> ```
-
->[!example]- 퀴즈 4
-> ```python
-> from random import *
-> users = range(1, 21) # 1부터 20까지 숫자를 생성
-> # print(type(users))
-> users = list(users) # range 타입이므로 list로 바꾼다.
-> shuffle(users) # shuffle을 통해 users를 섞는다.
-> 
-> winners = sample(users, 4) # 한명은 치킨, 3명은 커피
-> 
-> print("-- 당첨자 발표 --")
-> print("치킨 당첨자 : {0}".format(winners[0]))
-> print("커피 당첨자 : {0}".format(winners[1:]))
-> print("-- 축하합니다 --")
-> ```
-
 
 ## 조건문
->[!example] 분기(if문)
+>[!example]- 분기(if문)
 > ```python
 > weather = input("오늘 날씨는 어때요? ")
 > # input으로 사용자가 입력하는 것을 받아 들여서 weather에 저장
