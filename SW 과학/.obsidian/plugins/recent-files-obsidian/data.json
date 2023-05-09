@@ -1,16 +1,100 @@
 {
   "recentFiles": [
     {
-      "basename": "파이썬 출석과제",
-      "path": "99. 메모/파이썬 출석과제.md"
+      "basename": "2023-05-09",
+      "path": "99. 기타/데일리 노트/2023-05-09.md"
+    },
+    {
+      "basename": "HTML",
+      "path": "5. 프로그래밍 언어/마크업 언어/HTML.md"
+    },
+    {
+      "basename": "커넥션 풀 API",
+      "path": "4. 웹 개발/커넥션 풀 API.md"
+    },
+    {
+      "basename": "옵시디언",
+      "path": "99. 메모/옵시디언.md"
+    },
+    {
+      "basename": "python",
+      "path": "5. 프로그래밍 언어/python.md"
+    },
+    {
+      "basename": "논문처럼 글쓰는 방법",
+      "path": "99. 메모/논문처럼 글쓰는 방법.md"
+    },
+    {
+      "basename": "JSP",
+      "path": "4. 웹 개발/JSP.md"
+    },
+    {
+      "basename": "CSS",
+      "path": "5. 프로그래밍 언어/스타일 시트/CSS.md"
+    },
+    {
+      "basename": "2023-04-25",
+      "path": "99. 기타/데일리 노트/2023-04-25.md"
+    },
+    {
+      "basename": "2023-04-11",
+      "path": "99. 기타/데일리 노트/2023-04-11.md"
     },
     {
       "basename": "To do List",
       "path": "To do List.md"
     },
     {
+      "basename": "SQL",
+      "path": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md"
+    },
+    {
+      "basename": "난 영어도 싫어",
+      "path": "6. 영어/난 영어도 싫어.md"
+    },
+    {
+      "basename": "웹 개발론",
+      "path": "4. 웹 개발/웹 개발론.md"
+    },
+    {
+      "basename": "웹 브라우저",
+      "path": "4. 웹 개발/웹 브라우저.md"
+    },
+    {
+      "basename": "표현식",
+      "path": "9. 용어해설집/소프트웨어/표현식.md"
+    },
+    {
       "basename": "컴퓨터과학",
       "path": "컴퓨터과학.canvas"
+    },
+    {
+      "basename": "JSDOC",
+      "path": "5. 프로그래밍 언어/마크업 언어/JSDOC.md"
+    },
+    {
+      "basename": "Web API",
+      "path": "4. 웹 개발/Web API.md"
+    },
+    {
+      "basename": "네트워크",
+      "path": "4. 웹 개발/네트워크.md"
+    },
+    {
+      "basename": "유용한 사이트 정리",
+      "path": "유용한 사이트 정리.md"
+    },
+    {
+      "basename": "공부목표",
+      "path": "공부목표.canvas"
+    },
+    {
+      "basename": "파이썬 출석과제",
+      "path": "99. 메모/파이썬 출석과제.md"
+    },
+    {
+      "basename": "2023-05-08",
+      "path": "99. 기타/데일리 노트/2023-05-08.md"
     },
     {
       "basename": "컴퓨터 과학 흐름",
@@ -25,10 +109,6 @@
       "path": "9. 용어해설집/소프트웨어/Open Graph.md"
     },
     {
-      "basename": "2023-05-08",
-      "path": "99. 기타/데일리 노트/2023-05-08.md"
-    },
-    {
       "basename": "컴퓨터 구조",
       "path": "1. 컴퓨터과학 개론/컴퓨터 구조.md"
     },
@@ -37,40 +117,12 @@
       "path": "0. 공부 목표/정보처리기사/2. 소프트웨어 개발.md"
     },
     {
-      "basename": "HTML",
-      "path": "5. 프로그래밍 언어/마크업 언어/HTML.md"
-    },
-    {
-      "basename": "유용한 사이트 정리",
-      "path": "유용한 사이트 정리.md"
-    },
-    {
-      "basename": "CSS",
-      "path": "5. 프로그래밍 언어/스타일 시트/CSS.md"
-    },
-    {
-      "basename": "웹 개발론",
-      "path": "4. 웹 개발/웹 개발론.md"
-    },
-    {
-      "basename": "옵시디언",
-      "path": "99. 메모/옵시디언.md"
-    },
-    {
-      "basename": "무제 파일",
-      "path": "99. 메모/무제 파일.md"
-    },
-    {
       "basename": "새 노트",
       "path": "99. 기타/템플릿/새 노트.md"
     },
     {
       "basename": "웹 개발",
       "path": "웹 개발.canvas"
-    },
-    {
-      "basename": "python",
-      "path": "5. 프로그래밍 언어/python.md"
     },
     {
       "basename": "데일리 노트",

@@ -243,6 +243,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 	- 이외에 value 속성을 통해 값을 설정해주는 것도 가능
 - <jsp:getProperty>
 	- 문자열로 출력되니까 HTML에서 결과값을 보고 싶을 경우 사용
+
 ### 포워딩, 바인딩하기
 - <jsp:forward>
 	- 디스패처로 forward 한 것과 동일한 결과를 얻음

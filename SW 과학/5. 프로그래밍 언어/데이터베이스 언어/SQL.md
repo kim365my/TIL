@@ -538,7 +538,7 @@ delete from b_member where id ='mc';
 	```sql
 	select * from user_constraints where table_name = 'FRUTS2';
 	```
->[!warning] 테이블명을 대문자로 작성해야함
+- [!] 테이블명을 대문자로 작성해야함
 
 ### CONSTRAINT : 생성과 동시에 제약 걸기
 ```sql
@@ -612,8 +612,33 @@ RENAME 현재 테이블명 TO 바꿀 테이블명;
 Create index 인덱스명
 ```
 
+### 시퀀스(Sequence)
+- 기본 키를 사용하기 편하도록 설계된 자동 번호 생성기
+- 호출할 때마다 번호를 자동으로 증가시키는 DB 오브젝트
+	```sql
+	Create SEQUENCE 시퀀스 | 옵션명|;
+	```
+- 시퀀스 사용
+	```sql
+	insert into bb_board VALUES(
+	    BB_BOARD_SEQ.nextval
+	);
+	```
 
 
+| 옵션명                     |             |
+|-------------------------|-------------|
+| START WITH n            | 시퀀스 시작번호 설정 |
+| INCREMENT BY n          | 시퀀스 증가값 설정  |
+| MAXVAULE n \| NOMAXVALUE | 최대값 설정      |
+| MINVAULE n \| NOMINVALUE | 최솟값 설정      |
+
+>[!example]
+>```sql
+-- 1부터 시작해서 1씩 증가하는 시퀀스
+CREATE SEQUENCE bb_board_seq INCREMENT by 1 START with 1;
+select * from user_sequences;
+>```
 
 
 

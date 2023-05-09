@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "44d3d49b1b363472",
+            "id": "fb2490b771046ff9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 메모/파이썬 출석과제.md",
+                "file": "99. 기타/데일리 노트/2023-05-09.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,44 +21,12 @@
             }
           },
           {
-            "id": "fc0c49b0cc6e0fa1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "유용한 사이트 정리.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "76fd456c8e24120a",
+            "id": "eff793e845db2676",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "5. 프로그래밍 언어/마크업 언어/HTML.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "a5cc7815f42ed0fe",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "801beaf5de14557c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 메모/파이썬 출석과제.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -94,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "프로그램",
+                "query": "ㅓ네",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,14 +89,6 @@
               "type": "bookmarks",
               "state": {}
             }
-          },
-          {
-            "id": "e603f2c1286195e4",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
           }
         ]
       }
@@ -152,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 메모/파이썬 출석과제.md"
+                "file": "99. 기타/데일리 노트/2023-05-09.md"
               }
             }
           },
@@ -162,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 메모/파이썬 출석과제.md",
+                "file": "99. 기타/데일리 노트/2023-05-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,10 +139,18 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 메모/파이썬 출석과제.md",
+                "file": "99. 기타/데일리 노트/2023-05-09.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            }
+          },
+          {
+            "id": "17d0759eced21e62",
+            "type": "leaf",
+            "state": {
+              "type": "ReferenceListView",
+              "state": {}
             }
           }
         ]
@@ -206,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "99. 메모/파이썬 출석과제.md",
+                "file": "99. 기타/데일리 노트/2023-05-09.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -242,6 +210,14 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "e603f2c1286195e4",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
         ]
       }
@@ -261,37 +237,38 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "801beaf5de14557c",
+  "active": "fb2490b771046ff9",
   "lastOpenFiles": [
+    "5. 프로그래밍 언어/마크업 언어/HTML.md",
+    "99. 기타/데일리 노트/2023-05-09.md",
+    "4. 웹 개발/커넥션 풀 API.md",
+    "99. 메모/옵시디언.md",
+    "5. 프로그래밍 언어/python.md",
+    "99. 메모/논문처럼 글쓰는 방법.md",
+    "4. 웹 개발/JSP.md",
+    "5. 프로그래밍 언어/스타일 시트/CSS.md",
+    "99. 기타/데일리 노트/2023-04-25.md",
+    "99. 기타/데일리 노트/2023-04-11.md",
     "To do List.md",
+    "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+    "6. 영어/난 영어도 싫어.md",
+    "4. 웹 개발/웹 개발론.md",
+    "4. 웹 개발/웹 브라우저.md",
+    "9. 용어해설집/소프트웨어/표현식.md",
     "컴퓨터과학.canvas",
-    "컴퓨터 과학 흐름.md",
+    "유용한 사이트 정리.md",
+    "공부목표.canvas",
     "99. 메모/파이썬 출석과제.md",
+    "99. 기타/데일리 노트/2023-05-08.md",
+    "컴퓨터 과학 흐름.md",
     "99. 메모/HTML5 출석과제.md",
     "9. 용어해설집/소프트웨어/Open Graph.md",
-    "99. 기타/데일리 노트/2023-05-08.md",
     "1. 컴퓨터과학 개론/컴퓨터 구조.md",
     "0. 공부 목표/정보처리기사/2. 소프트웨어 개발.md",
-    "5. 프로그래밍 언어/마크업 언어/HTML.md",
-    "유용한 사이트 정리.md",
-    "5. 프로그래밍 언어/스타일 시트/CSS.md",
-    "4. 웹 개발/웹 개발론.md",
     "99. 기타/데일리 노트/2023-05-06.md",
-    "99. 메모/옵시디언.md",
-    "99. 메모/무제 파일.md",
     "99. 기타/템플릿/새 노트.md",
     "웹 개발.canvas",
-    "5. 프로그래밍 언어/python.md",
     "99. 기타/img/Pasted image 20230508041929.png",
-    "99. 기타/템플릿/데일리 노트.md",
-    "99. 프로젝트/교보문고 리디자인.md",
-    "3. 소프트웨어 공학/Visual C++ 프로그래밍.md",
-    "0. 공부 목표/정보처리기사/1. 소프트웨어 설계.md",
-    "0. 공부 목표/정보처리기사/4. 프로그래밍 언어 활용.md",
-    "0. 공부 목표/Coding Interview University.md",
-    "1. 컴퓨터과학 개론/데이터베이스.md",
-    "1. 컴퓨터과학 개론/데이터 구조와 알고리즘.md",
-    "공부목표.canvas",
     "6. 영어",
     "99. 기타.zip.old",
     "99. 기타.zip.temp",

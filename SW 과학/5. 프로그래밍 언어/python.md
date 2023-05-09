@@ -5,10 +5,21 @@ aliases : 파이썬
 
 # 개요
 >[!info] 프로그래밍 언어 학습이나 웹서버, 데이터 분석 분야에서 자주 사용되는 언어
+>>[!warning] 다른 프로그래밍 언어와 다른 점
+>> - 주석기호 : `#`
+>>	- 구글 코랩에서 마크 다운과 호환됨(다른 IDE는 잘 모르겠음)
+>> - 프로그램은 대비가 안되어있으면 에러를 내뱉고 그 에러를 셉션이라고 함 
+>> - 들여쓰기에 의미를 부여?
+>>	- 파이썬은 C와 다르게 {}에 따라 블럭을 정의하지 않고 띄어쓰기에 따라 블럭을 정의
+>
+>- `<run selection/line in python terminal>` : 단축기는 <Shift + Enter>마우스 오른쪽 버튼 클릭시 나옴. 선택한 코드 부분만 터니멀에서 실행하겠다는 의미로  코딩하다가 잘못 눌러 문장이 실행되면 SyntaxError: invalid syntax 오류가 콘솔창에 난다. 콘솔창에 >>>exit를 작성해 나가거나 쓰레기통 모양을 클릭해 나갈 수 있음
+> - 에코잉(메아리) 기법 : 어떤 데이터 값만 집어넣으면 해당 데이터를 그대로 콘솔에 출력하는 것을 말함
 
 >[!quote]- 참고문서
 > - 파이썬 홈페이지 : [Welcome to Python.org](https://www.python.org/)
-> - 파이썬 자습서 : [8. Errors and Exceptions - Python 3.9.5 documentation](https://docs.python.org/ko/3/tutorial/errors.html)
+> - 파이썬 자습서
+> 	- [8. Errors and Exceptions - Python 3.9.5 documentation](https://docs.python.org/ko/3/tutorial/errors.html)
+> 	- [사장님 몰래하는 업무 자동화](https://wikidocs.net/135796)
 > - 파이썬 강의 북마크 해놓은 것 
 > 	- ['파이썬 강의/기본편' 카테고리의 글 목록](https://nadocoding.tistory.com/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EA%B8%B0%EB%B3%B8%ED%8E%B8)
 > 	- [9.1 오류의 종류 | 연오의 파이썬 프로그래밍 입문서](https://python.bakyeono.net/chapter-9-1.html)
@@ -18,20 +29,13 @@ aliases : 파이썬
 
 
 
->[!warning] 다른 프로그래밍 언어와 다른 점
-> - 주석기호 : `#`
->	- 구글 코랩에서 마크 다운과 호환됨(다른 IDE는 잘 모르겠음)
-> - 프로그램은 대비가 안되어있으면 에러를 내뱉고 그 에러를 셉션이라고 함 
-> - 들여쓰기에 의미를 부여?
->	- 파이썬은 C와 다르게 {}에 따라 블럭을 정의하지 않고 띄어쓰기에 따라 블럭을 정의
-
->[!note]
->- `<run selection/line in python terminal>` : 단축기는 <Shift + Enter>마우스 오른쪽 버튼 클릭시 나옴. 선택한 코드 부분만 터니멀에서 실행하겠다는 의미로  코딩하다가 잘못 눌러 문장이 실행되면 SyntaxError: invalid syntax 오류가 콘솔창에 난다. 콘솔창에 >>>exit를 작성해 나가거나 쓰레기통 모양을 클릭해 나갈 수 있음
-> - 에코잉(메아리) 기법 : 어떤 데이터 값만 집어넣으면 해당 데이터를 그대로 콘솔에 출력하는 것을 말함
-
 # 파이썬 환경설정
-- [구글 코랩](https://colab.research.google.com/?hl=ko)
-- [[VSC]]
+- IDE 선정
+	- [구글 코랩](https://colab.research.google.com/?hl=ko) : 온라인
+	- [[VSC]] : 파이썬 익스텐션 설치하면 좋음
+- 파이썬 설치
+	- 코어 파이썬
+	- [아나콘다 파이썬](https://www.anaconda.com/download)
 
 
 # 기본 문법

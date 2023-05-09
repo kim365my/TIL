@@ -21,3 +21,6 @@ aliases : 웹API
 	    - Web Worker 
 >[!cite]- 참고 문서
 > - MDN web api : https://developer.mozilla.org/ko/docs/Web/API
+
+# Webrtc API
+- 웹 브라우저 간에 플러그인의 도움 없이 서로 통신할 수 있도록 설계된 API

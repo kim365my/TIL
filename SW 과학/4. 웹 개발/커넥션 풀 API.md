@@ -29,54 +29,53 @@ aliases : Connection full API
 
 
 # 커넥션 풀 설정하기
-## 형식 (MemberDAO.java)
-```java
-package biz;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.sql.DataSource;
-
-// DB와 관련된 비지니스 로직을 처리하기 위한 클래스
-public class MemberDAO {
-
-	Connection conn;
-	PreparedStatement pstml;
-	ResultSet rs;
-	
-	
-	// 커넥션 풀 이용 DB 연결메서드
-	public void dbConn() {
-		// 예외처리는 필수
-		try {
-			// 1. 외부에서 data를 읽어들이기 위한 Context 생성
-			// xml의 컨텍스트 파일과 연결하기 위한것
-			// server.xml <Context>의 설정과 관련
-			Context intetx = new InitialContext();
-			System.out.println("1. Context 생성 성공");
-			// 2. 톰켓 서버에 정보를 담아놓은 곳으로 이동
-			// lookup 메소드는 사용 환경을 찾는 메소드
-			Context envctx = (Context) intetx.lookup("java:comp/env"); // 가장 잘 막힘
-			System.out.println("2. Context 환경생성 성공!");
-			// 3. DataSource 객체 선언, 톰켓 server.xml에 코딩한 문자열 값
-			DataSource ds = (DataSource) envctx.lookup("jdbc/pool");
-			System.out.println("3. DataSource 찾기 성공");
-			// 4. DataSource를 기준으로 DB에 Connection 연결
-			conn = ds.getConnection();
-			System.out.println("4. DB 접속성공!");
-			
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-}
-
-```
+>[!example]- 예제 (MemberDAO.java)
+>```java
+> 	package biz;
+> 	
+> 	import java.sql.Connection;
+> 	import java.sql.PreparedStatement;
+> 	import java.sql.ResultSet;
+> 	
+> 	import javax.naming.Context;
+> 	import javax.naming.InitialContext;
+> 	import javax.sql.DataSource;
+> 	
+> 	// DB와 관련된 비지니스 로직을 처리하기 위한 클래스
+> 	public class MemberDAO {
+> 	
+> 		Connection conn;
+> 		PreparedStatement pstml;
+> 		ResultSet rs;
+> 		
+> 		
+> 		// 커넥션 풀 이용 DB 연결메서드
+> 		public void dbConn() {
+> 			// 예외처리는 필수
+> 			try {
+> 				// 1. 외부에서 data를 읽어들이기 위한 Context 생성
+> 				// xml의 컨텍스트 파일과 연결하기 위한것
+> 				// server.xml \<Context>의 설정과 관련
+> 				Context intetx = new InitialContext();
+> 				System.out.println("1. Context 생성 성공");
+> 				// 2. 톰켓 서버에 정보를 담아놓은 곳으로 이동
+> 				// lookup 메소드는 사용 환경을 찾는 메소드
+> 				Context envctx = (Context) intetx.lookup("java:comp/env"); // 가장 잘 막힘
+> 				System.out.println("2. Context 환경생성 성공!");
+> 				// 3. DataSource 객체 선언, 톰켓 server.xml에 코딩한 문자열 값
+> 				DataSource ds = (DataSource) envctx.lookup("jdbc/pool");
+> 				System.out.println("3. DataSource 찾기 성공");
+> 				// 4. DataSource를 기준으로 DB에 Connection 연결
+> 				conn = ds.getConnection();
+> 				System.out.println("4. DB 접속성공!");
+> 				
+> 				
+> 			} catch (Exception e) {
+> 				e.printStackTrace();
+> 			}
+> 		}
+> 	}
+>```
 
 
 ## server.xml
@@ -89,7 +88,7 @@ public class MemberDAO {
 	</Context>
 	</Host>
 	```
-- Resoure 추가
+- Context 안에 Resoure 추가하기
 	```java
 	<Resource auth="Container" 
 	    driverClassName="oracle.jdbc.driver.OracleDriver"
@@ -112,12 +111,11 @@ graph LR
 3. 세팅한 쿼리문 실행
 4. 자원 반납(DB 닫기)
 	- DB가 계속 열려있으면 죽어버리거나 과부화될 수 있음
-
-
+---
 - 데이터는 다 레코드셋 타입
-- ⚠️ 인용부호안에 물음표를 넣으면 안됨
 - 아이디 값은 거의 PK로 사용되니까 변하지 않음
 - SQL 커밋은 웹상에서 접속했을 경우 자동으로 이뤄지고 우리가 수동접속하면 수동으로 해야함
+- [!] 인용부호안에 물음표를 넣으면 안됨
 
 ## DB에 접속하기 위한 비지니스 로직
 - insert, update, delete의 흐름

@@ -6,8 +6,8 @@ body{
 	--accent-s: 80%;
 	--accent-l: 68%;
     /* --background-color:rgba(255,165,0,1); */
-	--blockquote-border-thickness:3px;
-	--blockquote-border-color:var(--tx2);
+	--blockquote-border-thickness:2px;
+	/* --blockquote-border-color:var(--tx2); */
 }
 
 .theme-light,
@@ -163,7 +163,7 @@ body:before{
 
 /* 목차 텍스트 안짤리게 하기 */
 body:not(.full-file-names) .tree-item-inner {
-	white-space: break-spaces;
+	/* white-space: break-spaces; */
 }
 
 /* 캔버스 편집시 번호와 컨텐츠 간격 조정 */
