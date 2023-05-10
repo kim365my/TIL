@@ -283,9 +283,9 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 
 ## EL의 기본 형식
 - 형식 : `${ }`
-	- ⭐사용하기 위해서는 선언문에서 `isELIgnored="false"` 설정필요 (안해도 출력은 됨)
+	- [*] 사용하기 위해서는 선언문에서 `isELIgnored="false"` 설정필요 (안해도 출력은 됨)
 	- 직접 값 접근에 가능하기에 `${키명}`식으로 접근하면 됨
-		- ⭐[[Scope|스코프]]에 저장된 값만 출력이 가능(page, request, session, applictaion)
+		- [*] [[Scope|스코프]]에 저장된 값만 출력이 가능(page, request, session, applictaion)
 	- 프로퍼티 표현법
 		- [] 연산자 사용 : `${user["name"]}`
 		- 점연산자 사용 : `${user.name}`
@@ -335,29 +335,28 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 
 ### EL의 [[Scope]] 우선순위
 - EL은 값에 키명으로 직접 접근이 가능하므로 여러개의 스코프에서 동일한 변수명이 있을 경우 아래처럼 우선순위가 있음
-	- 1) page > 2) request > 3) session > 4) application
+	- [*] 1) page > 2) request > 3) session > 4) application
 
 
 
 # JSTL (JSP 표준태그 라이브러리)
 >[!info]
-- JSP의 단점을 개선하기 위해 나온 것
-- 커스텀 태그 중 가장 많이 사용하는 태그를 표준화하여 라이브러리로 제공하는 것
-- JSP2.0 규약에서부터 추가되어 톰켓에서는 기본적으로 제공되지 않음
-	- 따라서 플러그인을 설치해줘야 사용 가능
-- 자바의 기능을 태그로 대체가 가능하다는 개념 
-- 사용하려면 JSP 선언부에 taglib 태그에 추가하여 톰캣에 알려줘야함
-	- value 값의 출력은 EL 표기법을 사용
-		- 입력에도 EL 표기법 사용가능
-- JSTL 태그의 종류
-	- 라이브러리 코어
-		- 변수지원
-		- 제어문, 반복문 처리
-		- URL 처리등이 가능 
-		- 접두어 c(Core)를 가장 많이 사용
+> - JSP의 단점을 개선하기 위해 나온 것
+> -  커스텀 태그 중 가장 많이 사용하는 태그를 표준화하여 라이브러리로 제공하는 것
+> - JSP2.0 규약에서부터 추가되어 톰켓에서는 기본적으로 제공되지 않음
+>	- 따라서 플러그인을 설치해줘야 사용 가능
+> - 자바의 기능을 태그로 대체가 가능하다는 개념 
+> - 사용하려면 JSP 선언부에 taglib 태그에 추가하여 톰캣에 알려줘야함
+>	- value 값의 출력은 EL 표기법을 사용
+>		- 입력에도 EL 표기법 사용가능
+> - JSTL 태그의 종류
+>	- 라이브러리 코어
+>		- 변수지원
+>		- 제어문, 반복문 처리
+>		- URL 처리등이 가능 
+>		- 접두어 c(Core)를 가장 많이 사용
 
->[!warning]
->JSP의 스크립틀릿에서 JSTL로 선언한 변수를 사용하지 못하니까 JSTL의 제어문을 통해서 제어해야함
+>[!warning] JSP의 스크립틀릿에서 JSTL로 선언한 변수를 사용하지 못하니까 JSTL의 제어문을 통해서 제어해야함
 
 ## 플러그인 설치
 - [설치 페이지](http://www.java2s.com/Code/Jar/j/Downloadjstl12jar.htm#google_vignette)에서 다운 받고 압축 푼 다음, 이클립스 프로젝트파일의 src->main->webapp-> WEB-INF->lib 경로에 .jar 파일을 넣으면 됨
@@ -381,7 +380,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 ```
 - value : EL로 작성 가능
 - [[scope]] : 생략가능, 기본값은 page
-	- [?] 전역변수로 저장됨, page는 한 page에서 사용할 수 있는 범위인가? 아직 명확하게 생각이 정리가 안돼 #질문 
+	- [?] 전역변수로 저장됨, page는 한 page에서 사용할 수 있는 범위인가? 아직 명확하게 생각이 정리가 안돼 #질문  : [[Scope]]에서 설명했듯이 page는 JSP에서만 사용되며 지역변수처럼 이용됨
 - EL로 value에 대입할 경우 `""`를 써줘야함
 	```jsp
 	<c:set var="age" value="${43}" />
@@ -433,6 +432,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 	${반복상태.count} <!--몇번 반복했는지 표시-->
 </c:forEach>
 ```
+- [*] var와 items 속성은 필수
 - varStatus : 반복문의 상태를 알려줌
 	- status.index : 인덱스 (0부터 시작)
 	- status.count : 카운트 (1부터 시작)

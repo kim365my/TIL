@@ -184,3 +184,8 @@ body:not(.full-file-names) .tree-item-inner {
 	padding: 0;
 	padding-left: 10px;
 }
+
+
+/* .tree-item{
+	background: var(--bg2);
+} */

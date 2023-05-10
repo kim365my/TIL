@@ -3,7 +3,6 @@ tag : 데이터베이스 쿼리용_언어 백엔드
 aliases : 에스큐엘, 데이터베이스 표준언어
 ---
 
-
 # 개요
 >[!info] [[데이터베이스]]의 기본 - SQL(에스큐엘, 데이터 베이스 표준언어)
 > - SQL은 프로그래밍 언어가 아닌 **쿼리용 언어**
@@ -20,16 +19,17 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 > ![[데이터베이스#개요]]
 
 # DBMS 설치
->[!quote]- 오라클 11gEE 설치 및 환경변수 설정
-> ![[오라클#오라클 설치하기]]
-
->[!quote] MySQL 설치 및 환경변수 설정
-> 1. 설치 페이지 : https://dev.mysql.com/downloads/file/?id=514518
-> 2. 환경변수 설정
->	- 고급 시스템 설정 - 환경변수 - 새로 추가 - `C:\Program Files\MySQL\MySQL Server 8.0\bin`(mysqld.exe가 있는 곳으로)
->	- window - R(실행) ->  cmd - `mysql -V` - 성공 문자 확인
-
->[!cite] [티베로 사용설명서](https://technet.tmaxsoft.com/upload/download/online/tibero/pver-20150504-000001/reference/index.html) : 한국산 DBMS
+>[!quote] DBMS 설치
+>>[!quote]- 오라클 11gEE 설치 및 환경변수 설정
+>> ![[오라클#오라클 설치하기]]
+>
+>>[!quote] MySQL 설치 및 환경변수 설정
+>> 1. 설치 페이지 : https://dev.mysql.com/downloads/file/?id=514518
+>> 2. 환경변수 설정
+>>	- 고급 시스템 설정 - 환경변수 - 새로 추가 - `C:\Program Files\MySQL\MySQL Server 8.0\bin`(mysqld.exe가 있는 곳으로)
+>>	- window - R(실행) ->  cmd - `mysql -V` - 성공 문자 확인
+>
+>>[!cite] [티베로 사용설명서](https://technet.tmaxsoft.com/upload/download/online/tibero/pver-20150504-000001/reference/index.html) : 한국산 DBMS
 
 # 기본 문법
 - 대소문자 구별안함 (데이터 값은 예외)

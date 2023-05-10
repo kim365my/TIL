@@ -3,6 +3,20 @@ tag : 마크업_언어 프론트엔드
 aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 ---
 
+# 개요
+- 박스 모델 레이아웃이 HTML의 핵심
+- XML에서 발전한 형태
+- CSS과 연결시 주의점
+	- 단일 태그 : 가상 선택자를 사용하지 못함
+		- 가상 클래스는 dom 요소가 아니기에 스크립트로 선택할 수 없음
+			- 가상 클래스는 해당 태그 객체의 속성으로 편입됨
+			- 따라서 after()나 before()를 이용해 js로 가상선택자에 접근은 되도 권장하지는 않음
+			- 가상 dom과 dom의 차이는 리액트 내용이기에 css의 가상클래스와 연관이 전혀 없음 
+	- 인라인 태그 : 너비/높이 조절 못함
+
+>[!cite]
+> - [표준 HTML위키](https://html.spec.whatwg.org/multipage/)
+
 >[!quote]- HTML 템플릿
 >> [!example]- 팝이콘
 >> ```html
@@ -71,21 +85,6 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 >> <script src="./js/jquery-ui.min.js"></script>
 >> <script src="./js/jquery.bxslider.js"></script>
 >> <script src="./js/jquery.scrollTo.min.js"></script>
-
-# 개요
-- 박스 모델 레이아웃이 HTML의 핵심
-- XML에서 발전한 형태
-- CSS과 연결시 주의점
-	- 단일 태그 : 가상 선택자를 사용하지 못함
-		- 가상 클래스는 dom 요소가 아니기에 스크립트로 선택할 수 없음
-			- 가상 클래스는 해당 태그 객체의 속성으로 편입됨
-			- 따라서 after()나 before()를 이용해 js로 가상선택자에 접근은 되도 권장하지는 않음
-			- 가상 dom과 dom의 차이는 리액트 내용이기에 css의 가상클래스와 연관이 전혀 없음 
-	- 인라인 태그 : 너비/높이 조절 못함
-
->[!cite]
-> - [표준 HTML위키](https://html.spec.whatwg.org/multipage/)
-
 
 # HTML 사용이유와 기초
 ## 왜 HTML을 쓰는가?
