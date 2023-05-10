@@ -1,40 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "JSP",
-      "path": "4. 웹 개발/JSP.md"
-    },
-    {
-      "basename": "2023-05-10",
-      "path": "99. 기타/데일리 노트/2023-05-10.md"
-    },
-    {
-      "basename": "SQL",
-      "path": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md"
-    },
-    {
-      "basename": "2023-05-09",
-      "path": "99. 기타/데일리 노트/2023-05-09.md"
+      "basename": "유용한 사이트 정리",
+      "path": "유용한 사이트 정리.md"
     },
     {
       "basename": "To do List",
       "path": "To do List.md"
     },
     {
-      "basename": "옵시디언",
-      "path": "99. 메모/옵시디언.md"
+      "basename": "JS",
+      "path": "5. 프로그래밍 언어/JS.md"
     },
     {
-      "basename": "2023-04-21",
-      "path": "99. 기타/데일리 노트/2023-04-21.md"
+      "basename": "2023-05-10",
+      "path": "99. 기타/데일리 노트/2023-05-10.md"
     },
     {
       "basename": "HTML",
       "path": "5. 프로그래밍 언어/마크업 언어/HTML.md"
     },
     {
+      "basename": "2023-05-09",
+      "path": "99. 기타/데일리 노트/2023-05-09.md"
+    },
+    {
       "basename": "커넥션 풀 API",
       "path": "4. 웹 개발/커넥션 풀 API.md"
+    },
+    {
+      "basename": "옵시디언",
+      "path": "99. 메모/옵시디언.md"
     },
     {
       "basename": "python",
@@ -43,6 +39,10 @@
     {
       "basename": "논문처럼 글쓰는 방법",
       "path": "99. 메모/논문처럼 글쓰는 방법.md"
+    },
+    {
+      "basename": "JSP",
+      "path": "4. 웹 개발/JSP.md"
     },
     {
       "basename": "CSS",
@@ -55,6 +55,10 @@
     {
       "basename": "2023-04-11",
       "path": "99. 기타/데일리 노트/2023-04-11.md"
+    },
+    {
+      "basename": "SQL",
+      "path": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md"
     },
     {
       "basename": "난 영어도 싫어",
@@ -87,10 +91,6 @@
     {
       "basename": "네트워크",
       "path": "4. 웹 개발/네트워크.md"
-    },
-    {
-      "basename": "유용한 사이트 정리",
-      "path": "유용한 사이트 정리.md"
     },
     {
       "basename": "공부목표",

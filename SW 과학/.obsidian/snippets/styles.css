@@ -50,6 +50,7 @@ body:before{
 	-webkit-mask-size:300% 300px;
 	-webkit-mask-position:88.5% -73px;
 	-webkit-mask-repeat:no-repeat;
+	
     background-color:var(--color-accent-2);
 	transform:rotateZ(180deg);
 	opacity:0.6;
@@ -68,10 +69,6 @@ body:before{
 	opacity: 0.8; */
 }
 
-/* 백그라운드 색깔 변경 */
-/* body, body.is-translucent{
-	background-color:var(--background-secondary);
-} */
 /* 캔버스 편집할때 뒤에 이미지가 보이는 오류가 있음  이부분에 스타일 적용하면 될것같은데*/
 .cm-editor{
 	background-color: var(--background-primary);
