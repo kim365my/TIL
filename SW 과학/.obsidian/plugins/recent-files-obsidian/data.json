@@ -5,6 +5,10 @@
       "path": "유용한 사이트 정리.md"
     },
     {
+      "basename": "웹 개발",
+      "path": "웹 개발.canvas"
+    },
+    {
       "basename": "To do List",
       "path": "To do List.md"
     },
@@ -127,10 +131,6 @@
     {
       "basename": "새 노트",
       "path": "99. 기타/템플릿/새 노트.md"
-    },
-    {
-      "basename": "웹 개발",
-      "path": "웹 개발.canvas"
     },
     {
       "basename": "데일리 노트",

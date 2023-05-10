@@ -15,6 +15,7 @@ aliases : Java script
 >	- 프레임워크 : Node.JS
 >	- 라이브러리:  [[JQuery]]
 >	- 커피 스크립트, 타입 스크립트, 자바스크립트 슈퍼셋
+>- [공식문서](https://262.ecma-international.org/13.0/)
 
 >[!cite]- 참고 문서 
 > - [JS cheatsheet](https://www.interviewbit.com/javascript-cheat-sheet/) 
