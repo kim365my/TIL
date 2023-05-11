@@ -232,7 +232,7 @@ select * from employees where commission_pct IS NULL;
 - 데이터의 일부분으로 원하는 내용을 검색할 수 있음
 - 문자, 날짜 데이터 타입에 사용할 수 있음 (대소문자 구분됨)
 - vsc의 정규식 같은 느낌
-- 와일드 카드
+- ==와일드 카드==
 	-  퍼센트(`%`) : 길이 제한 없이 아무 문자가 와도 상관 없는 와일드 카드
 		```sql
 		select * from employees where first_name LIKE 'D%'; -- 
@@ -538,7 +538,7 @@ delete from b_member where id ='mc';
 	```sql
 	select * from user_constraints where table_name = 'FRUTS2';
 	```
-- [!] 테이블명을 대문자로 작성해야함
+	- [!] 테이블명을 대문자로 작성해야함
 
 ### CONSTRAINT : 생성과 동시에 제약 걸기
 ```sql

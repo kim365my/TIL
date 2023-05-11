@@ -8,6 +8,7 @@ body{
     /* --background-color:rgba(255,165,0,1); */
 	--blockquote-border-thickness:2px;
 	/* --blockquote-border-color:var(--tx2); */
+	
 }
 
 .theme-light,
@@ -24,6 +25,7 @@ body{
 	--color-red:hsla(365, 90%, 65%, 1);
     --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 2%));
 	--custom-border-color:#ffffff14;
+	--color-orange:#ff7c00;
 }
 
 /* ----------------------------- */
@@ -186,3 +188,29 @@ body:not(.full-file-names) .tree-item-inner {
 /* .tree-item{
 	background: var(--bg2);
 } */
+
+/* 하이라이터 커스텀하기 */
+.search-result-file-matched-text{
+	background-color: transparent;
+	color: var(--text-accent);
+    font-weight: 600;
+}
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
+.markdown-rendered mark{
+	color: var(--code-property);
+	font-weight: 600;
+	background-color: transparent;
+}
+
+/* task 플러그인 글자 크기 조절 */
+.tasks-group-heading p{
+	font-size: 0.9rem;
+	margin-bottom: 0;
+}
+.tasks-group-heading{
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+.tasks-group-heading + ul{
+	margin-top: 0;
+}

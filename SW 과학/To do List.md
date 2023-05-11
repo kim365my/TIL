@@ -1,7 +1,8 @@
 
 >[!hint] 현재 진행 중
 >```tasks 
->	priority is above none
+>	not done
+>	status.type is IN_PROGRESS
 >```
 
 >[!note] 할 일 목록
