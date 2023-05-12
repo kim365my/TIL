@@ -1,128 +1,196 @@
 {
   "recentFiles": [
     {
-      "basename": "노트 정리방식",
-      "path": "99. 메모/노트 정리방식.md"
+      "basename": "book book",
+      "path": "book book.md"
     },
     {
       "basename": "To do List",
       "path": "To do List.md"
     },
     {
-      "basename": "옵시디언",
-      "path": "99. 메모/옵시디언.md"
-    },
-    {
-      "basename": "SQL",
-      "path": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md"
-    },
-    {
-      "basename": "파이썬 출석과제",
-      "path": "99. 메모/파이썬 출석과제.md"
-    },
-    {
-      "basename": "HTML5 출석과제",
-      "path": "99. 메모/HTML5 출석과제.md"
-    },
-    {
-      "basename": "JSP",
-      "path": "4. 웹 개발/JSP.md"
-    },
-    {
-      "basename": "유용한 사이트 정리",
-      "path": "유용한 사이트 정리.md"
-    },
-    {
-      "basename": "웹 개발",
-      "path": "웹 개발.canvas"
-    },
-    {
-      "basename": "JS",
-      "path": "5. 프로그래밍 언어/JS.md"
-    },
-    {
-      "basename": "HTML",
-      "path": "5. 프로그래밍 언어/마크업 언어/HTML.md"
-    },
-    {
-      "basename": "커넥션 풀 API",
-      "path": "4. 웹 개발/커넥션 풀 API.md"
-    },
-    {
-      "basename": "python",
-      "path": "5. 프로그래밍 언어/python.md"
-    },
-    {
-      "basename": "논문처럼 글쓰는 방법",
-      "path": "99. 메모/논문처럼 글쓰는 방법.md"
-    },
-    {
-      "basename": "CSS",
-      "path": "5. 프로그래밍 언어/스타일 시트/CSS.md"
-    },
-    {
-      "basename": "난 영어도 싫어",
-      "path": "6. 영어/난 영어도 싫어.md"
-    },
-    {
-      "basename": "웹 개발론",
-      "path": "4. 웹 개발/웹 개발론.md"
-    },
-    {
-      "basename": "웹 브라우저",
-      "path": "4. 웹 개발/웹 브라우저.md"
-    },
-    {
-      "basename": "표현식",
-      "path": "9. 용어해설집/소프트웨어/표현식.md"
-    },
-    {
-      "basename": "컴퓨터과학",
-      "path": "컴퓨터과학.canvas"
-    },
-    {
-      "basename": "JSDOC",
-      "path": "5. 프로그래밍 언어/마크업 언어/JSDOC.md"
-    },
-    {
-      "basename": "Web API",
-      "path": "4. 웹 개발/Web API.md"
-    },
-    {
-      "basename": "네트워크",
-      "path": "4. 웹 개발/네트워크.md"
-    },
-    {
-      "basename": "공부목표",
-      "path": "공부목표.canvas"
-    },
-    {
-      "basename": "컴퓨터 과학 흐름",
-      "path": "컴퓨터 과학 흐름.md"
-    },
-    {
-      "basename": "Open Graph",
-      "path": "9. 용어해설집/소프트웨어/Open Graph.md"
-    },
-    {
-      "basename": "컴퓨터 구조",
-      "path": "1. 컴퓨터과학 개론/컴퓨터 구조.md"
-    },
-    {
-      "basename": "2. 소프트웨어 개발",
-      "path": "0. 공부 목표/정보처리기사/2. 소프트웨어 개발.md"
-    },
-    {
-      "basename": "새 노트",
-      "path": "99. 기타/템플릿/새 노트.md"
-    },
-    {
-      "basename": "데일리 노트",
-      "path": "99. 기타/템플릿/데일리 노트.md"
+      "basename": "2023-05-10",
+      "path": "2. Area/데일리 노트/2023-05-10.md"
     },
     {
       "basename": "교보문고 리디자인",
-      "path": "99. 프로젝트/교보문고 리디자인.md"
+      "path": "1. Project/웹 개발 포폴제작/교보문고 리디자인.md"
+    },
+    {
+      "basename": "2023년 19주차",
+      "path": "2. Area/주간 노트/2023년 19주차.md"
+    },
+    {
+      "basename": "주간 노트",
+      "path": "2. Area/99. 기타/템플릿/주간 노트.md"
+    },
+    {
+      "basename": "2023-05-08",
+      "path": "2. Area/데일리 노트/2023-05-08.md"
+    },
+    {
+      "basename": "옵시디언",
+      "path": "2. Area/99. 메모/옵시디언.md"
+    },
+    {
+      "basename": "명상록 철학자 황제가 전쟁터에서 자신에게 쓴 일기",
+      "path": "2. Area/독서노트/명상록 철학자 황제가 전쟁터에서 자신에게 쓴 일기.md"
+    },
+    {
+      "basename": "2023-05-12",
+      "path": "2. Area/데일리 노트/2023-05-12.md"
+    },
+    {
+      "basename": "2023-04-11",
+      "path": "2. Area/데일리 노트/2023-04-11.md"
+    },
+    {
+      "basename": "공부목표",
+      "path": "2. Area/공부목표.canvas"
+    },
+    {
+      "basename": "기초부터 배우는 인공지능",
+      "path": "2. Area/독서노트/기초부터 배우는 인공지능.md"
+    },
+    {
+      "basename": "SQL",
+      "path": "2. Area/5. 프로그래밍 언어/데이터베이스 언어/SQL.md"
+    },
+    {
+      "basename": "2. 소프트웨어 개발",
+      "path": "2. Area/0. 공부 목표/정보처리기사/2. 소프트웨어 개발.md"
+    },
+    {
+      "basename": "웹 디자인 레퍼런스",
+      "path": "2. Area/8. 디자인/웹 디자인 레퍼런스.md"
+    },
+    {
+      "basename": "논문처럼 글쓰는 방법",
+      "path": "2. Area/99. 메모/논문처럼 글쓰는 방법.md"
+    },
+    {
+      "basename": "생각하는 법에 대해서",
+      "path": "2. Area/99. 메모/생각하는 법에 대해서.md"
+    },
+    {
+      "basename": "카페24 가입",
+      "path": "2. Area/99. 메모/카페24 가입.md"
+    },
+    {
+      "basename": "La Tex 수식",
+      "path": "2. Area/99. 메모/La Tex 수식.md"
+    },
+    {
+      "basename": "노트 정리방식",
+      "path": "2. Area/99. 메모/노트 정리방식.md"
+    },
+    {
+      "basename": "Coding Interview University",
+      "path": "2. Area/0. 공부 목표/Coding Interview University.md"
+    },
+    {
+      "basename": "1. 소프트웨어 설계",
+      "path": "2. Area/0. 공부 목표/정보처리기사/1. 소프트웨어 설계.md"
+    },
+    {
+      "basename": "Anki",
+      "path": "3. Resouce/Anki.md"
+    },
+    {
+      "basename": "독서 노트",
+      "path": "2. Area/TIL - SW과학/99. 기타/템플릿/독서 노트.md"
+    },
+    {
+      "basename": "철학",
+      "path": "2. Area/철학.md"
+    },
+    {
+      "basename": "쇼핑몰 페이지 구축",
+      "path": "1. Project/웹 개발 포폴제작/쇼핑몰 페이지 구축.md"
+    },
+    {
+      "basename": "파이썬 출석과제",
+      "path": "1. Project/방통대 과제/파이썬 출석과제.md"
+    },
+    {
+      "basename": "Astar알고리즘_8퍼즐문제_노드확장트리",
+      "path": "1. Project/방통대 과제/Astar알고리즘_8퍼즐문제_노드확장트리.canvas"
+    },
+    {
+      "basename": "HTML5 출석과제",
+      "path": "1. Project/방통대 과제/HTML5 출석과제.md"
+    },
+    {
+      "basename": "UWB(초광대역)",
+      "path": "2. Area/TIL - SW과학/9. 용어해설집/하드웨어/UWB(초광대역).md"
+    },
+    {
+      "basename": "플래터",
+      "path": "2. Area/TIL - SW과학/9. 용어해설집/하드웨어/플래터.md"
+    },
+    {
+      "basename": "VSC",
+      "path": "2. Area/TIL - SW과학/9. 용어해설집/IDE/VSC.md"
+    },
+    {
+      "basename": "이클립스",
+      "path": "2. Area/TIL - SW과학/9. 용어해설집/IDE/이클립스.md"
+    },
+    {
+      "basename": "온라인 IDE",
+      "path": "2. Area/TIL - SW과학/9. 용어해설집/IDE/온라인 IDE.md"
+    },
+    {
+      "basename": "구조 분해 할당",
+      "path": "2. Area/TIL - SW과학/9. 용어해설집/구조 분해 할당.md"
+    },
+    {
+      "basename": "코드 컨벤션",
+      "path": "2. Area/TIL - SW과학/9. 용어해설집/코드 컨벤션.md"
+    },
+    {
+      "basename": "클린코드",
+      "path": "2. Area/TIL - SW과학/9. 용어해설집/클린코드.md"
+    },
+    {
+      "basename": "git",
+      "path": "2. Area/TIL - SW과학/9. 용어해설집/git.md"
+    },
+    {
+      "basename": "OLF",
+      "path": "2. Area/TIL - SW과학/9. 용어해설집/OLF.md"
+    },
+    {
+      "basename": "Coding Interview University",
+      "path": "2. Area/TIL - SW과학/0. 공부 목표/Coding Interview University.md"
+    },
+    {
+      "basename": "컴퓨터 과학 흐름",
+      "path": "2. Area/TIL - SW과학/컴퓨터 과학 흐름.md"
+    },
+    {
+      "basename": "컴퓨터과학",
+      "path": "2. Area/TIL - SW과학/컴퓨터과학.canvas"
+    },
+    {
+      "basename": "README",
+      "path": "2. Area/TIL - SW과학/README.md"
+    },
+    {
+      "basename": "노트 정리방식",
+      "path": "2. Area/TIL - SW과학/99. 메모/노트 정리방식.md"
+    },
+    {
+      "basename": "생각하는 법에 대해서",
+      "path": "2. Area/TIL - SW과학/99. 메모/생각하는 법에 대해서.md"
+    },
+    {
+      "basename": "카페24 가입",
+      "path": "2. Area/TIL - SW과학/99. 메모/카페24 가입.md"
+    },
+    {
+      "basename": "La Tex 수식",
+      "path": "2. Area/TIL - SW과학/99. 메모/La Tex 수식.md"
     }
   ],
   "omittedPaths": [],

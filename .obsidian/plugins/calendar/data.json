@@ -1,10 +1,10 @@
 {
   "shouldConfirmBeforeCreate": true,
   "weekStart": "locale",
-  "wordsPerDot": 250,
-  "showWeeklyNote": false,
-  "weeklyNoteFormat": "",
-  "weeklyNoteTemplate": "",
-  "weeklyNoteFolder": "",
+  "wordsPerDot": 500,
+  "showWeeklyNote": true,
+  "weeklyNoteFormat": "gggg[년] ww[주차]",
+  "weeklyNoteTemplate": "2. Area/99. 기타/템플릿/주간 노트",
+  "weeklyNoteFolder": "2. Area/주간 노트",
   "localeOverride": "system-default"
 }

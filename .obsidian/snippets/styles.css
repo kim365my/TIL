@@ -6,7 +6,6 @@ body{
 	--accent-s: 80%;
 	--accent-l: 68%;
 	--blockquote-border-thickness:2px;
-	
 }
 
 .theme-light,
@@ -201,7 +200,17 @@ b, strong, .cm-strong{
 	/* background-color: transparent; */
 	--text-highlight-bg:var(--hl1)
 }
+/* 임베드시 타이틀영역 숨기기 */
+.embed-title, .markdown-embed-title{
+	/* font-size: 1.2rem;
+    font-weight: 800;
+    border-bottom: 1px solid var(--border-color); */
+	display: none;
+}
 
+/* ------------- */
+/* 플러그인 커스텀 */
+/* ------------- */
 /* task 플러그인 글자 크기 조절 */
 .tasks-group-heading p{
 	font-size: 0.9rem;
@@ -220,3 +229,56 @@ b, strong, .cm-strong{
 	background-color: var(--code-background);
 }
 
+
+
+/* cheack 플러그인 커스텀 */
+.workspace .view-content .checklist-plugin-main {
+    padding: 0;
+}
+.checklist-plugin-main .container  input.search {
+	font-size: .8rem;
+	box-shadow: 0 0 2px var(--ui3);
+}
+.settings-container .svg.svelte-9fjno5 {
+	width: 1rem;
+}
+/* 태그그룹 헤더부분 */
+.group .group-header{
+	margin: 0;
+	border-bottom: 1px solid var(--ui2);
+}
+.group .group-header .title * {
+	color: var(--tx1);
+}
+/* 태그 그룹 각 부분 스타일 적용 */
+.group .classic button.toggle{
+	padding: 0;
+	padding-right: 10px;
+}
+.classic p{
+	font-size: 0.8rem;
+}
+.checklist-plugin-main .group .checkbox{
+	min-width: 1rem;
+	min-height: 1rem;
+	width : 1rem;
+	height: 1rem;
+}
+.checkbox div.checked{
+	min-width: 1rem;
+	min-height: 1rem;
+	width : 1rem;
+	height: 1rem;
+	top: 0;
+	left: 0;
+}
+
+.dataview.table-view-table{
+	margin-top: 0;
+}
+.is-live-preview.is-readable-line-width .cm-embed-block table.dataview, .is-live-preview.is-readable-line-width.embed-strict .internal-embed .markdown-preview-sizer, .is-readable-line-width .block-language-dataview table.dataview, .is-readable-line-width .block-language-dataviewjs table.dataview, .markdown-preview-view.is-readable-line-width .dataview.result-group .contains-task-list, .markdown-source-view.is-live-preview.is-readable-line-width table.NLT__table{
+	width: calc(var(--line-width-adaptive) - var(--folding-offset));
+}
+.table-view-tbody tr{
+	width: 10rem;
+}

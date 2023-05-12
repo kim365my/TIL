@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "070a0edb12daaefa",
+        "id": "a298f117af1bdbec",
         "type": "tabs",
         "children": [
           {
-            "id": "8bacd4902634dab3",
+            "id": "0a68c47af3bc9161",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 메모/노트 정리방식.md",
+                "file": "book book.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rs.",
+                "query": "tag:#독서",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +73,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 209.5,
+    "collapsed": true
   },
   "right": {
     "id": "0ec7239b9c0b9a42",
@@ -82,7 +83,7 @@
       {
         "id": "efdcbd70d8282bb8",
         "type": "tabs",
-        "dimension": 67.82945736434108,
+        "dimension": 68.02325581395348,
         "children": [
           {
             "id": "e297f3dcd7f9d836",
@@ -90,7 +91,42 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 메모/노트 정리방식.md"
+                "file": "book book.md"
+              }
+            }
+          },
+          {
+            "id": "b0ac13d7bbc874ca",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "book book.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": -3,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4061496711336462,
+                  "close": true
+                }
               }
             }
           },
@@ -100,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 메모/노트 정리방식.md",
+                "file": "book book.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,10 +153,18 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 메모/노트 정리방식.md",
+                "file": "book book.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            }
+          },
+          {
+            "id": "7b38a7cf544b139b",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
             }
           },
           {
@@ -131,12 +175,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "92f7af63d8dd3cce",
         "type": "tabs",
-        "dimension": 32.17054263565892,
+        "dimension": 31.976744186046513,
         "children": [
           {
             "id": "f9f8e608f518e7a0",
@@ -144,41 +189,6 @@
             "state": {
               "type": "calendar",
               "state": {}
-            }
-          },
-          {
-            "id": "b0ac13d7bbc874ca",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "99. 메모/노트 정리방식.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.4061496711336462,
-                  "close": true
-                }
-              }
             }
           },
           {
@@ -210,7 +220,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.5
+    "width": 261.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,39 +231,49 @@
       "zk-prefixer:새로운 유니크 노트 생성": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "kr-book-info-plugin:Add Book Info": false
     }
   },
-  "active": "e603f2c1286195e4",
+  "active": "0a68c47af3bc9161",
   "lastOpenFiles": [
-    "99. 메모/노트 정리방식.md",
-    "99. 메모/PARA 노트 정리방식.md",
-    "99. 메모/에버그린 노트 정리방식.md",
     "To do List.md",
-    "데일리 노트/2023-05-12.md",
-    "데일리 노트/2023-05-11.md",
-    "데일리 노트/2023-05-10.md",
-    "데일리 노트/2023-05-09.md",
-    "데일리 노트/2023-05-08.md",
-    "데일리 노트/2023-05-05.md",
-    "데일리 노트/2023-05-04.md",
-    "데일리 노트/2023-05-03.md",
-    "데일리 노트/2023-05-02.md",
-    "데일리 노트/2023-04-29.md",
-    "데일리 노트/2023-04-28.md",
-    "데일리 노트/2023-04-27.md",
-    "데일리 노트/2023-04-25.md",
-    "데일리 노트/2023-04-24.md",
-    "데일리 노트/2023-04-23.md",
-    "데일리 노트/2023-04-22.md",
-    "데일리 노트/2023-04-21.md",
-    "데일리 노트/2023-04-20.md",
-    "데일리 노트/2023-04-19.md",
-    "데일리 노트/2023-04-18.md",
-    "데일리 노트/2023-04-17.md",
-    "데일리 노트/2023-04-15.md",
-    "데일리 노트",
+    "2. Area/99. 기타/무제 파일.md",
+    "2. Area/99. 기타/사전",
+    "2. Area/데일리 노트/2023-05-10.md",
+    "1. Project/웹 개발 포폴제작/교보문고 리디자인.md",
+    "2. Area/주간 노트/2023년 19주차.md",
+    "2. Area/99. 기타/템플릿/주간 노트.md",
+    "2. Area/데일리 노트/2023-05-08.md",
+    "2. Area/주간 노트/2023-W19.md",
+    "2. Area/주간 노트/2023년 18주차.md",
+    "2. Area/주간 노트/9999년 20주차.md",
+    "2. Area/주간 노트/2023-W20.md",
+    "2. Area/99. 메모/옵시디언.md",
+    "2. Area/데일리 노트/2023-05-07.md",
+    "2. Area/주간 노트/2023-05-07.md",
+    "2. Area/99. 기타/템플릿/무제 파일.md",
+    "2. Area/독서노트/명상록 철학자 황제가 전쟁터에서 자신에게 쓴 일기.md",
+    "2. Area/주간 노트",
+    "2. Area/데일리 노트/2023-05-12.md",
+    "2. Area/데일리 노트/2023-04-11.md",
+    "2. Area/공부목표.canvas",
+    "book book.md",
+    "2. Area/독서노트/기초부터 배우는 인공지능.md",
+    "2. Area/99. 기타/템플릿/독서 노트.md",
+    "2. Area/5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+    "2. Area/0. 공부 목표/정보처리기사/2. 소프트웨어 개발.md",
+    "4. Archive/img/Pasted image 20230512231820.png",
+    "2. Area/8. 디자인/웹 디자인 레퍼런스.md",
+    "2. Area/99. 메모/논문처럼 글쓰는 방법.md",
+    "1. Project/방통대 과제/Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
+    "2. Area/TIL - SW과학/컴퓨터과학.canvas",
+    "1. Project/방통대 과제",
+    "2. Area/TIL - SW과학/공부목표.canvas",
+    "2. Area/TIL - SW과학/웹 개발.canvas",
+    "2. Area/TIL - SW과학/0. 공부 목표/정보처리기사/자격증.canvas",
     "컴퓨터과학.canvas",
+    "데일리 노트",
     "공부목표.canvas",
     "웹 개발.canvas",
     "99. 기타/img/Pasted image 20230508041929.png",

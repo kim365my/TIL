@@ -11,11 +11,12 @@
   "obsidian-tasks-plugin",
   "obsidian-outliner",
   "obsidian-sortable",
-  "obsidian-emoji-toolbar",
   "obsidian-enhancing-export",
   "better-fn",
   "tag-wrangler",
   "recent-files-obsidian",
   "obsidian-excel-to-markdown-table",
-  "obsidian-pandoc-reference-list"
+  "obsidian-pandoc-reference-list",
+  "kr-book-info-plugin",
+  "obsidian-checklist-plugin"
 ]
