@@ -59,8 +59,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "af00575f807e8271",
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md"
+                "file": "99. 메모/옵시디언.md"
               }
             }
           },
@@ -161,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+                "file": "99. 메모/옵시디언.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+                "file": "99. 메모/옵시디언.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,7 +212,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
+                "file": "99. 메모/옵시디언.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -284,12 +283,12 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "054339a885fce527",
+  "active": "8bacd4902634dab3",
   "lastOpenFiles": [
-    "99. 기타/데일리 노트/2023-05-12.md",
-    "99. 기타/데일리 노트/2023-05-09.md",
     "5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
     "99. 메모/옵시디언.md",
+    "99. 기타/데일리 노트/2023-05-12.md",
+    "99. 기타/데일리 노트/2023-05-09.md",
     "99. 기타/데일리 노트/2023-05-08.md",
     "99. 기타/데일리 노트/2023-05-11.md",
     "99. 기타/데일리 노트/2023-05-02.md",

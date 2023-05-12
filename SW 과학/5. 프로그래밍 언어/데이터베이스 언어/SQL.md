@@ -607,7 +607,12 @@ RENAME 현재 테이블명 TO 바꿀 테이블명;
 
 
 ### 색인(index)
-- DML, DCM 만드는 것처럼 생성
+- DML, DCM 만드는 것처럼 생성함
+- DB 인덱스를 빠르게 하기 위해 사용되는 기능
+	- 장점 : 검색속도 빠르고 시스템 부하를 줄여 DB 성능 향상
+	- 단점 : insert, update, delete 등 변경 작업이 자주 일어나면 오히려 DB 성능이 저하됨
+		- 주기적인 기억공간이 필요
+	- [i] 오라클은 테이블 생성시 PK를 설정하면 자동으로 인덱스로 등록
 ```sql
 Create index 인덱스명
 ```
@@ -615,24 +620,28 @@ Create index 인덱스명
 
 
 ### 시퀀스(Sequence)
-- 기본 키를 사용하기 편하도록 설계된 자동 번호 생성기
+- 기본키로 사용하기 편하도록 설계된 **자동 번호 생성기**
 - 호출할 때마다 번호를 자동으로 증가시키는 DB 오브젝트
 	```sql
 	Create SEQUENCE 시퀀스 | 옵션명|;
 	```
-- 시퀀스 사용
-	```sql
-	insert into bb_board VALUES(
-	    BB_BOARD_SEQ.nextval
-	);
-	```
 
+#### 시퀀스 옵션
 | 옵션명                   |                      |
 | ------------------------ | -------------------- |
 | START WITH n             | 시퀀스 시작번호 설정 |
 | INCREMENT BY n           | 시퀀스 증가값 설정   |
 | MAXVAULE n \| NOMAXVALUE | 최대값 설정          |
 | MINVAULE n \| NOMINVALUE | 최솟값 설정          |
+
+- 시퀀스 사용법
+	```sql
+	insert into bb_board VALUES(
+	    BB_BOARD_SEQ.nextval
+	);
+	```
+
+
 
 >[!example]- 시퀀스 예시
 >```sql
