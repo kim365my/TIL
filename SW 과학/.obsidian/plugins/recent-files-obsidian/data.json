@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "SQL",
+      "path": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md"
+    },
+    {
+      "basename": "2023-05-12",
+      "path": "99. 기타/데일리 노트/2023-05-12.md"
+    },
+    {
+      "basename": "2023-05-09",
+      "path": "99. 기타/데일리 노트/2023-05-09.md"
+    },
+    {
+      "basename": "옵시디언",
+      "path": "99. 메모/옵시디언.md"
+    },
+    {
+      "basename": "2023-05-08",
+      "path": "99. 기타/데일리 노트/2023-05-08.md"
+    },
+    {
       "basename": "2023-05-11",
       "path": "99. 기타/데일리 노트/2023-05-11.md"
     },
@@ -9,20 +29,20 @@
       "path": "99. 기타/데일리 노트/2023-05-02.md"
     },
     {
-      "basename": "To do List",
-      "path": "To do List.md"
+      "basename": "JSP",
+      "path": "4. 웹 개발/JSP.md"
     },
     {
-      "basename": "옵시디언",
-      "path": "99. 메모/옵시디언.md"
-    },
-    {
-      "basename": "SQL",
-      "path": "5. 프로그래밍 언어/데이터베이스 언어/SQL.md"
+      "basename": "VSC",
+      "path": "9. 용어해설집/IDE/VSC.md"
     },
     {
       "basename": "2023-05-10",
       "path": "99. 기타/데일리 노트/2023-05-10.md"
+    },
+    {
+      "basename": "To do List",
+      "path": "To do List.md"
     },
     {
       "basename": "파이썬 출석과제",
@@ -31,10 +51,6 @@
     {
       "basename": "HTML5 출석과제",
       "path": "99. 메모/HTML5 출석과제.md"
-    },
-    {
-      "basename": "JSP",
-      "path": "4. 웹 개발/JSP.md"
     },
     {
       "basename": "유용한 사이트 정리",
@@ -51,10 +67,6 @@
     {
       "basename": "HTML",
       "path": "5. 프로그래밍 언어/마크업 언어/HTML.md"
-    },
-    {
-      "basename": "2023-05-09",
-      "path": "99. 기타/데일리 노트/2023-05-09.md"
     },
     {
       "basename": "커넥션 풀 API",
@@ -115,10 +127,6 @@
     {
       "basename": "공부목표",
       "path": "공부목표.canvas"
-    },
-    {
-      "basename": "2023-05-08",
-      "path": "99. 기타/데일리 노트/2023-05-08.md"
     },
     {
       "basename": "컴퓨터 과학 흐름",

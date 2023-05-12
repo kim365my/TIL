@@ -5,9 +5,7 @@ body{
 	--accent-h: 254;
 	--accent-s: 80%;
 	--accent-l: 68%;
-    /* --background-color:rgba(255,165,0,1); */
 	--blockquote-border-thickness:2px;
-	/* --blockquote-border-color:var(--tx2); */
 	
 }
 
@@ -185,21 +183,23 @@ body:not(.full-file-names) .tree-item-inner {
 }
 
 
-/* .tree-item{
-	background: var(--bg2);
-} */
+b, strong, .cm-strong{
+	color: var(--code-property);
+	/* color: var(--color-base-100); */
+	/* color: var(--code-keyword); */
+	/* color: var(--text-accent); */
+	/* color: var(--callout-title-color); */
+}
+
 
 /* 하이라이터 커스텀하기 */
-.search-result-file-matched-text{
-	background-color: transparent;
-	color: var(--text-accent);
-    font-weight: 600;
-}
+.search-result-file-matched-text,
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
 .markdown-rendered mark{
-	color: var(--code-property);
-	font-weight: 600;
-	background-color: transparent;
+	/* color: var(--color-accent-2); */
+	/* font-weight: 600; */
+	/* background-color: transparent; */
+	--text-highlight-bg:var(--hl1)
 }
 
 /* task 플러그인 글자 크기 조절 */
@@ -214,3 +214,9 @@ body:not(.full-file-names) .tree-item-inner {
 .tasks-group-heading + ul{
 	margin-top: 0;
 }
+
+/* 머메이드 백그라운드 색 추가 */
+.mermaid{
+	background-color: var(--code-background);
+}
+

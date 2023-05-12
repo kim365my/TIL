@@ -98,6 +98,7 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 	```sql
 	show user;
 	```
+
 ### show recyclebin : 휴지통 보기
 ```sql
 show recyclebin;
@@ -232,7 +233,7 @@ select * from employees where commission_pct IS NULL;
 - 데이터의 일부분으로 원하는 내용을 검색할 수 있음
 - 문자, 날짜 데이터 타입에 사용할 수 있음 (대소문자 구분됨)
 - vsc의 정규식 같은 느낌
-- ==와일드 카드==
+- **와일드 카드**
 	-  퍼센트(`%`) : 길이 제한 없이 아무 문자가 와도 상관 없는 와일드 카드
 		```sql
 		select * from employees where first_name LIKE 'D%'; -- 
@@ -356,7 +357,7 @@ ROLLBACK;
 - 커밋한 상태로 되돌릴 수 있음
 
 
-## 서브 쿼리문 ⭐
+## ⭐ 서브 쿼리문 
 - 하나의 SELECT 문 내부에 포함된 또 하나의 SELECT 문으로 서브쿼리를 포함하고 있는 쿼리를 메인쿼리라고 하며 항상 서브 쿼리가 먼저 실행됨 (사칙연산 생각하면 쉬움)
 - 실행결과에 따라 단일행 서브쿼리, 다중행 서브쿼리로 분류됨
 	- 단일행 서브쿼리
@@ -386,7 +387,7 @@ select * from fruts2;
 
 
 
-# CRUD
+# ⭐ CRUD
 >[!cite]- CRUD란?
 >![[CRUD#개요]]
 
@@ -427,8 +428,7 @@ insert into fruts(qty, price, name) VALUES('10', '5000', '오렌지');
 
 
 ## Read
-- select 구문
-
+![[SQL#select : 데이터 읽기]]
 ## Update
 ```sql
 UPDATE b_member SET name = '김수돌', email='mc@naver.com' where id = 'mc';
@@ -602,7 +602,7 @@ RENAME 현재 테이블명 TO 바꿀 테이블명;
 
 
 >[!warning] 제약조건 추가시 NOT NULL과 CHECK는 ADD  CONSTRAINT 대신 MODIFY를 사용
-
+ 
 - [?] NOT NULL의 제약조건 키명은 C로 되어 있던데 이것과 관련이 있는걸까?  #질문 
 
 
@@ -611,6 +611,8 @@ RENAME 현재 테이블명 TO 바꿀 테이블명;
 ```sql
 Create index 인덱스명
 ```
+
+
 
 ### 시퀀스(Sequence)
 - 기본 키를 사용하기 편하도록 설계된 자동 번호 생성기
@@ -625,24 +627,33 @@ Create index 인덱스명
 	);
 	```
 
+| 옵션명                   |                      |
+| ------------------------ | -------------------- |
+| START WITH n             | 시퀀스 시작번호 설정 |
+| INCREMENT BY n           | 시퀀스 증가값 설정   |
+| MAXVAULE n \| NOMAXVALUE | 최대값 설정          |
+| MINVAULE n \| NOMINVALUE | 최솟값 설정          |
 
-| 옵션명                     |             |
-|-------------------------|-------------|
-| START WITH n            | 시퀀스 시작번호 설정 |
-| INCREMENT BY n          | 시퀀스 증가값 설정  |
-| MAXVAULE n \| NOMAXVALUE | 최대값 설정      |
-| MINVAULE n \| NOMINVALUE | 최솟값 설정      |
-
->[!example]
+>[!example]- 시퀀스 예시
 >```sql
--- 1부터 시작해서 1씩 증가하는 시퀀스
-CREATE SEQUENCE bb_board_seq INCREMENT by 1 START with 1;
-select * from user_sequences;
+> -- 1부터 시작해서 1씩 증가하는 시퀀스
+> CREATE SEQUENCE bb_board_seq INCREMENT by 1 START with 1;
+> select * from user_sequences;
 >```
 
 
+### 함수
+- 오라클의 함수를 이용하면 테이블의 데이터를 가공하여 조회 가능
+- dual[^dual]를 통해서 함수 출력가능
 
-# 용어정리
+#### 함수 종류
+- 
+
+
+
+[^dual]: 오라클에서 제공하는 한행짜리 테스트 테이블
+
+# 용어정리 
 
 ## 릴레이션과 열, 행
 ![[데이터베이스#테이블 용어정리]]
@@ -655,3 +666,5 @@ select * from user_sequences;
 
 
 # 연관문서
+
+
