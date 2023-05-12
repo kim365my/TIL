@@ -312,7 +312,7 @@ session.invalidate(); // 세션 강제 삭제 : 브라우저와 서버의 연결
 
 # 서블릿 디자인 패턴
 ## MVC
-- Model : [[JAVA]]
+- Model : [[Java]]
 - View : [[JSP]]
 - Cotoller : Servlet
 

@@ -236,7 +236,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 - <jsp:useBean>
 	- id :  id 값을 이용해서 스크립틀릿에서 객체의 메소드에 접근 가능
 	- class : 자바빈으로 사용할 클래스 이름(`패키지명.클래스_이름` 형식으로 작성)
-	- [[scope]] : 자바빈에 접근할 수 있는 저장 범위를 지정 (기본값은 page)
+	- [[Scope]] : 자바빈에 접근할 수 있는 저장 범위를 지정 (기본값은 page)
 - <jsp:setProperty>
 	- [[자바빈]]과 파라미터 값의 name이 동일시 property 속성을 `*`로 지정하면 전송된 매개변수 이름과 자바빈 멤버변수를 비교하고 값을 자동으로 모두 넘겨줌
 		- 같은 데이터 타입으로 맞추기(String으로 넘겨 받으니까 멤버변수를 String으로 작성하는 것이 중요)
@@ -379,7 +379,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 <c:set var="변수명" value="값" scope="범위"
 ```
 - value : EL로 작성 가능
-- [[scope]] : 생략가능, 기본값은 page
+- [[Scope]] : 생략가능, 기본값은 page
 	- [?] 전역변수로 저장됨, page는 한 page에서 사용할 수 있는 범위인가? 아직 명확하게 생각이 정리가 안돼 #질문  : [[Scope]]에서 설명했듯이 page는 JSP에서만 사용되며 지역변수처럼 이용됨
 - EL로 value에 대입할 경우 `""`를 써줘야함
 	```jsp

@@ -206,7 +206,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -224,7 +224,7 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "d1241a9630c8b981",
+  "active": "e603f2c1286195e4",
   "lastOpenFiles": [
     "99. 메모/노트 정리방식.md",
     "99. 메모/PARA 노트 정리방식.md",
