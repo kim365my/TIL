@@ -1,5 +1,5 @@
 ---
-tag : 프론트엔드 마크업_언어 스타일시트
+tag : 프론트엔드 프론트엔드/마크업_언어 프론트엔드/스타일시트
 aliases : Cascading Style Sheets - 종속형 시트
 ---
 

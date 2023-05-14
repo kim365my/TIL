@@ -1,5 +1,5 @@
 ---
-tag : 마크업_언어 프론트엔드
+tag : 프론트엔드/마크업_언어 프론트엔드
 aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 ---
 
@@ -350,7 +350,7 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 
 
 
-## Form 요소 #암기
+## Form 요소 
 ```html
 <form action="" method="">
     <fieldset>
@@ -361,8 +361,9 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
     </fieldset>
 </form>
 ```
-### 서버와 사용하기
-- HTML에서 서버 쪽으로 데이터를 넘겨줄 수 있는 유일한 방법 (무조건 **문자열**)
+
+### 서버와 사용하기 
+- HTML에서 서버 쪽으로 데이터를 넘겨줄 수 있는 유일한 방법 (무조건 **문자열**) #암기
 	- form 태그 안에 있는 input 태그 name을 키로 getAttruebute 함
 	- type을 hidden으로 값을 숨겨진 키도 넘어감
 	- 한번에 여러개의 데이터를 묶어서 제출버튼을 클릭시 배열로 전송됨 ex) 체크박스 등
@@ -376,6 +377,8 @@ aliases : Hypertext Markup Language, 하이퍼텍스트 마크업 언어
 	- `method` 속성 : get/post 데이터 방식 결정, 기본값은 get
 		- 서블릿의 doGet/doPost 중 어떤 것을 선택할 것인지에 대한 차이
 	- `navalidate` : 데이터의 유효성검사 비활성화 
+
+
 
 ## Input 요소
 ```html

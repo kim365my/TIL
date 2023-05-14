@@ -389,6 +389,7 @@ select * from fruts2;
 >[!cite]- CRUD란?
 >![[CRUD#개요]]
 
+
 ## Create
 ### 테이블 생성
 ```sql
