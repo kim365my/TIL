@@ -10,9 +10,9 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 > 	- 쿼리 : RDBMS에서 이해하는 유효한 명령
 > 		-  row(행)과 column(열)이 존재
 > - DBMS : 오라클 등
-> -   ORM(객체 관계)을 이용하면 [[python|파이썬]] 등으로 작업한 코드를 SQL로 변경해줌.
->	-   장점 : 시간 절약가능
->	-   단점 : ORM에 너무 의존하면 SQL에서 어떻게 작동하는 지 생각을 못하게 됨
+> - ORM(객체 관계)을 이용하면 [[python|파이썬]] 등으로 작업한 코드를 SQL로 변경해줌.
+>	- 장점 : 시간 절약가능
+>	- 단점 : ORM에 너무 의존하면 SQL에서 어떻게 작동하는 지 생각을 못하게 됨
 >		- 풀스택개발자는 SQL의 기초적인 원리를 배워야 한다고 함
 
 
@@ -73,7 +73,7 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 | !=, <>, ^= = > |  다르면 true  |
 
 
-## DML과 DDL, DCL, TCL
+# DML과 DDL, DCL, TCL
   ![[Pasted image 20230428093752.png|400]]
 - **DDL(데이터 정의어 : Data Definition Language)** 
 	- 테이블, 시퀀스, 뷰 등 DB에서 사용하는 DB 오브젝트 구조를 생성할때 사용하는 명령어
@@ -91,6 +91,404 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 	- ROLLBACK
 
 ## DDL 명령어
+| 명령어    | 설명                                                                             |
+| --------- | -------------------------------------------------------------------------------- |
+| CREATE    | DB 오브젝트 생성                                                                 |
+| DROP      | DB 오브젝트 삭제                                                                 |
+| ALTER     | DB 오브젝트 수정                                                                 |
+| TRUNCATE  | DB 오브젝트 완전 삭제 <br> DB 데이터 관련된 하나의 트랜직션이 삭제               |
+| show      | 데이터베이스 목록이나, 테이블 목록 등 다양한 정보를 보기 원할 때 사용하는 명령어 |
+|           | 현재 접속한 계정을 확인하는 명령어                                               |
+|           | 휴지통에 있는 삭제 테이블 보기                                                   |
+| PURGE     | 휴지통 비우기                                                                    |
+| FLASHBACK | 테이블 복구                                                                      |
+
+
+## DML 명령어
+| 명령어                       | 설명                                                                              |
+| ---------------------------- | --------------------------------------------------------------------------------- |
+| INSERT INTO                  | 데이터 생성 <br> VALUES()를 이용해 데이터를 삽입                                  |
+| DESC                         | 테이블에 대한 정보 출력                                                           |
+| select                       | 데이터 읽기                                                                       |
+| AS                           | 칼럼을 원하는 이름으로 생성 후 조회할 수 있음                                     |
+| order by                     | 정렬                                                                              |
+| DISTINCT                     | 중복값 제거                                                                       |
+| WHERE                        | 조건문                                                                            |
+| AND, OR, NOT                 |                                                                                   |
+| MOD(value1, value2)          | 나머지 구하기                                                                     |
+| column BETWEEN 조건 AND 조건 | 조건과 조건을 만족할 때                                                           |
+| IS NULL                      | null 조회가능                                                                     |
+| like                         | 데이터의 일부분으로 원하는 내용을 검색할 수 있음                                  |
+| NVL(column, value)           | null 있는 칼럼을 찾아서 해당 값으로 치환해주는 메소드                             |
+| IN(value)                    | 해당 값을 포함되었다면 boolean 값을 반환하는 메소드                               |
+| 집합                         |                                                                                   |
+| UNION                        | 합집합                                                                            |
+| UNION ALL                    | UNION와 다르게 중복 제거 안함                                                     |
+| INTERSECT                    | 교집합                                                                            |
+| MINUS                        | 차집합                                                                            |
+| DECODE                       | switch~ case 문과 비슷한 함수로 위처럼 지정한 값을 원하는 이름으로 출력할 수 있음 |
+| GROUP BY                     | 그룹 함수                                                                         |
+| HAVING                       | 그룹 함수에 조건을 줄때 사용하는 명령어                                           |
+
+
+
+## TCL 명령어
+| 명령어      | 설명                                                                           |
+|----------|------------------------------------------------------------------------------|
+| COMMIT   | 작업 적용하는 키워드 <br> 외부 작업시 반드시 커밋을 적용시켜줘야함 <br> 커밋을 하게 되면 다시 롤백이 어려우므로 신중하게 해야함 |
+| ROLLBACK | 커밋한 상태로 되돌릴 수 있음                                                             |
+
+
+
+# ⭐ 서브 쿼리문 
+- 하나의 SELECT 문 내부에 포함된 또 하나의 SELECT 문으로 서브쿼리를 포함하고 있는 쿼리를 메인쿼리라고 하며 항상 서브 쿼리가 먼저 실행됨 (사칙연산 생각하면 쉬움)
+- 실행결과에 따라 단일행 서브쿼리, 다중행 서브쿼리로 분류됨
+	- 단일행 서브쿼리
+		- 서브쿼리의 실행결과가 단 하나의 행인 서브쿼리
+		- 단일값끼리 비교하는 연산자들을 사용할 수 있음
+	- 다중행 서브쿼리
+- 자주 함께 사용하는 메소드
+	- IN : 뒤에 나오는 값이 포함되어 있으면 참
+	- ANY, SOME : 뒤에 나오는 여러 값 중 하나 이상 조건을 만족시키면 참
+	- ALL : 뒤에 나오는 여러 값들이 모두 해당 조건을 만족시키면 참
+
+>[!warning] 하나의 쿼리문에 다른 쿼리문을 중첩할 수 있음 (select 문만 가능)
+>```sql
+> insert into b_board(seq,title,nickname,content)
+> values((select nvl(max(seq),0)+1 from b_board),'타이틀','글쓴이','글내용' );
+
+### 테이블 복사하기
+```sql
+-- 서브 쿼리 이용 같은 구조 테이블 생성 가능
+CREATE table fruts2 as(select * from fruts where 1 != 1);
+insert into fruts2(select * from fruts);
+select * from fruts2;
+```
+- 테이블 복사의 경우 NOT NULL 제약조건은 복사됨
+	- 서브쿼리문은 select만 되어서 참인게 다 들어옴
+	- 복사했을 경우  NOT NULL과 CHECK이외의 제약조건은 복사가 안되는 것을 확인할 수 있음
+
+
+
+# ⭐ CRUD
+>[!cite]- CRUD란?
+>![[CRUD#개요]]
+
+
+## Create
+### 테이블 생성
+```sql
+CREATE TABLE b_member(
+    id VARCHAR2(20) PRIMARY key,
+    pwd VARCHAR2(20) NOT NULL,
+    name VARCHAR2(20) NOT NULL,
+    email VARCHAR2(20) DEFAULT 'indopop@naver.com'
+);
+```
+
+- [[SQL#DESC : 테이블에 대한 정보 출력|DESC]]에서 테이블의 정보를 본 것처럼 생성해야함
+- `칼럼명 데이터유형 NULL?` 순으로 작성해야 함
+	- 데이터유형은 SQL 기본 데이터처럼?
+	- NULL?에 들어가는 데이터
+		- NULL : null 값
+		- NOT NULL : null 값이 들어가서는 안되는 데이터 일때
+		- DEFAULT : 기본 값
+		- PK, FK ![[SQL#PK와 FK란]]
+###  데이터 생성
+```sql
+INSERT INTO b_member VALUES(
+    'mc4', '1111', 'name', DEFAULT
+);
+```
+- VALUES()를 이용해 데이터를 삽입
+- DEFAULT나 NULL 키워드를 넣을 수 있음
+
+```sql
+insert into fruts(qty, price, name) VALUES('10', '5000', '오렌지');
+```
+- 이런 식으로 칼럼명을 지정해서 해당 순서로 해당 내용에만 데이터를 넣을 수 있음
+- 칼럼명 생략시 테이블 생성했을 때의 칼럼 순서대로 데이터를 모두 넣어야 함
+
+
+
+## Read
+![[SQL#select : 데이터 읽기]]
+## Update
+```sql
+UPDATE b_member SET name = '김수돌', email='mc@naver.com' where id = 'mc';
+```
+- 업데이트는 거의 where 조건절과 함께 사용
+- 테이블 데이터 수정
+	- `UPDATE 테이블명 set 칼럼 = 값 where 조건;`
+	- 중요 조건을 만족하는 모든 행을 수정함
+	- 조건을 안쓰면 모든 행을 수정
+	- 하나의 행을 구분할 수 있는 칼럼이 조건으로 사용되는 경우가 많음 (예. pk)
+
+## Delete
+### 테이블 삭제 (DROP)
+```sql
+drop table B_Member;
+```
+- B_Member 테이블 자체 삭제
+
+### 데이터 삭제
+```sql
+delete from b_member where id ='mc';
+```
+- mc 인 사람의 레코드를 삭제
+- 조건을 만족하는 모든 행을 수정
+- 조건을 안쓰면 모든 행을 수정
+
+
+# 데이터 딕셔너리(Data Dictionary) 
+## 설명
+- 시스템 카탈로그라고 부르며 사용가능한 데이터베이스 및 테이블의 정보를 요약해서 가지고 있는 시스템 테이블
+- 테이블의 요약된 정보는 **메타데이터**라고 하며 종류는 ==스키마 · 사용자 · 객체 · 권한 · 롤 · 데이터 베이스의 정보 등==이 있음
+	- 마치 옵시디언에서 메타데이터를 이용해 하나의 노트를 관리하는 것처럼 데이터 딕셔너리는 표를 이러한 방식으로 관리함
+- 시스템 정보를 가지고 있기에 일반 사용자는 조회만 가능
+- [[Pasted image 20230502091637.png|오라클의 딕셔너리]]
+- 시퀀스
+	- 기본 키를 사용하기 편하도록 설계된 자동번호 생성기
+	- 호출할 때마다 번호를 자동으로 증가시키는 DB 오브젝트   
+	- [ibm에서 설명한 시퀀스](https://www.ibm.com/docs/ko/db2/11.1?topic=objects-sequences)
+
+### 사용자 유형별 접근 권한별 뷰
+|      | 설명                                                       |
+| ---- | ---------------------------------------------------------- |
+| ALL  | 모든 개체에 접근가능                         |
+| DBA  | DB관리자들만 접속가능 직접 접근이 가능하며 데이터 사전을 직접 갱신 할 수 있음    |
+| USER | 뷰를 통해 소유중인 개체에만 접근 가능, 읽기만 할 수 있을 뿐 다른 작업은 불가 |
+- 오라클 명령어의 접두어를 통해서 어떤 뷰가 무슨 유형에서 사용되는지 알 수 있음
+
+### 시스템 뷰의 종류
+- 동적 뷰 : 테이블에서 동적으로 변경되는 메모리나 현재 세션에 관한 정보를 알 수 있는 뷰
+- 정적 뷰 : 하나 이상의 테이블에 있는 데이터들의 부분 집합
+
+
+### 데이터 제약조건
+- **데이터 무결성** : 데이터에 결함이 존재해서는 안됨
+	- 데이터에 결함이 없는 성질
+	- 정확성, 일관성, 유효성이 유지되는 데이터를 말함
+	 - 데이터 무결성 제약 조건
+		- NOT NOLL : 해당 도메인에 null을 허용하지 않음
+		- UNIQUE : 해당 도메인에 중복되는 값을 허용하지 않음
+		- primary key : 해당 도메인을 테이블의 기본 키로 사용 UNIQUTE = NOT null
+		- CHECK : 원하는 조건을 지정, 도메인 무결성을 유지함
+	- CONSTRAINT_TYPE
+		- P : Primary Key
+		- R : Foregin Key
+		- C : Check or Not null
+		- U : Unique
+			- 유니크와 PK의 차이점 : PK는 참조 주소가 FK와 연동이 됨
+- **개체 무결성**
+	- 테이블의 데이터 = 반드시 한 행을 구분할 수 있어야함
+	- 테이블의 개체 무결성을 지키기 위한 제약조건 = PK 사용
+- **참조 무결성**
+	- 참조 관계에 있는 데이터는 항상 일관된 값을 가져야함
+	- 참조 무결성을 지키기 위한 제약조건 = FK 사용
+	- JOIN을 통해서 FK와 PK를 연결해줄 수 있음
+	- e.g. departments에서 departments_id는 PK이고 employess에서는 departments_id는 FK로 되어있음
+
+>[!note]- 제약조건을 걸면 DB에서 조건에 맞지 않는 값은 받아들이지 않음, 하지만 DB에서 처리하기 전에 프론트엔드에서 유효성 검사를 하면 DB연결 비용절약 가능
+
+>[!warning] DB에서 개체(entity)를 객체(object)라고 하면 안되는 이유 
+> - 하나의 개체는 하나 이상의 속성(attribute)으로 구성되고 각 속성은 그 개체의 특성이나 상태를 설명함
+> - 객체는 실제로 컴퓨터 내에서 구현되는 코드 블럭같은 거
+> - [참고 문서 : 한빛출판네트워크](https://m.hanbit.co.kr/network/category/category_view.html?cms_code=CMS4926333301)
+
+## 데이터 딕셔너리 쿼리문
+- 데이터 딕셔너리
+	- 색인(index) : DML, DCM 만드는 것처럼 `Create index 인덱스명`으로 생성
+- `user_catalog` : 뷰, 시퀀스 등을 확인할 수 있는 데이터 딕셔너리 쿼리문
+- AS를 통해서 표를 복사할 수 있는 데, 복사할때 CHECK만 복사되고 다른 제약조건은 복사가 되지 않음
+
+### 정보조회 : select
+#### 테이블 목록 조회 (뷰, 시퀀스 포함)
+- 해당 유저가 소유하고 있는 테이블 목록을 다 보여줌
+	```sql
+	select * from user_catalog;
+	```
+
+#### 제약조건 조회하기
+- 제약사항에 대해 볼 수 있는 데이터 딕셔너리 뷰로 접속 사용자의 제약사항만 볼 수 있음
+	```sql
+	select * from user_constraints;
+	```
+- 모든 사용자의 제약사항을 볼 수 있는 데이터 딕셔너리 뷰
+	```sql
+	select * from all_constraints;
+	```
+
+- 한 테이블의 제약사항 조회
+	```sql
+	select * from user_constraints where table_name = 'FRUTS2';
+	```
+	- [!] 테이블명을 대문자로 작성해야함
+
+### CONSTRAINT : 생성과 동시에 제약 걸기
+```sql
+칼럼명 칼럼타입 제약조건(이름이 자동으로 정해짐)
+칼럼명 칼럼 타입 CONSTRANT 제약조건명 제약조건
+```
+>[!example]- CONSTRAINT를 통해서 생성과 동시에 제약조건을 설정할 수 있음
+> ```sql
+> -- CONSTRAINT 실습
+> select * from fruites5;
+> 
+> create table fruites5(
+> 	fid     number(4) -- PK
+> 		CONSTRAINT f5_fid_pk        PRIMARY KEY,
+> 	fname   varchar2(20)
+> 		CONSTRAINT f5_fname_uk      UNIQUE
+> 		CONSTRAINT f5_fname_nn  NOT NULL,
+> 	grade   varchar2(2)
+> 		CONSTRAINT f5_grade_chk     CHECK(grade IN('A+','A','B+','B')),
+> 	fsize     number(2)
+> 		CONSTRAINT f5_fsize_chk     CHECK(fsize BETWEEN 0 AND 20)
+> );
+> select * from user_constraints where table_name = 'FRUITES5';
+> ```
+
+
+### ALTER : 기존 테이블의 무언가를 변경하는 예약어
+
+- **테이블명 변경**
+	```sql
+	RENAME 현재 테이블명 TO 바꿀 테이블명;
+	```
+- **칼럼** 추가 | 수정 | 삭제
+	- 데이터 새 칼럼 추가하기
+		```sql
+		ALTER TABLE 테이블명 ADD (칼럼명, 칼럼타입, ...);
+		```
+	- 칼럼이름 변경하기
+		```sql
+		ALTER TABLE 테이블명 RENAME COLUMN 현재칼럼명 TO 바꿀 칼럼명;
+		```
+	- 테이블 컬럼 삭제 : 해당 컬럼의 제약조건들도 함께 삭제됨
+		```sql
+		ALTER TABLE 테이블명 DROP COLUMN 컬럼명
+	```
+- **제약조건** 추가 | 수정 | 삭제
+	- 이미 생성된 테이블 제약조건 추가
+		```sql 
+		ALTER TABLE 테이블명 ADD CONSTRAINT 제약조건명 제약조건(칼럼)
+		```
+	-  이미 존재하는 칼럼을 수정
+		```sql 
+		ALTER TABLE 테이블명 MODIFY
+		```
+	- 테이블 제약조건 삭제 : 대소문자 상관없음
+		```sql
+		ALTER TABLE 테이블명 DROP CONSTRAINT 제약조건명
+		```
+	- [!] 제약조건 추가시 NOT NULL과 CHECK는 ADD  CONSTRAINT 대신 MODIFY를 사용
+	- [?] NOT NULL의 제약조건 키명은 C로 되어 있던데 이것과 관련이 있는걸까?  #질문 
+
+
+### 색인(index)
+- DML, DCM 만드는 것처럼 생성함
+- DB 인덱스를 빠르게 하기 위해 사용되는 기능
+	- 장점 : 검색속도 빠르고 시스템 부하를 줄여 DB 성능 향상
+	- 단점 : insert, update, delete 등 변경 작업이 자주 일어나면 오히려 DB 성능이 저하됨
+		- 주기적인 기억공간이 필요
+	- [i] 오라클은 테이블 생성시 PK를 설정하면 자동으로 인덱스로 등록
+```sql
+Create index 인덱스명
+```
+
+-  인덱스 정보조회
+    ```sql
+    select index_name, table_name, column_name
+    from user_ind_columns
+    where table_name = 'TEST_LABLE100';
+    ```
+- 특정 집합 index 만들기
+	- 많이 사용하는 칼럼만 만들어서 사용해야 효율성이 높아짐, 아무대나 index를 사용하면 비효율적이므로 주의해서 사용할 것
+	    ```sql
+	    create index test01_dx on test01(name);
+	    ```
+- 인덱스 속도 테스트
+
+### 시퀀스(Sequence)
+- 기본키로 사용하기 편하도록 설계된 **자동 번호 생성기**
+- 호출할 때마다 번호를 자동으로 증가시키는 DB 오브젝트
+	```sql
+	Create SEQUENCE 시퀀스 | 옵션명|;
+	```
+
+#### 시퀀스 옵션
+| 옵션명                   |                      |
+| ------------------------ | -------------------- |
+| START WITH n             | 시퀀스 시작번호 설정 |
+| INCREMENT BY n           | 시퀀스 증가값 설정   |
+| MAXVAULE n \| NOMAXVALUE | 최대값 설정          |
+| MINVAULE n \| NOMINVALUE | 최솟값 설정          |
+
+- 시퀀스 사용법
+	```sql
+	insert into bb_board VALUES(
+	    BB_BOARD_SEQ.nextval
+	);
+	```
+
+
+
+>[!example]- 시퀀스 예시
+>```sql
+> -- 1부터 시작해서 1씩 증가하는 시퀀스
+> CREATE SEQUENCE bb_board_seq INCREMENT by 1 START with 1;
+> select * from user_sequences;
+>```
+
+
+### 함수
+- 오라클의 함수를 이용하면 테이블의 데이터를 가공하여 조회 가능
+- dual[^dual]를 통해서 함수 출력가능
+
+
+[^dual]: 오라클에서 제공하는 한행짜리 테스트 테이블
+
+
+#### 함수 종류
+- abs(n) : 절대값
+- floor(n) : 내림
+- ceil(n) : 올림
+- ROUND(n) : 반올림
+- MOD(n) : 나머지 연산
+- TRUNC(value, n) : 해당 값의 n자리 밑으로 잘라냄
+- TRIM : 문자 제거
+    - TRIM()
+        - 문자 바로앞에 특수문자 &가 있으면 해당값을 변수로 인식하여 대체변수 입력 대화창이 나옴
+    - LTRIM(원본, 제거할 문자) : 왼쪽
+    - RTRIM(원본, 제거할 문자) : 오른쪽
+- TO_CHAR() : 데이터를 문자 타입으로 변경하는 함수
+- TO_NUMBER() : 데이터를 숫자 타입으로 변환
+    ```sql
+    select to_char(300000, '999,999L') from dual;
+    select to_number('300,000￦','999,999L') from dual;
+    ```
+- TO_DATE() : 데이터를 날짜 타입으로 변환
+
+
+
+## View
+
+# 명령어 모음
+###  COMMIT
+```sql
+COMMIT;
+```
+- 작업 적용하는 키워드
+- 외부 작업시 반드시 커밋을 적용시켜줘야함
+- 커밋을 하게 되면 다시 롤백이 어려우므로 신중하게 해야함
+
+###  ROLLBACK
+```sql
+ROLLBACK;
+```
+- 커밋한 상태로 되돌릴 수 있음
+
 ### show 명령어
 - 현재 접속한 계정을 확인하는 명령어
 	```sql
@@ -114,9 +512,7 @@ PURGE RECYCLEBIN;
 FLASHBACK TABLE fruits to BEFORE DROP;
 ```
 
-
-## DML 명령어
-####  INSERT INTO 테이블명 VALUES() : 데이터 생성
+###  INSERT INTO 테이블명 VALUES() : 데이터 생성
 ```sql
 INSERT INTO b_member VALUES(
     'mc4', '1111', 'name', DEFAULT
@@ -338,323 +734,6 @@ select job_id, AVG(salary) AS sag_id from employees GROUP BY job_id HAVING AVG(s
 ```
 - 그룹 함수에 조건을 줄때 사용하는 명령어
 
-
-## TCL 명령어
-###  COMMIT
-```sql
-COMMIT;
-```
-- 작업 적용하는 키워드
-- 외부 작업시 반드시 커밋을 적용시켜줘야함
-- 커밋을 하게 되면 다시 롤백이 어려우므로 신중하게 해야함
-
-###  ROLLBACK
-```sql
-ROLLBACK;
-```
-- 커밋한 상태로 되돌릴 수 있음
-
-
-## ⭐ 서브 쿼리문 
-- 하나의 SELECT 문 내부에 포함된 또 하나의 SELECT 문으로 서브쿼리를 포함하고 있는 쿼리를 메인쿼리라고 하며 항상 서브 쿼리가 먼저 실행됨 (사칙연산 생각하면 쉬움)
-- 실행결과에 따라 단일행 서브쿼리, 다중행 서브쿼리로 분류됨
-	- 단일행 서브쿼리
-		- 서브쿼리의 실행결과가 단 하나의 행인 서브쿼리
-		- 단일값끼리 비교하는 연산자들을 사용할 수 있음
-	- 다중행 서브쿼리
-- 자주 함께 사용하는 메소드
-	- IN : 뒤에 나오는 값이 포함되어 있으면 참
-	- ANY, SOME : 뒤에 나오는 여러 값 중 하나 이상 조건을 만족시키면 참
-	- ALL : 뒤에 나오는 여러 값들이 모두 해당 조건을 만족시키면 참
-
->[!warning] 하나의 쿼리문에 다른 쿼리문을 중첩할 수 있음 (select 문만 가능)
->```sql
-> insert into b_board(seq,title,nickname,content)
-> values((select nvl(max(seq),0)+1 from b_board),'타이틀','글쓴이','글내용' );
-
-### 테이블 복사하기
-```sql
--- 서브 쿼리 이용 같은 구조 테이블 생성 가능
-CREATE table fruts2 as(select * from fruts where 1 != 1);
-insert into fruts2(select * from fruts);
-select * from fruts2;
-```
-- 테이블 복사의 경우 NOT NULL 제약조건은 복사됨
-	- 서브쿼리문은 select만 되어서 참인게 다 들어옴
-	- 복사했을 경우  NOT NULL과 CHECK이외의 제약조건은 복사가 안되는 것을 확인할 수 있음
-
-
-
-# ⭐ CRUD
->[!cite]- CRUD란?
->![[CRUD#개요]]
-
-
-## Create
-### 테이블 생성
-```sql
-CREATE TABLE b_member(
-    id VARCHAR2(20) PRIMARY key,
-    pwd VARCHAR2(20) NOT NULL,
-    name VARCHAR2(20) NOT NULL,
-    email VARCHAR2(20) DEFAULT 'indopop@naver.com'
-);
-```
-
-- [[SQL#DESC : 테이블에 대한 정보 출력|DESC]]에서 테이블의 정보를 본 것처럼 생성해야함
-- `칼럼명 데이터유형 NULL?` 순으로 작성해야 함
-	- 데이터유형은 SQL 기본 데이터처럼?
-	- NULL?에 들어가는 데이터
-		- NULL : null 값
-		- NOT NULL : null 값이 들어가서는 안되는 데이터 일때
-		- DEFAULT : 기본 값
-		- PK, FK ![[SQL#PK와 FK란]]
-###  데이터 생성
-```sql
-INSERT INTO b_member VALUES(
-    'mc4', '1111', 'name', DEFAULT
-);
-```
-- VALUES()를 이용해 데이터를 삽입
-- DEFAULT나 NULL 키워드를 넣을 수 있음
-
-```sql
-insert into fruts(qty, price, name) VALUES('10', '5000', '오렌지');
-```
-- 이런 식으로 칼럼명을 지정해서 해당 순서로 해당 내용에만 데이터를 넣을 수 있음
-- 칼럼명 생략시 테이블 생성했을 때의 칼럼 순서대로 데이터를 모두 넣어야 함
-
-
-
-## Read
-![[SQL#select : 데이터 읽기]]
-## Update
-```sql
-UPDATE b_member SET name = '김수돌', email='mc@naver.com' where id = 'mc';
-```
-- 업데이트는 거의 where 조건절과 함께 사용
-- 테이블 데이터 수정
-	- `UPDATE 테이블명 set 칼럼 = 값 where 조건;`
-	- 중요 조건을 만족하는 모든 행을 수정함
-	- 조건을 안쓰면 모든 행을 수정
-	- 하나의 행을 구분할 수 있는 칼럼이 조건으로 사용되는 경우가 많음 (예. pk)
-
-## Delete
-### 테이블 삭제 (DROP)
-```sql
-drop table B_Member;
-```
-- B_Member 테이블 자체 삭제
-
-### 데이터 삭제
-```sql
-delete from b_member where id ='mc';
-```
-- mc 인 사람의 레코드를 삭제
-- 조건을 만족하는 모든 행을 수정
-- 조건을 안쓰면 모든 행을 수정
-
-
-# 데이터 딕셔너리(Data Dictionary) 
-## 설명
-- 시스템 카탈로그라고 부르며 사용가능한 데이터베이스 및 테이블의 정보를 요약해서 가지고 있는 시스템 테이블
-- 테이블의 요약된 정보는 메타데이터라고 하며 종류는 스키마 · 사용자 · 객체 · 권한 · 롤 · 데이터 베이스의 정보 등이 있음
-- 옵시디언에서 메타데이터를 이용해 하나의 노트를 관리하는 것처럼 데이터 딕셔너리는 표를 이러한 방식으로 관리함
-- 시스템 정보를 가지고 있기에 일반 사용자는 조회만 가능
-- 오라클의 딕셔너리
-  ![[Pasted image 20230502091637.png|150]]
-- [?] 시퀀스?  #질문 
-	- [ibm에서 설명한 시퀀스](https://www.ibm.com/docs/ko/db2/11.1?topic=objects-sequences)
-
-### 사용자 유형별 접근 권한별 뷰
-|      | 설명                                                       |
-| ---- | ---------------------------------------------------------- |
-| ALL  | 모든 개체에 접근가능                         |
-| DBA  | DB관리자들만 접속가능 직접 접근이 가능하며 데이터 사전을 직접 갱신 할 수 있음    |
-| USER | 뷰를 통해 소유중인 개체에만 접근 가능, 읽기만 할 수 있을 뿐 다른 작업은 불가 |
-- 오라클 명령어의 접두어를 통해서 어떤 뷰가 무슨 유형에서 사용되는지 알 수 있음
-
-### 시스템 뷰의 종류
-- 동적 뷰 : 테이블에서 동적으로 변경되는 메모리나 현재 세션에 관한 정보를 알 수 있는 뷰
-- 정적 뷰 : 하나 이상의 테이블에 있는 데이터들의 부분 집합
-
-
-### 데이터 제약조건
-- **데이터 무결성** : 데이터에 결함이 존재해서는 안됨
-	- 데이터에 결함이 없는 성질
-	- 정확성, 일관성, 유효성이 유지되는 데이터를 말함
-	 - 데이터 무결성 제약 조건
-		- NOT NOLL : 해당 도메인에 null을 허용하지 않음
-		- UNIQUE : 해당 도메인에 중복되는 값을 허용하지 않음
-		- primary key : 해당 도메인을 테이블의 기본 키로 사용 UNIQUTE = NOT null
-		- CHECK : 원하는 조건을 지정, 도메인 무결성을 유지함
-	- CONSTRAINT_TYPE
-		- P : Primary Key
-		- R : Foregin Key
-		- C : Check or Not null
-		- U : Unique
-			- 유니크와 PK의 차이점 : PK는 참조 주소가 FK와 연동이 됨
-- **개체 무결성**
-	- 테이블의 데이터 = 반드시 한 행을 구분할 수 있어야함
-	- 테이블의 개체 무결성을 지키기 위한 제약조건 = PK 사용
-- **참조 무결성**
-	- 참조 관계에 있는 데이터는 항상 일관된 값을 가져야함
-	- 참조 무결성을 지키기 위한 제약조건 = FK 사용
-	- JOIN을 통해서 FK와 PK를 연결해줄 수 있음
-	- e.g. departments에서 departments_id는 PK이고 employess에서는 departments_id는 FK로 되어있음
-
->[!note]- 제약조건을 걸면 DB에서 조건에 맞지 않는 값은 받아들이지 않음, 하지만 DB에서 처리하기 전에 프론트엔드에서 유효성 검사를 하면 DB연결 비용절약 가능
-
->[!warning] DB에서 개체(entity)를 객체(object)라고 하면 안되는 이유 
-> - 하나의 개체는 하나 이상의 속성(attribute)으로 구성되고 각 속성은 그 개체의 특성이나 상태를 설명함
-> - 객체는 실제로 컴퓨터 내에서 구현되는 코드 블럭같은 거
-> - [참고 문서 : 한빛출판네트워크](https://m.hanbit.co.kr/network/category/category_view.html?cms_code=CMS4926333301)
-
-## 데이터 딕셔너리 쿼리문
-- 데이터 딕셔너리
-	- 색인(index) : DML, DCM 만드는 것처럼 `Create index 인덱스명`으로 생성
-- `user_catalog` : 뷰, 시퀀스 등을 확인할 수 있는 데이터 딕셔너리 쿼리문
-- AS를 통해서 표를 복사할 수 있는 데, 복사할때 CHECK만 복사되고 다른 제약조건은 복사가 되지 않음
-
-### 정보조회 : select
-#### 테이블 목록 조회 (뷰, 시퀀스 포함)
-- 해당 유저가 소유하고 있는 테이블 목록을 다 보여줌
-	```sql
-	select * from user_catalog;
-	```
-
-#### 제약조건 조회하기
-- 제약사항에 대해 볼 수 있는 데이터 딕셔너리 뷰로 접속 사용자의 제약사항만 볼 수 있음
-	```sql
-	select * from user_constraints;
-	```
-- 모든 사용자의 제약사항을 볼 수 있는 데이터 딕셔너리 뷰
-	```sql
-	select * from all_constraints;
-	```
-
-- 한 테이블의 제약사항 조회
-	```sql
-	select * from user_constraints where table_name = 'FRUTS2';
-	```
-	- [!] 테이블명을 대문자로 작성해야함
-
-### CONSTRAINT : 생성과 동시에 제약 걸기
-```sql
-칼럼명 칼럼타입 제약조건(이름이 자동으로 정해짐)
-칼럼명 칼럼 타입 CONSTRANT 제약조건명 제약조건
-```
->[!example]- CONSTRAINT를 통해서 생성과 동시에 제약조건을 설정할 수 있음
-> ```sql
-> -- CONSTRAINT 실습
-> select * from fruites5;
-> 
-> create table fruites5(
-> 	fid     number(4) -- PK
-> 		CONSTRAINT f5_fid_pk        PRIMARY KEY,
-> 	fname   varchar2(20)
-> 		CONSTRAINT f5_fname_uk      UNIQUE
-> 		CONSTRAINT f5_fname_nn  NOT NULL,
-> 	grade   varchar2(2)
-> 		CONSTRAINT f5_grade_chk     CHECK(grade IN('A+','A','B+','B')),
-> 	fsize     number(2)
-> 		CONSTRAINT f5_fsize_chk     CHECK(fsize BETWEEN 0 AND 20)
-> );
-> select * from user_constraints where table_name = 'FRUITES5';
-> ```
-
-
-### ALTER : 기존 테이블의 무언가를 변경하는 예약어
-
-- **테이블명 변경**
-	```sql
-	RENAME 현재 테이블명 TO 바꿀 테이블명;
-	```
-- **칼럼** 추가 | 수정 | 삭제
-	- 데이터 새 칼럼 추가하기
-		```sql
-		ALTER TABLE 테이블명 ADD (칼럼명, 칼럼타입, ...);
-		```
-	- 칼럼이름 변경하기
-		```sql
-		ALTER TABLE 테이블명 RENAME COLUMN 현재칼럼명 TO 바꿀 칼럼명;
-		```
-	- 테이블 컬럼 삭제 : 해당 컬럼의 제약조건들도 함께 삭제됨
-		```sql
-		ALTER TABLE 테이블명 DROP COLUMN 컬럼명
-	```
-- **제약조건** 추가 | 수정 | 삭제
-	- 이미 생성된 테이블 제약조건 추가
-		```sql 
-		ALTER TABLE 테이블명 ADD CONSTRAINT 제약조건명 제약조건(칼럼)
-		```
-	-  이미 존재하는 칼럼을 수정
-		```sql 
-		ALTER TABLE 테이블명 MODIFY
-		```
-	- 테이블 제약조건 삭제 : 대소문자 상관없음
-		```sql
-		ALTER TABLE 테이블명 DROP CONSTRAINT 제약조건명
-		```
-	- [!] 제약조건 추가시 NOT NULL과 CHECK는 ADD  CONSTRAINT 대신 MODIFY를 사용
-	- [?] NOT NULL의 제약조건 키명은 C로 되어 있던데 이것과 관련이 있는걸까?  #질문 
-
-
-### 색인(index)
-- DML, DCM 만드는 것처럼 생성함
-- DB 인덱스를 빠르게 하기 위해 사용되는 기능
-	- 장점 : 검색속도 빠르고 시스템 부하를 줄여 DB 성능 향상
-	- 단점 : insert, update, delete 등 변경 작업이 자주 일어나면 오히려 DB 성능이 저하됨
-		- 주기적인 기억공간이 필요
-	- [i] 오라클은 테이블 생성시 PK를 설정하면 자동으로 인덱스로 등록
-```sql
-Create index 인덱스명
-```
-
-
-
-### 시퀀스(Sequence)
-- 기본키로 사용하기 편하도록 설계된 **자동 번호 생성기**
-- 호출할 때마다 번호를 자동으로 증가시키는 DB 오브젝트
-	```sql
-	Create SEQUENCE 시퀀스 | 옵션명|;
-	```
-
-#### 시퀀스 옵션
-| 옵션명                   |                      |
-| ------------------------ | -------------------- |
-| START WITH n             | 시퀀스 시작번호 설정 |
-| INCREMENT BY n           | 시퀀스 증가값 설정   |
-| MAXVAULE n \| NOMAXVALUE | 최대값 설정          |
-| MINVAULE n \| NOMINVALUE | 최솟값 설정          |
-
-- 시퀀스 사용법
-	```sql
-	insert into bb_board VALUES(
-	    BB_BOARD_SEQ.nextval
-	);
-	```
-
-
-
->[!example]- 시퀀스 예시
->```sql
-> -- 1부터 시작해서 1씩 증가하는 시퀀스
-> CREATE SEQUENCE bb_board_seq INCREMENT by 1 START with 1;
-> select * from user_sequences;
->```
-
-
-### 함수
-- 오라클의 함수를 이용하면 테이블의 데이터를 가공하여 조회 가능
-- dual[^dual]를 통해서 함수 출력가능
-
-#### 함수 종류
-- 
-
-
-
-[^dual]: 오라클에서 제공하는 한행짜리 테스트 테이블
 
 # 용어정리 
 

@@ -1,7 +1,7 @@
 {
   "promptDelete": false,
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "4. Archive/img",
+  "attachmentFolderPath": "3. Resouce/99. 기타/img",
   "trashOption": "none",
   "newFileLocation": "current",
   "showLineNumber": true,
@@ -16,6 +16,7 @@
   },
   "defaultViewMode": "source",
   "userIgnoreFilters": [
-    "99. 메모/데일리 노트/"
+    "2. Area/99. 기타/템플릿/",
+    "2. Area/99. 기타/주간 노트/"
   ]
 }

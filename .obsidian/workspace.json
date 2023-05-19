@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a298f117af1bdbec",
+        "id": "016c08222b5a0269",
         "type": "tabs",
         "children": [
           {
-            "id": "0a68c47af3bc9161",
+            "id": "5014a0aa751d29e8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "book book.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -49,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#독서",
+                "query": "session",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,8 +68,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 209.5,
-    "collapsed": true
+    "width": 212.5
   },
   "right": {
     "id": "0ec7239b9c0b9a42",
@@ -83,16 +77,14 @@
       {
         "id": "efdcbd70d8282bb8",
         "type": "tabs",
-        "dimension": 68.02325581395348,
+        "dimension": 70.15503875968993,
         "children": [
           {
             "id": "e297f3dcd7f9d836",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "book book.md"
-              }
+              "state": {}
             }
           },
           {
@@ -101,7 +93,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "book book.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -117,7 +108,7 @@
                   "collapse-display": false,
                   "showArrow": false,
                   "textFadeMultiplier": -3,
-                  "nodeSizeMultiplier": 1,
+                  "nodeSizeMultiplier": 1.04427083333333,
                   "lineSizeMultiplier": 1,
                   "collapse-forces": true,
                   "centerStrength": 0.518713248970312,
@@ -131,12 +122,30 @@
             }
           },
           {
+            "id": "7b38a7cf544b139b",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "8bf3c9c5dc18741e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
             "id": "a41845c6911a332c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "book book.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,40 +157,19 @@
             }
           },
           {
-            "id": "8bf3c9c5dc18741e",
+            "id": "cbda86536ee0dd3d",
             "type": "leaf",
             "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "book book.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "7b38a7cf544b139b",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
-          },
-          {
-            "id": "17d0759eced21e62",
-            "type": "leaf",
-            "state": {
-              "type": "ReferenceListView",
+              "type": "dictionary-view",
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "92f7af63d8dd3cce",
         "type": "tabs",
-        "dimension": 31.976744186046513,
+        "dimension": 29.84496124031007,
         "children": [
           {
             "id": "f9f8e608f518e7a0",
@@ -216,11 +204,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 236.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,54 +223,63 @@
       "kr-book-info-plugin:Add Book Info": false
     }
   },
-  "active": "0a68c47af3bc9161",
+  "active": "e603f2c1286195e4",
   "lastOpenFiles": [
-    "To do List.md",
-    "2. Area/99. 기타/무제 파일.md",
-    "2. Area/99. 기타/사전",
-    "2. Area/데일리 노트/2023-05-10.md",
-    "1. Project/웹 개발 포폴제작/교보문고 리디자인.md",
-    "2. Area/주간 노트/2023년 19주차.md",
-    "2. Area/99. 기타/템플릿/주간 노트.md",
-    "2. Area/데일리 노트/2023-05-08.md",
-    "2. Area/주간 노트/2023-W19.md",
-    "2. Area/주간 노트/2023년 18주차.md",
-    "2. Area/주간 노트/9999년 20주차.md",
-    "2. Area/주간 노트/2023-W20.md",
-    "2. Area/99. 메모/옵시디언.md",
-    "2. Area/데일리 노트/2023-05-07.md",
-    "2. Area/주간 노트/2023-05-07.md",
-    "2. Area/99. 기타/템플릿/무제 파일.md",
-    "2. Area/독서노트/명상록 철학자 황제가 전쟁터에서 자신에게 쓴 일기.md",
-    "2. Area/주간 노트",
-    "2. Area/데일리 노트/2023-05-12.md",
-    "2. Area/데일리 노트/2023-04-11.md",
-    "2. Area/공부목표.canvas",
-    "book book.md",
-    "2. Area/독서노트/기초부터 배우는 인공지능.md",
-    "2. Area/99. 기타/템플릿/독서 노트.md",
-    "2. Area/5. 프로그래밍 언어/데이터베이스 언어/SQL.md",
-    "2. Area/0. 공부 목표/정보처리기사/2. 소프트웨어 개발.md",
-    "4. Archive/img/Pasted image 20230512231820.png",
-    "2. Area/8. 디자인/웹 디자인 레퍼런스.md",
-    "2. Area/99. 메모/논문처럼 글쓰는 방법.md",
-    "1. Project/방통대 과제/Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
+    "4. Archive/그림/그림 - 원본파일.zip",
+    "4. Archive/그림/그림.zip",
+    "3. Resouce/99. 메모/노트 정리방식.md",
+    "3. Resouce/99. 메모/생각하는 법에 대해서.md",
+    "3. Resouce/99. 메모/옵시디언.md",
+    "3. Resouce/10. 인문학/철학.md",
+    "2. Area/가족/특례보금자리론/증빙서류/부채증명서.pdf",
+    "4. Archive/게임/닌텐도/Roms/~ndsynctmp0d0a8a68",
+    "4. Archive/게임/era/기타 era/eraTWKR-temp_temp_master.zip",
+    "4. Archive/게임/닌텐도/Roms/~ndsynctmp0af05d02",
+    "4. Archive/게임/닌텐도/Battery/Maple Story.dsv",
+    "4. Archive/게임/닌텐도/Roms",
+    "4. Archive/게임/닌텐도/Battery/~ndsynctmp09e168cf",
+    "4. Archive/게임/닌텐도/Battery/놀러오세요! 동물의숲(K).dsv",
+    "4. Archive/게임/닌텐도/Battery/~ndsynctmp08d07624",
+    "1. Project/취직하기/이력서/이력서_0003.png",
+    "1. Project/취직하기/이력서/증명  사진.jpg",
+    "1. Project/취직하기/이력서/이력서_0001.png",
+    "1. Project/취직하기/이력서/이력서_0002.png",
+    "1. Project/취직하기/이력서/증명 사진.png",
+    "2. Area/가족/수기명가/수기명가.md",
+    "2. Area/가족/수기명가/미용업 영업주 자율점검표/통장사본.png",
+    "2. Area/가족/보험증권/자동차 보험증권.jpg",
+    "2. Area/가족/수기명가/사업자등록증명서/사업자등록증.jpg",
+    "3. Resouce/3. 웹 개발/웹 개발론.md",
+    "1. Project/방통대/0. 방통대 수업.md",
+    "1. Project/방통대/디지털 논리회로.md",
+    "1. Project/방통대/세계의 역사.md",
+    "1. Project/방통대/세계의 정치와 경제.md",
+    "1. Project/방통대/세상읽기와 논술.md",
+    "1. Project/방통대/운영체제.md",
+    "1. Project/방통대/그래픽커뮤니케이션.md",
+    "3. Resouce/99. 기타/주간 노트/2023년 19주차.md",
+    "3. Resouce/4. 프로그래밍 언어/Java.md",
+    "2. Area/가족/똘이를 행복하게.md",
+    "3. Resouce/5. 데이터베이스/SQL.md",
+    "3. Resouce/99. 기타/데일리 노트/2023-05-18.md",
+    "3. Resouce/99. 자격증/정보처리기사.md",
+    "3. Resouce/5. 데이터베이스/무제 파일.md",
+    "3. Resouce/9. 용어해설집/개발도구/오라클.md",
+    "1. Project/옵시디언 플러그인 개발하기.md",
+    "4. Archive/노트북에 윈도우 설치.md",
+    "4. Archive/세금정보/피부미용업 과세조건.md",
+    "4. Archive/게임/원신 리세마라.md",
+    "2. Area/가족/외삼촌 주소.png",
+    "3. Resouce/99. 기타/img/Pasted image 20230518074440.png",
+    "3. Resouce/웹 개발.canvas",
+    "3. Resouce/공부목표.canvas",
+    "1. Project/방통대/과제/Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
     "2. Area/TIL - SW과학/컴퓨터과학.canvas",
-    "1. Project/방통대 과제",
     "2. Area/TIL - SW과학/공부목표.canvas",
     "2. Area/TIL - SW과학/웹 개발.canvas",
     "2. Area/TIL - SW과학/0. 공부 목표/정보처리기사/자격증.canvas",
     "컴퓨터과학.canvas",
-    "데일리 노트",
     "공부목표.canvas",
-    "웹 개발.canvas",
-    "99. 기타/img/Pasted image 20230508041929.png",
-    "6. 영어",
-    "99. 기타.zip.old",
-    "99. 기타.zip.temp",
-    "99. 기타.zip",
-    "99. 기타/웹 개발.canvas",
-    "11. 교양",
-    "99. 프로젝트"
+    "웹 개발.canvas"
   ]
 }

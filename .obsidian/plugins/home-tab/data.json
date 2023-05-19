@@ -1,0 +1,53 @@
+{
+  "logoType": "lucideIcon",
+  "logo": {
+    "lucideIcon": "star",
+    "imagePath": "",
+    "imageLink": ""
+  },
+  "logoScale": 1.2,
+  "iconColorType": "default",
+  "wordmark": "mian",
+  "customFont": "interfaceFont",
+  "fontSize": "4em",
+  "fontColorType": "default",
+  "fontWeight": 600,
+  "maxResults": 5,
+  "showStarredFiles": false,
+  "showRecentFiles": false,
+  "maxRecentFiles": 5,
+  "storeRecentFile": true,
+  "showPath": true,
+  "selectionHighlight": "default",
+  "showShortcuts": true,
+  "markdownOnly": false,
+  "unresolvedLinks": false,
+  "recentFilesStore": [
+    {
+      "filepath": "2. Area/유용한 사이트 정리.md",
+      "timestamp": 1684362077457
+    },
+    {
+      "filepath": "3. Resouce/공부체크리스트.md",
+      "timestamp": 1684362043034
+    },
+    {
+      "filepath": "4. Archive/게임 만들기/자료조사.md",
+      "timestamp": 1684361995799
+    },
+    {
+      "filepath": "4. Archive/노트북에 윈도우 설치.md",
+      "timestamp": 1684352221221
+    },
+    {
+      "filepath": "1. Project/가족/강아지를 행복하게 해주기.md",
+      "timestamp": 1684351973510
+    }
+  ],
+  "starredFileStore": [],
+  "searchDelay": 0,
+  "replaceNewTabs": true,
+  "newTabOnStart": false,
+  "closePreviousSessionTabs": false,
+  "omnisearch": false
+}

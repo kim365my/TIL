@@ -6,7 +6,7 @@ aliases : Hypertext transfer protocol, 데이터 교환에 대한 규칙과 약�
 # HTTP란?
 - 월드 와이드 웹의 주요 프로토콜
 - 브라우저는 사실 HTTP 클라이언트라고 할 수 있다. (페이지를 제공하는 서버는 HTTP 서버)
-- [[AJAX]]는 HTTP 프로토콜 이용해서 서버로 요청을 보냄. 그 형식을 구성해서 보내야 함.
+- [[JS]]는 HTTP 프로토콜 이용해서 서버로 요청을 보냄. 그 형식을 구성해서 보내야 함.
 
 ## HTTP 메세지 구성
 - Header와 Body로 구성
@@ -21,7 +21,7 @@ aliases : Hypertext transfer protocol, 데이터 교환에 대한 규칙과 약�
 - 헤더 정보(생략 가능)
 	- 지금 보내는 요청에 대한 정보 / 본문의 내용에 대한 정보. Key-Value쌍이 콜론으로 구분되어 한 줄씩 차지함.
 	- `User-Agent: Mozilla/4.0`
-	- `Accept: text/plain, text/html` # 서버로부.,/터 오는 응답 중에서 어떤 종류의 정보를 받겠다. 서버에게 지금 요청을 내린 프로그램이 받아들일 수 있는것이 일반 텍스트와 HTML응답이다. (비디오, 오디오 등은 안 받음)
+	- `Accept: text/plain, text/html` # 서버로부터 오는 응답 중에서 어떤 종류의 정보를 받겠다. 서버에게 지금 요청을 내린 프로그램이 받아들일 수 있는것이 일반 텍스트와 HTML응답이다. (비디오, 오디오 등은 안 받음)
 - 빈칸
 - 본문 메세지(생략 가능)
 
@@ -39,10 +39,10 @@ aliases : Hypertext transfer protocol, 데이터 교환에 대한 규칙과 약�
 - 3**: 리다이렉트
 	- 301 Moved Permanently: 요청한 자원이 다른 주소로 이동되었음
 - 4**: 클라이언트 에러
-?	- 401 Not Authorized: 권한 없음?
-	.,- 404 해당 url을 찾을 수 없음
-	-?. 408 Request Timeout: 클라이언트가 서버가 지정한 타임아웃 시간 내에 응답을 보내지 않음
-- 5**.,
+- 401 Not Authorized: 권한 없음?
+	- 404 해당 url을 찾을 수 없음
+	- 408 Request Timeout: 클라이언트가 서버가 지정한 타임아웃 시간 내에 응답을 보내지 않음
+- 5** :
 	- 500 Server Error: 비정상적인 스크립트로 인해 서버 설정에 에러 등등
 
 
@@ -51,7 +51,7 @@ aliases : Hypertext transfer protocol, 데이터 교환에 대한 규칙과 약�
 - HTTP 메세지로 넘겨받은 값을 Request 객체가 처리
 
 ## Get (기본값)
-1.  서블릿에 데이터 전송시 데이터가 URL 뒤 `속성명=속성값` 형태( [#Query_String](app://obsidian.md/index.html#Query_String) )로 전송되며 주소창에 보임
+1.  서블릿에 데이터 전송시 데이터가 URL 뒤 `속성명=속성값` 형태( #Query_String )로 전송되며 주소창에 보임
 2.  보안에 취약
 3.  최대 256비트
 4.  서블릿에서 doGet()을 이용해 데이터 처리
@@ -63,3 +63,10 @@ aliases : Hypertext transfer protocol, 데이터 교환에 대한 규칙과 약�
 
 ## API 이용 (JSON, XML 등)
 - http api에서 주로 사용하며 json 등의 형식
+
+# HTTP 프로토콜 서버 통신 방법
+- 클라이언트폭 통신시 stateless 방식으로 통신
+	- 즉, 브라우저에서 새 페이지를 열면 브라우저간 어떤 연결도 없으므로  각 브라우저들끼리는 웹페이지의 상태나 정보를 모름 
+	- 따라서 웹 페이지나 서블릿끼리 상태나 정보를 간단히 공유하려면 쿠키, 세션을 이용함
+- Statless (무상태)
+	- **클라이언트-서버 관계에서 서버가 클라이언트의 상태를 보존하지 않음**을 의미한다. Stateless 구조에서 server는 단순히 요청이 오면 응답을 보내는 역할만 수행하며, 세션 관리는 클라이언트에게 책임이 있다.

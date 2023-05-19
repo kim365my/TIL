@@ -1,13 +1,15 @@
 ---
 aliases : Application Programming Interface, 요청과 응답을 주고 받을 수 있게 만든 체계
 ---
-- API 문서를 이해하기 위해서는 APP, web, [[데이터베이스]], 이미지 처리를 이해해야 함
-	-   오픈 API 문서는 열람가능 → 공부하자
-	    -   네이버
-	        [네이버 오픈API 종류 - Open API 가이드](https://developers.naver.com/docs/common/openapiguide/apilist.md)
-	-   변동 가능한 정보는 API로 서버에서 불러오게 만든다 
+
 
 # 개요
+- API 문서를 이해하기 위해서는 APP, web, [[데이터베이스]], 이미지 처리를 이해해야 함
+	- 오픈 API 문서는 열람가능 → 공부하자
+	    - 네이버
+	        [네이버 오픈API 종류 - Open API 가이드](https://developers.naver.com/docs/common/openapiguide/apilist.md)
+	- 변동 가능한 정보는 API로 서버에서 불러오게 만든다 
+
 
 📌 **API** : 클라이언트, 서버와 같은 서로 다른 프로그램에서 요청과 응답을 주고 받을 수 있게 만든 체계 (= SW가 다른 SW의 기능을 쓰기 위해 중간에 필요한 체계) *SW : 소프트웨어
 ```mermaid

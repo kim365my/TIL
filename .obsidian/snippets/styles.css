@@ -12,17 +12,19 @@ body{
 .is-mobile.theme-light,
 .is-tablet.theme-light{
 	--color-red:hsla(365, 85%, 55%, 1);
-    --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 5%));
+    /* --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 5%)); */
 	--custom-border-color:#00000014;
+	--highlighter : #FFB8EBA6;
 }
 
 .theme-dark,
 .is-mobile.theme-dark,
 .is-tablet.theme-dark{
 	--color-red:hsla(365, 90%, 65%, 1);
-    --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 2%));
+    /* --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 2%)); */
 	--custom-border-color:#ffffff14;
-	--color-orange:#ff7c00;
+	/* --color-orange:#ff7c00; */
+	--highlighter : #dd70ae94;
 }
 
 /* ----------------------------- */
@@ -93,6 +95,7 @@ body:before{
 .markdown-rendered :not(pre)>code,
 .cm-s-obsidian span.cm-inline-code{
     color:var(--inline-code-color);
+	/* color: var(--code-property); */
 	padding: 0 5px;
 }
 /* inline code background */
@@ -116,10 +119,6 @@ body:before{
 	background-color:initial;
 }
 
-/* 콜아웃 리스트 지우려고 프리뷰 화면에서 보이는게 거슬려 */
-.callout-content li:has(pre){
-	/* list-style: none;	 */
-}
 
 /* 콜아웃 보더랑 패딩 없애기 */
 .callout{
@@ -165,7 +164,7 @@ body:not(.full-file-names) .tree-item-inner {
 /* 캔버스 편집시 번호와 컨텐츠 간격 조정 */
 .markdown-source-view.mod-cm6.is-readable-line-width .cm-content,
 .node-insert-event.mod-inside-iframe .cm-editor .cm-content{
-	margin-left: 25px;
+	/* margin-left: 25px; */
 }
 
 /* 헤더 아래 마진 없애기 */
@@ -181,7 +180,7 @@ body:not(.full-file-names) .tree-item-inner {
 	padding-left: 10px;
 }
 
-
+/* 강조 구문 색 변경 */
 b, strong, .cm-strong{
 	color: var(--code-property);
 	/* color: var(--color-base-100); */
@@ -198,7 +197,11 @@ b, strong, .cm-strong{
 	/* color: var(--color-accent-2); */
 	/* font-weight: 600; */
 	/* background-color: transparent; */
-	--text-highlight-bg:var(--hl1)
+	/* --text-highlight-bg:var(--hl1) */
+	background-color: var(--highlighter);
+}
+mark{
+	color: var(--tx1);
 }
 /* 임베드시 타이틀영역 숨기기 */
 .embed-title, .markdown-embed-title{
@@ -228,7 +231,9 @@ b, strong, .cm-strong{
 .mermaid{
 	background-color: var(--code-background);
 }
-
+.mermaid svg{
+	width: 100%;
+}
 
 
 /* cheack 플러그인 커스텀 */
@@ -281,4 +286,24 @@ b, strong, .cm-strong{
 }
 .table-view-tbody tr{
 	width: 10rem;
+}
+
+
+/* 사전 플러그인 사이드바 설정 */
+.workspace-leaf-content .view-content.dictionary-view-content {
+	padding: var(--size-4-3) var(--size-4-3) 0 !important;
+}
+
+/* 테이블 스타일 설정 */
+.markdown-rendered tbody > tr > td:first-child {
+	white-space: nowrap;
+}
+.markdown-rendered table span img {	
+	width: 40% !important;
+}
+
+
+/* 캘린더 플러그인 스타일 설정 */
+.fc .fc-scrollgrid-liquid a{
+	color:var(--tx1);
 }

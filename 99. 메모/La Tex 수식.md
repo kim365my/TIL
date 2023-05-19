@@ -15,11 +15,11 @@ Input                   &       Text       &                 Math               
 \verb|\string^|         &     \string^     &              $\string^$               \\
 \verb|\char`\^|         &     \char`\^     &              $\char`\^$               \\
 \verb|\verb!^!|         &     \verb!^!     &              $\verb!^!$               \\ \hline
-\verb|\textasciicircum| & \textasciicircum &                  ---                  \\
-\verb|\^{}|             & \^{} (e.g. \^a)  &                  ---                  \\ \hline
-\verb|\hat{}|           &       ---        &       $\hat{}$ (e.g. $\hat a$)        \\
-\verb|\wedge|           &       ---        &      $\wedge$ (e.g. $a\wedge b$)      \\
-\verb|\widehat{}|       &       ---        & $\widehat{\ }$ (e.g. $\widehat{abc}$) \\
+\verb|\textasciicircum| & \textasciicircum &                  ---                \\
+\verb|\^{}|             & \^{} (e.g. \^a)  &                  ---                \\ \hline
+\verb|\hat{}|           &       ---      &       $\hat{}$ (e.g. $\hat a$)        \\
+\verb|\wedge|           &       ---      &      $\wedge$ (e.g. $a\wedge b$)      \\
+\verb|\widehat{}|       &       ---      & $\widehat{\ }$ (e.g. $\widehat{abc}$) \\
 \end{tabular}
 \end{document}
 ```

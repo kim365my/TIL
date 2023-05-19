@@ -10,7 +10,7 @@ aliases : Java script
 > - 앞으로 공부할 내용 
 >	- 스코트, 훅, 화살표 함수, 스프레드, 일급 객체개념, 클래스. this, Dom 제어
 > - 연관문서
->	- [[JSDOC]], [[AJAX]]
+>	- [[JSDOC]], [[JS]]
 >	- 데이터 :  [[JSON]]
 >	- 프레임워크 : Node.JS
 >	- 라이브러리:  [[JQuery]]
@@ -29,30 +29,19 @@ aliases : Java script
 # Why JS?
 |      | 설명                                                                                                                       |
 |:----:| -------------------------------------------------------------------------------------------------------------------------- |
-| 역사 | • 10일만에 개발됨                               • JAVA와는 공통점 ❌                                                                                                       |
-|      | • 넷스케이프를 만들기 위해 자바스크립트가 탄생                                                                             |
+| 역사 | -10일만에 개발됨                               -JAVA와는 공통점 ❌                                                                                                       |
+|      | -넷스케이프를 만들기 위해 자바스크립트가 탄생                                                                             |
 |      | → 당시 HTML과 CSS 밖에 없었기에 탄생                                                                                       |
-| 장점 | • 브라우저에 내장되어 있음(안드로이드, 애플, 크롬 등)                                                                      |
-|      | • 유일한 프론트엔드 웹 프로그래밍 언어                                                                                     |
-|      | • 최근에는 JS로 백엔드 개설이 가능                                                                                         |
+| 장점 | -브라우저에 내장되어 있음(안드로이드, 애플, 크롬 등)                                                                      |
+|      | -유일한 프론트엔드 웹 프로그래밍 언어                                                                                     |
+|      | -최근에는 JS로 백엔드 개설이 가능                                                                                         |
 |      | 웹을 위한 언어였으나 최근에는 서버 쪽에도 쓰인다.예전에는 단순히 웹에서 사용자와 상호작용을 하기 위해서 사용되던 언어였다. |
 |      | 현재 V8 엔진을 기반으로 만들어진 Node.js 등으로 인하여 백엔드에서도 사용, 지금 가장 유행하는 언어                          |
 |      | Angular, ReactJS, VueJS 프레임워크 등으로 인해 전성기임                                                                    |
-| 단점 | • 컴파일러가 코더의 잘못을 지적하지 않음(Bool + 1 등을 그대로 표현하려함)                                                  |
-|      | • 따라서 그 단점을 잡기 위해서는 Typescript가 필요                                                                         |
-| 활용 | 브라우저에서 동작하는 JS                                                                                                   |
-|      | • HTML 문서의 요소를 조작(생성, 삭제 등)                                                                                   |
-|      | • 문서 내 요소들의 스타일을 지정하거나 변경                                                                                |
-|      | • 클릭, 입력 등의 사용자가 발생시키는 이벤트 처리                                                                          |
-|      | • 브라우저에 데이터 저장                                                                                                   |
-|      | • 서버에 요청 전송                                                                                                         |
-|      | • 서버로부터 최선의 데이터 패치                                                                                            |
-|      | 브라우저 밖에서 동작하는 JS                                                                                                |
-|      | • 백엔드 개발(Express 등)                                                                                                  |
-|      | • 모바일 앱 개발(lonic, React Native 등)                                                                                   |
-|      | • 데스크톱 앱 개발(Electron 등)                                                                                            |
-|      | • slocket.io를 사용해 실시간 기능을 가능하게 함                                                                            |
-|      | • ml5.js머신러닝 개발도 가능                                                                                               |
+| 단점 | -컴파일러가 코더의 잘못을 지적하지 않음(Bool + 1 등을 그대로 표현하려함)                                                  |
+|      | -따라서 그 단점을 잡기 위해서는 Typescript가 필요                                                                         |
+| 활용 | **브라우저에서 동작하는 JS**<br>-HTML 문서의 요소를 조작(생성, 삭제 등)<br>-문서 내 요소들의 스타일을 지정하거나 변경<br>-클릭, 입력 등의 사용자가 발생시키는 이벤트 처리<br>-브라우저에 데이터 저장<Br>-서버에 요청 전송<br>-서버로부터 최선의 데이터 패치                                                                                            |
+|      | **브라우저 밖에서 동작하는 JS**<br>-백엔드 개발(Express 등)<br>-모바일 앱 개발(lonic, React Native 등)<br>-데스크톱 앱 개발(Electron 등)<br>-slocket.io를 사용해 실시간 기능을 가능하게 함<br>-ml5.js머신러닝 개발도 가능                                                                                               |
 | ES6? | 프로그래밍 언어로 부족했었던 자바 스크립트의 문제를 보완한 버전으로 중요하게 다뤄짐                                        |
 
 # 바닐라 JS
@@ -61,8 +50,8 @@ aliases : Java script
 1. const : 상수
 2. let : 변수
 - var : 최근에는 안씀
-	-   이전 버전의 JS에서 변수를 선언하기 위해 사용했던 키워드
-	-   변수의 중복 정의를 제한하지 않는 등의 치명적인 단점이 있어, 더이상 var를 사용하지 않음 
+	- 이전 버전의 JS에서 변수를 선언하기 위해 사용했던 키워드
+	- 변수의 중복 정의를 제한하지 않는 등의 치명적인 단점이 있어, 더이상 var를 사용하지 않음 
 - [[프로그래밍 언어론#^0ceace|카멜표기법]]으로 변수를 작성함
 
 ### 1.2. 자료형(types)
@@ -155,7 +144,7 @@ aliases : Java script
 	- (if, while 등)블록 내에서는 함수 선언 대신 함수 할당을 해라. 브라우저마다 다른방식으로 해석
 	- 매개변수에 arguments라 쓰지 말자. 예약어이다. (함수 범위로 전달 될 arguments 객체 덮어씀)
 - **조건식과 등가식** 
-	-   `==`, `!=`보단 `===`, `!==`를 사용
+	- `==`, `!=`보단 `===`, `!==`를 사용
 #### 1.2.3. 타입  변환
 - parseInt : 숫자면 정수형으로 변환 아니면 NaN 출력
 	```js
@@ -169,7 +158,7 @@ aliases : Java script
 ### 1.4. 연산자(operator)
 - 기본 연산자 : `+`, `-`, `*`, `/`(나눗셈), `%`(나머지), `**`(지수)
 - 증감 연산자 : `++`, `--`
-- 비교 연산자 : `<, >`, `<=, >=`, `==, ===`, `!=, !==`
+- 비교 연산자 : `<, >`, `<=, >=`, `\==`, `\===`, `!=, !==`
 - 논리 연산자 : `&&`,` ||`, `!`
 - 삼항 연산자 : `조건 ? '참일 경우 실행결과' : '거짓일 경우 실행결과'`
 - 비트 연산자 : `&`, `|`, `~`, `^`, `<<`, `>>`
@@ -499,14 +488,14 @@ alert(), confirm(), prompt() window.print(); // 인쇄 window.find(); // 찾기
 
 location 프로퍼티 들
 
--   hash : URL 해시(#)
--   host : 서버 이름과 포트 변호(있다면)
--   hostname : 포트번호를 제외한 서버이름
--   href : 현재 페이지의 완전한 URL
--   pathname : URL에 포함된 디렉터리 및 파일 이름
--   port : 포트번호
--   protocol : 페이지에서 사용하는 프로토콜 ex)http:, https:
--   search : URL의 쿼리 스트링 부분
+- hash : URL 해시(#)
+- host : 서버 이름과 포트 변호(있다면)
+- hostname : 포트번호를 제외한 서버이름
+- href : 현재 페이지의 완전한 URL
+- pathname : URL에 포함된 디렉터리 및 파일 이름
+- port : 포트번호
+- protocol : 페이지에서 사용하는 프로토콜 ex)http:, https:
+- search : URL의 쿼리 스트링 부분
 
 #### 1.2.1. 쿼리스트링 확장
 
@@ -535,28 +524,28 @@ location.reload(true); // 항상 서버에서
 
 navigator 객체 프로퍼티
 
--   appCodeName
--   appMinorVersion
--   appName : 완전한브라우저 이름
--   appVersion : 브라우저 버전
--   buildID
--   cookieEnabled
--   cpuClass
--   javaEnabled()
--   language
--   mimeTypes
--   onLine
--   oscpu
--   platform
--   plugins
--   preference()
--   product
--   productSub
--   userAgent : 브라우저 문자열
--   userLanguage
--   userProfile
--   vendor
--   vendorSub
+- appCodeName
+- appMinorVersion
+- appName : 완전한브라우저 이름
+- appVersion : 브라우저 버전
+- buildID
+- cookieEnabled
+- cpuClass
+- javaEnabled()
+- language
+- mimeTypes
+- onLine
+- oscpu
+- platform
+- plugins
+- preference()
+- product
+- productSub
+- userAgent : 브라우저 문자열
+- userLanguage
+- userProfile
+- vendor
+- vendorSub
 
 #### 1.3.1. 플러그인 감지
 
@@ -628,50 +617,50 @@ if (history.length == 0){
 ## 2. DOM API
 ### 2.1. 요소에 접근하기
 1. 하나의 요소 노드를 선택하기
-	-   getElementById(): 요소 유일한 id특성값 이용
-	-   querySelector(): CSS선택자 이용. 일치하는 요소들 중 첫 번째 리턴
+	- getElementById(): 요소 유일한 id특성값 이용
+	- querySelector(): CSS선택자 이용. 일치하는 요소들 중 첫 번째 리턴
 			또한, 돔 트리 내에서 한 요소로부터 다른요소 탐색해갈수 있다
 2. 여러개의 노드를 선택
-	-   getElementByClassName()
-	-   getElementByTagName()
-	-   querySelectorAll() _좀 느리다_
+	- getElementByClassName()
+	- getElementByTagName()
+	- querySelectorAll() _좀 느리다_
 3. 요소 노드 사이 탐색
-	-   parentNode : 현재요소의 부모노드 선택 (하나만 리턴)
-	-   previousSibling / nextSibling : 현재 돔트리내의 이전/다음 형제요소
-	-   firstChild/lastChild : 현재 요소의 첫/마지막 자식노드
+	- parentNode : 현재요소의 부모노드 선택 (하나만 리턴)
+	- previousSibling / nextSibling : 현재 돔트리내의 이전/다음 형제요소
+	- firstChild/lastChild : 현재 요소의 첫/마지막 자식노드
 ### 2.2. 요소 조작하기
 1. 텍스트 노드에 접근/수정
 	- li요소 선택 후 firstChild속성을 사용해 텍스트 노드를 선택.
-	-   nodeValue: 텍스트 노드의 유일한 속성.
+	- nodeValue: 텍스트 노드의 유일한 속성.
 2. HTML내용 조작
-	-   innerHTML : 이 하나의 속성을 통해 모든 자식 요소와 텍스트 콘텐츠에 접근 가능 _보안에 취약_
+	- innerHTML : 이 하나의 속성을 통해 모든 자식 요소와 텍스트 콘텐츠에 접근 가능 _보안에 취약_
 		- innerText : 이건 뭐지
-	-   textContent : 특정 요소의 텍스트 콘텐츠에만 접근
-	-   createElement()
-	-   createTextNode()
-	-   appendChild() / removeChild()
+	- textContent : 특정 요소의 텍스트 콘텐츠에만 접근
+	- createElement()
+	- createTextNode()
+	- appendChild() / removeChild()
 3. 특성 값에 접근/수정
-	-   className / id
-	-   hasAttribute()
-	-   getAttribute()
-	-   setAttribute()
-	-   removeAttribute()
+	- className / id
+	- hasAttribute()
+	- getAttribute()
+	- setAttribute()
+	- removeAttribute()
 
 ## 3. Web Storage
 ### 3.1. Web Storage란?
 - HTML5에는 웹사이트 데이터를 클라이언트에 저장할 수 있는 새로운 자료구조인 Web Storage스펙이 포함됨. 키-값 쌍으로 데이터를 저장하고 키를 기반으로 데이터를 조회하는 심플한 패턴. 
 - Web Storage 종류는 2가지
-	-   localStorage: 영구저장소
-	-   sessionStorage: 임시저장소 처럼 데이터의 지속성을 구별하여 사용할 수 있다. [브라우저 지원 현황](http://caniuse.com/#search=localstorage)을 보면 현재 오페라 미니 빼고 모두 지원한다.
+	- localStorage: 영구저장소
+	- sessionStorage: 임시저장소 처럼 데이터의 지속성을 구별하여 사용할 수 있다. [브라우저 지원 현황](http://caniuse.com/#search=localstorage)을 보면 현재 오페라 미니 빼고 모두 지원한다.
 
 ### 3.2. 쿠키와의 차이점
--   쿠키는 매번 서버로 전송됨
-    -   Web storage는 저장된 데이터가 클라에 존재할 뿐 서버전송은 ❌ (=>네트워크 트래픽 비용을 줄여주는 중요한 장점)
--   단순 문자열을 넘어 (스크립트)객체(=object)정보를 저장 가능.
-    -   체계적으로 구조화된 객체 저장 ⭕(브라우저 지원여부 확인 필요)
--   쿠키와 다르게 용량 제한 ❌
--   영구 데이터 저장 ⭕
-    -   로컬스토리지는 브라우저 종료해도 데이터 보관, 세션스토리지는 데이터 지움.
+- 쿠키는 매번 서버로 전송됨
+    - Web storage는 저장된 데이터가 클라에 존재할 뿐 서버전송은 ❌ (=>네트워크 트래픽 비용을 줄여주는 중요한 장점)
+- 단순 문자열을 넘어 (스크립트)객체(=object)정보를 저장 가능.
+    - 체계적으로 구조화된 객체 저장 ⭕(브라우저 지원여부 확인 필요)
+- 쿠키와 다르게 용량 제한 ❌
+- 영구 데이터 저장 ⭕
+    - 로컬스토리지는 브라우저 종료해도 데이터 보관, 세션스토리지는 데이터 지움.
 
 ### 3.3. 사용법
 
@@ -690,8 +679,8 @@ window.addEventListener('storage', function(e){ //이벤트 처리
 }, false);
 ```
 
--   key와 value 모두 String으로 저장된다.
--   getItem으로 값 못찾으면, 에러 발생이 아니고 `null`리턴.
+- key와 value 모두 String으로 저장된다.
+- getItem으로 값 못찾으면, 에러 발생이 아니고 `null`리턴.
 -  대부분의 브라우저에서는 다른 윈도우에서 로컬 스토리지의 데이터를 변경했을 때 이벤트가 발생한다. 즉, 같은 창에 이벤트를 추가하고, localStroage의 값을 변경해도 이벤트가 발생하지 않는다. 아마도, 자신의 window에서는 변경된 상황을 알고 있을 것이라는 가정 때문인가 보다. [링크](http://stackoverflow.com/questions/5370784/localstorage-eventlistener-is-not-called)
 
 ### 3.4. 세션스토리지 예제
@@ -821,10 +810,26 @@ function allStorage(){
 | 순회 | 키값을 통해 배열을 얻어 배열 순회 | 맵 자체로 가능        |
 
 
+# AJAX
+> [[JS]]를 이용하여 비동기식으로 [[XML]]을 이용해 서버와 소통하는 방식
+
+>[!info] 왜 AJAX를 사용하는가?
+> - 주요 특징
+> 	1.  페이지 새로고침 없이 서버에 요청
+>			페이지 전체를 리프레쉬하지 않아도 수행되는 “비동기성”, 사용자의 event가 있으면 전체 페이지가 아닌 일부분만 업데이트 가능
+> 	2.  서버로부터 데이터를 받고 작업을 수행 
+
+>[!cite]- 참고 문서
+> - [Ajax 시작하기 - 웹 개발자 안내서 | MDN](https://developer.mozilla.org/ko/docs/Web/Guide/AJAX/Getting_Started)
 
 
 
 
 # 용어정리
-- **폴리필** : 브라우저에서 지원하지 않는 코드에 대해 사용가능하게 구현하는 코드를 의미
-- **바벨** : 차세대 문법을 ES5 문법으로 번역해주는 역할
+| 폴리필(Polly-Fill)과 바벨(Babel)                       | 최신 문법을 적용할 수없는 브라우저에서의 하위호환 |
+|--------------------------------------------------|-----------------------------|
+| 폴리필 | 브라우저에서 지원하지 않는 코드에 대해 사용가능하게 구현하는 코드를 의미 |
+| 바벨 | 차세대 문법을 ES5 문법으로  번역해주는 역할                |
+
+
+
