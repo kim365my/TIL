@@ -6,7 +6,6 @@
   "obsidian-kanban",
   "link-exploder",
   "obsidian-minimal-settings",
-  "obsidian-to-anki-plugin",
   "obsidian-style-settings",
   "obsidian-tasks-plugin",
   "obsidian-outliner",
@@ -21,5 +20,8 @@
   "obsidian-dictionary-plugin",
   "obsidian-annotator",
   "obsidian-zotero-desktop-connector",
-  "highlightr-plugin"
+  "highlightr-plugin",
+  "obsidian-custom-frames",
+  "home-tab",
+  "obsidian-to-anki-plugin"
 ]

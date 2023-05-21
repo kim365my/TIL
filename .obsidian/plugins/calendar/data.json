@@ -4,7 +4,7 @@
   "wordsPerDot": 500,
   "showWeeklyNote": true,
   "weeklyNoteFormat": "gggg[년] ww[주차]",
-  "weeklyNoteTemplate": "99. 기타/템플릿/주간 노트",
-  "weeklyNoteFolder": "99. 기타/주간 노트",
+  "weeklyNoteTemplate": "3. Resouce/99. 기타/템플릿/주간 노트",
+  "weeklyNoteFolder": "3. Resouce/99. 기타/주간 노트",
   "localeOverride": "system-default"
 }

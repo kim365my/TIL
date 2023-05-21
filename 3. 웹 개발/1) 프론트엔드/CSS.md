@@ -16,7 +16,7 @@ aliases : Cascading Style Sheets - 종속형 시트
 
 >[!quote] 
 >>[!hint] 새로운 소식
->> - [CSS 중첩(nesting)이 된다고?](https://developer.chrome.com/articles/css-nesting/
+>> - [CSS 중첩(nesting)이 된다고?](https://developer.chrome.com/articles/css-nesting/)
 >
 >>[!question]- 어려운 부분
 >> - [ ] 선택자는 문자열이 아니라 객체 참조라는 말이 무슨 뜻이지
@@ -261,14 +261,6 @@ aliases : Cascading Style Sheets - 종속형 시트
 > - https://cocoon1787.tistory.com/m/843
 > - https://velog.io/@wiostz98kr/TIL8-l-CSS-Grid
 
-
-# 기초 CSS
-``` css
-선택자 {
-	 코드 작성;
-}
-```
-
 ## HTML과 CSS 연결
 1.  임베디드 방법 : [[HTML]] 내부적용
 	```html
@@ -280,6 +272,15 @@ aliases : Cascading Style Sheets - 종속형 시트
 	```
 3. 외부 CSS 파일과 연결
 	- HTML문서 head에 `<link rel="stylesheet" href="style.css" />` 작성하기
+
+# 기초 CSS
+``` css
+선택자 {
+	 코드 작성;
+}
+```
+CSS는 선택자를 통해서 [[HTML]] 태그를 선택해서 스타일을 지정하게 된다. 
+
 
 ## 선택자
 |                                | 예시      | 설명                                                     |
@@ -309,7 +310,7 @@ aliases : Cascading Style Sheets - 종속형 시트
 | `요소명[속성명] `      | 상관없이 해당 속성을 사용하는 요소 선택                          |
 | `요소명[속성명="값"]`  | 일치하는 요소 선택                                               |
 | `요소명[속성명~="값"]` | 공백으로 구분한 요소 선택                                        |
-| `요소명[속성명|="값"]` | 정확히 일치하거나 값으로 시작하고 바로 뒤에 `-` 기호로 요소 선택 |
+| `요소명[속성명\|="값"]` | 정확히 일치하거나 값으로 시작하고 바로 뒤에 `-` 기호로 요소 선택 |
 | `요소명[속성명^="값"]` | 시작 부분의 문자와 일치하는 요소 선택                            |
 | `요소명[속성명$="값"]` | 끝 부분의 문자와 일치하는 요소 선택                              |
 | `요소명[속성명*="값"]` | 전체 중 어떤 일부분이라도 일치하는 요소 선택                     |
@@ -442,9 +443,6 @@ body{
     ```
 
 ## 텍스트
-
-
-## 폰트
 >[!quote]- 폰트 사이즈에 대해
 > ![[웹 개발론#1. 폰트 사이즈 단위]]
 
@@ -474,7 +472,7 @@ body{
 ## 배경
 ## 박스모델
 ![[Pasted image 20230425101146.png|150]]
-1.  요소 : 텍스트, 사진 등을 보여줌
+1.  요소(Element) : 텍스트, 사진 등을 보여줌
 2.  패딩(padding) : 요소 주변을 감쌈, 해당 부분은 투명색
 	- 그 박스 안의 요소를 움직일때 사용
 3.  테두리(border) : 요소와 패딩을 감싸는 테두리
@@ -627,8 +625,8 @@ body{
 
 
 # CSS 프레임워크
-- JS 기반 프레임워크 : 프레임워크 기반의 JS APP과 함께 사용가능
-- CSS 기반 프레임워크 : 기본적인 JS 컴포넌트 제공 안함
+- **JS 기반 프레임워크** : 프레임워크 기반의 JS APP과 함께 사용가능
+- **CSS 기반 프레임워크** : 기본적인 JS 컴포넌트 제공 안함
 
 ## JS 기반 프레임워크
 - Reactstrap
@@ -637,7 +635,7 @@ body{
 - Chakra
 
 ## CSS 기반 프레임워크
-- 부트스트랩 Bootstrop
+- **부트스트랩 Bootstrop**
 	- CDN 연결링크
 		```html
 		<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
@@ -686,8 +684,8 @@ body{
 		</body>
 		</html>
 		```
-- Moterialize CSS
-- Bulma
+- **Moterialize CSS**
+- **Bulma**
 
 
 # 연관 문서

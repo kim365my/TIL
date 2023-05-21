@@ -14,7 +14,15 @@ body{
 	--color-red:hsla(365, 85%, 55%, 1);
     /* --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 5%)); */
 	--custom-border-color:#00000014;
-	--highlighter : #FFB8EBA6;
+	--highlighter-pink : #FFB8EBA6;
+	--highlighter-red : #FF5582A6;
+	--highlighter-orange : #FFB86CA6;
+	--highlighter-yellow : #FFF3A3A6;
+	--highlighter-green : #BBFABBA6;
+	--highlighter-cyan : #ABF7F7A6;
+	--highlighter-blue : #ADCCFFA6;
+	--highlighter-purple : #D2B3FFA6;
+	--highlighter-grey : #CACFD9A6;
 }
 
 .theme-dark,
@@ -24,7 +32,15 @@ body{
     /* --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 2%)); */
 	--custom-border-color:#ffffff14;
 	/* --color-orange:#ff7c00; */
-	--highlighter : #dd70ae94;
+	--highlighter-pink : #dd70ae94;
+	--highlighter-red : #a72c4da6;
+	--highlighter-orange : #bb7f40a6;
+	--highlighter-yellow : #ac9a29a6;
+	--highlighter-green : #24ad24a6;
+	--highlighter-cyan : #47c5c5a6;
+	--highlighter-blue : #1f4fa1a6;
+	--highlighter-purple : #6f46ada6;
+	--highlighter-grey : #808080a6;
 }
 
 /* ----------------------------- */
@@ -51,17 +67,16 @@ body:before{
 	-webkit-mask-size:300% 300px;
 	-webkit-mask-position:88.5% -73px;
 	-webkit-mask-repeat:no-repeat;
-	
-    background-color:var(--color-accent-2);
+    /* background-color:var(--color-accent-2); */
 	transform:rotateZ(180deg);
 	opacity:0.6;
 
 	/* 구름모양 svg */
-	/* -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1009%26quot%3b)' opacity='.1' fill='none'%3e%3cpath d='M1464 560L0 560 L0 307.17Q75.51 262.69%2c 120 338.2Q167.91 314.11%2c 192 362.02Q200.6 298.62%2c 264 307.22Q305.98 277.2%2c 336 319.17Q383.71 246.88%2c 456 294.59Q535.53 254.12%2c 576 333.65Q627.04 264.69%2c 696 315.73Q761.96 309.69%2c 768 375.65Q811.11 298.76%2c 888 341.87Q910.96 292.83%2c 960 315.79Q1025.82 261.61%2c 1080 327.43Q1131.37 306.8%2c 1152 358.16Q1217.2 303.36%2c 1272 368.56Q1314.54 291.1%2c 1392 333.64Q1437.59 307.23%2c 1464 352.82z' opacity='.2' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 361.66Q93.74 335.4%2c 120 429.14Q147.26 384.4%2c 192 411.67Q230.19 329.87%2c 312 368.06Q353.84 337.9%2c 384 379.74Q473.63 349.37%2c 504 439Q523.84 338.84%2c 624 358.68Q692.95 307.63%2c 744 376.58Q811.93 324.51%2c 864 392.44Q916.35 372.79%2c 936 425.14Q980.96 398.1%2c 1008 443.06Q1029.94 393%2c 1080 414.95Q1132.88 347.83%2c 1200 400.71Q1249.57 378.27%2c 1272 427.84Q1323.52 359.36%2c 1392 410.88Q1406.92 353.81%2c 1464 368.73z'  opacity='.3' fill='rgba(37%2c 70%2c 125%2c 0.7)'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 502.01Q52.85 434.86%2c 120 487.71Q148.69 396.4%2c 240 425.09Q323.24 388.33%2c 360 471.57Q403.25 394.82%2c 480 438.08Q507.67 393.75%2c 552 421.42Q646.92 396.34%2c 672 491.26Q707.88 407.14%2c 792 443.02Q846.63 377.65%2c 912 432.29Q1013.99 414.28%2c 1032 516.27Q1060.78 473.05%2c 1104 501.83Q1101.52 427.35%2c 1176 424.86Q1235.39 412.25%2c 1248 471.65Q1318.91 422.56%2c 1368 493.48Q1407.62 413.1%2c 1488 452.71z' fill='rgba(53%2c 108%2c 177%2c 0.21)'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 511.45Q87.05 478.5%2c 120 565.55Q162.16 535.71%2c 192 577.87Q215.69 481.56%2c 312 505.24Q380.77 454.01%2c 432 522.78Q497.99 468.77%2c 552 534.76Q623.36 486.12%2c 672 557.47Q686.83 500.3%2c 744 515.12Q809.4 460.52%2c 864 525.92Q883.01 472.93%2c 936 491.94Q977.08 461.02%2c 1008 502.1Q1070.2 492.3%2c 1080 554.5Q1123.08 525.58%2c 1152 568.65Q1182.76 479.41%2c 1272 510.17Q1313.04 479.21%2c 1344 520.25Q1391.2 495.45%2c 1416 542.65Q1471.88 526.53%2c 1488 582.41z' fill='rgba(255%2c 255%2c 255%2c 0.27)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1009'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+	/* -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1009%26quot%3b)' opacity='.3' fill='none'%3e%3cpath d='M1464 560L0 560 L0 307.17Q75.51 262.69%2c 120 338.2Q167.91 314.11%2c 192 362.02Q200.6 298.62%2c 264 307.22Q305.98 277.2%2c 336 319.17Q383.71 246.88%2c 456 294.59Q535.53 254.12%2c 576 333.65Q627.04 264.69%2c 696 315.73Q761.96 309.69%2c 768 375.65Q811.11 298.76%2c 888 341.87Q910.96 292.83%2c 960 315.79Q1025.82 261.61%2c 1080 327.43Q1131.37 306.8%2c 1152 358.16Q1217.2 303.36%2c 1272 368.56Q1314.54 291.1%2c 1392 333.64Q1437.59 307.23%2c 1464 352.82z' opacity='.3' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 361.66Q93.74 335.4%2c 120 429.14Q147.26 384.4%2c 192 411.67Q230.19 329.87%2c 312 368.06Q353.84 337.9%2c 384 379.74Q473.63 349.37%2c 504 439Q523.84 338.84%2c 624 358.68Q692.95 307.63%2c 744 376.58Q811.93 324.51%2c 864 392.44Q916.35 372.79%2c 936 425.14Q980.96 398.1%2c 1008 443.06Q1029.94 393%2c 1080 414.95Q1132.88 347.83%2c 1200 400.71Q1249.57 378.27%2c 1272 427.84Q1323.52 359.36%2c 1392 410.88Q1406.92 353.81%2c 1464 368.73z'  opacity='1' fill='rgba(37%2c 70%2c 125%2c 0.7)'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 502.01Q52.85 434.86%2c 120 487.71Q148.69 396.4%2c 240 425.09Q323.24 388.33%2c 360 471.57Q403.25 394.82%2c 480 438.08Q507.67 393.75%2c 552 421.42Q646.92 396.34%2c 672 491.26Q707.88 407.14%2c 792 443.02Q846.63 377.65%2c 912 432.29Q1013.99 414.28%2c 1032 516.27Q1060.78 473.05%2c 1104 501.83Q1101.52 427.35%2c 1176 424.86Q1235.39 412.25%2c 1248 471.65Q1318.91 422.56%2c 1368 493.48Q1407.62 413.1%2c 1488 452.71z' fill='rgba(53%2c 108%2c 177%2c 0.21)'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 511.45Q87.05 478.5%2c 120 565.55Q162.16 535.71%2c 192 577.87Q215.69 481.56%2c 312 505.24Q380.77 454.01%2c 432 522.78Q497.99 468.77%2c 552 534.76Q623.36 486.12%2c 672 557.47Q686.83 500.3%2c 744 515.12Q809.4 460.52%2c 864 525.92Q883.01 472.93%2c 936 491.94Q977.08 461.02%2c 1008 502.1Q1070.2 492.3%2c 1080 554.5Q1123.08 525.58%2c 1152 568.65Q1182.76 479.41%2c 1272 510.17Q1313.04 479.21%2c 1344 520.25Q1391.2 495.45%2c 1416 542.65Q1471.88 526.53%2c 1488 582.41z' fill='rgba(255%2c 255%2c 255%2c 0.27)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1009'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 	-webkit-mask-size:100% 300px;
 	-webkit-mask-position:0 100%;
-	-webkit-mask-repeat:no-repeat;
-    background-color:var(--color-accent-2); */
+	-webkit-mask-repeat:no-repeat; */
+    background-color:var(--code-property);
 
 	/* 바다 */
 	/* background: url("https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80");
@@ -189,20 +204,6 @@ b, strong, .cm-strong{
 	/* color: var(--callout-title-color); */
 }
 
-
-/* 하이라이터 커스텀하기 */
-.search-result-file-matched-text,
-.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
-.markdown-rendered mark{
-	/* color: var(--color-accent-2); */
-	/* font-weight: 600; */
-	/* background-color: transparent; */
-	/* --text-highlight-bg:var(--hl1) */
-	background-color: var(--highlighter);
-}
-mark{
-	color: var(--tx1);
-}
 /* 임베드시 타이틀영역 숨기기 */
 .embed-title, .markdown-embed-title{
 	/* font-size: 1.2rem;
@@ -302,8 +303,25 @@ mark{
 	width: 40% !important;
 }
 
+/* 하이라이터 스타일 */
+.search-result-file-matched-text,
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
+.markdown-rendered mark{
+	background-color: var(--highlighter-pink);
+}
+mark{color: var(--tx1);}
+mark.hltr-pink{background-color: var(--highlighter-pink) !important;}
+mark.hltr-red{background-color: var(--highlighter-red) !important;}
+mark.hltr-orange{background-color: var(--highlighter-orange) !important;}
+mark.hltr-yellow{background-color: var(--highlighter-yellow) !important;}
+mark.hltr-green{background-color: var(--highlighter-green) !important;}
+mark.hltr-cyan{background-color: var(--highlighter-cyan) !important;}
+mark.hltr-blue{background-color: var(--highlighter-blue) !important;}
+mark.hltr-purple{background-color: var(--highlighter-purple) !important;}
+mark.hltr-grey{background-color: var(--highlighter-grey) !important;}
 
-/* 캘린더 플러그인 스타일 설정 */
-.fc .fc-scrollgrid-liquid a{
-	color:var(--tx1);
+
+/* anki ID 태그 숨기기 */
+.cm-s-obsidian span.cm-comment {
+	display: none;
 }

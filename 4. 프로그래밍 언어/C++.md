@@ -19,11 +19,12 @@ tag : 소프트웨어공학
 namespace myNSPc{
 	int count;
 	myNSPc::count = 0;
+	// 
 }
 ```
-- :: = std 
+- `::` = std 
 - using을 이용한 명칭공간 사용
-	- std란 명칭공간을 다 생략 : `using namespace std;` or `using std::name`
+	- std란 명칭공간을 다 생략 : `using namespace std;` or `using std::name` 
 	- 중괄호 사용하여 변수를 생성했을때 
 		- 소괄호/_중괄호_가 붙으면 그것은 _괄호_ 안의 값을 가진(없으면 기본값) 이름 없는 임시 객체_를 생성_한다는 뜻
 ## 2. 포인터

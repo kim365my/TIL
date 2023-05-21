@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "016c08222b5a0269",
+        "id": "43e604a83c4f32da",
         "type": "tabs",
         "children": [
           {
-            "id": "5014a0aa751d29e8",
+            "id": "b80c343d0d21cef6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -44,10 +49,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "session",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -68,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 212.5
+    "width": 222.5
   },
   "right": {
     "id": "0ec7239b9c0b9a42",
@@ -84,7 +89,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md"
+              }
             }
           },
           {
@@ -93,6 +100,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -135,6 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -146,13 +155,14 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -203,12 +213,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 236.5
+    "width": 280.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,67 +228,67 @@
       "zk-prefixer:새로운 유니크 노트 생성": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "kr-book-info-plugin:Add Book Info": false
+      "kr-book-info-plugin:Add Book Info": false,
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "e603f2c1286195e4",
+  "active": "b80c343d0d21cef6",
   "lastOpenFiles": [
-    "4. Archive/그림/그림 - 원본파일.zip",
-    "4. Archive/그림/그림.zip",
-    "3. Resouce/99. 메모/노트 정리방식.md",
-    "3. Resouce/99. 메모/생각하는 법에 대해서.md",
+    "1. Project/방통대/HTML5 웹 프로그래밍.md",
+    "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md",
+    "1. Project/방통대/0. 방통대 수업.md",
+    "3. Resouce/1. 컴퓨터과학 개론/컴퓨터 구조.md",
+    "3. Resouce/3. 웹 개발/1) 프론트엔드/CSS.md",
+    "1. Project/방통대/파이썬 프로그래밍 기초.md",
     "3. Resouce/99. 메모/옵시디언.md",
-    "3. Resouce/10. 인문학/철학.md",
-    "2. Area/가족/특례보금자리론/증빙서류/부채증명서.pdf",
-    "4. Archive/게임/닌텐도/Roms/~ndsynctmp0d0a8a68",
-    "4. Archive/게임/era/기타 era/eraTWKR-temp_temp_master.zip",
-    "4. Archive/게임/닌텐도/Roms/~ndsynctmp0af05d02",
-    "4. Archive/게임/닌텐도/Battery/Maple Story.dsv",
-    "4. Archive/게임/닌텐도/Roms",
-    "4. Archive/게임/닌텐도/Battery/~ndsynctmp09e168cf",
-    "4. Archive/게임/닌텐도/Battery/놀러오세요! 동물의숲(K).dsv",
-    "4. Archive/게임/닌텐도/Battery/~ndsynctmp08d07624",
-    "1. Project/취직하기/이력서/이력서_0003.png",
+    "3. Resouce/99. 메모/Anki 정규식 연습.md",
+    "3. Resouce/9. 용어해설집/개발도구/VSC.md",
+    "4. Archive/그림/그림.zip",
+    "4. Archive/그림/그림 - 원본파일.zip",
+    "4. Archive/그림",
+    "2. Area/가족/세금 신고/종합소득세.md",
+    "3. Resouce/9. 용어해설집/소프트웨어/Open Graph.md",
+    "3. Resouce/1. 컴퓨터과학 개론/인공지능.md",
+    "3. Resouce/4. 프로그래밍 언어/C++.md",
+    "3. Resouce/4. 프로그래밍 언어/Java.md",
+    "3. Resouce/99. 메모/노트 정리방식.md",
+    "2. Area/가족/세금 신고/부가가치세.md",
+    "4. Archive/세금정보/피부미용업 과세조건.md",
+    "3. Resouce/3. 웹 개발/2) 백엔드/바인딩.md",
+    "3. Resouce/1. 컴퓨터과학 개론/ref 3.md",
+    "3. Resouce/99. 자격증/정보처리기사.md",
+    "2. Area/게임 만들기/자료조사.md",
+    "3. Resouce/99. 기타/데일리 노트/2023-05-19.md",
+    "3. Resouce/3. 웹 개발/1) 프론트엔드/JSDOC.md",
+    "3. Resouce/3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인 레퍼런스.md",
+    "3. Resouce/3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인.md",
+    "3. Resouce/3. 웹 개발/웹 3.0.md",
+    "3. Resouce/3. 웹 개발/무제 파일.canvas",
+    "3. Resouce/공부목표.canvas",
+    "3. Resouce/웹 개발.canvas",
+    "2. Area/자바스크립트 웹 앱 분석과 결함 검출.pdf",
+    "2. Area/~ndsynctmpbfcd028e",
+    "1. Project/지영이 포폴사이트제작/자료/노래3.mp4",
+    "1. Project/지영이 포폴사이트제작/자료/노래2.mp4",
+    "1. Project/지영이 포폴사이트제작/자료/강아지.mp4",
+    "1. Project/지영이 포폴사이트제작/자료/강아지 1.mp4",
+    "1. Project/지영이 포폴사이트제작/자료/노래.mp4",
     "1. Project/취직하기/이력서/증명  사진.jpg",
-    "1. Project/취직하기/이력서/이력서_0001.png",
-    "1. Project/취직하기/이력서/이력서_0002.png",
     "1. Project/취직하기/이력서/증명 사진.png",
-    "2. Area/가족/수기명가/수기명가.md",
+    "1. Project/취직하기/이력서/이력서_0003.png",
+    "1. Project/취직하기/이력서/이력서_0002.png",
+    "1. Project/취직하기/이력서/이력서_0001.png",
     "2. Area/가족/수기명가/미용업 영업주 자율점검표/통장사본.png",
     "2. Area/가족/보험증권/자동차 보험증권.jpg",
     "2. Area/가족/수기명가/사업자등록증명서/사업자등록증.jpg",
-    "3. Resouce/3. 웹 개발/웹 개발론.md",
-    "1. Project/방통대/0. 방통대 수업.md",
-    "1. Project/방통대/디지털 논리회로.md",
-    "1. Project/방통대/세계의 역사.md",
-    "1. Project/방통대/세계의 정치와 경제.md",
-    "1. Project/방통대/세상읽기와 논술.md",
-    "1. Project/방통대/운영체제.md",
-    "1. Project/방통대/그래픽커뮤니케이션.md",
-    "3. Resouce/99. 기타/주간 노트/2023년 19주차.md",
-    "3. Resouce/4. 프로그래밍 언어/Java.md",
-    "2. Area/가족/똘이를 행복하게.md",
-    "3. Resouce/5. 데이터베이스/SQL.md",
-    "3. Resouce/99. 기타/데일리 노트/2023-05-18.md",
-    "3. Resouce/99. 자격증/정보처리기사.md",
-    "3. Resouce/5. 데이터베이스/무제 파일.md",
-    "3. Resouce/9. 용어해설집/개발도구/오라클.md",
-    "1. Project/옵시디언 플러그인 개발하기.md",
-    "4. Archive/노트북에 윈도우 설치.md",
-    "4. Archive/세금정보/피부미용업 과세조건.md",
-    "4. Archive/게임/원신 리세마라.md",
     "2. Area/가족/외삼촌 주소.png",
     "3. Resouce/99. 기타/img/Pasted image 20230518074440.png",
-    "3. Resouce/웹 개발.canvas",
-    "3. Resouce/공부목표.canvas",
     "1. Project/방통대/과제/Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
     "2. Area/TIL - SW과학/컴퓨터과학.canvas",
     "2. Area/TIL - SW과학/공부목표.canvas",
     "2. Area/TIL - SW과학/웹 개발.canvas",
     "2. Area/TIL - SW과학/0. 공부 목표/정보처리기사/자격증.canvas",
     "컴퓨터과학.canvas",
-    "공부목표.canvas",
-    "웹 개발.canvas"
+    "공부목표.canvas"
   ]
 }

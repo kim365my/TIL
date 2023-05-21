@@ -1,6 +1,6 @@
 ---
 tag : 프론트엔드 oop
-aliases : Java script
+aliases : Java script, 자바스크립트
 ---
 
 # 개요
@@ -779,7 +779,6 @@ function allStorage(){
 	- https://serzhul.io/JavaScript/learn-webpack-in-under-10minutes/
 
 # [[Node JS]]와 함께 하는 환경설정 ⭐
-
 > 목표 : ESLint과 TS 환경설정하기
 
 
@@ -787,6 +786,8 @@ function allStorage(){
 
 # ES6 : JS의 표준화 문법
 > ES6이란? ES6을 기점으로 JS는 큰 변화를 맞이함
+
+
 ### 3.1. 자료형
 #### 3.1.1. Set
 - 중복 허용 ❌, 아예 중복된 값이 들어가지 않음
@@ -811,9 +812,7 @@ function allStorage(){
 
 
 # AJAX
-> [[JS]]를 이용하여 비동기식으로 [[XML]]을 이용해 서버와 소통하는 방식
-
->[!info] 왜 AJAX를 사용하는가?
+>[!info] AJAX란?  [[JS]]를 이용하여 비동기식으로 [[XML]]을 이용해 서버와 소통하는 방식
 > - 주요 특징
 > 	1.  페이지 새로고침 없이 서버에 요청
 >			페이지 전체를 리프레쉬하지 않아도 수행되는 “비동기성”, 사용자의 event가 있으면 전체 페이지가 아닌 일부분만 업데이트 가능

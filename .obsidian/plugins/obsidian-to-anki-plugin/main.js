@@ -30245,12 +30245,6 @@ function id_to_str(identifier, inline = false, comment = false) {
     if (comment) {
         result = "<!--" + result + "-->";
     }
-    if (inline) {
-        result += " ";
-    }
-    else {
-        result += "\n";
-    }
     return result;
 }
 function string_insert(text, position_inserts) {
@@ -30570,7 +30564,7 @@ class AllFile extends AbstractFile {
         this.regex_id_indexes.forEach((id_position, index) => {
             const identifier = this.note_ids[index + this.notes_to_add.length + this.inline_notes_to_add.length]; // Since regular then inline then regex
             if (identifier) {
-                regex_inserts.push([id_position, "\n" + id_to_str(identifier, false, this.data.comment)]);
+                regex_inserts.push([id_position, " " + id_to_str(identifier, false, this.data.comment)]);
             }
         });
         this.file = string_insert(this.file, normal_inserts.concat(inline_inserts).concat(regex_inserts));
