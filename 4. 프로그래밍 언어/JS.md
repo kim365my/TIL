@@ -49,13 +49,30 @@ aliases : Java script, 자바스크립트
 ### 1.1. 변수(variable)
 1. const : 상수
 2. let : 변수
-- var : 최근에는 안씀
+3. var : 최근에는 안씀
 	- 이전 버전의 JS에서 변수를 선언하기 위해 사용했던 키워드
 	- 변수의 중복 정의를 제한하지 않는 등의 치명적인 단점이 있어, 더이상 var를 사용하지 않음 
 - [[프로그래밍 언어론#^0ceace|카멜표기법]]으로 변수를 작성함
 
 ### 1.2. 자료형(types)
 ![[Pasted image 20221017125852.png]]
+- 원시 타입(primitive type) : 숫자, 문자열, 논리형, unddfinded^[^변수가 정의되지 않음], null^[^값 없음, no auto, 파이썬에서는 none]
+	```js
+	/* 문자열은 큰따옴표보다 작은따옴표 */
+	var name = 'Josh';
+	
+	/* 80자 이상 문자열은 +를 사용하여 여러 줄로 */
+	var errorMessage = 'This is super long error \
+	어쩌구 저쩌구\
+	저쩌구 럴럴럴.'; // bad
+	
+	var errorMessage = 'This is super long error'+
+		'어쩌구 저쩌구'+
+		'저쩌구 럴럴럴.'; // good
+	
+	/* 프로그램적으로 문자열 연결할 때에는 Array.join()을 활용 */
+	items.join('</li><li>');
+	```
 - 원시 타입(primitive type)과 참조 타입(Non primitive type)의 차이
 	- 원시형은 값 직접 조작
 		```js
@@ -71,28 +88,9 @@ aliases : Java script, 자바스크립트
 		bar[0] = 9;
 		console.log(foo[0], bar[0]); //9, 9
 		```
+
 #### 1.2.1. 원시 타입(primitive type)
-- 숫자
-- 문자열
-	```js
-	/* 문자열은 큰따옴표보다 작은따옴표 */
-	var name = 'Josh';
-	
-	/* 80자 이상 문자열은 +를 사용하여 여러 줄로 */
-	var errorMessage = 'This is super long error \
-	어쩌구 저쩌구\
-	저쩌구 럴럴럴.'; // bad
-	
-	var errorMessage = 'This is super long error'+
-	    '어쩌구 저쩌구'+
-	    '저쩌구 럴럴럴.'; // good
-	
-	/* 프로그램적으로 문자열 연결할 때에는 Array.join()을 활용 */
-	items.join('</li><li>');
-	```
-- Unddfinded: 변수가 정의되지 않음
-- Null : 값 없음, no auto, 파이썬에서는 none
-- 부울(Boolean) 
+
 
 #### 1.2.2. 참조 타입(non primitive type)
 - 예약어보다 동의어 사용. 예약어를 키로 사용하면 IE8에서 동작 X

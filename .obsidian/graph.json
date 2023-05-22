@@ -8,35 +8,35 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"2. Area/3. 웹 개발\"",
+      "query": "path:\"3. 웹 개발\"",
       "color": {
         "a": 1,
         "rgb": 16112476
       }
     },
     {
-      "query": "path:\"2. Area/1. 컴퓨터과학 개론\"",
+      "query": "path:\"1. 컴퓨터과학 개론\"",
       "color": {
         "a": 1,
         "rgb": 14794989
       }
     },
     {
-      "query": "path:\"2. Area/9. 용어해설집\"",
+      "query": "path:\"9. 용어해설집\"",
       "color": {
         "a": 1,
         "rgb": 6068182
       }
     },
     {
-      "query": "path:\"2. Area/4. 프로그래밍 언어\"",
+      "query": "path:\"4. 프로그래밍 언어\"",
       "color": {
         "a": 1,
         "rgb": 8150230
       }
     },
     {
-      "query": "path:\"2. Area/99. 기타\"",
+      "query": "path:\"99. 기타\"",
       "color": {
         "a": 1,
         "rgb": 8417449
@@ -53,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 283,
-  "scale": 0.7069024726667162,
+  "scale": 1.3894564288397235,
   "close": true
 }

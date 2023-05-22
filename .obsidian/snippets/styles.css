@@ -67,7 +67,7 @@ body:before{
 	-webkit-mask-size:300% 300px;
 	-webkit-mask-position:88.5% -73px;
 	-webkit-mask-repeat:no-repeat;
-    /* background-color:var(--color-accent-2); */
+    background-color:var(--color-accent-2);
 	transform:rotateZ(180deg);
 	opacity:0.6;
 
@@ -76,7 +76,7 @@ body:before{
 	-webkit-mask-size:100% 300px;
 	-webkit-mask-position:0 100%;
 	-webkit-mask-repeat:no-repeat; */
-    background-color:var(--code-property);
+    /* background-color:var(--code-property); */
 
 	/* 바다 */
 	/* background: url("https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80");
@@ -322,6 +322,7 @@ mark.hltr-grey{background-color: var(--highlighter-grey) !important;}
 
 
 /* anki ID 태그 숨기기 */
-.cm-s-obsidian span.cm-comment {
+.cm-s-obsidian span.cm-comment:not(.cm-hmd-codeblock) {
 	display: none;
 }
+

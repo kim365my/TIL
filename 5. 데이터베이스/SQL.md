@@ -15,7 +15,6 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 >	- 단점 : ORM에 너무 의존하면 SQL에서 어떻게 작동하는 지 생각을 못하게 됨
 >		- 풀스택개발자는 SQL의 기초적인 원리를 배워야 한다고 함
 
-
 # DBMS 설치
 >[!quote] DBMS 설치
 >>[!quote]- [[오라클]] 11gEE 설치 및 환경변수 설정
@@ -243,8 +242,8 @@ delete from b_member where id ='mc';
 # 데이터 딕셔너리(Data Dictionary) 
 ## 설명
 - 시스템 카탈로그라고 부르며 사용가능한 데이터베이스 및 테이블의 정보를 요약해서 가지고 있는 시스템 테이블
-- 테이블의 요약된 정보는 **메타데이터**라고 하며 종류는 ==스키마 · 사용자 · 객체 · 권한 · 롤 · 데이터 베이스의 정보 등==이 있음
-	- 마치 옵시디언에서 메타데이터를 이용해 하나의 노트를 관리하는 것처럼 데이터 딕셔너리는 표를 이러한 방식으로 관리함
+- 테이블의 요약된 정보는 **메타데이터**라고 하며 종류는 <mark class="hltr-purple">스키마 · 사용자 · 객체 · 권한 · 롤 · 데이터 베이스의 정보</mark> 등이 있음
+	- 마치 옵시디언에서 메타데이터를 이용해 하나의 노트를 관리하는 것처럼 데이터 딕셔너리는 테이블을 이러한 방식으로 관리함
 - 시스템 정보를 가지고 있기에 일반 사용자는 조회만 가능
 - [[Pasted image 20230502091637.png|오라클의 딕셔너리]]
 - 시퀀스
@@ -318,7 +317,6 @@ delete from b_member where id ='mc';
 	```sql
 	select * from all_constraints;
 	```
-
 - 한 테이블의 제약사항 조회
 	```sql
 	select * from user_constraints where table_name = 'FRUTS2';
@@ -393,10 +391,10 @@ delete from b_member where id ='mc';
 	- 단점 : insert, update, delete 등 변경 작업이 자주 일어나면 오히려 DB 성능이 저하됨
 		- 주기적인 기억공간이 필요
 	- [i] 오라클은 테이블 생성시 PK를 설정하면 자동으로 인덱스로 등록
-```sql
-Create index 인덱스명
-```
-
+- 인덱스 생성
+	```sql
+	Create index 인덱스명 ON 테이블명(칼럼1, 칼럼2, 칼럼3...)
+	```
 -  인덱스 정보조회
     ```sql
     select index_name, table_name, column_name
@@ -444,22 +442,30 @@ Create index 인덱스명
 
 ### 함수
 - 오라클의 함수를 이용하면 테이블의 데이터를 가공하여 조회 가능
-- dual[^dual]를 통해서 함수 출력가능
-
-
-[^dual]: 오라클에서 제공하는 한행짜리 테스트 테이블
-
+- dual^[^오라클에서 제공하는 한행짜리 테스트 테이블]를 통해서 함수 출력가능
 
 #### 함수 종류
-- abs(n) : 절대값
+- abs(n) : 절대값 
+	```sql
+	select abs(-13) from dual; -- 13
+	```
 - floor(n) : 내림
+	```sql
+	select floor(123.23232) from dual; --123
+	```
 - ceil(n) : 올림
+	```sql
+	select ceil(1212.23232) from dual; --1213
+	```
 - ROUND(n) : 반올림
 - MOD(n) : 나머지 연산
 - TRUNC(value, n) : 해당 값의 n자리 밑으로 잘라냄
 - TRIM : 문자 제거
-    - TRIM()
-        - 문자 바로앞에 특수문자 &가 있으면 해당값을 변수로 인식하여 대체변수 입력 대화창이 나옴
+	- [!] 문자 바로앞에 특수문자 &가 있으면 해당값을 변수로 인식하여 대체변수 입력 대화창이 나옴
+	```sql
+	SELECT LTRIM('^&^&^&^&^&^&^&^&^&^ABC', '^&') FROM DUAL;
+	SELECT RTRIM('ABC@#','@#') FROM DUAL;
+	```
     - LTRIM(원본, 제거할 문자) : 왼쪽
     - RTRIM(원본, 제거할 문자) : 오른쪽
 - TO_CHAR() : 데이터를 문자 타입으로 변경하는 함수
@@ -736,6 +742,12 @@ select job_id, AVG(salary) AS sag_id from employees GROUP BY job_id HAVING AVG(s
 
 
 # 용어정리 
+- 릴레이션(Relation)
+	- 표, 테이블
+	- 스키마 :  
+	- 인스턴스 : 저장된 스키마에 따라 실제 저장된 값
+- 시퀀스 : 번호 생성기
+
 
 ## 릴레이션과 열, 행
 ![[데이터베이스#테이블 용어정리]]

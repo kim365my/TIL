@@ -1,6 +1,82 @@
 {
   "recentFiles": [
     {
+      "basename": "SQL",
+      "path": "5. 데이터베이스/SQL.md"
+    },
+    {
+      "basename": "JSP",
+      "path": "3. 웹 개발/2) 백엔드/JSP.md"
+    },
+    {
+      "basename": "JDBC",
+      "path": "3. 웹 개발/2) 백엔드/JDBC.md"
+    },
+    {
+      "basename": "2023년 19주차",
+      "path": "99. 기타/주간 노트/2023년 19주차.md"
+    },
+    {
+      "basename": "Servlet",
+      "path": "3. 웹 개발/2) 백엔드/Servlet.md"
+    },
+    {
+      "basename": "JS",
+      "path": "4. 프로그래밍 언어/JS.md"
+    },
+    {
+      "basename": "웹 개발론",
+      "path": "3. 웹 개발/웹 개발론.md"
+    },
+    {
+      "basename": "커넥션 풀 API",
+      "path": "3. 웹 개발/2) 백엔드/커넥션 풀 API.md"
+    },
+    {
+      "basename": "Java",
+      "path": "4. 프로그래밍 언어/Java.md"
+    },
+    {
+      "basename": "파라미터",
+      "path": "9. 용어해설집/소프트웨어/파라미터.md"
+    },
+    {
+      "basename": "영어",
+      "path": "6. 영어/영어.md"
+    },
+    {
+      "basename": "수학",
+      "path": "7. 수학/수학.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "2023-05-22",
+      "path": "99. 기타/데일리 노트/2023-05-22.md"
+    },
+    {
+      "basename": "JSDOC",
+      "path": "3. 웹 개발/1) 프론트엔드/JSDOC.md"
+    },
+    {
+      "basename": "정보처리기사",
+      "path": "99. 자격증/정보처리기사.md"
+    },
+    {
+      "basename": "2023-05-08",
+      "path": "99. 기타/데일리 노트/2023-05-08.md"
+    },
+    {
+      "basename": "2023-05-15",
+      "path": "99. 기타/데일리 노트/2023-05-15.md"
+    },
+    {
+      "basename": "2023-05-18",
+      "path": "99. 기타/데일리 노트/2023-05-18.md"
+    },
+    {
       "basename": "변수명, 함수명 짓는 방법",
       "path": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md"
     },
@@ -123,82 +199,6 @@
     {
       "basename": "용어해설집",
       "path": "3. Resouce/9. 용어해설집/용어해설집.md"
-    },
-    {
-      "basename": "노트북에 윈도우 설치",
-      "path": "4. Archive/노트북에 윈도우 설치.md"
-    },
-    {
-      "basename": "윈도우 단축키",
-      "path": "3. Resouce/99. 메모/윈도우 단축키.md"
-    },
-    {
-      "basename": "코드 컨벤션",
-      "path": "3. Resouce/9. 용어해설집/코드 컨벤션.md"
-    },
-    {
-      "basename": "소프트웨어 디자인 패턴",
-      "path": "3. Resouce/9. 용어해설집/소프트웨어 디자인 패턴.md"
-    },
-    {
-      "basename": "BASE64",
-      "path": "3. Resouce/1. 컴퓨터과학 개론/BASE64.md"
-    },
-    {
-      "basename": "컴파일러",
-      "path": "3. Resouce/1. 컴퓨터과학 개론/컴파일러.md"
-    },
-    {
-      "basename": "HTTP",
-      "path": "3. Resouce/3. 웹 개발/HTTP.md"
-    },
-    {
-      "basename": "Chat AI 개발에 대해 궁금해",
-      "path": "4. Archive/Chat AI 개발에 대해 궁금해.md"
-    },
-    {
-      "basename": "Read Me",
-      "path": "Read Me.md"
-    },
-    {
-      "basename": "JSP",
-      "path": "3. Resouce/3. 웹 개발/2) 백엔드/JSP.md"
-    },
-    {
-      "basename": "웹 개발 흐름",
-      "path": "3. Resouce/3. 웹 개발/웹 개발 흐름.md"
-    },
-    {
-      "basename": "JS",
-      "path": "3. Resouce/4. 프로그래밍 언어/JS.md"
-    },
-    {
-      "basename": "HTML",
-      "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/HTML.md"
-    },
-    {
-      "basename": "웹 저장공간",
-      "path": "3. Resouce/3. 웹 개발/웹 저장공간.md"
-    },
-    {
-      "basename": "웹 브라우저",
-      "path": "3. Resouce/3. 웹 개발/웹 브라우저.md"
-    },
-    {
-      "basename": "웹 개발론",
-      "path": "3. Resouce/3. 웹 개발/웹 개발론.md"
-    },
-    {
-      "basename": "Servlet",
-      "path": "3. Resouce/3. 웹 개발/2) 백엔드/Servlet.md"
-    },
-    {
-      "basename": "Pasted image 20230407144044",
-      "path": "3. Resouce/99. 기타/img/Pasted image 20230407144044.png"
-    },
-    {
-      "basename": "웹 어셈블리",
-      "path": "3. Resouce/3. 웹 개발/웹 어셈블리.md"
     }
   ],
   "omittedPaths": [],

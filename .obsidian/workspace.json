@@ -4,23 +4,76 @@
     "type": "split",
     "children": [
       {
-        "id": "43e604a83c4f32da",
+        "id": "5a7c9844ae782ffb",
         "type": "tabs",
         "children": [
           {
-            "id": "b80c343d0d21cef6",
+            "id": "e1424f6f84a8464f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md",
+                "file": "4. 프로그래밍 언어/JS.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "56296586c2ffe4ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. 프로그래밍 언어/Java.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d802e047904b2b0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "99. 기타/주간 노트/2023년 19주차.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fef57e38592e1bab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3. 웹 개발/2) 백엔드/JSP.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "017bbb789f9f25dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5. 데이터베이스/SQL.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -49,10 +102,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "jsp:use",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -69,11 +122,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 222.5
+    "width": 222.5,
+    "collapsed": true
   },
   "right": {
     "id": "0ec7239b9c0b9a42",
@@ -90,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md"
+                "file": "5. 데이터베이스/SQL.md"
               }
             }
           },
@@ -100,7 +155,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -143,7 +198,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -155,7 +210,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +272,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 237.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -232,37 +287,37 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "b80c343d0d21cef6",
+  "active": "017bbb789f9f25dd",
   "lastOpenFiles": [
+    "3. 웹 개발/2) 백엔드/JSP.md",
+    "3. 웹 개발/2) 백엔드/JDBC.md",
+    "5. 데이터베이스/SQL.md",
+    "99. 기타/주간 노트/2023년 19주차.md",
+    "3. 웹 개발/2) 백엔드/Servlet.md",
+    "4. 프로그래밍 언어/JS.md",
+    "3. 웹 개발/웹 개발론.md",
+    "3. 웹 개발/2) 백엔드/커넥션 풀 API.md",
+    "4. 프로그래밍 언어/Java.md",
+    "9. 용어해설집/소프트웨어/파라미터.md",
+    "6. 영어/영어.md",
+    "7. 수학/수학.md",
+    "README.md",
+    "99. 기타/데일리 노트/2023-05-22.md",
+    "3. 웹 개발/1) 프론트엔드/JSDOC.md",
+    "99. 자격증/정보처리기사.md",
+    "99. 기타/데일리 노트/2023-05-08.md",
+    "99. 기타/데일리 노트/2023-05-15.md",
+    "99. 기타/데일리 노트/2023-05-18.md",
+    "99. 기타/데일리 노트/2023-05-19.md",
+    "99. 기타/주간 노트/2023년 20주차.md",
     "1. Project/방통대/HTML5 웹 프로그래밍.md",
     "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md",
     "1. Project/방통대/0. 방통대 수업.md",
     "3. Resouce/1. 컴퓨터과학 개론/컴퓨터 구조.md",
     "3. Resouce/3. 웹 개발/1) 프론트엔드/CSS.md",
-    "1. Project/방통대/파이썬 프로그래밍 기초.md",
-    "3. Resouce/99. 메모/옵시디언.md",
-    "3. Resouce/99. 메모/Anki 정규식 연습.md",
-    "3. Resouce/9. 용어해설집/개발도구/VSC.md",
     "4. Archive/그림/그림.zip",
     "4. Archive/그림/그림 - 원본파일.zip",
     "4. Archive/그림",
-    "2. Area/가족/세금 신고/종합소득세.md",
-    "3. Resouce/9. 용어해설집/소프트웨어/Open Graph.md",
-    "3. Resouce/1. 컴퓨터과학 개론/인공지능.md",
-    "3. Resouce/4. 프로그래밍 언어/C++.md",
-    "3. Resouce/4. 프로그래밍 언어/Java.md",
-    "3. Resouce/99. 메모/노트 정리방식.md",
-    "2. Area/가족/세금 신고/부가가치세.md",
-    "4. Archive/세금정보/피부미용업 과세조건.md",
-    "3. Resouce/3. 웹 개발/2) 백엔드/바인딩.md",
-    "3. Resouce/1. 컴퓨터과학 개론/ref 3.md",
-    "3. Resouce/99. 자격증/정보처리기사.md",
-    "2. Area/게임 만들기/자료조사.md",
-    "3. Resouce/99. 기타/데일리 노트/2023-05-19.md",
-    "3. Resouce/3. 웹 개발/1) 프론트엔드/JSDOC.md",
-    "3. Resouce/3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인 레퍼런스.md",
-    "3. Resouce/3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인.md",
-    "3. Resouce/3. 웹 개발/웹 3.0.md",
     "3. Resouce/3. 웹 개발/무제 파일.canvas",
     "3. Resouce/공부목표.canvas",
     "3. Resouce/웹 개발.canvas",
