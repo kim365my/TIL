@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 자격증/정보처리기사.md"
+                "file": "5. 데이터베이스/SQL.md"
               }
             }
           },
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "99. 자격증/정보처리기사.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -218,7 +218,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 자격증/정보처리기사.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -230,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 자격증/정보처리기사.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -307,13 +307,13 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "a1930997ec62d05e",
+  "active": "2b7e9c86509b9f22",
   "lastOpenFiles": [
+    "99. 자격증/정보처리기사.md",
     "5. 데이터베이스/SQL.md",
     "99. 기타/데일리 노트/2023-05-12.md",
     "99. 기타/주간 노트/2023년 19주차.md",
     "99. 기타/데일리 노트/2023-05-23.md",
-    "99. 자격증/정보처리기사.md",
     "9. 용어해설집/소프트웨어/CRUD.md",
     "3. 웹 개발/2) 백엔드/백엔드.md",
     "4. 프로그래밍 언어/JS.md",
