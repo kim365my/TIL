@@ -155,7 +155,6 @@ pw : ${param.pw }
 
 # JSP 기본 문법
 ### JSP에서 session 로그인 처리하기
-
 - session의 유지시간은 밀리세컨드로 받음
 	- `session.setMaxInactiveInterval(interval)`
 - 세션 종료 : `session.invalidate()`
@@ -382,11 +381,11 @@ pw : ${param.pw }
 ## 플러그인 설치
 - [설치 페이지](http://www.java2s.com/Code/Jar/j/Downloadjstl12jar.htm#google_vignette)에서 다운 받고 압축 푼 다음, 이클립스 프로젝트파일의 src->main->webapp-> WEB-INF->lib 경로에 .jar 파일을 넣으면 됨
 
-## JSTL 라이브러리 코어 태그 문법
+## JSTL 코어문법
 ```jsp
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 ```
-- 코어 태그를 사용하겠다고 선언
+- 코어 태그를 사용하겠다고 선언해야 해당 문법을 사용할 수 있음 
 
 ###  변수관련
 #### import : 페이지 임포트
@@ -411,17 +410,16 @@ pw : ${param.pw }
 #### out : 변수 출력
 ```jsp
 <c:set var="str" value="<h3>수업중입니다.</h3>"/>
-<c:out value="${str})" escapeXml="false"/>
+<c:out value="${str}" escapeXml="false"/>
 ```
 - 출력, 이스케이프 문자 등을 지정가능
 - escapeXml="false"로 할시 html 태그를 인식시킬 수 있음
 	- 기본값은 true
+- `<c:out>`태그안에 내용을 넣어주면 다 문자열이 됨
+	- 컨트롤러에서 `alert()`이라는 문자열이 어떤 키 안에 특정값으로 들어갔다고 하면 이 상태에서 `<c:out>`을쓰지 않으면 alert창이 웹상에서 떠 버림
+	- `<c:out>”alert()”</c:out>` 이렇게 c:out을 써주면 alert()라는 문자열로만 보여집니다 alert창이 따로 뜨질 않는거죠
+	- 보안에도 관련이 있는데 해당 코드가 alert()가 아닌 악성코드라고 한다면 감염이 되지만, 그것을 String으로 받아버리면 alert()이 아니라 <c:out>이 문자열로 받아버리니까 감염 될 일이 없기에 그래서 무조건 c:out으로 문자열로 만들어 주는게 중요
 
-
-- <c:out>태그안에 내용을 넣어주면 다 문자열이 됩니다  
-- 컨트롤러에서 alert()이라는 문자열이 어떤 키 안에 특정값으로 들어갔다고 하면 이상태에서 <c:out>을쓰지 않으면 alert창이 웹상에서 떠 버립니다
-- <c:out>”alert()”</c:out> 이렇게 c:out을 써주면 alert()라는 문자열로만 보여집니다 alert창이 따로 뜨질 않는거죠
-- 보안에도 관련이 있는데 alert()이 아닌 악성코드라고 한다면 감염이 될 것입니다 그것을 String으로 받아버리면 alert()이 아니라 <c:out>이 문자열로 받아버리니까 감염 될 일이 없고요 그래서 무조건 c:out으로 문자열로 만들어 주는게 중요합니다
 
 ### 제어문
 #### if문 (단일if만 존재)
@@ -461,7 +459,7 @@ pw : ${param.pw }
 	- status.first : 현재가 첫번째 루프면 참
 	- status.last : 현재가 마지막 루프면 참
 	- status.begin : begin 속성 사용시 나옴
-	- status.end : end 속성 사용시 나옴
+	- status.end : end 속성 사용시 나옴 
 	- status.step : step 속성 사용시 나옴
 ##### 객체값
 ```jsp

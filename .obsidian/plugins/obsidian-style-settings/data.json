@@ -66,5 +66,6 @@
   "minimal-mobile@@mobile-toolbar-off": false,
   "minimal-style@@minimal-code-scroll": false,
   "minimal-style@@code-size": "0.8rem",
-  "minimal-style@@row-hover": true
+  "minimal-style@@row-hover": true,
+  "minimal-style@@minimal-unstyled-tags": false
 }

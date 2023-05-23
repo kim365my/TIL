@@ -1,28 +1,72 @@
 {
   "recentFiles": [
     {
+      "basename": "정보처리기사",
+      "path": "99. 자격증/정보처리기사.md"
+    },
+    {
       "basename": "SQL",
       "path": "5. 데이터베이스/SQL.md"
     },
     {
-      "basename": "JSP",
-      "path": "3. 웹 개발/2) 백엔드/JSP.md"
-    },
-    {
-      "basename": "JDBC",
-      "path": "3. 웹 개발/2) 백엔드/JDBC.md"
+      "basename": "2023-05-12",
+      "path": "99. 기타/데일리 노트/2023-05-12.md"
     },
     {
       "basename": "2023년 19주차",
       "path": "99. 기타/주간 노트/2023년 19주차.md"
     },
     {
-      "basename": "Servlet",
-      "path": "3. 웹 개발/2) 백엔드/Servlet.md"
+      "basename": "2023-05-23",
+      "path": "99. 기타/데일리 노트/2023-05-23.md"
+    },
+    {
+      "basename": "CRUD",
+      "path": "9. 용어해설집/소프트웨어/CRUD.md"
+    },
+    {
+      "basename": "백엔드",
+      "path": "3. 웹 개발/2) 백엔드/백엔드.md"
     },
     {
       "basename": "JS",
       "path": "4. 프로그래밍 언어/JS.md"
+    },
+    {
+      "basename": "JSP",
+      "path": "3. 웹 개발/2) 백엔드/JSP.md"
+    },
+    {
+      "basename": "Java",
+      "path": "4. 프로그래밍 언어/Java.md"
+    },
+    {
+      "basename": "CSV",
+      "path": "3. 웹 개발/전송 데이터 형태/CSV.md"
+    },
+    {
+      "basename": "데이터 송수신",
+      "path": "3. 웹 개발/전송 데이터 형태/데이터 송수신.md"
+    },
+    {
+      "basename": "MIME 타입",
+      "path": "9. 용어해설집/MIME 타입.md"
+    },
+    {
+      "basename": "electron",
+      "path": "3. 웹 개발/프레임워크/electron.md"
+    },
+    {
+      "basename": "Node.JS",
+      "path": "3. 웹 개발/프레임워크/Node.JS.md"
+    },
+    {
+      "basename": "JDBC",
+      "path": "3. 웹 개발/2) 백엔드/JDBC.md"
+    },
+    {
+      "basename": "Servlet",
+      "path": "3. 웹 개발/2) 백엔드/Servlet.md"
     },
     {
       "basename": "웹 개발론",
@@ -31,10 +75,6 @@
     {
       "basename": "커넥션 풀 API",
       "path": "3. 웹 개발/2) 백엔드/커넥션 풀 API.md"
-    },
-    {
-      "basename": "Java",
-      "path": "4. 프로그래밍 언어/Java.md"
     },
     {
       "basename": "파라미터",
@@ -59,10 +99,6 @@
     {
       "basename": "JSDOC",
       "path": "3. 웹 개발/1) 프론트엔드/JSDOC.md"
-    },
-    {
-      "basename": "정보처리기사",
-      "path": "99. 자격증/정보처리기사.md"
     },
     {
       "basename": "2023-05-08",
@@ -163,42 +199,6 @@
     {
       "basename": "JSDOC",
       "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/JSDOC.md"
-    },
-    {
-      "basename": "웹 디자인 레퍼런스",
-      "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인 레퍼런스.md"
-    },
-    {
-      "basename": "웹 디자인",
-      "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인.md"
-    },
-    {
-      "basename": "웹 3.0",
-      "path": "3. Resouce/3. 웹 개발/웹 3.0.md"
-    },
-    {
-      "basename": "컴퓨터 과학 흐름",
-      "path": "3. Resouce/컴퓨터 과학 흐름.md"
-    },
-    {
-      "basename": "유용한 사이트 정리",
-      "path": "3. Resouce/유용한 사이트 정리.md"
-    },
-    {
-      "basename": "README",
-      "path": "3. Resouce/README.md"
-    },
-    {
-      "basename": "포토샵",
-      "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/웹 디자인/포토샵.md"
-    },
-    {
-      "basename": "디자인 효과",
-      "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/웹 디자인/디자인 효과.md"
-    },
-    {
-      "basename": "용어해설집",
-      "path": "3. Resouce/9. 용어해설집/용어해설집.md"
     }
   ],
   "omittedPaths": [],

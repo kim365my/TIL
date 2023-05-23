@@ -12,6 +12,7 @@ body{
 .is-mobile.theme-light,
 .is-tablet.theme-light{
 	--color-red:hsla(365, 85%, 55%, 1);
+	--code-function : #e2b900;
     /* --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 5%)); */
 	--custom-border-color:#00000014;
 	--highlighter-pink : #FFB8EBA6;
@@ -32,7 +33,7 @@ body{
     /* --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 2%)); */
 	--custom-border-color:#ffffff14;
 	/* --color-orange:#ff7c00; */
-	--highlighter-pink : #dd70ae94;
+	--highlighter-pink : #dd70ae54;
 	--highlighter-red : #a72c4da6;
 	--highlighter-orange : #bb7f40a6;
 	--highlighter-yellow : #ac9a29a6;
@@ -308,6 +309,7 @@ b, strong, .cm-strong{
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
 .markdown-rendered mark{
 	background-color: var(--highlighter-pink);
+	/* background-color: var(--text-selection); */
 }
 mark{color: var(--tx1);}
 mark.hltr-pink{background-color: var(--highlighter-pink) !important;}

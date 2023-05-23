@@ -7,7 +7,7 @@ aliases : Cascading Style Sheets - 종속형 시트
 - CSS 도구
 	- [[SASS]] : Syntactically Awesome Style Sheets - 문법적으로 어썸한 스타일시트
 	- [[SCSS]] : Sassy CSS - 문법적으로 짱 멋진(Sassy) CSS
-	- PostCSS : [[Node JS]]와 함께 언급되는 css 후처리기
+	- PostCSS : [[Node.JS]]와 함께 언급되는 css 후처리기
 - CSS 프레임 워크
 	- 부트스트랩 프레임워크 [설치 페이지](https://getbootstrap.com/docs/4.4/getting-started/download/)  [템플릿](https://learn2you.tistory.com/42)
 		```html
