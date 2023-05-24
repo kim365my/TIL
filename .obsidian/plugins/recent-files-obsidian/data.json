@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "HTML",
+      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
+    },
+    {
+      "basename": "JSP",
+      "path": "3. 웹 개발/2) 백엔드/JSP.md"
+    },
+    {
+      "basename": "Java",
+      "path": "4. 프로그래밍 언어/Java.md"
+    },
+    {
+      "basename": "2023-05-23",
+      "path": "99. 기타/데일리 노트/2023-05-23.md"
+    },
+    {
+      "basename": "Servlet",
+      "path": "3. 웹 개발/2) 백엔드/Servlet.md"
+    },
+    {
+      "basename": "JDBC",
+      "path": "3. 웹 개발/2) 백엔드/JDBC.md"
+    },
+    {
+      "basename": "2023-05-24",
+      "path": "99. 기타/데일리 노트/2023-05-24.md"
+    },
+    {
       "basename": "SQL",
       "path": "5. 데이터베이스/SQL.md"
     },
@@ -17,10 +45,6 @@
       "path": "99. 기타/주간 노트/2023년 19주차.md"
     },
     {
-      "basename": "2023-05-23",
-      "path": "99. 기타/데일리 노트/2023-05-23.md"
-    },
-    {
       "basename": "CRUD",
       "path": "9. 용어해설집/소프트웨어/CRUD.md"
     },
@@ -31,14 +55,6 @@
     {
       "basename": "JS",
       "path": "4. 프로그래밍 언어/JS.md"
-    },
-    {
-      "basename": "JSP",
-      "path": "3. 웹 개발/2) 백엔드/JSP.md"
-    },
-    {
-      "basename": "Java",
-      "path": "4. 프로그래밍 언어/Java.md"
     },
     {
       "basename": "CSV",
@@ -59,14 +75,6 @@
     {
       "basename": "Node.JS",
       "path": "3. 웹 개발/프레임워크/Node.JS.md"
-    },
-    {
-      "basename": "JDBC",
-      "path": "3. 웹 개발/2) 백엔드/JDBC.md"
-    },
-    {
-      "basename": "Servlet",
-      "path": "3. 웹 개발/2) 백엔드/Servlet.md"
     },
     {
       "basename": "웹 개발론",
@@ -191,14 +199,6 @@
     {
       "basename": "자료조사",
       "path": "2. Area/게임 만들기/자료조사.md"
-    },
-    {
-      "basename": "2023-05-19",
-      "path": "3. Resouce/99. 기타/데일리 노트/2023-05-19.md"
-    },
-    {
-      "basename": "JSDOC",
-      "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/JSDOC.md"
     }
   ],
   "omittedPaths": [],

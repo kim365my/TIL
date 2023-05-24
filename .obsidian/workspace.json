@@ -4,22 +4,9 @@
     "type": "split",
     "children": [
       {
-        "id": "06bdca9a6e606048",
+        "id": "5a7c9844ae782ffb",
         "type": "tabs",
         "children": [
-          {
-            "id": "017bbb789f9f25dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 기타/데일리 노트/2023-05-12.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
           {
             "id": "a1930997ec62d05e",
             "type": "leaf",
@@ -32,14 +19,7 @@
                 "source": false
               }
             }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "5a7c9844ae782ffb",
-        "type": "tabs",
-        "children": [
+          },
           {
             "id": "e1424f6f84a8464f",
             "type": "leaf",
@@ -72,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. 웹 개발/2) 백엔드/JSP.md",
+                "file": "99. 기타/데일리 노트/2023-05-23.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -80,12 +60,25 @@
             }
           },
           {
-            "id": "2b7e9c86509b9f22",
+            "id": "e753bae20a6396a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. 데이터베이스/SQL.md",
+                "file": "3. 웹 개발/2) 백엔드/Servlet.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cf632d5b42a27bfa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3. 웹 개발/1) 프론트엔드/HTML.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -93,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -122,10 +115,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DB 오브젝트",
+                "query": "modal",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -165,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5. 데이터베이스/SQL.md"
+                "file": "3. 웹 개발/1) 프론트엔드/HTML.md"
               }
             }
           },
@@ -175,7 +168,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "5. 데이터베이스/SQL.md",
+                "file": "3. 웹 개발/1) 프론트엔드/HTML.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -218,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5. 데이터베이스/SQL.md",
+                "file": "3. 웹 개발/1) 프론트엔드/HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -230,7 +223,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. 데이터베이스/SQL.md",
+                "file": "3. 웹 개발/1) 프론트엔드/HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -307,47 +300,46 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "2b7e9c86509b9f22",
+  "active": "cf632d5b42a27bfa",
   "lastOpenFiles": [
-    "99. 자격증/정보처리기사.md",
+    "3. 웹 개발/2) 백엔드/JSP.md",
+    "4. 프로그래밍 언어/Java.md",
+    "99. 기타/데일리 노트/2023-05-23.md",
+    "3. 웹 개발/2) 백엔드/Servlet.md",
+    "3. 웹 개발/2) 백엔드/JDBC.md",
+    "99. 기타/데일리 노트/2023-05-24.md",
+    "logseq/bak/logseq/config/2023-05-24T00_05_34.353Z.Desktop.edn",
+    "logseq/bak/logseq/config/2023-05-24T00_05_30.407Z.Desktop.edn",
+    "logseq/bak/logseq/config",
+    "logseq/bak/logseq",
+    "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_46.732Z.Desktop.md",
+    "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_44.652Z.Desktop.md",
+    "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_40.255Z.Desktop.md",
+    "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_33.789Z.Desktop.md",
+    "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_21.252Z.Desktop.md",
+    "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_19.013Z.Desktop.md",
+    "logseq/bak/99. 기타/데일리 노트/2023-05-24",
+    "logseq/bak/99. 기타/데일리 노트",
+    "logseq/bak/99. 기타",
+    "logseq/bak",
+    "logseq/custom.css",
+    "pages/contents.md",
+    "pages",
     "5. 데이터베이스/SQL.md",
+    "99. 자격증/정보처리기사.md",
     "99. 기타/데일리 노트/2023-05-12.md",
     "99. 기타/주간 노트/2023년 19주차.md",
-    "99. 기타/데일리 노트/2023-05-23.md",
     "9. 용어해설집/소프트웨어/CRUD.md",
     "3. 웹 개발/2) 백엔드/백엔드.md",
     "4. 프로그래밍 언어/JS.md",
-    "3. 웹 개발/2) 백엔드/JSP.md",
-    "4. 프로그래밍 언어/Java.md",
     "3. 웹 개발/전송 데이터 형태/CSV.md",
     "3. 웹 개발/전송 데이터 형태/데이터 송수신.md",
     "9. 용어해설집/MIME 타입.md",
     "3. 웹 개발/프레임워크/electron.md",
     "3. 웹 개발/프레임워크/Node.JS.md",
-    "3. 웹 개발/2) 백엔드/JDBC.md",
-    "3. 웹 개발/2) 백엔드/Servlet.md",
-    "3. 웹 개발/웹 개발론.md",
-    "3. 웹 개발/2) 백엔드/커넥션 풀 API.md",
-    "9. 용어해설집/소프트웨어/파라미터.md",
-    "6. 영어/영어.md",
-    "7. 수학/수학.md",
-    "README.md",
-    "99. 기타/데일리 노트/2023-05-22.md",
-    "3. 웹 개발/1) 프론트엔드/JSDOC.md",
-    "99. 기타/데일리 노트/2023-05-08.md",
-    "4. Archive/그림/그림.zip",
-    "4. Archive/그림/그림 - 원본파일.zip",
-    "4. Archive/그림",
     "3. Resouce/3. 웹 개발/무제 파일.canvas",
     "3. Resouce/공부목표.canvas",
     "3. Resouce/웹 개발.canvas",
-    "2. Area/자바스크립트 웹 앱 분석과 결함 검출.pdf",
-    "2. Area/~ndsynctmpbfcd028e",
-    "1. Project/지영이 포폴사이트제작/자료/노래3.mp4",
-    "1. Project/지영이 포폴사이트제작/자료/노래2.mp4",
-    "1. Project/지영이 포폴사이트제작/자료/강아지.mp4",
-    "1. Project/지영이 포폴사이트제작/자료/강아지 1.mp4",
-    "1. Project/지영이 포폴사이트제작/자료/노래.mp4",
     "1. Project/취직하기/이력서/증명  사진.jpg",
     "1. Project/취직하기/이력서/증명 사진.png",
     "1. Project/취직하기/이력서/이력서_0003.png",
