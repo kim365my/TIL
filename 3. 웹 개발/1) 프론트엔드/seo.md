@@ -12,6 +12,7 @@ aliasses : search engine optimization
 		- ▶️ section, article, aside는 중앙에 위치하여 요소를 보기 좋게 표현하는 데 사용됨
 
 # 시맨틱 태그
+
 | 각 분류    |                                             |
 |---------|---------------------------------------------|
 | Header  | 소개요소 또는 탐색 링크를 나타냄                          |

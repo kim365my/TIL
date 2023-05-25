@@ -17,5 +17,6 @@
   "defaultViewMode": "source",
   "userIgnoreFilters": [
     "99. 기타/"
-  ]
+  ],
+  "spellcheck": false
 }

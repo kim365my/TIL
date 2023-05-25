@@ -12,7 +12,7 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 >하지만 EL과 JSTL은 함께 사용 가능
 
 # JSP란?
-- 정의 
+- **정의** 
 	- JSP 등장배경 : 서블릿을 View단에서 보여주기 위해
 		- 서블릿은 화면 구현이 불편하므로 화면 구현을 편하게 하기 위해서 등장
 		- 서블릿 비지니스 로직과 결과를 보여주는 화면과 기능을 분리하기 위해 사용
@@ -29,97 +29,96 @@ aliases : Java Server Page, HTML 코드에 자바코드를 넣어 동적웹페�
 			- WAS에서 jsp 파일을 먼저 읽은 다음에 jsp 코드를 한곳에 모음
 			-  `<% %>`로 처리된 jsp 코드를 자바로 변환
 			- HTML 파일을 실행
-- [[Servlet]]과의 차이점
-	- JSP도 서블릿 기술과 동일하게 동적으로 서버에서 데이터를 다루는 기술
-	- 서블릿과 JSP 모두 동적으로 데이터를 생성해 전송하는 것은 같지만 서블릿은 자바와 HTML코드가 별개로 작성하는 반면에 JSP는 HTML 구조안에 코드를 작성함. 따라서 서블릿에 비해 View단 구현이 쉽지만 코드가 뒤섞일 우려가 있어서 Contoller은 서블릿으로 함
-	- JSP에서는 `Get/Post` 처리방식의 구분이 없음
+- **[[Servlet]]과의 차이점**
+	- JSP도 서블릿 기술과 동일하게 <mark class="hltr-purple">동적으로 서버에서 데이터를 다루는 기술</mark>이지만 서블릿은 자바와 HTML코드가 별개로 작성하는 반면, JSP는 HTML 구조안에 코드를 작성
+		- [>] 서블릿에 비해 View단 구현이 쉽지만 코드가 뒤섞일 우려가 있어서 Contoller은 서블릿으로 함
+	- JSP에서 JSP로 파일을 전송하는 경우 서블릿과 달리 `Get/Post` 처리방식의 구분이 없음
 	- 구분
 		- 서블릿 : 자바 코드 기반으로 HTML과 JS로 화면을 구현
 			- 쿼리스트링에 대한 처리는 Servlet이 담당
 		- JSP : HTML, CSS, JS를 기반으로 JSP 요소를 사용해 화면을 구현
 			- View 단은 JSP가 담당
-- HTML과의 차이점
-	- HTML 태그는 컨테이너 작업없이 바로 브라우저로 전송되므로 동적인 구성이 아님
+- [[HTML]]과의 차이점
+	- HTML 태그는 <mark class="hltr-purple">컨테이너 작업 없이</mark> 바로 브라우저로 전송되므로 동적인 구성이 아님
 	- JSP는 WAS에서 자바로 변환되는 과정을 거치므로 JSP 제공 스크립트 요소를 이용하여 조건, 상황에 맞게 HTML 태그를 선택적으로 전송가능하므로 화면이 동적으로 구성됨
-- JSP 구성요소
+- [[JSP]] 구성요소
 	1. HTML, CSS, JS
 	2. JSP 기본태그
 	3. JSP 액션태그
 	4. 커스텀 태그
 		- 개발자가 직접 제작하여 사용하는 태그와 프레임워크가 제공하는 태그를 말함
-
-## JSP 파일 생성위치
-- src -> main -> webapp에서 jsp 파일을 생성
-
-
-## 다른 파일들과 연동해서 사용하기
-### HTML, CSS, JS
-- 서블릿은 HTML 파일에 작성하는 거
-- css와 JS도 기본 HTML에서 사용하는 것처럼 사용하면 됨
-- form에서 다른 페이지로 넘기기 : 서블릿과 방법 동일
-- 다음 코드와 같이 스크립틀릿 연결을 끊었다 이었다하면서 HTML 코드사이사이에 적어넣을 수 있음
-	- for문을 통해서 특정 HTML 구문을 반복해서 출력하게 할 수도 있음
-- 코드예시
-	```jsp
-	<%@ page language="java" contentType="text/html; charset=UTF-8"
-	    pageEncoding="UTF-8"%>
-	    
-	<%
-		// 한글처리
-		request.setCharacterEncoding("utf-8");
-		response.setCharacterEncoding("utf-8");
-		response.setContentType("text/html; charset=utf-8");
-	
-		// 값 받기
-		String id = request.getParameter("user_id");
-		String pw = request.getParameter("user_pw");
-	%>
-	<!DOCTYPE html>
-	<html>
-	<head>
-	<meta charset="UTF-8">
-	<title>JSP 로그인 결과 출력</title>
-	</head>
-	<body>
-	    <h1>JSP 로그인 결과 출력</h1>
-	    <ul>
-	        <li>아이디 : <%= id%></li>
-	        <li>비밀번호 : <%= pw%></li>
-	    </ul>
-	    <hr>
-	    <%
-	    	if(id == null || id.length() == 0){ // 아이디 값이 없으면
-	    		// 아이디 입력하기
-	    %>
-	    	<h3>아이디 입력하세요</h3>
-	    <%
-	    	} else{
-	    		//아이디가 있는 데 adimin이라는 아이디로 입력하면 다른 곳으로가기
-	    		if(id.equals("admin")){
-	    			// 관리자 로그인
-	    %>
-	        <h3>관리자님 환영합니다.</h3>
-	    <%
-	    		} else{
-	    			// ...님 환영합니다.
-	    %>
-	                <h3><%= id%>님 환영해여</h3>
-	    <%
-	    		}
-	    	}
-	    %>
-	    
-	</body>
-	</html>
-	```
-
-### Servlet 연동하기
-- 서블릿에 앵커태그를 넣어서 jsp 파일로 이동하게 할 수 있음 
-	- 이동하려면 html에서 하는 것과 동일하게 `./`을 넣고 이동할 파일명을 적어주면 됨
-
-
+- **JSP 파일 생성위치** : src -> main -> webapp에서 jsp 파일을 생성
+- **JSP 코드 예시**
+	- 다음 코드와 같이 스크립틀릿 연결을 끊었다이었다하면서 HTML 코드 사이사이에 적어넣을 수 있으며 for문을 통해서 특정 HTML 구문을 반복해서 출력하게 할 수도 있음
+	- 코드예시
+		```jsp
+		<%@ page language="java" contentType="text/html; charset=UTF-8"
+		    pageEncoding="UTF-8"%>
+		<%
+			// 한글처리
+			request.setCharacterEncoding("utf-8");
+			response.setCharacterEncoding("utf-8");
+			response.setContentType("text/html; charset=utf-8");
+			// 값 받기
+			String id = request.getParameter("user_id");
+			String pw = request.getParameter("user_pw");
+		%>
+		<!DOCTYPE html>
+		<html>
+		<head>
+		<meta charset="UTF-8">
+		<title>JSP 로그인 결과 출력</title>
+		</head>
+		<body>
+		    <h1>JSP 로그인 결과 출력</h1>
+		    <ul>
+		        <li>아이디 : <%= id%></li>
+		        <li>비밀번호 : <%= pw%></li>
+		    </ul>
+		    <hr>
+		    <%
+		    	if(id == null || id.length() == 0){ // 아이디 값이 없으면
+		    		// 아이디 입력하기
+					%>
+						<h3>아이디 입력하세요</h3>
+					<%
+		    	} else{
+		    		//아이디가 있는 데 adimin이라는 아이디로 입력하면 다른 곳으로가기
+		    		if(id.equals("admin")){
+		    			// 관리자 로그인
+					    %>
+					        <h3>관리자님 환영합니다.</h3>
+					    <%
+		    		} else{
+		    			// ...님 환영합니다.
+					    %>
+			                <h3><%= id%>님 환영해여</h3>
+					    <%
+		    		}
+		    	}
+		    %>
+		</body>
+		</html>
+		```
+- Servlet에 데이터 전송하기
+	- 서블릿에 앵커태그를 넣어서 jsp 파일로 이동하게 할 수 있음 
+		- 이동하려면 html에서 하는 것과 동일하게 `./`을 넣고 이동할 파일명을 적어주면 됨
 
 # JSP 내장객체 (이외에도 존재)
+
+| 객체명      | 서블릿 코드                             |  설명   |
+| ----------- | --------------------------------------- | --- |
+| page        | JSP에서만 존재하는 듯 #질문             |     |
+| request     | HttpServletRequest request              | 요청에 관련된 메소드를 가짐|
+| response    | HttpServletResponse response            | 응답에 관련된 메소드를 가짐 |
+| session     | HttpSession session = request.getSession();  | 스코프의 범위가 request보다 넓음|
+| application | ServletContext                          |     |
+| out         | PrintWriter out = response.getWriter(); |     |
+
+- JSP 내장 객체는 표현식에서만 사용가능(변수사용했을 때) 그래서 나온게 EL
+- [[Scope|스코프]] 관련 객체들은 `get/setAttribute("keyname", Object)` 메소드를 가지는 데 이를 통해서 데이터를 공유가 가능
+- [?] request는 `get/setParamter`이라는 파라미터 값을 받는 메소드가 존재 위의 Attributer와 어떤 차이가 있지?  #질문 
+
 ## 데이터 받아오는 방식
 ```jsp
 <h2>액션태그 방식</h2>
@@ -137,22 +136,6 @@ id : ${param.id } <br>
 pw : ${param.pw }
 ```
 
-
-## 스코프
-| 객체명      | 서블릿 코드                             |  설명   |
-| ----------- | --------------------------------------- | --- |
-| page        | JSP에서만 존재하는 듯 #질문             |     |
-| request     | HttpServletRequest request              | 요청에 관련된 메소드를 가짐|
-| response    | HttpServletResponse response            | 응답에 관련된 메소드를 가짐 |
-| session     | HttpSession session = request.getSession();  | 스코프의 범위가 request보다 넓음|
-| application | ServletContext                          |     |
-| out         | PrintWriter out = response.getWriter(); |     |
-
-- JSP 내장 객체는 표현식에서만 사용가능(변수사용했을 때) 그래서 나온게 EL
-- [[Scope|스코프]] 관련 객체들은 `get/setAttribute("keyname", Object)` 메소드를 가지는 데 이를 통해서 데이터를 공유가 가능
-- [?] request는 `get/setParamter`이라는 파라미터 값을 받는 메소드가 존재 위의 Attributer와 어떤 차이가 있지?  #질문 
-
-
 # JSP 기본 문법
 ### JSP에서 session 로그인 처리하기
 - session의 유지시간은 밀리세컨드로 받음
@@ -160,6 +143,7 @@ pw : ${param.pw }
 - 세션 종료 : `session.invalidate()`
 
 ## JSP 기본 태그
+
 | 태그명              |  예시          |
 |------------------|--------------|
 | JSP 기본폼(스크립트 요소) |  `<% %>`     |
@@ -170,16 +154,15 @@ pw : ${param.pw }
 
 ### JSP 스크립트 요소 : 선언문, 스크립틀릿, 표현식
 - JSP 스크립트 요소 안에서 자바코드를 작성
-	- 선언문(declaration tag)  JSP에서 변수나 메서드 선언에서 사용
+	- **선언문**(declaration tag)  JSP에서 변수나 메서드 선언에서 사용
 		- 서블릿으로 변환시 서블릿 클래스의 멤버변수로 변환
-		- 일반적으로 상단에 코딩
+		- 일반적으로 상단부에 코딩
 		- 클래스 선언하는 것과 동일, 보통 따로 만들기에 안씀
-	- 스크립틀릿(scriptlet) : JSP에서 자바 코드 작성시 사용
+	- **스크립틀릿**(scriptlet) : JSP에서 자바 코드 작성시 사용
 		- 코드 블록 안에 쓰는 코드는 지역변수 취급
 		- 하나의 클래스를 만드는 것과 동일하게 취급(익명 클래스?)
-	- 표현식(expression tag) : JSP에서 변수 값 출력시 사용
-		- (주의) 변수나 자바 식에는 절대 세미콜론`;`을 사용해서는 안됨
-
+	- **표현식**(expression tag) : JSP에서 변수 값 출력시 사용
+		- [!] 변수나 자바식에는 절대 세미콜론`;`을 사용해서는 안됨
 - HTML 파일 어디에서나 사용해도 되지만 top-down은 지켜줘야 함
 - JSP 스크립트 요소는 모두 서블릿의 자바 코드로 변환됨
 	- 스크립트 요소는 브라우저로 전송이 바로 되지 않음
@@ -187,10 +170,11 @@ pw : ${param.pw }
 - JSP 코드는 +연산자를 사용해 쓸 필요가 전혀 없음 (섞여있는 거라)
 
 #### 스크립트 요소 코드 형식
+
 |                          | 코드형식 |  설명   |
 | ------------------------ | -------- | --- |
-| 선언문 (declaration tag) | `<%! %>` | 변수나 메서드 선언에서 사용|
-| 스크립틀릿(scriptlet)    | `<% %>`   | 자바 코드 작성시 사용 |
+| [[#선언문 (declaration tag)]] | `<%! %>` | 변수나 메서드 선언에서 사용 <br> 서블릿으로 변환시 서블릿 클래스의 멤버변수로 변환|
+| 스크립틀릿(scriptlet)    | `<% %>`   | 자바 코드 작성시 사용<br>코드 블록 안에 쓰는 코드는 지역변수 취급 |
 | 표현식(expression tag)   | `<%= %>` | 변수 값 출력시 사용 |
 
 #### 선언문 (declaration tag)
@@ -201,8 +185,6 @@ pw : ${param.pw }
 		pageEncoding="UTF-8"%>
 	```
 - 페이지 디렉티브 태그 : JSP 페이지에 대한 전반적인 설정 정보를 지정할 때 사용
-	- 속성은 무조건 한번만 선언해야 함 (단, import 속성은 여러번 선언가능)
-	- 대, 소문자 유의
 	```jsp
 	<%@ page
 		language="java"
@@ -212,12 +194,13 @@ pw : ${param.pw }
 		session="true"
 		info="페이지 설명"%>
 	```
+	- 속성은 무조건 한번만 선언해야 함 (단, import 속성은 여러번 선언가능)
+	- 대, 소문자 유의
 
-##### 인클루드 include 디렉티브
-- 코드
-	```jsp
-	<%@ include file="/NewFile01.jsp" %>
-	```
+##### include 디렉티브
+```jsp
+<%@ include file="/NewFile01.jsp" %>
+```
 - 인클루드 사용장소
 	- 공통으로 JSP 페이지에 사용할경우 적용 ex) gnb, footer
 	- 재사용성과 유지보수가 쉬움
@@ -226,9 +209,7 @@ pw : ${param.pw }
 	- include.jsp의 자바코드가 해당 작성한 파일과 합쳐져서 브라우저에 전송
 		- 한 페이지당 자바코드는 하나 (무조건)
 		- JSP 페이지에서 실행하는 자바파일은 단 한개만 생성
-	- 자바코드로 변환
-	- 사바코드 서블릿 변환
-	- class 컴파일 후 브라우저 출력
+	- 흐름 : JSP -> 자바코드 -> class 컴파일 -> 브라우저 출력
 
 
 ## JSP 액션 태그
@@ -241,6 +222,7 @@ pw : ${param.pw }
 	- 액션태그를 조합해서 파라미터 값을 넘겨주거나, 자바빈에 값을 저장하는 등
 
 ### 액션태그 종류 (이외에도 더 존재)
+
 | 이름        | 설명                                                       | 코드예시                                                        |
 | ----------- | ---------------------------------------------------------- | --------------------------------------------------------------- |
 | include     | 해당 페이지를 현재 페이지에 포함시키는 것                  | <jsp:include page ="페이지.jsp" />                                |
@@ -250,25 +232,23 @@ pw : ${param.pw }
 | setProperty | 자바빈 속성 설정, 자바빈의 멤버변수와 파라미터 값이 동일하면 `property="*"`를 통해서 일괄적으로 값 할당 가능             |  <jsp:setProperty name="사용할 유즈빈 id값" property="속성값이름" value="속성값" />                                                               |
 | param  | 파라미터 설정을 통해서 값을 넘겨줄 수 있음                      | <jsp:param name="키명" value="키값"/>                                                         |
 
-
-### [[자바빈]]과 연결하기 
-- <jsp:useBean>
-	- id :  id 값을 이용해서 스크립틀릿에서 객체의 메소드에 접근 가능
-	- class : 자바빈으로 사용할 클래스 이름(`패키지명.클래스_이름` 형식으로 작성)
-	- [[Scope]] : 자바빈에 접근할 수 있는 저장 범위를 지정 (기본값은 page)
-- <jsp:setProperty>
-	- [[자바빈]]과 파라미터 값의 name이 동일시 property 속성을 `*`로 지정하면 전송된 매개변수 이름과 자바빈 멤버변수를 비교하고 값을 자동으로 모두 넘겨줌
-		- 같은 데이터 타입으로 맞추기(String으로 넘겨 받으니까 멤버변수를 String으로 작성하는 것이 중요)
-	- 이외에 value 속성을 통해 값을 설정해주는 것도 가능
-- <jsp:getProperty>
-	- 문자열로 출력되니까 HTML에서 결과값을 보고 싶을 경우 사용
-
-### 포워딩, 바인딩하기
-- <jsp:forward>
-	- 디스패처로 forward 한 것과 동일한 결과를 얻음
-	- page 속성 뒤에 #Query_String 으로 파라미터 값을 넘겨줄 수 있음
-- <jsp:param>
-	- 파라미터에 자바빈으로 값을 넘겨주면 파라미터를 통해서 받을 수 있음
+- **[[자바빈]]과 연결하기** 
+	- <jsp:useBean>
+		- id :  id 값을 이용해서 스크립틀릿에서 객체의 메소드에 접근 가능
+		- class : 자바빈으로 사용할 클래스 이름(`패키지명.클래스_이름` 형식으로 작성)
+		- [[Scope]] : 자바빈에 접근할 수 있는 저장 범위를 지정 (기본값은 page)
+	- <jsp:setProperty>
+		- [[자바빈]]과 파라미터 값의 name이 동일시 property 속성을 `*`로 지정하면 전송된 매개변수 이름과 자바빈 멤버변수를 비교하고 값을 자동으로 모두 넘겨줌
+			- 같은 데이터 타입으로 맞추기(String으로 넘겨 받으니까 멤버변수를 String으로 작성하는 것이 중요)
+		- 이외에 value 속성을 통해 값을 설정해주는 것도 가능
+	- <jsp:getProperty>
+		- 문자열로 출력되니까 HTML에서 결과값을 보고 싶을 경우 사용
+- **포워딩, 바인딩하기**
+	- <jsp:forward>
+		- 디스패처로 forward 한 것과 동일한 결과를 얻음
+		- page 속성 뒤에 #Query_String 으로 파라미터 값을 넘겨줄 수 있음
+	- <jsp:param>
+		- 파라미터에 자바빈으로 값을 넘겨주면 파라미터를 통해서 받을 수 있음
 
 
 # JSP 예외처리(exception) 페이지

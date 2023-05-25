@@ -1,20 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "HTML",
-      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
-    },
-    {
       "basename": "JSP",
       "path": "3. 웹 개발/2) 백엔드/JSP.md"
     },
     {
-      "basename": "Java",
-      "path": "4. 프로그래밍 언어/Java.md"
+      "basename": "옵시디언",
+      "path": "99. 메모/옵시디언.md"
+    },
+    {
+      "basename": "윈도우 단축키",
+      "path": "99. 메모/윈도우 단축키.md"
+    },
+    {
+      "basename": "2023-05-25",
+      "path": "99. 기타/데일리 노트/2023-05-25.md"
+    },
+    {
+      "basename": "401(k) 저축플랜",
+      "path": "99. 메모/401(k) 저축플랜.md"
+    },
+    {
+      "basename": "JS",
+      "path": "4. 프로그래밍 언어/JS.md"
+    },
+    {
+      "basename": "포워딩",
+      "path": "3. 웹 개발/2) 백엔드/포워딩.md"
+    },
+    {
+      "basename": "철학",
+      "path": "10. 인문학/철학.md"
+    },
+    {
+      "basename": "2023년 19주차",
+      "path": "99. 기타/주간 노트/2023년 19주차.md"
+    },
+    {
+      "basename": "2023-05-12",
+      "path": "99. 기타/데일리 노트/2023-05-12.md"
+    },
+    {
+      "basename": "2023-05-24",
+      "path": "99. 기타/데일리 노트/2023-05-24.md"
+    },
+    {
+      "basename": "정보처리기사",
+      "path": "99. 자격증/정보처리기사.md"
     },
     {
       "basename": "2023-05-23",
       "path": "99. 기타/데일리 노트/2023-05-23.md"
+    },
+    {
+      "basename": "HTML",
+      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
+    },
+    {
+      "basename": "Java",
+      "path": "4. 프로그래밍 언어/Java.md"
     },
     {
       "basename": "Servlet",
@@ -25,24 +69,8 @@
       "path": "3. 웹 개발/2) 백엔드/JDBC.md"
     },
     {
-      "basename": "2023-05-24",
-      "path": "99. 기타/데일리 노트/2023-05-24.md"
-    },
-    {
       "basename": "SQL",
       "path": "5. 데이터베이스/SQL.md"
-    },
-    {
-      "basename": "정보처리기사",
-      "path": "99. 자격증/정보처리기사.md"
-    },
-    {
-      "basename": "2023-05-12",
-      "path": "99. 기타/데일리 노트/2023-05-12.md"
-    },
-    {
-      "basename": "2023년 19주차",
-      "path": "99. 기타/주간 노트/2023년 19주차.md"
     },
     {
       "basename": "CRUD",
@@ -51,10 +79,6 @@
     {
       "basename": "백엔드",
       "path": "3. 웹 개발/2) 백엔드/백엔드.md"
-    },
-    {
-      "basename": "JS",
-      "path": "4. 프로그래밍 언어/JS.md"
     },
     {
       "basename": "CSV",
@@ -175,30 +199,6 @@
     {
       "basename": "Java",
       "path": "3. Resouce/4. 프로그래밍 언어/Java.md"
-    },
-    {
-      "basename": "노트 정리방식",
-      "path": "3. Resouce/99. 메모/노트 정리방식.md"
-    },
-    {
-      "basename": "부가가치세",
-      "path": "2. Area/가족/세금 신고/부가가치세.md"
-    },
-    {
-      "basename": "피부미용업 과세조건",
-      "path": "4. Archive/세금정보/피부미용업 과세조건.md"
-    },
-    {
-      "basename": "바인딩",
-      "path": "3. Resouce/3. 웹 개발/2) 백엔드/바인딩.md"
-    },
-    {
-      "basename": "정보처리기사",
-      "path": "3. Resouce/99. 자격증/정보처리기사.md"
-    },
-    {
-      "basename": "자료조사",
-      "path": "2. Area/게임 만들기/자료조사.md"
     }
   ],
   "omittedPaths": [],
