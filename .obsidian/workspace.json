@@ -4,63 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "313d95631399ea31",
+        "id": "ef5b2b1ff1b7e7d7",
         "type": "tabs",
         "children": [
           {
-            "id": "486661c9a75e4075",
+            "id": "173fcd0bd8973eca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-05-25.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "30b47c2ec227c87a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3. 웹 개발/2) 백엔드/JSP.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e055daec347669f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 메모/윈도우 단축키.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a715a6048562cbc2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 메모/옵시디언.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -72,6 +32,7 @@
       {
         "id": "a166f7034495f256",
         "type": "tabs",
+        "dimension": 74.42307692307692,
         "children": [
           {
             "id": "d1241a9630c8b981",
@@ -89,10 +50,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "단축키",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -110,6 +71,21 @@
             }
           }
         ]
+      },
+      {
+        "id": "a6abf472695a1412",
+        "type": "tabs",
+        "dimension": 25.576923076923073,
+        "children": [
+          {
+            "id": "7b38a7cf544b139b",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -123,7 +99,7 @@
       {
         "id": "efdcbd70d8282bb8",
         "type": "tabs",
-        "dimension": 70.15503875968993,
+        "dimension": 70.86538461538461,
         "children": [
           {
             "id": "e297f3dcd7f9d836",
@@ -131,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. 웹 개발/2) 백엔드/JSP.md"
+                "file": "5. 데이터베이스/SQL.md"
               }
             }
           },
@@ -141,7 +117,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "3. 웹 개발/2) 백엔드/JSP.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,20 +147,12 @@
             }
           },
           {
-            "id": "7b38a7cf544b139b",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
-          },
-          {
             "id": "8bf3c9c5dc18741e",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. 웹 개발/2) 백엔드/JSP.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -196,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. 웹 개발/2) 백엔드/JSP.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,7 +188,7 @@
       {
         "id": "92f7af63d8dd3cce",
         "type": "tabs",
-        "dimension": 29.84496124031007,
+        "dimension": 29.134615384615387,
         "children": [
           {
             "id": "f9f8e608f518e7a0",
@@ -273,18 +241,25 @@
       "kr-book-info-plugin:Add Book Info": false
     }
   },
-  "active": "30b47c2ec227c87a",
+  "active": "173fcd0bd8973eca",
   "lastOpenFiles": [
+    "99. 기타/데일리 노트/2023-05-10.md",
+    "5. 데이터베이스/SQL.md",
+    "99. 기타/데일리 노트/2023-05-13.md",
+    "99. 기타/데일리 노트/2023-05-05.md",
+    "99. 기타/주간 노트/2023년 19주차.md",
+    "99. 기타/데일리 노트/2023-05-26.md",
+    "99. 기타/데일리 노트/2023-05-25.md",
+    "3. 웹 개발/2) 백엔드/커넥션 풀 API.md",
     "99. 메모/옵시디언.md",
+    "99. 기타/데일리 노트/2023-05-12.md",
+    "3. 웹 개발/웹 개발론.md",
     "3. 웹 개발/2) 백엔드/JSP.md",
     "99. 메모/윈도우 단축키.md",
-    "99. 기타/데일리 노트/2023-05-25.md",
     "99. 메모/401(k) 저축플랜.md",
     "4. 프로그래밍 언어/JS.md",
     "3. 웹 개발/2) 백엔드/포워딩.md",
     "10. 인문학/철학.md",
-    "99. 기타/주간 노트/2023년 19주차.md",
-    "99. 기타/데일리 노트/2023-05-12.md",
     "99. 기타/데일리 노트/2023-05-24.md",
     "99. 자격증/정보처리기사.md",
     "99. 기타/데일리 노트/2023-05-23.md",
@@ -298,19 +273,12 @@
     "logseq/bak/logseq",
     "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_46.732Z.Desktop.md",
     "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_44.652Z.Desktop.md",
-    "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_40.255Z.Desktop.md",
-    "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_33.789Z.Desktop.md",
-    "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_21.252Z.Desktop.md",
-    "logseq/bak/99. 기타/데일리 노트/2023-05-24/2023-05-24T00_03_19.013Z.Desktop.md",
     "logseq/bak/99. 기타/데일리 노트/2023-05-24",
     "logseq/bak/99. 기타/데일리 노트",
     "logseq/bak/99. 기타",
     "logseq/bak",
     "logseq/custom.css",
-    "pages/contents.md",
     "pages",
-    "5. 데이터베이스/SQL.md",
-    "9. 용어해설집/소프트웨어/CRUD.md",
     "3. Resouce/3. 웹 개발/무제 파일.canvas",
     "3. Resouce/공부목표.canvas",
     "3. Resouce/웹 개발.canvas",

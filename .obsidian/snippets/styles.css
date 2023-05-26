@@ -134,7 +134,10 @@ body:before{
 
 /* 콜아웃 인라인 코드 */
 .callout-content code{
-	background-color:initial;
+	background-color:var(--background-primary);
+}
+.callout-content table{
+	background-color:var(--background-primary);
 }
 
 
@@ -333,5 +336,5 @@ mark.hltr-grey{background-color: var(--highlighter-grey) !important;}
 
 /* anki ID 태그 숨기기 */
 .cm-s-obsidian span.cm-comment:not(.cm-hmd-codeblock) {
-	/* display: none; */
+	display: none;
 }

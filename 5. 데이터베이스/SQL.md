@@ -65,13 +65,13 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 
 # 명령어의 종류
   ![[Pasted image 20230428093752.png|400]]
+  
 | 명칭                                               | 정의                                                |
 |--------------------------------------------------|---------------------------------------------------|
 | DDL(Data Definition Language)          | 데이터 정의어 <br> 테이블, 시퀀스, 뷰 등 DB에서 사용하는 DB 오브젝트 구조를 생성할때 사용하는 명령어 |
 | DML (Data Manipulation Language)     | 데이터 조작 언어                                                  |
 | DCL  (Data Control Language)        | 데이터 제어 명령어                                                  |
 | TCL (Transaction Control Language) |[[#트랜잭션(Transaction)]] 제어 명령어 | 
-
 
 
 ## DDL 명령어
@@ -133,6 +133,7 @@ aliases : 에스큐엘, 데이터베이스 표준언어
 
 # SQL 문법
 ## DB 오브젝트
+>[!warning] RBDMS 제품마다 객체가 다른가봐
 
 | DB 오브젝트 | 설명                                    |
 |-----------|---------------------------------------|

@@ -1,20 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "JSP",
-      "path": "3. 웹 개발/2) 백엔드/JSP.md"
+      "basename": "SQL",
+      "path": "5. 데이터베이스/SQL.md"
+    },
+    {
+      "basename": "2023-05-10",
+      "path": "99. 기타/데일리 노트/2023-05-10.md"
+    },
+    {
+      "basename": "2023년 19주차",
+      "path": "99. 기타/주간 노트/2023년 19주차.md"
+    },
+    {
+      "basename": "2023-05-26",
+      "path": "99. 기타/데일리 노트/2023-05-26.md"
+    },
+    {
+      "basename": "2023-05-25",
+      "path": "99. 기타/데일리 노트/2023-05-25.md"
+    },
+    {
+      "basename": "커넥션 풀 API",
+      "path": "3. 웹 개발/2) 백엔드/커넥션 풀 API.md"
     },
     {
       "basename": "옵시디언",
       "path": "99. 메모/옵시디언.md"
     },
     {
-      "basename": "윈도우 단축키",
-      "path": "99. 메모/윈도우 단축키.md"
+      "basename": "2023-05-12",
+      "path": "99. 기타/데일리 노트/2023-05-12.md"
     },
     {
-      "basename": "2023-05-25",
-      "path": "99. 기타/데일리 노트/2023-05-25.md"
+      "basename": "웹 개발론",
+      "path": "3. 웹 개발/웹 개발론.md"
+    },
+    {
+      "basename": "JSP",
+      "path": "3. 웹 개발/2) 백엔드/JSP.md"
+    },
+    {
+      "basename": "윈도우 단축키",
+      "path": "99. 메모/윈도우 단축키.md"
     },
     {
       "basename": "401(k) 저축플랜",
@@ -31,14 +59,6 @@
     {
       "basename": "철학",
       "path": "10. 인문학/철학.md"
-    },
-    {
-      "basename": "2023년 19주차",
-      "path": "99. 기타/주간 노트/2023년 19주차.md"
-    },
-    {
-      "basename": "2023-05-12",
-      "path": "99. 기타/데일리 노트/2023-05-12.md"
     },
     {
       "basename": "2023-05-24",
@@ -69,10 +89,6 @@
       "path": "3. 웹 개발/2) 백엔드/JDBC.md"
     },
     {
-      "basename": "SQL",
-      "path": "5. 데이터베이스/SQL.md"
-    },
-    {
       "basename": "CRUD",
       "path": "9. 용어해설집/소프트웨어/CRUD.md"
     },
@@ -99,14 +115,6 @@
     {
       "basename": "Node.JS",
       "path": "3. 웹 개발/프레임워크/Node.JS.md"
-    },
-    {
-      "basename": "웹 개발론",
-      "path": "3. 웹 개발/웹 개발론.md"
-    },
-    {
-      "basename": "커넥션 풀 API",
-      "path": "3. 웹 개발/2) 백엔드/커넥션 풀 API.md"
     },
     {
       "basename": "파라미터",
@@ -187,18 +195,6 @@
     {
       "basename": "Open Graph",
       "path": "3. Resouce/9. 용어해설집/소프트웨어/Open Graph.md"
-    },
-    {
-      "basename": "인공지능",
-      "path": "3. Resouce/1. 컴퓨터과학 개론/인공지능.md"
-    },
-    {
-      "basename": "C++",
-      "path": "3. Resouce/4. 프로그래밍 언어/C++.md"
-    },
-    {
-      "basename": "Java",
-      "path": "3. Resouce/4. 프로그래밍 언어/Java.md"
     }
   ],
   "omittedPaths": [],
