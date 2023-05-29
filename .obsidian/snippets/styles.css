@@ -24,6 +24,9 @@ body{
 	--highlighter-blue : #ADCCFFA6;
 	--highlighter-purple : #D2B3FFA6;
 	--highlighter-grey : #CACFD9A6;
+
+	--background-color01 : #9796f0;
+	--background-color02 : #fbc7d4;
 }
 
 .theme-dark,
@@ -42,6 +45,9 @@ body{
 	--highlighter-blue : #1f4fa1a6;
 	--highlighter-purple : #6f46ada6;
 	--highlighter-grey : #808080a6;
+
+	--background-color01 : #9796f0;
+	--background-color02 : #554a4f;
 }
 
 /* ----------------------------- */
@@ -62,15 +68,15 @@ body:before{
 	content:"";
 	position:absolute;
     width:100%;
-    height: 20%;
+    height: 18%;
     bottom: 0;
 	/* 웨이브 디자인 패턴  */
-	-webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" xml:space="preserve"><path opacity=".1" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"/><path opacity=".2" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"/><path opacity=".4" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"/></svg>');
+	-webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" xml:space="preserve"><path opacity=".3" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"/><path opacity=".4" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"/><path opacity=".6" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"/></svg>');
 	-webkit-mask-size:300% 300px;
 	-webkit-mask-position:88.5% -73px;
 	-webkit-mask-repeat:no-repeat;
     /* background-color:var(--color-accent-2); */
-	background: linear-gradient(#0bedea, #e1ff6a);
+	background: linear-gradient(var(--background-color01), var(--background-color02));
 	transform:rotateZ(180deg);
 	opacity:0.6;
 
@@ -139,9 +145,6 @@ body:before{
 .callout-content table{
 	background-color:var(--background-primary);
 }
-
-
-/* 콜아웃 보더랑 패딩 없애기 */
 .callout{
 	padding: 0;
 	border:1px solid rgba(var(--callout-color), 0.3);
@@ -166,12 +169,10 @@ body:before{
 	margin:0;
 	align-self:center;
 }
-
 /* only apply border if callout is not collapsed */
 .callout:not(.is-collapsed)>.callout-title:has(+.callout-content){
 	border-bottom:1px solid rgba(var(--callout-color), 0.3);
 }
-
 .markdown-source-view.mod-cm6 .callout,
 .callout{
 	margin: 0.5rem 0;
@@ -182,19 +183,6 @@ body:not(.full-file-names) .tree-item-inner {
 	/* white-space: break-spaces; */
 }
 
-/* 캔버스 편집시 번호와 컨텐츠 간격 조정 */
-.markdown-source-view.mod-cm6.is-readable-line-width .cm-content,
-.node-insert-event.mod-inside-iframe .cm-editor .cm-content{
-	/* margin-left: 25px; */
-}
-
-/* 헤더 아래 마진 없애기 */
-.h1-l .markdown-reading-view h1:not(.embedded-note-title), .h1-l .mod-cm6 .cm-editor .HyperMD-header-1,
-.h2-l .markdown-reading-view h2, .h2-l .mod-cm6 .cm-editor .HyperMD-header-2,
-.h3-l .markdown-reading-view h3, .h3-l .mod-cm6 .cm-editor .HyperMD-header-3{
-	margin-bottom: 0;
-}
-
 /* 다른 문서를 해당 문서에 포함하게 되었을 경우 스타일 설정 */
 .workspace-split.mod-vertical.mod-root .markdown-preview-view{
 	padding: 0;
@@ -203,18 +191,28 @@ body:not(.full-file-names) .tree-item-inner {
 
 /* 강조 구문 색 변경 */
 b, strong, .cm-strong{
-	color: var(--code-property);
+	/* color: var(--code-property); */
 	/* color: var(--color-base-100); */
 	/* color: var(--code-keyword); */
 	/* color: var(--text-accent); */
-	/* color: var(--callout-title-color); */
+	color: var(--callout-title-color);
+}
+
+/* 테이블 스타일 설정 */
+.markdown-rendered tbody > tr > td:first-child {
+	white-space: nowrap;
+}
+.markdown-rendered.show-indentation-guide.el-table table {
+	margin-left: 0 !important;
+	margin-right: 0;
+	max-width: 100%;
+}
+.markdown-rendered table:not(.dataview) span img {	
+	width: 40% !important;
 }
 
 /* 임베드시 타이틀영역 숨기기 */
 .embed-title, .markdown-embed-title{
-	/* font-size: 1.2rem;
-    font-weight: 800;
-    border-bottom: 1px solid var(--border-color); */
 	display: none;
 }
 
@@ -292,35 +290,14 @@ b, strong, .cm-strong{
 	padding: var(--size-4-3) var(--size-4-3) 0 !important;
 }
 
-/* 테이블 스타일 설정 */
-.dataview.table-view-table{
-	margin-top: 0;
-}
-.is-live-preview.is-readable-line-width .cm-embed-block table.dataview, .is-live-preview.is-readable-line-width.embed-strict .internal-embed .markdown-preview-sizer, .is-readable-line-width .block-language-dataview table.dataview, .is-readable-line-width .block-language-dataviewjs table.dataview, .markdown-preview-view.is-readable-line-width .dataview.result-group .contains-task-list, .markdown-source-view.is-live-preview.is-readable-line-width table.NLT__table{
-	width: calc(var(--line-width-adaptive) - var(--folding-offset));
-}
-.table-view-tbody tr{
-	width: 10rem;
-}
-.markdown-rendered tbody > tr > td:first-child {
-	white-space: nowrap;
-}
-.markdown-rendered.show-indentation-guide.el-table table {
-	margin-left: 0 !important;
-	margin-right: 0;
-	max-width: 100%;
-}
-.markdown-rendered table span img {	
-	width: 40% !important;
-}
+
 
 
 /* 하이라이터 스타일 */
 .search-result-file-matched-text,
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
 .markdown-rendered mark{
-	/* background-color: var(--highlighter-pink); */
-	background-color: var(--text-selection);
+	background-color: var(--highlighter-pink);
 }
 mark{color: var(--tx1);}
 mark.hltr-pink{background-color: var(--highlighter-pink) !important;}

@@ -295,7 +295,7 @@ function 이름(매개변수) {
 ## 2. 이벤트(Event)
 - event 멈추기
 	```js
-	postBox.addEventLister("click" (e)={
+	postBox.addEventLister("click" (e)=>{
 		e.preventDefalut();
 	})
 	```
@@ -305,6 +305,15 @@ function 이름(매개변수) {
 ## 4. JS 객체
 - new 연산자로 객체 생성하는 줄 알고 있었는데 리터널 구문을 사용해서 객체를 생성하라고 하네 음 
 
+
+## 템플릿 리터널
+완전 [[JSP]]에 있는 EL 문법같네. 하지만 [[JSP]]의 EL문법과 달리 역따음표(\`)로 묶어서 표현해야함. pre태그를 쓴것처럼 줄바꿈이 되어서 출력됨.
+```js
+var letter = `Dear ${user} 
+
+Lorem ipsum dolor sit amet, ${user} 
+`
+```
 
 # JS의 작동 원리 
 ## 1. JS로 HTML/CSS 수정하기

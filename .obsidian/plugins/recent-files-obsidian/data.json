@@ -1,200 +1,204 @@
 {
   "recentFiles": [
     {
-      "basename": "SQL",
-      "path": "5. 데이터베이스/SQL.md"
+      "basename": "electron",
+      "path": "3. Resouce/3. 웹 개발/프레임워크/electron.md"
     },
     {
-      "basename": "2023-05-10",
-      "path": "99. 기타/데일리 노트/2023-05-10.md"
+      "basename": "생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘",
+      "path": "2. Area/독서노트/진행중/생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘.md"
     },
     {
-      "basename": "2023년 19주차",
-      "path": "99. 기타/주간 노트/2023년 19주차.md"
+      "basename": "생활코딩_Nodejs_후반부_웹공개용",
+      "path": "2. Area/독서노트/진행중/생활코딩_Nodejs_후반부_웹공개용.pdf"
     },
     {
-      "basename": "2023-05-26",
-      "path": "99. 기타/데일리 노트/2023-05-26.md"
+      "basename": "2023-05-28",
+      "path": "3. Resouce/99. 기타/데일리 노트/2023-05-28.md"
     },
     {
-      "basename": "2023-05-25",
-      "path": "99. 기타/데일리 노트/2023-05-25.md"
-    },
-    {
-      "basename": "커넥션 풀 API",
-      "path": "3. 웹 개발/2) 백엔드/커넥션 풀 API.md"
-    },
-    {
-      "basename": "옵시디언",
-      "path": "99. 메모/옵시디언.md"
-    },
-    {
-      "basename": "2023-05-12",
-      "path": "99. 기타/데일리 노트/2023-05-12.md"
-    },
-    {
-      "basename": "웹 개발론",
-      "path": "3. 웹 개발/웹 개발론.md"
-    },
-    {
-      "basename": "JSP",
-      "path": "3. 웹 개발/2) 백엔드/JSP.md"
-    },
-    {
-      "basename": "윈도우 단축키",
-      "path": "99. 메모/윈도우 단축키.md"
-    },
-    {
-      "basename": "401(k) 저축플랜",
-      "path": "99. 메모/401(k) 저축플랜.md"
-    },
-    {
-      "basename": "JS",
-      "path": "4. 프로그래밍 언어/JS.md"
-    },
-    {
-      "basename": "포워딩",
-      "path": "3. 웹 개발/2) 백엔드/포워딩.md"
-    },
-    {
-      "basename": "철학",
-      "path": "10. 인문학/철학.md"
-    },
-    {
-      "basename": "2023-05-24",
-      "path": "99. 기타/데일리 노트/2023-05-24.md"
-    },
-    {
-      "basename": "정보처리기사",
-      "path": "99. 자격증/정보처리기사.md"
+      "basename": "MY SQL",
+      "path": "3. Resouce/5. 데이터베이스/MY SQL.md"
     },
     {
       "basename": "2023-05-23",
-      "path": "99. 기타/데일리 노트/2023-05-23.md"
+      "path": "3. Resouce/99. 기타/데일리 노트/2023-05-23.md"
     },
     {
       "basename": "HTML",
-      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
-    },
-    {
-      "basename": "Java",
-      "path": "4. 프로그래밍 언어/Java.md"
-    },
-    {
-      "basename": "Servlet",
-      "path": "3. 웹 개발/2) 백엔드/Servlet.md"
-    },
-    {
-      "basename": "JDBC",
-      "path": "3. 웹 개발/2) 백엔드/JDBC.md"
-    },
-    {
-      "basename": "CRUD",
-      "path": "9. 용어해설집/소프트웨어/CRUD.md"
-    },
-    {
-      "basename": "백엔드",
-      "path": "3. 웹 개발/2) 백엔드/백엔드.md"
-    },
-    {
-      "basename": "CSV",
-      "path": "3. 웹 개발/전송 데이터 형태/CSV.md"
-    },
-    {
-      "basename": "데이터 송수신",
-      "path": "3. 웹 개발/전송 데이터 형태/데이터 송수신.md"
-    },
-    {
-      "basename": "MIME 타입",
-      "path": "9. 용어해설집/MIME 타입.md"
-    },
-    {
-      "basename": "electron",
-      "path": "3. 웹 개발/프레임워크/electron.md"
+      "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/HTML.md"
     },
     {
       "basename": "Node.JS",
-      "path": "3. 웹 개발/프레임워크/Node.JS.md"
-    },
-    {
-      "basename": "파라미터",
-      "path": "9. 용어해설집/소프트웨어/파라미터.md"
-    },
-    {
-      "basename": "영어",
-      "path": "6. 영어/영어.md"
-    },
-    {
-      "basename": "수학",
-      "path": "7. 수학/수학.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "2023-05-22",
-      "path": "99. 기타/데일리 노트/2023-05-22.md"
-    },
-    {
-      "basename": "JSDOC",
-      "path": "3. 웹 개발/1) 프론트엔드/JSDOC.md"
-    },
-    {
-      "basename": "2023-05-08",
-      "path": "99. 기타/데일리 노트/2023-05-08.md"
-    },
-    {
-      "basename": "2023-05-15",
-      "path": "99. 기타/데일리 노트/2023-05-15.md"
-    },
-    {
-      "basename": "2023-05-18",
-      "path": "99. 기타/데일리 노트/2023-05-18.md"
-    },
-    {
-      "basename": "변수명, 함수명 짓는 방법",
-      "path": "3. Resouce/99. 메모/변수명, 함수명 짓는 방법.md"
-    },
-    {
-      "basename": "HTML5 웹 프로그래밍",
-      "path": "1. Project/방통대/HTML5 웹 프로그래밍.md"
-    },
-    {
-      "basename": "0. 방통대 수업",
-      "path": "1. Project/방통대/0. 방통대 수업.md"
-    },
-    {
-      "basename": "컴퓨터 구조",
-      "path": "3. Resouce/1. 컴퓨터과학 개론/컴퓨터 구조.md"
+      "path": "3. Resouce/3. 웹 개발/프레임워크/Node.JS.md"
     },
     {
       "basename": "CSS",
       "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/CSS.md"
     },
     {
-      "basename": "파이썬 프로그래밍 기초",
-      "path": "1. Project/방통대/파이썬 프로그래밍 기초.md"
+      "basename": "python",
+      "path": "3. Resouce/4. 프로그래밍 언어/python.md"
+    },
+    {
+      "basename": "Neutralino.js",
+      "path": "3. Resouce/3. 웹 개발/프레임워크/Neutralino.js.md"
+    },
+    {
+      "basename": "JS",
+      "path": "3. Resouce/4. 프로그래밍 언어/JS.md"
+    },
+    {
+      "basename": "웹 개발론",
+      "path": "3. Resouce/3. 웹 개발/웹 개발론.md"
+    },
+    {
+      "basename": "웹 개발 흐름",
+      "path": "3. Resouce/3. 웹 개발/웹 개발 흐름.md"
+    },
+    {
+      "basename": "웹 데이터 전송파일",
+      "path": "3. Resouce/3. 웹 개발/웹 데이터 전송파일.md"
+    },
+    {
+      "basename": "웹 3.0",
+      "path": "3. Resouce/3. 웹 개발/웹 3.0.md"
+    },
+    {
+      "basename": "웹 브라우저",
+      "path": "3. Resouce/3. 웹 개발/웹 브라우저.md"
+    },
+    {
+      "basename": "데이터 송수신",
+      "path": "3. Resouce/3. 웹 개발/전송 데이터 형태/데이터 송수신.md"
+    },
+    {
+      "basename": "XML",
+      "path": "3. Resouce/3. 웹 개발/전송 데이터 형태/XML.md"
+    },
+    {
+      "basename": "JSON",
+      "path": "3. Resouce/3. 웹 개발/전송 데이터 형태/JSON.md"
+    },
+    {
+      "basename": "CSV",
+      "path": "3. Resouce/3. 웹 개발/전송 데이터 형태/CSV.md"
     },
     {
       "basename": "옵시디언",
       "path": "3. Resouce/99. 메모/옵시디언.md"
     },
     {
-      "basename": "Anki 정규식 연습",
-      "path": "3. Resouce/99. 메모/Anki 정규식 연습.md"
+      "basename": "환경변수",
+      "path": "3. Resouce/9. 용어해설집/환경변수.md"
+    },
+    {
+      "basename": "Express.js",
+      "path": "3. Resouce/3. 웹 개발/프레임워크/Express.js.md"
     },
     {
       "basename": "VSC",
       "path": "3. Resouce/9. 용어해설집/개발도구/VSC.md"
     },
     {
-      "basename": "종합소득세",
-      "path": "2. Area/가족/세금 신고/종합소득세.md"
+      "basename": "파이썬 프로그래밍 기초",
+      "path": "1. Project/방통대/3학년 1학기/파이썬 프로그래밍 기초.md"
     },
     {
-      "basename": "Open Graph",
-      "path": "3. Resouce/9. 용어해설집/소프트웨어/Open Graph.md"
+      "basename": "방통대 수업",
+      "path": "1. Project/방통대/방통대 수업.md"
+    },
+    {
+      "basename": "데이터베이스",
+      "path": "3. Resouce/5. 데이터베이스/데이터베이스.md"
+    },
+    {
+      "basename": "1. 개발자+환경+구축",
+      "path": "1. Project/노원이젠풀스택/1. 개발자+환경+구축.pdf"
+    },
+    {
+      "basename": "컴퓨터 보안",
+      "path": "1. Project/방통대/3학년 1학기/컴퓨터 보안.md"
+    },
+    {
+      "basename": "컴퓨터 그래픽스",
+      "path": "1. Project/방통대/3학년 1학기/컴퓨터 그래픽스.md"
+    },
+    {
+      "basename": "그래픽커뮤니케이션",
+      "path": "1. Project/방통대/3학년 1학기/그래픽커뮤니케이션.md"
+    },
+    {
+      "basename": "유니티",
+      "path": "4. Archive/유니티.md"
+    },
+    {
+      "basename": "노트북에 윈도우 설치",
+      "path": "4. Archive/노트북에 윈도우 설치.md"
+    },
+    {
+      "basename": "피부미용업 과세조건",
+      "path": "2. Area/가족/수기명가/피부미용업 과세조건.md"
+    },
+    {
+      "basename": "2. UI+구현",
+      "path": "1. Project/노원이젠풀스택/2. UI+구현.pdf"
+    },
+    {
+      "basename": "나에 대해서",
+      "path": "2. Area/나에 대해서.md"
+    },
+    {
+      "basename": "독서 목록",
+      "path": "2. Area/독서노트/독서 목록.md"
+    },
+    {
+      "basename": "자바스크립트 웹 앱 분석과 결함 검출",
+      "path": "2. Area/논문/자바스크립트 웹 앱 분석과 결함 검출.pdf"
+    },
+    {
+      "basename": "세금신고 가이드",
+      "path": "2. Area/가족/세금 신고/세금신고 가이드.md"
+    },
+    {
+      "basename": "부가가치세",
+      "path": "2. Area/가족/세금 신고/부가가치세.md"
+    },
+    {
+      "basename": "집합건물 202호 등기부등본",
+      "path": "2. Area/가족/등기부등본/집합건물 202호 등기부등본.pdf"
+    },
+    {
+      "basename": "금융아파트906호 부동산 등기사항 증명서 열람",
+      "path": "2. Area/가족/등기부등본/금융아파트906호 부동산 등기사항 증명서 열람.pdf"
+    },
+    {
+      "basename": "자동차보험증권_2022년",
+      "path": "2. Area/가족/보험증권/자동차보험증권_2022년.pdf"
+    },
+    {
+      "basename": "자동차 보험증권",
+      "path": "2. Area/가족/보험증권/자동차 보험증권.jpg"
+    },
+    {
+      "basename": "이륜자동차_보험증권_2022년",
+      "path": "2. Area/가족/보험증권/이륜자동차_보험증권_2022년.pdf"
+    },
+    {
+      "basename": "철학",
+      "path": "3. Resouce/10. 인문학/철학.md"
+    },
+    {
+      "basename": "IT 좀 아는 사람 비전공자도 IT 전문가처럼 생각하는 법",
+      "path": "2. Area/독서노트/완료/IT 좀 아는 사람 비전공자도 IT 전문가처럼 생각하는 법.md"
+    },
+    {
+      "basename": "나는 인생의 아주 기본적인 것부터 바꿔보기로 했다",
+      "path": "2. Area/독서노트/완료/나는 인생의 아주 기본적인 것부터 바꿔보기로 했다.md"
+    },
+    {
+      "basename": "독서방법 정리",
+      "path": "2. Area/독서노트/독서방법 정리.md"
     }
   ],
   "omittedPaths": [],

@@ -4,7 +4,8 @@ aliases : 파이썬
 ---
 
 # 개요
->[!info] 프로그래밍 언어 학습이나 웹서버, 데이터 분석 분야에서 자주 사용되는 언어
+>[!info] [파이썬 공식 홈페이지](https://www.python.org/)
+>프로그래밍 언어 학습이나 웹서버, 데이터 분석 분야에서 자주 사용되는 언어
 >>[!warning] 다른 프로그래밍 언어와 다른 점
 >> - 주석기호 : `#`
 >>	- 구글 코랩에서 마크 다운과 호환됨(다른 IDE는 잘 모르겠음)
@@ -34,7 +35,7 @@ aliases : 파이썬
 	- [구글 코랩](https://colab.research.google.com/?hl=ko) : 온라인
 	- [[VSC]] : 파이썬 익스텐션 설치하면 좋음
 - 파이썬 설치
-	- 코어 파이썬
+	- [코어 파이썬](https://www.python.org/)
 	- [아나콘다 파이썬](https://www.anaconda.com/download)
 
 

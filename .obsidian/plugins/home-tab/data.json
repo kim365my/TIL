@@ -1,5 +1,5 @@
 {
-  "logoType": "default",
+  "logoType": "lucideIcon",
   "logo": {
     "lucideIcon": "star",
     "imagePath": "",
@@ -24,24 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "3. Resouce/99. 메모/무제 파일.md",
-      "timestamp": 1684548508864
+      "filepath": "1. Project/취직하기/Coding Interview University/pdf/Java Fundamentals Cheatsheet.pdf",
+      "timestamp": 1685099045478
     },
     {
-      "filepath": "1. Project/방통대/HTML5 웹 프로그래밍.md",
-      "timestamp": 1684544126528
+      "filepath": "1. Project/취직하기/Coding Interview University/pdf/Cpp_reference.pdf",
+      "timestamp": 1685099043804
     },
     {
-      "filepath": "1. Project/방통대/0. 방통대 수업.md",
-      "timestamp": 1684544112318
+      "filepath": "1. Project/취직하기/Coding Interview University/pdf/Coding Interview Python Language Essentials.pdf",
+      "timestamp": 1685099033383
     },
     {
-      "filepath": "3. Resouce/1. 컴퓨터과학 개론/컴퓨터 구조.md",
-      "timestamp": 1684544109284
+      "filepath": "1. Project/취직하기/Coding Interview University/pdf/bits-cheat-sheet.pdf",
+      "timestamp": 1685099019765
     },
     {
-      "filepath": "3. Resouce/3. 웹 개발/1) 프론트엔드/CSS.md",
-      "timestamp": 1684539178224
+      "filepath": "1. Project/웹 개발 포폴제작/교보문고 리디자인.md",
+      "timestamp": 1685099017387
     }
   ],
   "starredFileStore": [],
