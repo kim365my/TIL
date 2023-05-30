@@ -27,7 +27,7 @@ aliases : 일렉트론
 	```
 	node -v
 	npm -v
-	npm init
+	npm init -y // 디폴트 값으로 초기화
 	```
 2. [[electron]] 프로젝트 생성하기
 	```
@@ -41,6 +41,29 @@ aliases : 일렉트론
 	```
 - 이런 형식으로 폴더가 구성됨
   ![[Pasted image 20230528210257.png|200]]
+
+## electron 빌드도구
+1. electron -forge : windows 빌더 지원안함
+2. electron -builder : 모든 os 지원
+	- 빌더를 내가 진행 중인 프로젝트에 설치해야함 (우선 [[Node.JS#패키지 관리자 설치하기|yarn]] 설치해야함)
+		```
+		yarn add electron-builder --dev
+		```
+	- package.json의 스크립트에 실행명령어 추가
+		```js
+		"scripts": { 
+			"dist": "electron-builder", 
+			"dist:win": "electron-builder --win"
+		}
+		```
+	- 실행
+		```
+		yarn dist:win
+		```
+	- 실행이 완료되면 dist 폴더에 exe 실행파일이 생성되어있는 것을 확인할 수 있음
+		- unpacked 파일은 압축 안된거
+3. electron -packager
+
 
 # 용어해설
 

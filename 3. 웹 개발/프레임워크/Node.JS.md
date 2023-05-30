@@ -11,10 +11,26 @@ aliases : 노드JS
 
 >[!cite]- 참고 문서 
 > - [NodeJS](https://hanamon.kr/nodejs-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/)
-## Node JS 시작하기
+# Node JS 시작하기
 - 공식 홈페이지에서 설치
 - 환경변수 설정
 	- Window 설정 - 시스템 - 정보 - 고급 시스템 설정 - 환경변수로 이동해서 시스템 변수에서 Path를 편집해서 새로만들기 버튼을 누른 뒤 nodejs가 설치된 경로를 입력
+- 설치된 버전 조회
+	```
+	node -v
+	npm -v
+	npm init -y // 디폴트 값으로 초기화
+	```
+
+## 패키지 관리자 설치하기
+- npm : [[Node.JS]] 설치와 동시에 기본으로 설치되는 패키지 관리자
+- yarn : 따로 설치해야함
+	```
+	npm install -g yarn 
+	yarn --version
+	```
+	- [[VSC]]에서 권한때문에 작동을 안하는 경우가 있는데 이때 Windows PowerShell을 관리자 권한으로 실행해서 `get-ExecutionPolicy`로 권한이 Restricted이면, `set-ExecutionPolicy RemoteSigned`을 해서 이 권한을 풀어줘야함
+	- 전역 사용에 문제가 있으면 path 설정을 해줘야함
 
 ## 관련 프레임워크
 
