@@ -1,7 +1,7 @@
 {
   "promptDelete": false,
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "3. Resouce/99. 기타/img",
+  "attachmentFolderPath": "99. 기타/img",
   "trashOption": "none",
   "newFileLocation": "current",
   "showLineNumber": true,

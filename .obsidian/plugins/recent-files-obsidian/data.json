@@ -1,12 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "2023-05-30",
-      "path": "99. 기타/데일리 노트/2023-05-30.md"
+      "basename": "SQL",
+      "path": "5. 데이터베이스/SQL.md"
     },
     {
       "basename": "생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘",
       "path": "독서노트/진행중/생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘.md"
+    },
+    {
+      "basename": "2023-05-31",
+      "path": "99. 기타/데일리 노트/2023-05-31.md"
+    },
+    {
+      "basename": "Node.JS",
+      "path": "3. 웹 개발/프레임워크/Node.JS.md"
+    },
+    {
+      "basename": "HTML5 웹 프로그래밍",
+      "path": "HTML5 웹 프로그래밍.md"
+    },
+    {
+      "basename": "2023년 21주차",
+      "path": "99. 기타/주간 노트/2023년 21주차.md"
+    },
+    {
+      "basename": "2023년 19주차",
+      "path": "99. 기타/주간 노트/2023년 19주차.md"
+    },
+    {
+      "basename": "Pasted image 20230530122443",
+      "path": "99. 기타/img/Pasted image 20230530122443.png"
+    },
+    {
+      "basename": "HTML",
+      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
+    },
+    {
+      "basename": "용어해설집",
+      "path": "9. 용어해설집/용어해설집.md"
+    },
+    {
+      "basename": "2023-05-30",
+      "path": "99. 기타/데일리 노트/2023-05-30.md"
     },
     {
       "basename": "2023-05-28",
@@ -17,16 +53,8 @@
       "path": "3. 웹 개발/프레임워크/electron.md"
     },
     {
-      "basename": "Node.JS",
-      "path": "3. 웹 개발/프레임워크/Node.JS.md"
-    },
-    {
       "basename": "2023-05-09",
       "path": "99. 기타/데일리 노트/2023-05-09.md"
-    },
-    {
-      "basename": "SQL",
-      "path": "5. 데이터베이스/SQL.md"
     },
     {
       "basename": "2023-04-21",
@@ -171,34 +199,6 @@
     {
       "basename": "컴퓨터 보안",
       "path": "1. Project/방통대/3학년 1학기/컴퓨터 보안.md"
-    },
-    {
-      "basename": "컴퓨터 그래픽스",
-      "path": "1. Project/방통대/3학년 1학기/컴퓨터 그래픽스.md"
-    },
-    {
-      "basename": "그래픽커뮤니케이션",
-      "path": "1. Project/방통대/3학년 1학기/그래픽커뮤니케이션.md"
-    },
-    {
-      "basename": "유니티",
-      "path": "4. Archive/유니티.md"
-    },
-    {
-      "basename": "노트북에 윈도우 설치",
-      "path": "4. Archive/노트북에 윈도우 설치.md"
-    },
-    {
-      "basename": "피부미용업 과세조건",
-      "path": "2. Area/가족/수기명가/피부미용업 과세조건.md"
-    },
-    {
-      "basename": "2. UI+구현",
-      "path": "1. Project/노원이젠풀스택/2. UI+구현.pdf"
-    },
-    {
-      "basename": "나에 대해서",
-      "path": "2. Area/나에 대해서.md"
     }
   ],
   "omittedPaths": [],

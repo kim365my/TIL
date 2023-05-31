@@ -21,7 +21,7 @@
             }
           },
           {
-            "id": "46897c90d03c9357",
+            "id": "1baf0507be307eb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,38 +34,12 @@
             }
           },
           {
-            "id": "1baf0507be307eb8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "독서노트/진행중/생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8ace985ab8c0ce45",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. 웹 개발/프레임워크/Node.JS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "651d35a5b4333cf1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 기타/데일리 노트/2023-05-30.md",
+                "file": "99. 기타/데일리 노트/2023-05-31.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -73,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "location.",
+                "query": "from",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -144,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-05-30.md"
+                "file": "5. 데이터베이스/SQL.md"
               }
             }
           },
@@ -154,7 +128,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-05-30.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -189,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-05-30.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -201,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-05-30.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -286,16 +260,27 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "651d35a5b4333cf1",
+  "active": "1baf0507be307eb8",
   "lastOpenFiles": [
     "독서노트/진행중/생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘.md",
-    "99. 기타/데일리 노트/2023-05-28.md",
-    "99. 기타/데일리 노트/2023-05-30.md",
-    "3. 웹 개발/프레임워크/electron.md",
+    "99. 기타/데일리 노트/2023-05-31.md",
     "3. 웹 개발/프레임워크/Node.JS.md",
-    "99. 기타/데일리 노트/2023-05-09.md",
-    "Pasted image 20230530122443.png",
+    "HTML5 웹 프로그래밍.md",
+    "99. 기타/주간 노트/2023년 21주차.md",
+    "99. 기타/주간 노트/2023년 19주차.md",
+    "99. 기타/주간 노트/2023년 20주차.md",
+    "3. Resouce/99. 기타/주간 노트/2023년 19주차.md",
+    "3. Resouce/99. 기타/주간 노트",
+    "3. Resouce/99. 기타",
+    "3. Resouce",
+    "99. 기타/img/Pasted image 20230530122443.png",
+    "3. 웹 개발/1) 프론트엔드/HTML.md",
     "5. 데이터베이스/SQL.md",
+    "9. 용어해설집/용어해설집.md",
+    "99. 기타/데일리 노트/2023-05-30.md",
+    "99. 기타/데일리 노트/2023-05-28.md",
+    "3. 웹 개발/프레임워크/electron.md",
+    "99. 기타/데일리 노트/2023-05-09.md",
     "99. 기타/데일리 노트/2023-04-21.md",
     "99. 자격증/정보처리기사.md",
     "99. 기타/데일리 노트/2023-05-10.md",
@@ -305,16 +290,8 @@
     "99. 기타/데일리 노트/2023-05-27.md",
     "99. 기타/데일리 노트/2023-05-13.md",
     "99. 기타/데일리 노트/2023-05-05.md",
-    "99. 기타/주간 노트/2023년 19주차.md",
     "99. 기타/데일리 노트/2023-05-26.md",
     "99. 기타/데일리 노트/2023-05-25.md",
-    "3. 웹 개발/2) 백엔드/커넥션 풀 API.md",
-    "99. 메모/옵시디언.md",
-    "3. 웹 개발/웹 개발론.md",
-    "3. 웹 개발/2) 백엔드/JSP.md",
-    "99. 메모/윈도우 단축키.md",
-    "99. 메모/401(k) 저축플랜.md",
-    "4. 프로그래밍 언어/JS.md",
     "logseq/bak/logseq/config/2023-05-24T00_05_34.353Z.Desktop.edn",
     "logseq/bak/logseq/config/2023-05-24T00_05_30.407Z.Desktop.edn",
     "logseq/bak/logseq/config",
@@ -322,9 +299,6 @@
     "logseq/bak/99. 기타/데일리 노트/2023-05-24",
     "logseq/bak/99. 기타/데일리 노트",
     "logseq/bak/99. 기타",
-    "logseq/bak",
-    "logseq/custom.css",
-    "pages",
     "3. Resouce/3. 웹 개발/무제 파일.canvas",
     "3. Resouce/공부목표.canvas",
     "3. Resouce/웹 개발.canvas",
