@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. 데이터베이스/SQL.md",
+                "file": "99. 기타/데일리 노트/2023-06-01.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,8 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "0ec7239b9c0b9a42",
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5. 데이터베이스/SQL.md"
+                "file": "99. 기타/데일리 노트/2023-06-01.md"
               }
             }
           },
@@ -128,7 +127,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "5. 데이터베이스/SQL.md",
+                "file": "99. 기타/데일리 노트/2023-06-01.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -163,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5. 데이터베이스/SQL.md",
+                "file": "99. 기타/데일리 노트/2023-06-01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -175,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. 데이터베이스/SQL.md",
+                "file": "99. 기타/데일리 노트/2023-06-01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -262,6 +261,8 @@
   },
   "active": "1baf0507be307eb8",
   "lastOpenFiles": [
+    "5. 데이터베이스/SQL.md",
+    "99. 기타/데일리 노트/2023-06-01.md",
     "독서노트/진행중/생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘.md",
     "99. 기타/데일리 노트/2023-05-31.md",
     "3. 웹 개발/프레임워크/Node.JS.md",
@@ -275,7 +276,6 @@
     "3. Resouce",
     "99. 기타/img/Pasted image 20230530122443.png",
     "3. 웹 개발/1) 프론트엔드/HTML.md",
-    "5. 데이터베이스/SQL.md",
     "9. 용어해설집/용어해설집.md",
     "99. 기타/데일리 노트/2023-05-30.md",
     "99. 기타/데일리 노트/2023-05-28.md",
@@ -291,7 +291,6 @@
     "99. 기타/데일리 노트/2023-05-13.md",
     "99. 기타/데일리 노트/2023-05-05.md",
     "99. 기타/데일리 노트/2023-05-26.md",
-    "99. 기타/데일리 노트/2023-05-25.md",
     "logseq/bak/logseq/config/2023-05-24T00_05_34.353Z.Desktop.edn",
     "logseq/bak/logseq/config/2023-05-24T00_05_30.407Z.Desktop.edn",
     "logseq/bak/logseq/config",

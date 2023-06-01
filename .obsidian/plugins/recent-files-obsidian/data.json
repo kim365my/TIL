@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-06-01",
+      "path": "99. 기타/데일리 노트/2023-06-01.md"
+    },
+    {
       "basename": "SQL",
       "path": "5. 데이터베이스/SQL.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "1. 개발자+환경+구축",
       "path": "1. Project/노원이젠풀스택/1. 개발자+환경+구축.pdf"
-    },
-    {
-      "basename": "컴퓨터 보안",
-      "path": "1. Project/방통대/3학년 1학기/컴퓨터 보안.md"
     }
   ],
   "omittedPaths": [],
