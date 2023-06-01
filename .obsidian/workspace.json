@@ -39,7 +39,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-05-31.md",
+                "file": "99. 기타/주간 노트/2023년 19주차.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3666d63b9152d7b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5. 데이터베이스/SQL.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -47,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -76,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "from",
+                "query": "document.r",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,11 +109,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "0ec7239b9c0b9a42",
@@ -117,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-01.md"
+                "file": "5. 데이터베이스/SQL.md"
               }
             }
           },
@@ -127,7 +142,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-01.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -162,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-01.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -174,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-01.md",
+                "file": "5. 데이터베이스/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,16 +274,19 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "1baf0507be307eb8",
+  "active": "3666d63b9152d7b9",
   "lastOpenFiles": [
+    "99. 기타/주간 노트/2023년 19주차.md",
     "5. 데이터베이스/SQL.md",
+    "99. 기타/주간 노트/2023년 21주차.md",
+    "99. 기타/데일리 노트/2023-04-21.md",
+    "99. 기타/주간 노트/2023년 22주차.md",
+    "3. 웹 개발/2) 백엔드/JDBC.md",
+    "99. 기타/데일리 노트/2023-05-31.md",
     "99. 기타/데일리 노트/2023-06-01.md",
     "독서노트/진행중/생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘.md",
-    "99. 기타/데일리 노트/2023-05-31.md",
     "3. 웹 개발/프레임워크/Node.JS.md",
     "HTML5 웹 프로그래밍.md",
-    "99. 기타/주간 노트/2023년 21주차.md",
-    "99. 기타/주간 노트/2023년 19주차.md",
     "99. 기타/주간 노트/2023년 20주차.md",
     "3. Resouce/99. 기타/주간 노트/2023년 19주차.md",
     "3. Resouce/99. 기타/주간 노트",
@@ -281,7 +299,6 @@
     "99. 기타/데일리 노트/2023-05-28.md",
     "3. 웹 개발/프레임워크/electron.md",
     "99. 기타/데일리 노트/2023-05-09.md",
-    "99. 기타/데일리 노트/2023-04-21.md",
     "99. 자격증/정보처리기사.md",
     "99. 기타/데일리 노트/2023-05-10.md",
     "99. 기타/데일리 노트/2023-05-12.md",
@@ -289,8 +306,6 @@
     "99. 기타/데일리 노트/2023-05-23.md",
     "99. 기타/데일리 노트/2023-05-27.md",
     "99. 기타/데일리 노트/2023-05-13.md",
-    "99. 기타/데일리 노트/2023-05-05.md",
-    "99. 기타/데일리 노트/2023-05-26.md",
     "logseq/bak/logseq/config/2023-05-24T00_05_34.353Z.Desktop.edn",
     "logseq/bak/logseq/config/2023-05-24T00_05_30.407Z.Desktop.edn",
     "logseq/bak/logseq/config",
