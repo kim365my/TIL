@@ -168,7 +168,7 @@
 		- URL : `<input type="url" …>` : 자동 유효성 검사
 		- 이메일 주소 : `<input type="email" …>` : 자동 유효성 검사
 	- 특정 범위의 숫자 입력
-		- `<input type="number" …>`와 `<input type="range" …>` : 입력 방식의 차이
+		- `<input type="number" …>`와 `<input type="https://github.com/naver/smarteditor2/releases/tag/v2.10.0" …>` : 입력 방식의 차이
 		- 속성 : min(입력 범위의 최소값), max(입력 범위의 최대값), value(초기값, 현재 입력값), step(입력값의 유효한 간격)
 	- 나열 항목 중에서 데이터 항목 선택
 		- 라디오 버튼 : `<input type="radio" …>` : 동일 그룹 내에서 오직 하나만 배타적으로 선택 가능
