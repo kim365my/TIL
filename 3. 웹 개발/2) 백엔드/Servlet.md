@@ -6,6 +6,7 @@ aliases : 서블릿
 # 개요
 >[!info]- [[Java]] 1.8버전 / [[이클립스]] IDE / 아파치 톰캣을 기준으로 설명
 - 서블릿은 JavaEE 패키지의 Javax 클래스를 사용
+- [서블릿 공식 웹 사이트](http://www.servlets.com/)
 
 >[!cite]- 이클립스 서블릿 기본 세팅방법
 > ![[이클립스#WAS 세팅]]
@@ -420,9 +421,9 @@ public class Session01Basic extends HttpServlet {
 	- 참고) 서버단 프로그래밍 시 쿼리스트링의 키들을 매개변수(파라미터 paramter)라고 함
 
 # 에러에 대처하기
->[!cite]- 404 에러시 대처방법
-> - [이클립스 톰캣 설정 수정](https://dev-handbook.tistory.com/32)
-> - [경로지우고 재시작](https://clsrn4561.tistory.com/10)
-> - [이외의 방법 링크 모음](https://october-east-sea.tistory.com/160)
+- 404 에러시 대처방법
+	- [이클립스 톰캣 설정 수정](https://dev-handbook.tistory.com/32)
+	- [경로지우고 재시작](https://clsrn4561.tistory.com/10)
+	- [이외의 방법 링크 모음](https://october-east-sea.tistory.com/160)
 
 # 연관문서

@@ -4,46 +4,44 @@ aliases : 제이쿼리
 ---
 
 # 개요
-- 💡 **왜 사용하는가?**
-	- 멀티브라우져 지원, 이벤트+애니메이션+복잡한 CSS 변환+AJAX의 기능 모두를 다양하게 사용할 때, 그리고 위의 기능들을 구현할만한 시간적 여유가 없고 jquery에 대해서 이미 알고 있을 때. 그리고 무엇보다도 페이지가 퍼포먼스를 크게 요구하지 않고 사용자와의 인터렉션이 많지 않을 때 사용
-	- 장점
-		- 멀티브라우저 지원
-		- 간단한 이벤트 설정, DOM 탐색
-	- 단점
-		- jquery API를 별도로 공부
-		- 퍼포먼스(32k 용량)의 문제 
-		- 가상 DOM의 등장
-- 서드파티 플로그인 연결
-	- 반드시 코어 제이쿼리 밑에 추가해야함 : [jQuery UI - 공식위키](https://jqueryui.com/)
-	- 파일확장자에서 이런식으로 min이 있는 건 들여쓰기 없는거
+>[!info] **왜 사용하는가?**
+> - 멀티브라우저 지원, 이벤트+애니메이션+복잡한 [[CSS]] 변환 + [[AJAX]]의 기능 모두를 다양하게 사용할 때, 그리고 위의 기능들을 구현할만한 시간적 여유가 없고 jquery에 대해서 이미 알고 있을 때. 그리고 무엇보다도 페이지가 퍼포먼스를 크게 요구하지 않고 사용자와의 인터렉션이 많지 않을 때 사용
+> - **장점**
+> 	- 멀티브라우저 지원
+> 	- 간단한 이벤트 설정, DOM 탐색
+> - **단점**
+> 	- jquery API를 별도로 공부
+> 	- 퍼포먼스(32k 용량)의 문제 
+> 	- 가상 DOM의 등장
+> - **서드파티 플로그인 연결**
+> 	- 반드시 코어 제이쿼리 밑에 추가해야함 : [jQuery UI - 공식위키](https://jqueryui.com/)
+> 	- 파일확장자에서 이런식으로 min이 있는 건 들여쓰기 없는거
 
 >[!cite]- 참고 문서  
 > -  [[자바스크립트] 왜 jquery를 사용하는가?](https://unikys.tistory.com/300)
 > - https://www.samsungsds.com/kr/insights/jquery.html
 
 # 코어 제이쿼리
-- 코어 제이쿼리
-	- 문자열로 작성해야 함
-	- 바꿀 속성이 2개 이상일 경우, 객체 형식(`{}`)으로 작성 단위를 작성할때 문자열없이 작성하면 브라우저가 자동으로 px로 인식
-	- 콜론(`:`)으로 해당 속성을 가지고 있는 요소를 선택
-	- dom은 화면에 보여지는 거고 스크롤이나 기타등등 화면 밖은 윈도우
+- 문자열로 작성해야 함
+- 바꿀 속성이 2개 이상일 경우, 객체 형식(`{}`)으로 작성 단위를 작성할때 문자열없이 작성하면 브라우저가 자동으로 px로 인식
+- 콜론(`:`)으로 해당 속성을 가지고 있는 요소를 선택
+- dom은 화면에 보여지는 거고 스크롤이나 기타등등 화면 밖은 윈도우
 
 ## HTML과 연결
-- HTML과 연결
-    ```html
-    <!-- 1. 제이쿼리 코어파일 -->
-    <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <!-- 2. 제이쿼리 cdn방식 -->
-    <script src="<http://code.jquery.com/jquery-1.12.4.min.js>"></script>
-    <script src="<http://code.jquery.com/jquery-3.3.1.min.js>"></script>
-    ```
-- 기본 틀
+```html
+<!-- 1. 제이쿼리 코어파일 -->
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<!-- 2. 제이쿼리 cdn방식 -->
+<script src="<http://code.jquery.com/jquery-1.12.4.min.js>"></script>
+<script src="<http://code.jquery.com/jquery-3.3.1.min.js>"></script>
+```
+- **기본 틀**
     ```jsx
     $(document).ready(function(){})
     ```
-	- window.onload와 동일하게 메모리에 먼저 올리고 HTML을 읽음 같이 사용은 못하더라 
+	- window.onload와 동일하게 메모리에 먼저 올리고 HTML을 읽음 (같이 사용은 못하더라) 
 	- $()에 익명함수를 넣으면 ready 축약가능
 
 ## 코어 제이쿼리 문법
