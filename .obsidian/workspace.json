@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-01.md",
-                "mode": "preview",
+                "file": "99. 기타/데일리 노트/2023-06-07.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "document.r",
+                "query": "modal",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -91,7 +92,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-01.md"
+                "file": "99. 기타/데일리 노트/2023-06-07.md"
               }
             }
           },
@@ -101,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-01.md",
+                "file": "99. 기타/데일리 노트/2023-06-07.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -136,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-01.md",
+                "file": "99. 기타/데일리 노트/2023-06-07.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -148,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-01.md",
+                "file": "99. 기타/데일리 노트/2023-06-07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,10 +236,14 @@
   },
   "active": "1baf0507be307eb8",
   "lastOpenFiles": [
+    "99. 기타/데일리 노트/2023-06-01.md",
+    "99. 기타/데일리 노트/2023-06-07.md",
+    "3. 웹 개발/1) 프론트엔드/HTML.md",
+    "9. 용어해설집/개발도구/이클립스.md",
+    "99. 메모/옵시디언.md",
     "99. 기타/주간 노트/2023년 19주차.md",
     "HTML5 웹 프로그래밍.md",
     "5. 데이터베이스/SQL.md",
-    "99. 기타/데일리 노트/2023-06-01.md",
     "99. 기타/주간 노트/2023년 21주차.md",
     "99. 기타/데일리 노트/2023-04-21.md",
     "99. 기타/주간 노트/2023년 22주차.md",
@@ -252,7 +257,6 @@
     "3. Resouce/99. 기타",
     "3. Resouce",
     "99. 기타/img/Pasted image 20230530122443.png",
-    "3. 웹 개발/1) 프론트엔드/HTML.md",
     "9. 용어해설집/용어해설집.md",
     "99. 기타/데일리 노트/2023-05-30.md",
     "99. 기타/데일리 노트/2023-05-28.md",
@@ -262,9 +266,6 @@
     "99. 기타/데일리 노트/2023-05-10.md",
     "99. 기타/데일리 노트/2023-05-12.md",
     "99. 기타/데일리 노트/2023-05-11.md",
-    "99. 기타/데일리 노트/2023-05-23.md",
-    "99. 기타/데일리 노트/2023-05-27.md",
-    "99. 기타/데일리 노트/2023-05-13.md",
     "logseq/bak/logseq/config/2023-05-24T00_05_34.353Z.Desktop.edn",
     "logseq/bak/logseq/config/2023-05-24T00_05_30.407Z.Desktop.edn",
     "logseq/bak/logseq/config",

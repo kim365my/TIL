@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-06-07",
+      "path": "99. 기타/데일리 노트/2023-06-07.md"
+    },
+    {
       "basename": "2023-06-01",
       "path": "99. 기타/데일리 노트/2023-06-01.md"
+    },
+    {
+      "basename": "HTML",
+      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
+    },
+    {
+      "basename": "이클립스",
+      "path": "9. 용어해설집/개발도구/이클립스.md"
+    },
+    {
+      "basename": "옵시디언",
+      "path": "99. 메모/옵시디언.md"
     },
     {
       "basename": "2023년 19주차",
@@ -47,10 +63,6 @@
     {
       "basename": "Pasted image 20230530122443",
       "path": "99. 기타/img/Pasted image 20230530122443.png"
-    },
-    {
-      "basename": "HTML",
-      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
     },
     {
       "basename": "용어해설집",
@@ -187,18 +199,6 @@
     {
       "basename": "Express.js",
       "path": "3. Resouce/3. 웹 개발/프레임워크/Express.js.md"
-    },
-    {
-      "basename": "VSC",
-      "path": "3. Resouce/9. 용어해설집/개발도구/VSC.md"
-    },
-    {
-      "basename": "파이썬 프로그래밍 기초",
-      "path": "1. Project/방통대/3학년 1학기/파이썬 프로그래밍 기초.md"
-    },
-    {
-      "basename": "방통대 수업",
-      "path": "1. Project/방통대/방통대 수업.md"
     }
   ],
   "omittedPaths": [],
