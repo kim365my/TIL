@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-06-09",
+      "path": "99. 기타/데일리 노트/2023-06-09.md"
+    },
+    {
+      "basename": "React.js",
+      "path": "3. 웹 개발/프레임워크/React.js.md"
+    },
+    {
+      "basename": "Node.JS",
+      "path": "3. 웹 개발/프레임워크/Node.JS.md"
+    },
+    {
+      "basename": "Scope",
+      "path": "3. 웹 개발/2) 백엔드/Scope.md"
+    },
+    {
+      "basename": "웹 개발론",
+      "path": "3. 웹 개발/웹 개발론.md"
+    },
+    {
+      "basename": "2023-04-11",
+      "path": "99. 기타/데일리 노트/2023-04-11.md"
+    },
+    {
       "basename": "2023-06-07",
       "path": "99. 기타/데일리 노트/2023-06-07.md"
     },
@@ -55,10 +79,6 @@
     {
       "basename": "생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘",
       "path": "독서노트/진행중/생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘.md"
-    },
-    {
-      "basename": "Node.JS",
-      "path": "3. 웹 개발/프레임워크/Node.JS.md"
     },
     {
       "basename": "Pasted image 20230530122443",
@@ -179,26 +199,6 @@
     {
       "basename": "XML",
       "path": "3. Resouce/3. 웹 개발/전송 데이터 형태/XML.md"
-    },
-    {
-      "basename": "JSON",
-      "path": "3. Resouce/3. 웹 개발/전송 데이터 형태/JSON.md"
-    },
-    {
-      "basename": "CSV",
-      "path": "3. Resouce/3. 웹 개발/전송 데이터 형태/CSV.md"
-    },
-    {
-      "basename": "옵시디언",
-      "path": "3. Resouce/99. 메모/옵시디언.md"
-    },
-    {
-      "basename": "환경변수",
-      "path": "3. Resouce/9. 용어해설집/환경변수.md"
-    },
-    {
-      "basename": "Express.js",
-      "path": "3. Resouce/3. 웹 개발/프레임워크/Express.js.md"
     }
   ],
   "omittedPaths": [],
