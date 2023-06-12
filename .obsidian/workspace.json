@@ -13,14 +13,67 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-09.md",
+                "file": "99. 기타/데일리 노트/2023-06-12.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c32f9d8d2fd2b2ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "유용한 사이트 정리.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f16a9e044a8df889",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "9. 용어해설집/구조 분해 할당.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "68442ba4bf14af03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. 프로그래밍 언어/JS.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7dfc0d4a6aeb2947",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "기술면접 대비.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 297.5,
     "collapsed": true
   },
   "right": {
@@ -83,7 +136,7 @@
       {
         "id": "efdcbd70d8282bb8",
         "type": "tabs",
-        "dimension": 68.29971181556196,
+        "dimension": 68.36538461538461,
         "children": [
           {
             "id": "e297f3dcd7f9d836",
@@ -91,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-09.md"
+                "file": "유용한 사이트 정리.md"
               }
             }
           },
@@ -101,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-09.md",
+                "file": "유용한 사이트 정리.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -136,7 +189,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-09.md",
+                "file": "유용한 사이트 정리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -148,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-09.md",
+                "file": "유용한 사이트 정리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +225,7 @@
       {
         "id": "92f7af63d8dd3cce",
         "type": "tabs",
-        "dimension": 31.70028818443804,
+        "dimension": 31.634615384615383,
         "children": [
           {
             "id": "f9f8e608f518e7a0",
@@ -218,7 +271,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5
+    "width": 238.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,10 +286,22 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "1baf0507be307eb8",
+  "active": "c32f9d8d2fd2b2ea",
   "lastOpenFiles": [
-    "3. 웹 개발/프레임워크/React.js.md",
+    "기술면접 대비.md",
+    "99. 기타/데일리 노트/2023-06-12.md",
+    "99. 기타/img/Pasted image 20230612142524.png",
+    "99. 기타/img/Pasted image 20230612144025.png",
+    "99. 기타/img/Pasted image 20230612144022.png",
+    "99. 기타/img/Pasted image 20230612143608.png",
+    "99. 기타/img/Pasted image 20230612143352.png",
+    "HTML5 웹 프로그래밍.md",
+    "README.md",
+    "99. 기타/데일리 노트/무제 파일.md",
+    "9. 용어해설집/구조 분해 할당.md",
+    "4. 프로그래밍 언어/JS.md",
     "99. 기타/데일리 노트/2023-06-09.md",
+    "3. 웹 개발/프레임워크/React.js.md",
     "3. 웹 개발/프레임워크/Node.JS.md",
     "3. 웹 개발/2) 백엔드/Scope.md",
     "3. 웹 개발/웹 개발론.md",
@@ -247,24 +312,16 @@
     "9. 용어해설집/개발도구/이클립스.md",
     "99. 메모/옵시디언.md",
     "99. 기타/주간 노트/2023년 19주차.md",
-    "HTML5 웹 프로그래밍.md",
     "5. 데이터베이스/SQL.md",
     "99. 기타/주간 노트/2023년 21주차.md",
     "99. 기타/데일리 노트/2023-04-21.md",
     "99. 기타/주간 노트/2023년 22주차.md",
     "3. 웹 개발/2) 백엔드/JDBC.md",
     "99. 기타/데일리 노트/2023-05-31.md",
-    "독서노트/진행중/생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘.md",
-    "99. 기타/주간 노트/2023년 20주차.md",
-    "3. Resouce/99. 기타/주간 노트/2023년 19주차.md",
     "3. Resouce/99. 기타/주간 노트",
     "3. Resouce/99. 기타",
     "3. Resouce",
     "99. 기타/img/Pasted image 20230530122443.png",
-    "9. 용어해설집/용어해설집.md",
-    "99. 기타/데일리 노트/2023-05-30.md",
-    "99. 기타/데일리 노트/2023-05-28.md",
-    "3. 웹 개발/프레임워크/electron.md",
     "logseq/bak/logseq/config/2023-05-24T00_05_34.353Z.Desktop.edn",
     "logseq/bak/logseq/config/2023-05-24T00_05_30.407Z.Desktop.edn",
     "logseq/bak/logseq/config",
@@ -279,11 +336,6 @@
     "1. Project/취직하기/이력서/증명 사진.png",
     "1. Project/취직하기/이력서/이력서_0003.png",
     "1. Project/취직하기/이력서/이력서_0002.png",
-    "1. Project/취직하기/이력서/이력서_0001.png",
-    "2. Area/가족/수기명가/미용업 영업주 자율점검표/통장사본.png",
-    "2. Area/가족/보험증권/자동차 보험증권.jpg",
-    "2. Area/가족/수기명가/사업자등록증명서/사업자등록증.jpg",
-    "2. Area/가족/외삼촌 주소.png",
     "1. Project/방통대/과제/Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
     "2. Area/TIL - SW과학/컴퓨터과학.canvas",
     "2. Area/TIL - SW과학/공부목표.canvas",

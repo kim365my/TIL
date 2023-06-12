@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "유용한 사이트 정리",
+      "path": "유용한 사이트 정리.md"
+    },
+    {
+      "basename": "기술면접 대비",
+      "path": "기술면접 대비.md"
+    },
+    {
+      "basename": "2023-06-12",
+      "path": "99. 기타/데일리 노트/2023-06-12.md"
+    },
+    {
+      "basename": "Pasted image 20230612142524",
+      "path": "99. 기타/img/Pasted image 20230612142524.png"
+    },
+    {
+      "basename": "HTML5 웹 프로그래밍",
+      "path": "HTML5 웹 프로그래밍.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "구조 분해 할당",
+      "path": "9. 용어해설집/구조 분해 할당.md"
+    },
+    {
+      "basename": "JS",
+      "path": "4. 프로그래밍 언어/JS.md"
+    },
+    {
       "basename": "2023-06-09",
       "path": "99. 기타/데일리 노트/2023-06-09.md"
     },
@@ -47,10 +79,6 @@
     {
       "basename": "2023년 19주차",
       "path": "99. 기타/주간 노트/2023년 19주차.md"
-    },
-    {
-      "basename": "HTML5 웹 프로그래밍",
-      "path": "HTML5 웹 프로그래밍.md"
     },
     {
       "basename": "SQL",
@@ -171,34 +199,6 @@
     {
       "basename": "JS",
       "path": "3. Resouce/4. 프로그래밍 언어/JS.md"
-    },
-    {
-      "basename": "웹 개발론",
-      "path": "3. Resouce/3. 웹 개발/웹 개발론.md"
-    },
-    {
-      "basename": "웹 개발 흐름",
-      "path": "3. Resouce/3. 웹 개발/웹 개발 흐름.md"
-    },
-    {
-      "basename": "웹 데이터 전송파일",
-      "path": "3. Resouce/3. 웹 개발/웹 데이터 전송파일.md"
-    },
-    {
-      "basename": "웹 3.0",
-      "path": "3. Resouce/3. 웹 개발/웹 3.0.md"
-    },
-    {
-      "basename": "웹 브라우저",
-      "path": "3. Resouce/3. 웹 개발/웹 브라우저.md"
-    },
-    {
-      "basename": "데이터 송수신",
-      "path": "3. Resouce/3. 웹 개발/전송 데이터 형태/데이터 송수신.md"
-    },
-    {
-      "basename": "XML",
-      "path": "3. Resouce/3. 웹 개발/전송 데이터 형태/XML.md"
     }
   ],
   "omittedPaths": [],
