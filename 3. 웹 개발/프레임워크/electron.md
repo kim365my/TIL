@@ -16,9 +16,13 @@ aliases : 일렉트론
 > 	3.  크로스 플랫폼 
 > - [Electron Dos](https://www.electronjs.org/docs/latest) 
 
+- 디자인 라이브러리
+	- [ant-design](https://github.com/ant-design/ant-design)
+
 >[!cite]- 참고 문서
 > - [https://www.youtube.com/watch?v=6Ep8ot0ABH0](https://www.youtube.com/watch?v=6Ep8ot0ABH0)
 > - [FE개발자의 성장 스토리 11 : Electron, 저도 한번 해보겠습니다.](https://tech.kakao.com/2021/08/17/frontend-growth-11/)
+
 
 # 시작하기
 >[!info] [[VSC]]의 경우 콘솔에서 아래 코드를 입력하면 됨

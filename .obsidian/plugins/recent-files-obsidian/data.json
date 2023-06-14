@@ -1,44 +1,88 @@
 {
   "recentFiles": [
     {
-      "basename": "유용한 사이트 정리",
-      "path": "유용한 사이트 정리.md"
+      "basename": "HTML",
+      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
     },
     {
-      "basename": "기술면접 대비",
-      "path": "기술면접 대비.md"
+      "basename": "2023-06-14",
+      "path": "99. 기타/데일리 노트/2023-06-14.md"
     },
     {
       "basename": "2023-06-12",
       "path": "99. 기타/데일리 노트/2023-06-12.md"
     },
     {
-      "basename": "Pasted image 20230612142524",
-      "path": "99. 기타/img/Pasted image 20230612142524.png"
+      "basename": "JQuery",
+      "path": "3. 웹 개발/1) 프론트엔드/JQuery.md"
     },
     {
-      "basename": "HTML5 웹 프로그래밍",
-      "path": "HTML5 웹 프로그래밍.md"
+      "basename": "HTTP",
+      "path": "3. 웹 개발/HTTP.md"
+    },
+    {
+      "basename": "서비스 기획자로 일하고 있습니다 현직 서비스 기획자가 들려주는 커리어 관리부터 취업·이직까지",
+      "path": "독서노트/진행중/서비스 기획자로 일하고 있습니다 현직 서비스 기획자가 들려주는 커리어 관리부터 취업·이직까지.md"
+    },
+    {
+      "basename": "React.js",
+      "path": "3. 웹 개발/프레임워크/React.js.md"
+    },
+    {
+      "basename": "포트폴리오 제작",
+      "path": "포트폴리오 제작.md"
     },
     {
       "basename": "README",
       "path": "README.md"
     },
     {
-      "basename": "구조 분해 할당",
-      "path": "9. 용어해설집/구조 분해 할당.md"
+      "basename": "2023-06-09",
+      "path": "99. 기타/데일리 노트/2023-06-09.md"
+    },
+    {
+      "basename": "2023-06-13",
+      "path": "99. 기타/데일리 노트/2023-06-13.md"
+    },
+    {
+      "basename": "2023년 22주차",
+      "path": "99. 기타/주간 노트/2023년 22주차.md"
+    },
+    {
+      "basename": "옵시디언",
+      "path": "99. 메모/옵시디언.md"
+    },
+    {
+      "basename": "기술면접 대비",
+      "path": "기술면접 대비.md"
+    },
+    {
+      "basename": "electron",
+      "path": "3. 웹 개발/프레임워크/electron.md"
+    },
+    {
+      "basename": "ant design",
+      "path": "3. 웹 개발/디자인 라이브러리/ant design.md"
+    },
+    {
+      "basename": "2023-05-23",
+      "path": "99. 기타/데일리 노트/2023-05-23.md"
     },
     {
       "basename": "JS",
       "path": "4. 프로그래밍 언어/JS.md"
     },
     {
-      "basename": "2023-06-09",
-      "path": "99. 기타/데일리 노트/2023-06-09.md"
+      "basename": "구조 분해 할당",
+      "path": "9. 용어해설집/구조 분해 할당.md"
     },
     {
-      "basename": "React.js",
-      "path": "3. 웹 개발/프레임워크/React.js.md"
+      "basename": "유용한 사이트 정리",
+      "path": "유용한 사이트 정리.md"
+    },
+    {
+      "basename": "Pasted image 20230612142524",
+      "path": "99. 기타/img/Pasted image 20230612142524.png"
     },
     {
       "basename": "Node.JS",
@@ -65,16 +109,8 @@
       "path": "99. 기타/데일리 노트/2023-06-01.md"
     },
     {
-      "basename": "HTML",
-      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
-    },
-    {
       "basename": "이클립스",
       "path": "9. 용어해설집/개발도구/이클립스.md"
-    },
-    {
-      "basename": "옵시디언",
-      "path": "99. 메모/옵시디언.md"
     },
     {
       "basename": "2023년 19주차",
@@ -91,10 +127,6 @@
     {
       "basename": "2023-04-21",
       "path": "99. 기타/데일리 노트/2023-04-21.md"
-    },
-    {
-      "basename": "2023년 22주차",
-      "path": "99. 기타/주간 노트/2023년 22주차.md"
     },
     {
       "basename": "JDBC",
@@ -125,10 +157,6 @@
       "path": "99. 기타/데일리 노트/2023-05-28.md"
     },
     {
-      "basename": "electron",
-      "path": "3. 웹 개발/프레임워크/electron.md"
-    },
-    {
       "basename": "2023-05-09",
       "path": "99. 기타/데일리 노트/2023-05-09.md"
     },
@@ -147,10 +175,6 @@
     {
       "basename": "2023-05-11",
       "path": "99. 기타/데일리 노트/2023-05-11.md"
-    },
-    {
-      "basename": "2023-05-23",
-      "path": "99. 기타/데일리 노트/2023-05-23.md"
     },
     {
       "basename": "electron",
@@ -175,30 +199,6 @@
     {
       "basename": "2023-05-23",
       "path": "3. Resouce/99. 기타/데일리 노트/2023-05-23.md"
-    },
-    {
-      "basename": "HTML",
-      "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/HTML.md"
-    },
-    {
-      "basename": "Node.JS",
-      "path": "3. Resouce/3. 웹 개발/프레임워크/Node.JS.md"
-    },
-    {
-      "basename": "CSS",
-      "path": "3. Resouce/3. 웹 개발/1) 프론트엔드/CSS.md"
-    },
-    {
-      "basename": "python",
-      "path": "3. Resouce/4. 프로그래밍 언어/python.md"
-    },
-    {
-      "basename": "Neutralino.js",
-      "path": "3. Resouce/3. 웹 개발/프레임워크/Neutralino.js.md"
-    },
-    {
-      "basename": "JS",
-      "path": "3. Resouce/4. 프로그래밍 언어/JS.md"
     }
   ],
   "omittedPaths": [],

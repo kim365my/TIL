@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ef5b2b1ff1b7e7d7",
+        "id": "be35a99cd47f1692",
         "type": "tabs",
         "children": [
           {
-            "id": "1baf0507be307eb8",
+            "id": "818ad6eb1e33fffa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-12.md",
+                "file": "3. 웹 개발/1) 프론트엔드/HTML.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,59 +21,19 @@
             }
           },
           {
-            "id": "c32f9d8d2fd2b2ea",
+            "id": "15a0f91528be2db6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "유용한 사이트 정리.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f16a9e044a8df889",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "9. 용어해설집/구조 분해 할당.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "68442ba4bf14af03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. 프로그래밍 언어/JS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7dfc0d4a6aeb2947",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "기술면접 대비.md",
+                "file": "3. 웹 개발/1) 프론트엔드/JQuery.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "스코프",
+                "query": "FontAwesome",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,12 +82,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 297.5,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "0ec7239b9c0b9a42",
@@ -144,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "유용한 사이트 정리.md"
+                "file": "3. 웹 개발/1) 프론트엔드/HTML.md"
               }
             }
           },
@@ -154,7 +114,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "유용한 사이트 정리.md",
+                "file": "3. 웹 개발/1) 프론트엔드/HTML.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -177,7 +137,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.4061496711336462,
+                  "scale": 0.40614967113364825,
                   "close": true
                 }
               }
@@ -189,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "유용한 사이트 정리.md",
+                "file": "3. 웹 개발/1) 프론트엔드/HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -201,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "유용한 사이트 정리.md",
+                "file": "3. 웹 개발/1) 프론트엔드/HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +185,7 @@
       {
         "id": "92f7af63d8dd3cce",
         "type": "tabs",
-        "dimension": 31.634615384615383,
+        "dimension": 31.63461538461538,
         "children": [
           {
             "id": "f9f8e608f518e7a0",
@@ -286,56 +246,57 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "c32f9d8d2fd2b2ea",
+  "active": "818ad6eb1e33fffa",
   "lastOpenFiles": [
-    "기술면접 대비.md",
+    "99. 기타/데일리 노트/2023-06-14.md",
     "99. 기타/데일리 노트/2023-06-12.md",
+    "3. 웹 개발/1) 프론트엔드/JQuery.md",
+    "3. 웹 개발/HTTP.md",
+    "독서노트/진행중/서비스 기획자로 일하고 있습니다 현직 서비스 기획자가 들려주는 커리어 관리부터 취업·이직까지.md",
+    "3. 웹 개발/프레임워크/React.js.md",
+    "포트폴리오 제작.md",
+    "README.md",
+    "3. 웹 개발/프레임워크/무제 파일.md",
+    "99. 기타/데일리 노트/2023-06-09.md",
+    "99. 기타/데일리 노트/2023-06-13.md",
+    "99. 기타/주간 노트/2023년 22주차.md",
+    "99. 메모/옵시디언.md",
+    "기술면접 대비.md",
+    "3. 웹 개발/프레임워크/electron.md",
+    "3. 웹 개발/디자인 라이브러리/ant design.md",
+    "3. 웹 개발/디자인 라이브러리",
+    "99. 기타/데일리 노트/2023-05-23.md",
+    "4. 프로그래밍 언어/JS.md",
+    "9. 용어해설집/구조 분해 할당.md",
+    "유용한 사이트 정리.md",
+    "99. 기타/데일리 노트/2023-06-10.md",
+    "99. 기타/img/Pasted image 20230610233027.png",
+    "99. 기타/img/Pasted image 20230610232813.png",
+    "99. 기타/img/Pasted image 20230610220604.png",
+    "99. 기타/img/Pasted image 20230610201804.png",
+    "99. 기타/img/Pasted image 20230610185816.png",
+    "99. 기타/img/Pasted image 20230610160830.png",
+    "99. 기타/img/Pasted image 20230610160639.png",
+    "99. 기타/img/Pasted image 20230610155522.png",
+    "3. 웹 개발/1) 프론트엔드/웹 디자인/인터렉션 디자인.md",
     "99. 기타/img/Pasted image 20230612142524.png",
     "99. 기타/img/Pasted image 20230612144025.png",
-    "99. 기타/img/Pasted image 20230612144022.png",
-    "99. 기타/img/Pasted image 20230612143608.png",
-    "99. 기타/img/Pasted image 20230612143352.png",
     "HTML5 웹 프로그래밍.md",
-    "README.md",
     "99. 기타/데일리 노트/무제 파일.md",
-    "9. 용어해설집/구조 분해 할당.md",
-    "4. 프로그래밍 언어/JS.md",
-    "99. 기타/데일리 노트/2023-06-09.md",
-    "3. 웹 개발/프레임워크/React.js.md",
     "3. 웹 개발/프레임워크/Node.JS.md",
     "3. 웹 개발/2) 백엔드/Scope.md",
-    "3. 웹 개발/웹 개발론.md",
-    "99. 기타/데일리 노트/2023-04-11.md",
-    "99. 기타/데일리 노트/2023-06-07.md",
-    "99. 기타/데일리 노트/2023-06-01.md",
-    "3. 웹 개발/1) 프론트엔드/HTML.md",
-    "9. 용어해설집/개발도구/이클립스.md",
-    "99. 메모/옵시디언.md",
-    "99. 기타/주간 노트/2023년 19주차.md",
-    "5. 데이터베이스/SQL.md",
-    "99. 기타/주간 노트/2023년 21주차.md",
-    "99. 기타/데일리 노트/2023-04-21.md",
-    "99. 기타/주간 노트/2023년 22주차.md",
-    "3. 웹 개발/2) 백엔드/JDBC.md",
-    "99. 기타/데일리 노트/2023-05-31.md",
     "3. Resouce/99. 기타/주간 노트",
     "3. Resouce/99. 기타",
     "3. Resouce",
-    "99. 기타/img/Pasted image 20230530122443.png",
     "logseq/bak/logseq/config/2023-05-24T00_05_34.353Z.Desktop.edn",
     "logseq/bak/logseq/config/2023-05-24T00_05_30.407Z.Desktop.edn",
     "logseq/bak/logseq/config",
     "logseq/bak/logseq",
     "logseq/bak/99. 기타/데일리 노트/2023-05-24",
     "logseq/bak/99. 기타/데일리 노트",
-    "logseq/bak/99. 기타",
     "3. Resouce/3. 웹 개발/무제 파일.canvas",
     "3. Resouce/공부목표.canvas",
     "3. Resouce/웹 개발.canvas",
-    "1. Project/취직하기/이력서/증명  사진.jpg",
-    "1. Project/취직하기/이력서/증명 사진.png",
-    "1. Project/취직하기/이력서/이력서_0003.png",
-    "1. Project/취직하기/이력서/이력서_0002.png",
     "1. Project/방통대/과제/Astar알고리즘_8퍼즐문제_노드확장트리.canvas",
     "2. Area/TIL - SW과학/컴퓨터과학.canvas",
     "2. Area/TIL - SW과학/공부목표.canvas",
