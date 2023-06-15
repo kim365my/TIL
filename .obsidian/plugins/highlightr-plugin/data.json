@@ -1,5 +1,5 @@
 {
-  "highlighterStyle": "lowlight",
+  "highlighterStyle": "rounded",
   "highlighterMethods": "css-classes",
   "highlighters": {
     "Pink": "#FFB8EBA6",

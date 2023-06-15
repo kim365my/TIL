@@ -1,20 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "HTML",
-      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
+      "basename": "JQuery",
+      "path": "3. 웹 개발/1) 프론트엔드/JQuery.md"
+    },
+    {
+      "basename": "유용한 사이트 정리",
+      "path": "유용한 사이트 정리.md"
+    },
+    {
+      "basename": "2023-06-15",
+      "path": "99. 기타/데일리 노트/2023-06-15.md"
+    },
+    {
+      "basename": "React.js",
+      "path": "3. 웹 개발/프레임워크/React.js.md"
     },
     {
       "basename": "2023-06-14",
       "path": "99. 기타/데일리 노트/2023-06-14.md"
     },
     {
-      "basename": "2023-06-12",
-      "path": "99. 기타/데일리 노트/2023-06-12.md"
+      "basename": "옵시디언",
+      "path": "99. 메모/옵시디언.md"
     },
     {
-      "basename": "JQuery",
-      "path": "3. 웹 개발/1) 프론트엔드/JQuery.md"
+      "basename": "CSS",
+      "path": "3. 웹 개발/1) 프론트엔드/CSS.md"
+    },
+    {
+      "basename": "2023-04-13",
+      "path": "99. 기타/데일리 노트/2023-04-13.md"
+    },
+    {
+      "basename": "HTML",
+      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
+    },
+    {
+      "basename": "2023-06-12",
+      "path": "99. 기타/데일리 노트/2023-06-12.md"
     },
     {
       "basename": "HTTP",
@@ -23,10 +47,6 @@
     {
       "basename": "서비스 기획자로 일하고 있습니다 현직 서비스 기획자가 들려주는 커리어 관리부터 취업·이직까지",
       "path": "독서노트/진행중/서비스 기획자로 일하고 있습니다 현직 서비스 기획자가 들려주는 커리어 관리부터 취업·이직까지.md"
-    },
-    {
-      "basename": "React.js",
-      "path": "3. 웹 개발/프레임워크/React.js.md"
     },
     {
       "basename": "포트폴리오 제작",
@@ -47,10 +67,6 @@
     {
       "basename": "2023년 22주차",
       "path": "99. 기타/주간 노트/2023년 22주차.md"
-    },
-    {
-      "basename": "옵시디언",
-      "path": "99. 메모/옵시디언.md"
     },
     {
       "basename": "기술면접 대비",
@@ -75,10 +91,6 @@
     {
       "basename": "구조 분해 할당",
       "path": "9. 용어해설집/구조 분해 할당.md"
-    },
-    {
-      "basename": "유용한 사이트 정리",
-      "path": "유용한 사이트 정리.md"
     },
     {
       "basename": "Pasted image 20230612142524",
@@ -187,18 +199,6 @@
     {
       "basename": "생활코딩_Nodejs_후반부_웹공개용",
       "path": "2. Area/독서노트/진행중/생활코딩_Nodejs_후반부_웹공개용.pdf"
-    },
-    {
-      "basename": "2023-05-28",
-      "path": "3. Resouce/99. 기타/데일리 노트/2023-05-28.md"
-    },
-    {
-      "basename": "MY SQL",
-      "path": "3. Resouce/5. 데이터베이스/MY SQL.md"
-    },
-    {
-      "basename": "2023-05-23",
-      "path": "3. Resouce/99. 기타/데일리 노트/2023-05-23.md"
     }
   ],
   "omittedPaths": [],
