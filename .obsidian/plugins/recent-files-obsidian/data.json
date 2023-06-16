@@ -1,24 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "JQuery",
-      "path": "3. 웹 개발/1) 프론트엔드/JQuery.md"
+      "basename": "2023-06-16",
+      "path": "99. 기타/데일리 노트/2023-06-16.md"
     },
     {
-      "basename": "유용한 사이트 정리",
-      "path": "유용한 사이트 정리.md"
+      "basename": "2023-05-26",
+      "path": "99. 기타/데일리 노트/2023-05-26.md"
+    },
+    {
+      "basename": "2023-06-14",
+      "path": "99. 기타/데일리 노트/2023-06-14.md"
+    },
+    {
+      "basename": "2023년 24주차",
+      "path": "99. 기타/주간 노트/2023년 24주차.md"
     },
     {
       "basename": "2023-06-15",
       "path": "99. 기타/데일리 노트/2023-06-15.md"
     },
     {
-      "basename": "React.js",
-      "path": "3. 웹 개발/프레임워크/React.js.md"
+      "basename": "유용한 사이트 정리",
+      "path": "유용한 사이트 정리.md"
     },
     {
-      "basename": "2023-06-14",
-      "path": "99. 기타/데일리 노트/2023-06-14.md"
+      "basename": "HTTP",
+      "path": "3. 웹 개발/HTTP.md"
+    },
+    {
+      "basename": "JQuery",
+      "path": "3. 웹 개발/1) 프론트엔드/JQuery.md"
+    },
+    {
+      "basename": "React.js",
+      "path": "3. 웹 개발/프레임워크/React.js.md"
     },
     {
       "basename": "옵시디언",
@@ -39,10 +55,6 @@
     {
       "basename": "2023-06-12",
       "path": "99. 기타/데일리 노트/2023-06-12.md"
-    },
-    {
-      "basename": "HTTP",
-      "path": "3. 웹 개발/HTTP.md"
     },
     {
       "basename": "서비스 기획자로 일하고 있습니다 현직 서비스 기획자가 들려주는 커리어 관리부터 취업·이직까지",
@@ -187,18 +199,6 @@
     {
       "basename": "2023-05-11",
       "path": "99. 기타/데일리 노트/2023-05-11.md"
-    },
-    {
-      "basename": "electron",
-      "path": "3. Resouce/3. 웹 개발/프레임워크/electron.md"
-    },
-    {
-      "basename": "생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘",
-      "path": "2. Area/독서노트/진행중/생활코딩 Nodejs 노드제이에스 프로그래밍 처음 프로그래밍을 시작하는 입문자의 눈높이에 맞춘.md"
-    },
-    {
-      "basename": "생활코딩_Nodejs_후반부_웹공개용",
-      "path": "2. Area/독서노트/진행중/생활코딩_Nodejs_후반부_웹공개용.pdf"
     }
   ],
   "omittedPaths": [],
