@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-16.md",
+                "file": "99. 기타/데일리 노트/2023-06-19.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-16.md"
+                "file": "99. 기타/데일리 노트/2023-06-19.md"
               }
             }
           },
@@ -142,7 +142,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-16.md",
+                "file": "99. 기타/데일리 노트/2023-06-19.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-16.md",
+                "file": "99. 기타/데일리 노트/2023-06-19.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-16.md",
+                "file": "99. 기타/데일리 노트/2023-06-19.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -276,15 +276,16 @@
   },
   "active": "fde376579f8f4b70",
   "lastOpenFiles": [
+    "3. 웹 개발/프레임워크/React.js.md",
+    "99. 기타/데일리 노트/2023-06-19.md",
+    "99. 기타/데일리 노트/2023-06-16.md",
     "99. 기타/데일리 노트/2023-05-26.md",
     "99. 기타/데일리 노트/2023-06-14.md",
     "99. 기타/주간 노트/2023년 24주차.md",
-    "99. 기타/데일리 노트/2023-06-16.md",
     "99. 기타/데일리 노트/2023-06-15.md",
     "유용한 사이트 정리.md",
     "3. 웹 개발/HTTP.md",
     "3. 웹 개발/1) 프론트엔드/JQuery.md",
-    "3. 웹 개발/프레임워크/React.js.md",
     "99. 메모/옵시디언.md",
     "99. 기타/img/Pasted image 20230615115605.png",
     "99. 기타/img/Pasted image 20230615115523.png",
@@ -306,7 +307,6 @@
     "3. 웹 개발/디자인 라이브러리/ant design.md",
     "3. 웹 개발/디자인 라이브러리",
     "99. 기타/데일리 노트/2023-05-23.md",
-    "4. 프로그래밍 언어/JS.md",
     "99. 기타/img/Pasted image 20230610233027.png",
     "99. 기타/img/Pasted image 20230610232813.png",
     "99. 기타/img/Pasted image 20230610220604.png",

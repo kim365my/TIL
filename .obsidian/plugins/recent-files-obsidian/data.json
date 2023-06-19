@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-06-19",
+      "path": "99. 기타/데일리 노트/2023-06-19.md"
+    },
+    {
+      "basename": "React.js",
+      "path": "3. 웹 개발/프레임워크/React.js.md"
+    },
+    {
       "basename": "2023-06-16",
       "path": "99. 기타/데일리 노트/2023-06-16.md"
     },
@@ -31,10 +39,6 @@
     {
       "basename": "JQuery",
       "path": "3. 웹 개발/1) 프론트엔드/JQuery.md"
-    },
-    {
-      "basename": "React.js",
-      "path": "3. 웹 개발/프레임워크/React.js.md"
     },
     {
       "basename": "옵시디언",
@@ -195,10 +199,6 @@
     {
       "basename": "2023-05-12",
       "path": "99. 기타/데일리 노트/2023-05-12.md"
-    },
-    {
-      "basename": "2023-05-11",
-      "path": "99. 기타/데일리 노트/2023-05-11.md"
     }
   ],
   "omittedPaths": [],
