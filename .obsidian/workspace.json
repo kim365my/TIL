@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-15.md",
+                "file": "3. 웹 개발/프레임워크/React.js.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. 웹 개발/1) 프론트엔드/웹 디자인/포토샵.md",
+                "file": "99. 기타/데일리 노트/2023-06-21.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "포토샵",
+                "query": "react",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. 웹 개발/1) 프론트엔드/웹 디자인/포토샵.md"
+                "file": "3. 웹 개발/프레임워크/React.js.md"
               }
             }
           },
@@ -142,7 +142,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "3. 웹 개발/1) 프론트엔드/웹 디자인/포토샵.md",
+                "file": "3. 웹 개발/프레임워크/React.js.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. 웹 개발/1) 프론트엔드/웹 디자인/포토샵.md",
+                "file": "3. 웹 개발/프레임워크/React.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. 웹 개발/1) 프론트엔드/웹 디자인/포토샵.md",
+                "file": "3. 웹 개발/프레임워크/React.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -274,16 +274,20 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "fde376579f8f4b70",
+  "active": "ee50e971333e6f73",
   "lastOpenFiles": [
+    "99. 기타/데일리 노트/2023-06-15.md",
+    "99. 기타/데일리 노트/2023-06-21.md",
+    "3. 웹 개발/프레임워크/React.js.md",
+    "99. 기타/데일리 노트/2023-06-13.md",
+    "99. 기타/데일리 노트/2023-05-08.md",
+    "3. 웹 개발/1) 프론트엔드/웹 디자인/포토샵.md",
     "99. 기타/데일리 노트/2023-06-20.md",
     "99. 기타/데일리 노트/2023-06-19.md",
-    "3. 웹 개발/프레임워크/React.js.md",
     "99. 기타/데일리 노트/2023-06-16.md",
     "99. 기타/데일리 노트/2023-05-26.md",
     "99. 기타/데일리 노트/2023-06-14.md",
     "99. 기타/주간 노트/2023년 24주차.md",
-    "99. 기타/데일리 노트/2023-06-15.md",
     "유용한 사이트 정리.md",
     "3. 웹 개발/HTTP.md",
     "3. 웹 개발/1) 프론트엔드/JQuery.md",
@@ -301,11 +305,7 @@
     "README.md",
     "3. 웹 개발/프레임워크/무제 파일.md",
     "99. 기타/데일리 노트/2023-06-09.md",
-    "99. 기타/데일리 노트/2023-06-13.md",
     "99. 기타/주간 노트/2023년 22주차.md",
-    "기술면접 대비.md",
-    "3. 웹 개발/프레임워크/electron.md",
-    "3. 웹 개발/디자인 라이브러리/ant design.md",
     "3. 웹 개발/디자인 라이브러리",
     "99. 기타/img/Pasted image 20230610233027.png",
     "99. 기타/img/Pasted image 20230610232813.png",
