@@ -11,6 +11,7 @@ aliases : 노드JS
 
 >[!cite]- 참고 문서 
 > - [NodeJS](https://hanamon.kr/nodejs-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/)
+
 # Node JS 시작하기
 - 공식 홈페이지에서 설치
 - 환경변수 설정
