@@ -8,58 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "15a0f91528be2db6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "유용한 사이트 정리.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ee50e971333e6f73",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 기타/데일리 노트/2023-06-14.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fde376579f8f4b70",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99. 기타/데일리 노트/2023-06-21.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18c28464e443786f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3. 웹 개발/HTTP.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "bdda75279aef1821",
             "type": "leaf",
             "state": {
@@ -72,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "리액트",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +69,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -267,7 +215,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -288,12 +237,13 @@
   },
   "active": "bdda75279aef1821",
   "lastOpenFiles": [
+    "3. 웹 개발/프레임워크/React.js.md",
+    "99. 기타/데일리 노트/2023-06-09.md",
+    "3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인.md",
     "99. 기타/데일리 노트/2023-06-23.md",
     "3. 웹 개발/1) 프론트엔드/HTML.md",
-    "3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인.md",
     "3. 웹 개발/1) 프론트엔드/CSS.md",
     "99. 기타/데일리 노트/2023-06-14.md",
-    "3. 웹 개발/프레임워크/React.js.md",
     "99. 기타/데일리 노트/2023-06-15.md",
     "99. 기타/데일리 노트/2023-06-21.md",
     "99. 기타/데일리 노트/2023-06-13.md",
@@ -317,7 +267,6 @@
     "독서노트/진행중/서비스 기획자로 일하고 있습니다 현직 서비스 기획자가 들려주는 커리어 관리부터 취업·이직까지.md",
     "포트폴리오 제작.md",
     "README.md",
-    "3. 웹 개발/프레임워크/무제 파일.md",
     "3. 웹 개발/디자인 라이브러리",
     "99. 기타/img/Pasted image 20230610233027.png",
     "99. 기타/img/Pasted image 20230610232813.png",
