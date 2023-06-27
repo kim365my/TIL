@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-27.md",
+                "file": "99. 기타/데일리 노트/2023-05-26.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "리액트",
+                "query": "white-space",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,11 +83,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 418.5
   },
   "right": {
     "id": "0ec7239b9c0b9a42",
@@ -104,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-27.md"
+                "file": "99. 기타/데일리 노트/2023-05-26.md"
               }
             }
           },
@@ -114,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-27.md",
+                "file": "99. 기타/데일리 노트/2023-05-26.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -149,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-27.md",
+                "file": "99. 기타/데일리 노트/2023-05-26.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -161,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99. 기타/데일리 노트/2023-06-27.md",
+                "file": "99. 기타/데일리 노트/2023-05-26.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -248,13 +249,17 @@
   },
   "active": "a9693c77d5651485",
   "lastOpenFiles": [
+    "3. 웹 개발/네트워크.md",
+    "99. 기타/데일리 노트/2023-06-27.md",
+    "3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인.md",
+    "README.md",
+    "포트폴리오 제작.md",
+    "20211227020205rsr9e97smc.mp4",
     "99. 기타/데일리 노트/2023-06-12.md",
     "99. 기타/데일리 노트/2023-06-13.md",
     "99. 기타/데일리 노트/2023-06-07.md",
     "99. 기타/데일리 노트/2023-06-02.md",
     "99. 기타/데일리 노트/2023-06-01.md",
-    "99. 기타/데일리 노트/2023-06-27.md",
-    "3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인.md",
     "3. 웹 개발/프레임워크/React.js.md",
     "99. 기타/데일리 노트/2023-06-09.md",
     "99. 기타/데일리 노트/2023-06-23.md",
@@ -271,9 +276,6 @@
     "99. 기타/데일리 노트/2023-05-26.md",
     "99. 기타/주간 노트/2023년 24주차.md",
     "유용한 사이트 정리.md",
-    "3. 웹 개발/HTTP.md",
-    "3. 웹 개발/1) 프론트엔드/JQuery.md",
-    "99. 메모/옵시디언.md",
     "99. 기타/img/Pasted image 20230615115605.png",
     "99. 기타/img/Pasted image 20230615115523.png",
     "99. 기타/img/Pasted image 20230615115428.png",
@@ -293,7 +295,6 @@
     "logseq/bak/logseq/config",
     "logseq/bak/logseq",
     "logseq/bak/99. 기타/데일리 노트/2023-05-24",
-    "logseq/bak/99. 기타/데일리 노트",
     "3. Resouce/3. 웹 개발/무제 파일.canvas",
     "3. Resouce/공부목표.canvas",
     "3. Resouce/웹 개발.canvas",
