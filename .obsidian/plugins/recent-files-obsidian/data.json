@@ -1,8 +1,88 @@
 {
   "recentFiles": [
     {
+      "basename": "React.js",
+      "path": "3. 웹 개발/프레임워크/React.js.md"
+    },
+    {
+      "basename": "2023-06-14",
+      "path": "99. 기타/데일리 노트/2023-06-14.md"
+    },
+    {
+      "basename": "2023-06-19",
+      "path": "99. 기타/데일리 노트/2023-06-19.md"
+    },
+    {
+      "basename": "2023-06-29",
+      "path": "99. 기타/데일리 노트/2023-06-29.md"
+    },
+    {
+      "basename": "웹 디자인",
+      "path": "3. 웹 개발/1) 프론트엔드/웹 디자인.md"
+    },
+    {
+      "basename": "HTML",
+      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
+    },
+    {
+      "basename": "유용한 사이트 정리",
+      "path": "유용한 사이트 정리.md"
+    },
+    {
+      "basename": "Web API",
+      "path": "3. 웹 개발/1) 프론트엔드/Web API.md"
+    },
+    {
       "basename": "이클립스",
       "path": "9. 용어해설집/개발도구/이클립스.md"
+    },
+    {
+      "basename": "IntersectionObserver",
+      "path": "3. 웹 개발/JS API/IntersectionObserver.md"
+    },
+    {
+      "basename": "2023-06-02",
+      "path": "99. 기타/데일리 노트/2023-06-02.md"
+    },
+    {
+      "basename": "Web Component",
+      "path": "3. 웹 개발/JS API/Web Component.md"
+    },
+    {
+      "basename": "포토샵",
+      "path": "3. 웹 개발/1) 프론트엔드/포토샵.md"
+    },
+    {
+      "basename": "ant design",
+      "path": "3. 웹 개발/라이브러리/ant design.md"
+    },
+    {
+      "basename": "PWA",
+      "path": "3. 웹 개발/1) 프론트엔드/용어해설/PWA.md"
+    },
+    {
+      "basename": "seo",
+      "path": "3. 웹 개발/1) 프론트엔드/용어해설/seo.md"
+    },
+    {
+      "basename": "JSDOC",
+      "path": "3. 웹 개발/1) 프론트엔드/용어해설/JSDOC.md"
+    },
+    {
+      "basename": "Shadow DOM",
+      "path": "3. 웹 개발/JS API/Shadow DOM.md"
+    },
+    {
+      "basename": "Spring boot",
+      "path": "3. 웹 개발/2) 백엔드/Spring boot.md"
+    },
+    {
+      "basename": "Node.JS",
+      "path": "3. 웹 개발/프레임워크/Node.JS.md"
+    },
+    {
+      "basename": "electron",
+      "path": "3. 웹 개발/프레임워크/electron.md"
     },
     {
       "basename": "2023-04-17",
@@ -11,18 +91,6 @@
     {
       "basename": "Java",
       "path": "4. 프로그래밍 언어/Java.md"
-    },
-    {
-      "basename": "웹 디자인",
-      "path": "3. 웹 개발/1) 프론트엔드/웹 디자인/웹 디자인.md"
-    },
-    {
-      "basename": "유용한 사이트 정리",
-      "path": "유용한 사이트 정리.md"
-    },
-    {
-      "basename": "HTML",
-      "path": "3. 웹 개발/1) 프론트엔드/HTML.md"
     },
     {
       "basename": "2023-05-26",
@@ -57,16 +125,8 @@
       "path": "99. 기타/데일리 노트/2023-06-07.md"
     },
     {
-      "basename": "2023-06-02",
-      "path": "99. 기타/데일리 노트/2023-06-02.md"
-    },
-    {
       "basename": "2023-06-01",
       "path": "99. 기타/데일리 노트/2023-06-01.md"
-    },
-    {
-      "basename": "React.js",
-      "path": "3. 웹 개발/프레임워크/React.js.md"
     },
     {
       "basename": "2023-06-09",
@@ -81,10 +141,6 @@
       "path": "3. 웹 개발/1) 프론트엔드/CSS.md"
     },
     {
-      "basename": "2023-06-14",
-      "path": "99. 기타/데일리 노트/2023-06-14.md"
-    },
-    {
       "basename": "2023-06-15",
       "path": "99. 기타/데일리 노트/2023-06-15.md"
     },
@@ -97,16 +153,8 @@
       "path": "99. 기타/데일리 노트/2023-05-08.md"
     },
     {
-      "basename": "포토샵",
-      "path": "3. 웹 개발/1) 프론트엔드/웹 디자인/포토샵.md"
-    },
-    {
       "basename": "2023-06-20",
       "path": "99. 기타/데일리 노트/2023-06-20.md"
-    },
-    {
-      "basename": "2023-06-19",
-      "path": "99. 기타/데일리 노트/2023-06-19.md"
     },
     {
       "basename": "2023-06-16",
@@ -145,60 +193,12 @@
       "path": "기술면접 대비.md"
     },
     {
-      "basename": "electron",
-      "path": "3. 웹 개발/프레임워크/electron.md"
-    },
-    {
       "basename": "ant design",
       "path": "3. 웹 개발/디자인 라이브러리/ant design.md"
     },
     {
       "basename": "2023-05-23",
       "path": "99. 기타/데일리 노트/2023-05-23.md"
-    },
-    {
-      "basename": "JS",
-      "path": "4. 프로그래밍 언어/JS.md"
-    },
-    {
-      "basename": "구조 분해 할당",
-      "path": "9. 용어해설집/구조 분해 할당.md"
-    },
-    {
-      "basename": "Pasted image 20230612142524",
-      "path": "99. 기타/img/Pasted image 20230612142524.png"
-    },
-    {
-      "basename": "Node.JS",
-      "path": "3. 웹 개발/프레임워크/Node.JS.md"
-    },
-    {
-      "basename": "Scope",
-      "path": "3. 웹 개발/2) 백엔드/Scope.md"
-    },
-    {
-      "basename": "웹 개발론",
-      "path": "3. 웹 개발/웹 개발론.md"
-    },
-    {
-      "basename": "2023-04-11",
-      "path": "99. 기타/데일리 노트/2023-04-11.md"
-    },
-    {
-      "basename": "2023년 19주차",
-      "path": "99. 기타/주간 노트/2023년 19주차.md"
-    },
-    {
-      "basename": "SQL",
-      "path": "5. 데이터베이스/SQL.md"
-    },
-    {
-      "basename": "2023년 21주차",
-      "path": "99. 기타/주간 노트/2023년 21주차.md"
-    },
-    {
-      "basename": "2023-04-21",
-      "path": "99. 기타/데일리 노트/2023-04-21.md"
     }
   ],
   "omittedPaths": [],
