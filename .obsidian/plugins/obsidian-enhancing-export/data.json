@@ -34,8 +34,7 @@
       "name": "Latex"
     },
     {
-      "name": "Latex",
-      "arguments": "-f markdown --resource-path=\"${currentDir}\" --resource-path=\"${attachmentFolderPath}\" -s -o \"${outputPath}\" -t latex --extract-media \"${outputPath}/images/\""
+      "name": "Latex"
     },
     {
       "name": "Media Wiki"
@@ -53,6 +52,9 @@
       "name": "Bibliography"
     }
   ],
+  "pandocPath": {
+    "win32": "C:\\Users\\i7A-62\\AppData\\Local\\Pandoc"
+  },
   "defaultExportDirectoryMode": "Auto",
   "openExportedFile": true,
   "lastExportDirectory": {
