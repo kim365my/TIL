@@ -34,6 +34,10 @@
       "name": "Latex"
     },
     {
+      "name": "Latex",
+      "arguments": "-f markdown --resource-path=\"${currentDir}\" --resource-path=\"${attachmentFolderPath}\" -s -o \"${outputPath}\" -t latex --extract-media \"${outputPath}/images/\""
+    },
+    {
       "name": "Media Wiki"
     },
     {
@@ -53,7 +57,5 @@
   "openExportedFile": true,
   "lastExportDirectory": {
     "win32": "C:\\Users\\ringingm88\\Desktop"
-  },
-  "lastEditName": "Markdown",
-  "lastExportType": "Html"
+  }
 }

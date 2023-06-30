@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "포트폴리오 설명문서",
+      "path": "취직하기/포트폴리오 설명문서.md"
+    },
+    {
+      "basename": "포토샵",
+      "path": "3. 웹 개발/1) 프론트엔드/포토샵.md"
+    },
+    {
+      "basename": "2023-06-30",
+      "path": "99. 기타/데일리 노트/2023-06-30.md"
+    },
+    {
+      "basename": "웹 디자인",
+      "path": "3. 웹 개발/1) 프론트엔드/웹 디자인.md"
+    },
+    {
+      "basename": "포트폴리오 제작",
+      "path": "취직하기/포트폴리오 제작.md"
+    },
+    {
+      "basename": "독서 목록",
+      "path": "독서노트/독서 목록.md"
+    },
+    {
+      "basename": "기술면접 대비",
+      "path": "취직하기/기술면접 대비.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "React.js",
       "path": "3. 웹 개발/프레임워크/React.js.md"
     },
@@ -15,10 +47,6 @@
     {
       "basename": "2023-06-29",
       "path": "99. 기타/데일리 노트/2023-06-29.md"
-    },
-    {
-      "basename": "웹 디자인",
-      "path": "3. 웹 개발/1) 프론트엔드/웹 디자인.md"
     },
     {
       "basename": "HTML",
@@ -47,10 +75,6 @@
     {
       "basename": "Web Component",
       "path": "3. 웹 개발/JS API/Web Component.md"
-    },
-    {
-      "basename": "포토샵",
-      "path": "3. 웹 개발/1) 프론트엔드/포토샵.md"
     },
     {
       "basename": "ant design",
@@ -103,14 +127,6 @@
     {
       "basename": "2023-06-27",
       "path": "99. 기타/데일리 노트/2023-06-27.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "포트폴리오 제작",
-      "path": "포트폴리오 제작.md"
     },
     {
       "basename": "2023-06-12",
@@ -179,26 +195,6 @@
     {
       "basename": "2023-04-13",
       "path": "99. 기타/데일리 노트/2023-04-13.md"
-    },
-    {
-      "basename": "서비스 기획자로 일하고 있습니다 현직 서비스 기획자가 들려주는 커리어 관리부터 취업·이직까지",
-      "path": "독서노트/진행중/서비스 기획자로 일하고 있습니다 현직 서비스 기획자가 들려주는 커리어 관리부터 취업·이직까지.md"
-    },
-    {
-      "basename": "2023년 22주차",
-      "path": "99. 기타/주간 노트/2023년 22주차.md"
-    },
-    {
-      "basename": "기술면접 대비",
-      "path": "기술면접 대비.md"
-    },
-    {
-      "basename": "ant design",
-      "path": "3. 웹 개발/디자인 라이브러리/ant design.md"
-    },
-    {
-      "basename": "2023-05-23",
-      "path": "99. 기타/데일리 노트/2023-05-23.md"
     }
   ],
   "omittedPaths": [],
