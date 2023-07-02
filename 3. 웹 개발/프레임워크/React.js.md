@@ -18,11 +18,16 @@ aliases : 리액트
 ## 설치하기
 - [[Node.JS]] 설치 필요
 - [[React.js]] 설치하기
-	```
-	npm install -g create-react-app
-	npm i -g create-react-app 
-	```
-	- 경고창이 표시될텐데 무시하고 넘어가면 됨
+	- npm 5버전 이하라면
+		```
+		npm install -g create-react-app
+		npm i -g create-react-app 
+		```
+		- 경고창이 표시될텐데 무시하고 넘어가면 됨
+	- npm 버전이 6이상이라면
+		```
+		npm init react-app 설치폴더
+		```
 - 보일러 플레이트
 	```
 	create-react-app 설치폴더명
