@@ -1,6 +1,54 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-07-03",
+      "path": "99. 기타/데일리 노트/2023-07-03.md"
+    },
+    {
+      "basename": "Redux",
+      "path": "3. 웹 개발/프레임워크/Redux.md"
+    },
+    {
+      "basename": "네트워크",
+      "path": "3. 웹 개발/네트워크.md"
+    },
+    {
+      "basename": "웹 개발 흐름",
+      "path": "3. 웹 개발/웹 개발 흐름.md"
+    },
+    {
+      "basename": "웹 3.0",
+      "path": "3. 웹 개발/웹 3.0.md"
+    },
+    {
+      "basename": "JSDOC",
+      "path": "3. 웹 개발/용어해설/JSDOC.md"
+    },
+    {
+      "basename": "AJAX",
+      "path": "3. 웹 개발/용어해설/AJAX.md"
+    },
+    {
+      "basename": "Spring boot",
+      "path": "3. 웹 개발/2) 백엔드/Spring boot.md"
+    },
+    {
+      "basename": "PWA",
+      "path": "3. 웹 개발/용어해설/PWA.md"
+    },
+    {
+      "basename": "seo",
+      "path": "3. 웹 개발/용어해설/seo.md"
+    },
+    {
+      "basename": "2023-06-19",
+      "path": "99. 기타/데일리 노트/2023-06-19.md"
+    },
+    {
+      "basename": "React.js",
+      "path": "3. 웹 개발/프레임워크/React.js.md"
+    },
+    {
       "basename": "포트폴리오 설명문서",
       "path": "취직하기/포트폴리오 설명문서.md"
     },
@@ -33,16 +81,8 @@
       "path": "README.md"
     },
     {
-      "basename": "React.js",
-      "path": "3. 웹 개발/프레임워크/React.js.md"
-    },
-    {
       "basename": "2023-06-14",
       "path": "99. 기타/데일리 노트/2023-06-14.md"
-    },
-    {
-      "basename": "2023-06-19",
-      "path": "99. 기타/데일리 노트/2023-06-19.md"
     },
     {
       "basename": "2023-06-29",
@@ -81,24 +121,8 @@
       "path": "3. 웹 개발/라이브러리/ant design.md"
     },
     {
-      "basename": "PWA",
-      "path": "3. 웹 개발/1) 프론트엔드/용어해설/PWA.md"
-    },
-    {
-      "basename": "seo",
-      "path": "3. 웹 개발/1) 프론트엔드/용어해설/seo.md"
-    },
-    {
-      "basename": "JSDOC",
-      "path": "3. 웹 개발/1) 프론트엔드/용어해설/JSDOC.md"
-    },
-    {
       "basename": "Shadow DOM",
       "path": "3. 웹 개발/JS API/Shadow DOM.md"
-    },
-    {
-      "basename": "Spring boot",
-      "path": "3. 웹 개발/2) 백엔드/Spring boot.md"
     },
     {
       "basename": "Node.JS",
@@ -119,10 +143,6 @@
     {
       "basename": "2023-05-26",
       "path": "99. 기타/데일리 노트/2023-05-26.md"
-    },
-    {
-      "basename": "네트워크",
-      "path": "3. 웹 개발/네트워크.md"
     },
     {
       "basename": "2023-06-27",
@@ -175,26 +195,6 @@
     {
       "basename": "2023-06-16",
       "path": "99. 기타/데일리 노트/2023-06-16.md"
-    },
-    {
-      "basename": "2023년 24주차",
-      "path": "99. 기타/주간 노트/2023년 24주차.md"
-    },
-    {
-      "basename": "HTTP",
-      "path": "3. 웹 개발/HTTP.md"
-    },
-    {
-      "basename": "JQuery",
-      "path": "3. 웹 개발/1) 프론트엔드/JQuery.md"
-    },
-    {
-      "basename": "옵시디언",
-      "path": "99. 메모/옵시디언.md"
-    },
-    {
-      "basename": "2023-04-13",
-      "path": "99. 기타/데일리 노트/2023-04-13.md"
     }
   ],
   "omittedPaths": [],
